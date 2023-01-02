@@ -1,0 +1,347 @@
+26:12:2022 00:00:35.958 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.MustUnderstandInterceptor$UltimateReceiverMustUnderstandInterceptor@34cd9582
+26:12:2022 00:00:35.967 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.interceptor.OutgoingChainInterceptor@2807be91
+26:12:2022 00:00:35.968 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.i.OutgoingChainInterceptor}: Interceptors contributed by bus: [org.apache.cxf.ws.policy.PolicyOutInterceptor@4c22bd52]
+26:12:2022 00:00:35.969 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.i.OutgoingChainInterceptor}: Interceptors contributed by service: []
+26:12:2022 00:00:35.969 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.i.OutgoingChainInterceptor}: Interceptors contributed by endpoint: [org.apache.cxf.interceptor.MessageSenderInterceptor@344a2e92, org.apache.cxf.jaxws.interceptors.SwAOutInterceptor@151c6871, org.apache.cxf.jaxws.interceptors.WrapperClassOutInterceptor@15f1e6bc, org.apache.cxf.jaxws.interceptors.HolderOutInterceptor@4c60017d, org.apache.cxf.jaxws.handler.logical.LogicalHandlerOutInterceptor@29bb88dd, org.apache.cxf.jaxws.handler.soap.SOAPHandlerInterceptor@7a602007]
+26:12:2022 00:00:35.969 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.i.OutgoingChainInterceptor}: Interceptors contributed by binding: [org.apache.cxf.interceptor.AttachmentOutInterceptor@5f12227b, org.apache.cxf.interceptor.StaxOutInterceptor@454ceb23, org.apache.cxf.binding.soap.interceptor.SoapHeaderOutFilterInterceptor@96b711e, org.apache.cxf.wsdl.interceptors.WrappedOutInterceptor@7ce3fd8e, org.apache.cxf.wsdl.interceptors.BareOutInterceptor@322c1993, org.apache.cxf.binding.soap.interceptor.SoapPreProtocolOutInterceptor@109bf906, org.apache.cxf.binding.soap.interceptor.SoapOutInterceptor@42aa898a]
+26:12:2022 00:00:35.969 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.i.OutgoingChainInterceptor}: Interceptors contributed by databinding: []
+26:12:2022 00:00:35.969 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.ws.policy.PolicyOutInterceptor@4c22bd52 to phase setup
+26:12:2022 00:00:35.969 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.interceptor.MessageSenderInterceptor@344a2e92 to phase prepare-send
+26:12:2022 00:00:35.969 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.jaxws.interceptors.SwAOutInterceptor@151c6871 to phase pre-logical
+26:12:2022 00:00:35.969 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.jaxws.interceptors.WrapperClassOutInterceptor@15f1e6bc to phase pre-logical
+26:12:2022 00:00:35.969 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.jaxws.interceptors.HolderOutInterceptor@4c60017d to phase pre-logical
+26:12:2022 00:00:35.969 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.jaxws.handler.logical.LogicalHandlerOutInterceptor@29bb88dd to phase pre-marshal
+26:12:2022 00:00:35.969 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.jaxws.handler.soap.SOAPHandlerInterceptor@7a602007 to phase pre-protocol-frontend
+26:12:2022 00:00:35.969 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.interceptor.AttachmentOutInterceptor@5f12227b to phase pre-stream
+26:12:2022 00:00:35.969 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.interceptor.StaxOutInterceptor@454ceb23 to phase pre-stream
+26:12:2022 00:00:35.969 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapHeaderOutFilterInterceptor@96b711e to phase pre-logical
+26:12:2022 00:00:35.970 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.wsdl.interceptors.WrappedOutInterceptor@7ce3fd8e to phase marshal
+26:12:2022 00:00:35.970 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.wsdl.interceptors.BareOutInterceptor@322c1993 to phase marshal
+26:12:2022 00:00:35.970 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapPreProtocolOutInterceptor@109bf906 to phase post-logical
+26:12:2022 00:00:35.970 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapOutInterceptor@42aa898a to phase write
+26:12:2022 00:00:35.970 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Chain org.apache.cxf.phase.PhaseInterceptorChain@214603dc was created. Current flow:
+  setup [PolicyOutInterceptor]
+  pre-logical [HolderOutInterceptor, SwAOutInterceptor, WrapperClassOutInterceptor, SoapHeaderOutFilterInterceptor]
+  post-logical [SoapPreProtocolOutInterceptor]
+  prepare-send [MessageSenderInterceptor]
+  pre-stream [AttachmentOutInterceptor, StaxOutInterceptor]
+  pre-protocol-frontend [SOAPHandlerInterceptor]
+  write [SoapOutInterceptor]
+  pre-marshal [LogicalHandlerOutInterceptor]
+  marshal [WrappedOutInterceptor, BareOutInterceptor]
+
+26:12:2022 00:00:35.970 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.ws.policy.PolicyOutInterceptor@4c22bd52
+26:12:2022 00:00:35.971 SerikHome tomcat {TRACE} {http-nio-8085-exec-1} {o.a.c.w.p.PolicyOutInterceptor}: Using effective policy: 
+type: Policy
+  type: ExactlyOne
+    type: All
+
+26:12:2022 00:00:35.971 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.jaxws.interceptors.HolderOutInterceptor@4c60017d
+26:12:2022 00:00:35.971 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.j.i.HolderOutInterceptor}: op: [OperationInfo: {http://bip.bee.kz/SyncChannel/v10/Interfaces}SendMessage]
+26:12:2022 00:00:35.971 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.j.i.HolderOutInterceptor}: op.hasOutput(): true
+26:12:2022 00:00:35.971 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.j.i.HolderOutInterceptor}: op.getOutput().size(): 1
+26:12:2022 00:00:35.971 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.jaxws.interceptors.SwAOutInterceptor@151c6871
+26:12:2022 00:00:35.972 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.jaxws.interceptors.WrapperClassOutInterceptor@15f1e6bc
+26:12:2022 00:00:35.975 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.SoapHeaderOutFilterInterceptor@96b711e
+26:12:2022 00:00:35.975 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.SoapPreProtocolOutInterceptor@109bf906
+26:12:2022 00:00:35.975 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.interceptor.MessageSenderInterceptor@344a2e92
+26:12:2022 00:00:35.976 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor@4f838ec4 to phase prepare-send-ending
+26:12:2022 00:00:35.976 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Chain org.apache.cxf.phase.PhaseInterceptorChain@214603dc was modified. Current flow:
+  setup [PolicyOutInterceptor]
+  pre-logical [HolderOutInterceptor, SwAOutInterceptor, WrapperClassOutInterceptor, SoapHeaderOutFilterInterceptor]
+  post-logical [SoapPreProtocolOutInterceptor]
+  prepare-send [MessageSenderInterceptor]
+  pre-stream [AttachmentOutInterceptor, StaxOutInterceptor]
+  pre-protocol-frontend [SOAPHandlerInterceptor]
+  write [SoapOutInterceptor]
+  pre-marshal [LogicalHandlerOutInterceptor]
+  marshal [WrappedOutInterceptor, BareOutInterceptor]
+  prepare-send-ending [MessageSenderEndingInterceptor]
+
+26:12:2022 00:00:35.976 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.interceptor.AttachmentOutInterceptor@5f12227b
+26:12:2022 00:00:35.977 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.interceptor.StaxOutInterceptor@454ceb23
+26:12:2022 00:00:35.983 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.interceptor.StaxOutEndingInterceptor@14949c17 to phase pre-stream-ending
+26:12:2022 00:00:35.983 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Chain org.apache.cxf.phase.PhaseInterceptorChain@214603dc was modified. Current flow:
+  setup [PolicyOutInterceptor]
+  pre-logical [HolderOutInterceptor, SwAOutInterceptor, WrapperClassOutInterceptor, SoapHeaderOutFilterInterceptor]
+  post-logical [SoapPreProtocolOutInterceptor]
+  prepare-send [MessageSenderInterceptor]
+  pre-stream [AttachmentOutInterceptor, StaxOutInterceptor]
+  pre-protocol-frontend [SOAPHandlerInterceptor]
+  write [SoapOutInterceptor]
+  pre-marshal [LogicalHandlerOutInterceptor]
+  marshal [WrappedOutInterceptor, BareOutInterceptor]
+  pre-stream-ending [StaxOutEndingInterceptor]
+  prepare-send-ending [MessageSenderEndingInterceptor]
+
+26:12:2022 00:00:35.983 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.jaxws.handler.soap.SOAPHandlerInterceptor@7a602007
+26:12:2022 00:00:35.984 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.binding.soap.saaj.SAAJOutInterceptor$SAAJOutEndingInterceptor@6aca4189 to phase pre-protocol-ending
+26:12:2022 00:00:35.984 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Chain org.apache.cxf.phase.PhaseInterceptorChain@214603dc was modified. Current flow:
+  setup [PolicyOutInterceptor]
+  pre-logical [HolderOutInterceptor, SwAOutInterceptor, WrapperClassOutInterceptor, SoapHeaderOutFilterInterceptor]
+  post-logical [SoapPreProtocolOutInterceptor]
+  prepare-send [MessageSenderInterceptor]
+  pre-stream [AttachmentOutInterceptor, StaxOutInterceptor]
+  pre-protocol-frontend [SOAPHandlerInterceptor]
+  write [SoapOutInterceptor]
+  pre-marshal [LogicalHandlerOutInterceptor]
+  marshal [WrappedOutInterceptor, BareOutInterceptor]
+  pre-protocol-ending [SAAJOutEndingInterceptor]
+  pre-stream-ending [StaxOutEndingInterceptor]
+  prepare-send-ending [MessageSenderEndingInterceptor]
+
+26:12:2022 00:00:35.984 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.jaxws.handler.soap.SOAPHandlerInterceptor$1@5a8e1ce3 to phase user-protocol
+26:12:2022 00:00:35.984 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Chain org.apache.cxf.phase.PhaseInterceptorChain@214603dc was modified. Current flow:
+  setup [PolicyOutInterceptor]
+  pre-logical [HolderOutInterceptor, SwAOutInterceptor, WrapperClassOutInterceptor, SoapHeaderOutFilterInterceptor]
+  post-logical [SoapPreProtocolOutInterceptor]
+  prepare-send [MessageSenderInterceptor]
+  pre-stream [AttachmentOutInterceptor, StaxOutInterceptor]
+  pre-protocol-frontend [SOAPHandlerInterceptor]
+  write [SoapOutInterceptor]
+  pre-marshal [LogicalHandlerOutInterceptor]
+  marshal [WrappedOutInterceptor, BareOutInterceptor]
+  user-protocol [org.apache.cxf.jaxws.handler.soap.SOAPHandlerInterceptor.ENDING]
+  pre-protocol-ending [SAAJOutEndingInterceptor]
+  pre-stream-ending [StaxOutEndingInterceptor]
+  prepare-send-ending [MessageSenderEndingInterceptor]
+
+26:12:2022 00:00:35.984 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.SoapOutInterceptor@42aa898a
+26:12:2022 00:00:35.986 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapOutInterceptor$SoapOutEndingInterceptor@385f6531 to phase write-ending
+26:12:2022 00:00:35.986 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Chain org.apache.cxf.phase.PhaseInterceptorChain@214603dc was modified. Current flow:
+  setup [PolicyOutInterceptor]
+  pre-logical [HolderOutInterceptor, SwAOutInterceptor, WrapperClassOutInterceptor, SoapHeaderOutFilterInterceptor]
+  post-logical [SoapPreProtocolOutInterceptor]
+  prepare-send [MessageSenderInterceptor]
+  pre-stream [AttachmentOutInterceptor, StaxOutInterceptor]
+  pre-protocol-frontend [SOAPHandlerInterceptor]
+  write [SoapOutInterceptor]
+  pre-marshal [LogicalHandlerOutInterceptor]
+  marshal [WrappedOutInterceptor, BareOutInterceptor]
+  user-protocol [org.apache.cxf.jaxws.handler.soap.SOAPHandlerInterceptor.ENDING]
+  write-ending [SoapOutEndingInterceptor]
+  pre-protocol-ending [SAAJOutEndingInterceptor]
+  pre-stream-ending [StaxOutEndingInterceptor]
+  prepare-send-ending [MessageSenderEndingInterceptor]
+
+26:12:2022 00:00:35.986 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.jaxws.handler.logical.LogicalHandlerOutInterceptor@29bb88dd
+26:12:2022 00:00:35.986 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.wsdl.interceptors.WrappedOutInterceptor@7ce3fd8e
+26:12:2022 00:00:35.986 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.wsdl.interceptors.BareOutInterceptor@322c1993
+26:12:2022 00:00:35.997 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.jaxws.handler.soap.SOAPHandlerInterceptor$1@5a8e1ce3
+26:12:2022 00:00:35.997 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.j.h.HandlerChainInvoker}: invoking handlers, direction: outbound
+26:12:2022 00:00:35.997 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.j.h.HandlerChainInvoker}: invoking handler of type soap.start.serik.handlers.PropertyValidator
+26:12:2022 00:00:35.997 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.j.h.HandlerChainInvoker}: invoking handler of type soap.start.serik.handlers.LoggingHandler
+26:12:2022 00:00:35.998 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.j.h.HandlerChainInvoker}: closing protocol handlers - handler count:2
+26:12:2022 00:00:35.998 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.SoapOutInterceptor$SoapOutEndingInterceptor@385f6531
+26:12:2022 00:00:35.998 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.binding.soap.saaj.SAAJOutInterceptor$SAAJOutEndingInterceptor@6aca4189
+26:12:2022 00:00:36.001 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.w.a.ContextUtils}: retrieving MAPs from context property javax.xml.ws.addressing.context.inbound
+26:12:2022 00:00:36.001 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.w.a.ContextUtils}: WS-Addressing - failed to retrieve Message Addressing Properties from context
+26:12:2022 00:00:36.005 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.interceptor.StaxOutEndingInterceptor@14949c17
+26:12:2022 00:00:36.005 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor@4f838ec4
+26:12:2022 00:00:36.006 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.t.h.AbstractHTTPDestination}: Finished servicing http request on thread: Thread[http-nio-8085-exec-1,5,main]
+26:12:2022 00:00:36.006 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.t.s.ServletController}: Finished servicing http request on thread: Thread[http-nio-8085-exec-1,5,main]
+26:12:2022 00:14:31.656 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.t.s.ServletController}: Service http request on thread: Thread[http-nio-8085-exec-3,5,main]
+26:12:2022 00:14:31.656 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.t.h.AbstractHTTPDestination}: Create a new message for processing
+26:12:2022 00:14:31.656 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.t.h.Headers}: Request Headers: {Accept=[*/*], Authorization=[***], cache-control=[no-cache], connection=[keep-alive], content-type=[text/xml; charset=UTF-8], host=[localhost:8085], pragma=[no-cache], Proxy-Authorization=[***], SOAPAction=[""], transfer-encoding=[chunked], user-agent=[Apache-CXF/3.5.4]}
+26:12:2022 00:14:31.657 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.transport.https.CertConstraintsInterceptor@68298820 to phase pre-stream
+26:12:2022 00:14:31.657 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Chain org.apache.cxf.phase.PhaseInterceptorChain@1cd56cca was created. Current flow:
+  receive [PolicyInInterceptor, AttachmentInInterceptor]
+  pre-stream [CertConstraintsInterceptor]
+  post-stream [StaxInInterceptor]
+  read [WSDLGetInterceptor, ReadHeadersInterceptor, SoapActionInInterceptor, StartBodyInterceptor]
+  pre-protocol [MustUnderstandInterceptor]
+  pre-protocol-frontend [SOAPHandlerInterceptor, LogicalHandlerInInterceptor]
+  post-protocol [CheckFaultInterceptor, JAXBAttachmentSchemaValidationHack]
+  unmarshal [DocLiteralInInterceptor, SoapHeaderInterceptor]
+  pre-logical [OneWayProcessorInterceptor]
+  post-logical [WrapperClassInInterceptor]
+  pre-invoke [SwAInInterceptor, HolderInInterceptor]
+  invoke [ServiceInvokerInterceptor]
+  post-invoke [OutgoingChainInterceptor]
+
+26:12:2022 00:14:31.657 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.ws.policy.PolicyInInterceptor@268b130a
+26:12:2022 00:14:31.657 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.interceptor.AttachmentInInterceptor@333faa2d
+26:12:2022 00:14:31.657 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.transport.https.CertConstraintsInterceptor@68298820
+26:12:2022 00:14:31.657 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.interceptor.StaxInInterceptor@e381d74
+26:12:2022 00:14:31.657 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.interceptor.StaxInEndingInterceptor@31fb75bb to phase pre-invoke
+26:12:2022 00:14:31.658 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Chain org.apache.cxf.phase.PhaseInterceptorChain@1cd56cca was modified. Current flow:
+  receive [PolicyInInterceptor, AttachmentInInterceptor]
+  pre-stream [CertConstraintsInterceptor]
+  post-stream [StaxInInterceptor]
+  read [WSDLGetInterceptor, ReadHeadersInterceptor, SoapActionInInterceptor, StartBodyInterceptor]
+  pre-protocol [MustUnderstandInterceptor]
+  pre-protocol-frontend [SOAPHandlerInterceptor, LogicalHandlerInInterceptor]
+  post-protocol [CheckFaultInterceptor, JAXBAttachmentSchemaValidationHack]
+  unmarshal [DocLiteralInInterceptor, SoapHeaderInterceptor]
+  pre-logical [OneWayProcessorInterceptor]
+  post-logical [WrapperClassInInterceptor]
+  pre-invoke [StaxInEndingInterceptor, SwAInInterceptor, HolderInInterceptor]
+  invoke [ServiceInvokerInterceptor]
+  post-invoke [OutgoingChainInterceptor]
+
+26:12:2022 00:14:31.658 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.frontend.WSDLGetInterceptor@24233325
+26:12:2022 00:14:31.658 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.ReadHeadersInterceptor@54ace3d9
+26:12:2022 00:14:31.659 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.SoapActionInInterceptor@2f0a45c5
+26:12:2022 00:14:31.659 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.StartBodyInterceptor@2975b0e4
+26:12:2022 00:14:31.659 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.MustUnderstandInterceptor@622df676
+26:12:2022 00:14:31.659 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.binding.soap.interceptor.MustUnderstandInterceptor$UltimateReceiverMustUnderstandInterceptor@5de866f1 to phase invoke
+26:12:2022 00:14:31.659 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Chain org.apache.cxf.phase.PhaseInterceptorChain@1cd56cca was modified. Current flow:
+  receive [PolicyInInterceptor, AttachmentInInterceptor]
+  pre-stream [CertConstraintsInterceptor]
+  post-stream [StaxInInterceptor]
+  read [WSDLGetInterceptor, ReadHeadersInterceptor, SoapActionInInterceptor, StartBodyInterceptor]
+  pre-protocol [MustUnderstandInterceptor]
+  pre-protocol-frontend [SOAPHandlerInterceptor, LogicalHandlerInInterceptor]
+  post-protocol [CheckFaultInterceptor, JAXBAttachmentSchemaValidationHack]
+  unmarshal [DocLiteralInInterceptor, SoapHeaderInterceptor]
+  pre-logical [OneWayProcessorInterceptor]
+  post-logical [WrapperClassInInterceptor]
+  pre-invoke [StaxInEndingInterceptor, SwAInInterceptor, HolderInInterceptor]
+  invoke [ServiceInvokerInterceptor, UltimateReceiverMustUnderstandInterceptor]
+  post-invoke [OutgoingChainInterceptor]
+
+26:12:2022 00:14:31.659 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.jaxws.handler.soap.SOAPHandlerInterceptor@7a602007
+26:12:2022 00:14:31.659 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.j.h.HandlerChainInvoker}: invoker for chain size: 2
+26:12:2022 00:14:31.662 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.j.h.HandlerChainInvoker}: invoking handlers, direction: inbound
+26:12:2022 00:14:31.662 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.j.h.HandlerChainInvoker}: invoking handler of type soap.start.serik.handlers.LoggingHandler
+26:12:2022 00:14:31.663 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.j.h.HandlerChainInvoker}: invoking handler of type soap.start.serik.handlers.PropertyValidator
+26:12:2022 00:14:31.681 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.jaxws.handler.logical.LogicalHandlerInInterceptor@10c62abc
+26:12:2022 00:14:31.681 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.CheckFaultInterceptor@74789501
+26:12:2022 00:14:31.681 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.jaxb.attachment.JAXBAttachmentSchemaValidationHack@512c63c1
+26:12:2022 00:14:31.681 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.wsdl.interceptors.DocLiteralInInterceptor@5491283b
+26:12:2022 00:14:31.682 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.SoapHeaderInterceptor@1ab18e46
+26:12:2022 00:14:31.682 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.interceptor.OneWayProcessorInterceptor@749a8a1b
+26:12:2022 00:14:31.682 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.jaxws.interceptors.WrapperClassInInterceptor@a77d4c1
+26:12:2022 00:14:31.682 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.interceptor.StaxInEndingInterceptor@31fb75bb
+26:12:2022 00:14:31.682 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.jaxws.interceptors.SwAInInterceptor@449abe5
+26:12:2022 00:14:31.682 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.jaxws.interceptors.HolderInInterceptor@11af6c77
+26:12:2022 00:14:31.682 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.interceptor.ServiceInvokerInterceptor@937a12
+26:12:2022 00:14:31.682 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.s.i.AbstractInvoker}: Invoking method public kz.bee.bip.esedo.SyncSendMessageResponse kz.bee.bip.esedo.SyncChannelImpl.sendMessage(kz.bee.bip.esedo.SyncSendMessageRequest) throws kz.bee.bip.esedo.SendMessageSendMessageFaultMsg on object kz.bee.bip.esedo.SyncChannelImpl@62c2313c with params [kz.bee.bip.esedo.SyncSendMessageRequest@2306bcc1].
+26:12:2022 00:14:38.925 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.MustUnderstandInterceptor$UltimateReceiverMustUnderstandInterceptor@5de866f1
+26:12:2022 00:14:38.925 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.interceptor.OutgoingChainInterceptor@2807be91
+26:12:2022 00:14:38.925 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.i.OutgoingChainInterceptor}: Interceptors contributed by bus: [org.apache.cxf.ws.policy.PolicyOutInterceptor@4c22bd52]
+26:12:2022 00:14:38.926 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.i.OutgoingChainInterceptor}: Interceptors contributed by service: []
+26:12:2022 00:14:38.926 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.i.OutgoingChainInterceptor}: Interceptors contributed by endpoint: [org.apache.cxf.interceptor.MessageSenderInterceptor@344a2e92, org.apache.cxf.jaxws.interceptors.SwAOutInterceptor@151c6871, org.apache.cxf.jaxws.interceptors.WrapperClassOutInterceptor@15f1e6bc, org.apache.cxf.jaxws.interceptors.HolderOutInterceptor@4c60017d, org.apache.cxf.jaxws.handler.logical.LogicalHandlerOutInterceptor@29bb88dd, org.apache.cxf.jaxws.handler.soap.SOAPHandlerInterceptor@7a602007]
+26:12:2022 00:14:38.926 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.i.OutgoingChainInterceptor}: Interceptors contributed by binding: [org.apache.cxf.interceptor.AttachmentOutInterceptor@5f12227b, org.apache.cxf.interceptor.StaxOutInterceptor@454ceb23, org.apache.cxf.binding.soap.interceptor.SoapHeaderOutFilterInterceptor@96b711e, org.apache.cxf.wsdl.interceptors.WrappedOutInterceptor@7ce3fd8e, org.apache.cxf.wsdl.interceptors.BareOutInterceptor@322c1993, org.apache.cxf.binding.soap.interceptor.SoapPreProtocolOutInterceptor@109bf906, org.apache.cxf.binding.soap.interceptor.SoapOutInterceptor@42aa898a]
+26:12:2022 00:14:38.926 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.i.OutgoingChainInterceptor}: Interceptors contributed by databinding: []
+26:12:2022 00:14:38.926 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Chain org.apache.cxf.phase.PhaseInterceptorChain@3dc799be was created. Current flow:
+  setup [PolicyOutInterceptor]
+  pre-logical [HolderOutInterceptor, SwAOutInterceptor, WrapperClassOutInterceptor, SoapHeaderOutFilterInterceptor]
+  post-logical [SoapPreProtocolOutInterceptor]
+  prepare-send [MessageSenderInterceptor]
+  pre-stream [AttachmentOutInterceptor, StaxOutInterceptor]
+  pre-protocol-frontend [SOAPHandlerInterceptor]
+  write [SoapOutInterceptor]
+  pre-marshal [LogicalHandlerOutInterceptor]
+  marshal [WrappedOutInterceptor, BareOutInterceptor]
+
+26:12:2022 00:14:38.926 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.ws.policy.PolicyOutInterceptor@4c22bd52
+26:12:2022 00:14:38.926 SerikHome tomcat {TRACE} {http-nio-8085-exec-3} {o.a.c.w.p.PolicyOutInterceptor}: Using effective policy: 
+type: Policy
+  type: ExactlyOne
+    type: All
+
+26:12:2022 00:14:38.926 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.jaxws.interceptors.HolderOutInterceptor@4c60017d
+26:12:2022 00:14:38.926 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.j.i.HolderOutInterceptor}: op: [OperationInfo: {http://bip.bee.kz/SyncChannel/v10/Interfaces}SendMessage]
+26:12:2022 00:14:38.926 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.j.i.HolderOutInterceptor}: op.hasOutput(): true
+26:12:2022 00:14:38.926 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.j.i.HolderOutInterceptor}: op.getOutput().size(): 1
+26:12:2022 00:14:38.926 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.jaxws.interceptors.SwAOutInterceptor@151c6871
+26:12:2022 00:14:38.926 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.jaxws.interceptors.WrapperClassOutInterceptor@15f1e6bc
+26:12:2022 00:14:38.926 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.SoapHeaderOutFilterInterceptor@96b711e
+26:12:2022 00:14:38.926 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.SoapPreProtocolOutInterceptor@109bf906
+26:12:2022 00:14:38.926 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.interceptor.MessageSenderInterceptor@344a2e92
+26:12:2022 00:14:38.926 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor@4f838ec4 to phase prepare-send-ending
+26:12:2022 00:14:38.926 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Chain org.apache.cxf.phase.PhaseInterceptorChain@3dc799be was modified. Current flow:
+  setup [PolicyOutInterceptor]
+  pre-logical [HolderOutInterceptor, SwAOutInterceptor, WrapperClassOutInterceptor, SoapHeaderOutFilterInterceptor]
+  post-logical [SoapPreProtocolOutInterceptor]
+  prepare-send [MessageSenderInterceptor]
+  pre-stream [AttachmentOutInterceptor, StaxOutInterceptor]
+  pre-protocol-frontend [SOAPHandlerInterceptor]
+  write [SoapOutInterceptor]
+  pre-marshal [LogicalHandlerOutInterceptor]
+  marshal [WrappedOutInterceptor, BareOutInterceptor]
+  prepare-send-ending [MessageSenderEndingInterceptor]
+
+26:12:2022 00:14:38.926 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.interceptor.AttachmentOutInterceptor@5f12227b
+26:12:2022 00:14:38.926 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.interceptor.StaxOutInterceptor@454ceb23
+26:12:2022 00:14:38.926 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.interceptor.StaxOutEndingInterceptor@14949c17 to phase pre-stream-ending
+26:12:2022 00:14:38.926 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Chain org.apache.cxf.phase.PhaseInterceptorChain@3dc799be was modified. Current flow:
+  setup [PolicyOutInterceptor]
+  pre-logical [HolderOutInterceptor, SwAOutInterceptor, WrapperClassOutInterceptor, SoapHeaderOutFilterInterceptor]
+  post-logical [SoapPreProtocolOutInterceptor]
+  prepare-send [MessageSenderInterceptor]
+  pre-stream [AttachmentOutInterceptor, StaxOutInterceptor]
+  pre-protocol-frontend [SOAPHandlerInterceptor]
+  write [SoapOutInterceptor]
+  pre-marshal [LogicalHandlerOutInterceptor]
+  marshal [WrappedOutInterceptor, BareOutInterceptor]
+  pre-stream-ending [StaxOutEndingInterceptor]
+  prepare-send-ending [MessageSenderEndingInterceptor]
+
+26:12:2022 00:14:38.926 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.jaxws.handler.soap.SOAPHandlerInterceptor@7a602007
+26:12:2022 00:14:38.927 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.binding.soap.saaj.SAAJOutInterceptor$SAAJOutEndingInterceptor@6aca4189 to phase pre-protocol-ending
+26:12:2022 00:14:38.927 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Chain org.apache.cxf.phase.PhaseInterceptorChain@3dc799be was modified. Current flow:
+  setup [PolicyOutInterceptor]
+  pre-logical [HolderOutInterceptor, SwAOutInterceptor, WrapperClassOutInterceptor, SoapHeaderOutFilterInterceptor]
+  post-logical [SoapPreProtocolOutInterceptor]
+  prepare-send [MessageSenderInterceptor]
+  pre-stream [AttachmentOutInterceptor, StaxOutInterceptor]
+  pre-protocol-frontend [SOAPHandlerInterceptor]
+  write [SoapOutInterceptor]
+  pre-marshal [LogicalHandlerOutInterceptor]
+  marshal [WrappedOutInterceptor, BareOutInterceptor]
+  pre-protocol-ending [SAAJOutEndingInterceptor]
+  pre-stream-ending [StaxOutEndingInterceptor]
+  prepare-send-ending [MessageSenderEndingInterceptor]
+
+26:12:2022 00:14:38.927 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.jaxws.handler.soap.SOAPHandlerInterceptor$1@5a8e1ce3 to phase user-protocol
+26:12:2022 00:14:38.927 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Chain org.apache.cxf.phase.PhaseInterceptorChain@3dc799be was modified. Current flow:
+  setup [PolicyOutInterceptor]
+  pre-logical [HolderOutInterceptor, SwAOutInterceptor, WrapperClassOutInterceptor, SoapHeaderOutFilterInterceptor]
+  post-logical [SoapPreProtocolOutInterceptor]
+  prepare-send [MessageSenderInterceptor]
+  pre-stream [AttachmentOutInterceptor, StaxOutInterceptor]
+  pre-protocol-frontend [SOAPHandlerInterceptor]
+  write [SoapOutInterceptor]
+  pre-marshal [LogicalHandlerOutInterceptor]
+  marshal [WrappedOutInterceptor, BareOutInterceptor]
+  user-protocol [org.apache.cxf.jaxws.handler.soap.SOAPHandlerInterceptor.ENDING]
+  pre-protocol-ending [SAAJOutEndingInterceptor]
+  pre-stream-ending [StaxOutEndingInterceptor]
+  prepare-send-ending [MessageSenderEndingInterceptor]
+
+26:12:2022 00:14:38.927 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.SoapOutInterceptor@42aa898a
+26:12:2022 00:14:38.927 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapOutInterceptor$SoapOutEndingInterceptor@3f792a6a to phase write-ending
+26:12:2022 00:14:38.927 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Chain org.apache.cxf.phase.PhaseInterceptorChain@3dc799be was modified. Current flow:
+  setup [PolicyOutInterceptor]
+  pre-logical [HolderOutInterceptor, SwAOutInterceptor, WrapperClassOutInterceptor, SoapHeaderOutFilterInterceptor]
+  post-logical [SoapPreProtocolOutInterceptor]
+  prepare-send [MessageSenderInterceptor]
+  pre-stream [AttachmentOutInterceptor, StaxOutInterceptor]
+  pre-protocol-frontend [SOAPHandlerInterceptor]
+  write [SoapOutInterceptor]
+  pre-marshal [LogicalHandlerOutInterceptor]
+  marshal [WrappedOutInterceptor, BareOutInterceptor]
+  user-protocol [org.apache.cxf.jaxws.handler.soap.SOAPHandlerInterceptor.ENDING]
+  write-ending [SoapOutEndingInterceptor]
+  pre-protocol-ending [SAAJOutEndingInterceptor]
+  pre-stream-ending [StaxOutEndingInterceptor]
+  prepare-send-ending [MessageSenderEndingInterceptor]
+
+26:12:2022 00:14:38.927 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.jaxws.handler.logical.LogicalHandlerOutInterceptor@29bb88dd
+26:12:2022 00:14:38.927 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.wsdl.interceptors.WrappedOutInterceptor@7ce3fd8e
+26:12:2022 00:14:38.927 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.wsdl.interceptors.BareOutInterceptor@322c1993
+26:12:2022 00:14:38.928 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.jaxws.handler.soap.SOAPHandlerInterceptor$1@5a8e1ce3
+26:12:2022 00:14:38.928 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.j.h.HandlerChainInvoker}: invoking handlers, direction: outbound
+26:12:2022 00:14:38.928 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.j.h.HandlerChainInvoker}: invoking handler of type soap.start.serik.handlers.PropertyValidator
+26:12:2022 00:14:38.928 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.j.h.HandlerChainInvoker}: invoking handler of type soap.start.serik.handlers.LoggingHandler
+26:12:2022 00:14:38.929 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.j.h.HandlerChainInvoker}: closing protocol handlers - handler count:2
+26:12:2022 00:14:38.929 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.SoapOutInterceptor$SoapOutEndingInterceptor@3f792a6a
+26:12:2022 00:14:38.929 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.binding.soap.saaj.SAAJOutInterceptor$SAAJOutEndingInterceptor@6aca4189
+26:12:2022 00:14:38.930 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.w.a.ContextUtils}: retrieving MAPs from context property javax.xml.ws.addressing.context.inbound
+26:12:2022 00:14:38.930 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.w.a.ContextUtils}: WS-Addressing - failed to retrieve Message Addressing Properties from context
+26:12:2022 00:14:38.930 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.interceptor.StaxOutEndingInterceptor@14949c17
+26:12:2022 00:14:38.930 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor@4f838ec4
+26:12:2022 00:14:38.930 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.t.h.AbstractHTTPDestination}: Finished servicing http request on thread: Thread[http-nio-8085-exec-3,5,main]
+26:12:2022 00:14:38.930 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.t.s.ServletController}: Finished servicing http request on thread: Thread[http-nio-8085-exec-3,5,main]

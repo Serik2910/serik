@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="DEBUG">
+    <Properties>
+        <Property name="LOGS_PATH">LOGS</Property>
+    </Properties>
+    <Appenders>
+        <Console name="LogToConsole" target="SYSTEM_OUT">
+            <PatternLayout>
+                <Pattern>
+                    %d{dd:MM:yyyy HH:mm:ss.SSS} ${hostName} tomcat %highlight{%-5level}{FATAL=bright red, ERROR=bright red, WARN=bright yellow, INFO=bright green, DEBUG=bright cyan, TRACE= bright blue} %blue{%t} %yellow{%c{1.}}: %msg%n%throwable
+                </Pattern>
+            </PatternLayout>
+        </Console>
+        <RollingFile name="DebugLogToFile" fileName="${LOGS_PATH}/debug-info.log"
+                     filePattern="${LOGS_PATH}/archive/debug/debug-info-%d{yyyy-MM-dd}-%i.log">
+            <PatternLayout>
+                <Pattern>%d{dd:MM:yyyy HH:mm:ss.SSS} ${hostName} tomcat {%-5level} {%t} {%c{1.}}: %msg%n%throwable</Pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="20MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+        <RollingFile name="TraceLogToFile" fileName="${LOGS_PATH}/trace-info.log"
+                     filePattern="${LOGS_PATH}/archive/trace/trace-info-%d{yyyy-MM-dd}-%i.log">
+            <PatternLayout>
+                <Pattern>%d{dd:MM:yyyy HH:mm:ss.SSS} ${hostName} tomcat {%-5level} {%t} {%c{1.}}: %msg%n%throwable</Pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="20MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+        <RollingFile name="DictLogToFile" fileName="${LOGS_PATH}/dict-info.log"
+                     filePattern="${LOGS_PATH}/archive/dict/dict-info-%d{yyyy-MM-dd}-%i.log">
+            <PatternLayout>
+                <Pattern>%d{dd:MM:yyyy HH:mm:ss.SSS} ${hostName} tomcat {%-5level} {%t} {%c{1.}}: %msg%n%throwable</Pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="20MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+        <RollingFile name="DictTraceLog" fileName="${LOGS_PATH}/dict-trace-info.log"
+                     filePattern="${LOGS_PATH}/archive/hed/dict-trace-info-%d{yyyy-MM-dd}-%i.log">
+            <PatternLayout>
+                <Pattern>%d{dd:MM:yyyy HH:mm:ss.SSS} ${hostName} tomcat {%-5level} {%t} {%c{1.}}: %msg%n%throwable</Pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="20MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+        <RollingFile name="HEDLogToFile" fileName="${LOGS_PATH}/hed-info.log"
+                     filePattern="${LOGS_PATH}/archive/hed/hed-info-%d{yyyy-MM-dd}-%i.log">
+            <PatternLayout>
+                <Pattern>%d{dd:MM:yyyy HH:mm:ss.SSS} ${hostName} tomcat {%-5level} {%t} {%c{1.}}: %msg%n%throwable</Pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="20MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+        <RollingFile name="HEDTraceLog" fileName="${LOGS_PATH}/hed-trace-info.log"
+                     filePattern="${LOGS_PATH}/archive/hed/hed-trace-info-%d{yyyy-MM-dd}-%i.log">
+            <PatternLayout>
+                <Pattern>%d{dd:MM:yyyy HH:mm:ss.SSS} ${hostName} tomcat {%-5level} {%t} {%c{1.}}: %msg%n%throwable</Pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="20MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+        <RollingFile name="DocLogToFile" fileName="${LOGS_PATH}/doc-info.log"
+                     filePattern="${LOGS_PATH}/archive/doc/doc-info-%d{yyyy-MM-dd}-%i.log">
+            <PatternLayout>
+                <Pattern>%d{dd:MM:yyyy HH:mm:ss.SSS} ${hostName} tomcat {%-5level} {%t} {%c{1.}}: %msg%n%throwable</Pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="10MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+        <RollingFile name="DocTraceLog" fileName="${LOGS_PATH}/doc-trace-info.log"
+                     filePattern="${LOGS_PATH}/archive/doc/doc-trace-info-%d{yyyy-MM-dd}-%i.log">
+            <PatternLayout>
+                <Pattern>%d{dd:MM:yyyy HH:mm:ss.SSS} ${hostName} tomcat {%-5level} {%t} {%c{1.}}: %msg%n%throwable</Pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="10MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <Logger name="soap.start.serik.handlers.PropertyInjector" level="info" additivity="false">
+            <AppenderRef ref="LogToConsole"/>
+
+        </Logger>
+        <Logger name="soap.start.serik.controllers.HEDController" level="trace" additivity="false">
+            <AppenderRef ref="HEDTraceLog"/>
+
+        </Logger>
+        <Logger name="soap.start.serik.controllers.HEDController" level="info" additivity="false">
+            <AppenderRef ref="HEDLogToFile"/>
+
+        </Logger>
+        <Logger name="soap.start.serik.controllers.HEDController" level="trace" additivity="false">
+            <AppenderRef ref="HEDTraceLog"/>
+
+        </Logger>
+        <Logger name="soap.start.serik.controllers.DocController" level="info" additivity="false">
+            <AppenderRef ref="DocLogToFile"/>
+
+        </Logger>
+        <Logger name="soap.start.serik.controllers.DocController" level="trace" additivity="false">
+            <AppenderRef ref="DocTraceLog"/>
+
+        </Logger>
+        <Logger name="handlers" level="info">
+
+        </Logger>
+        <Logger name="org.apache.cxf" level="TRACE">
+            <AppenderRef ref="TraceLogToFile"/>
+        </Logger>
+        <Root level="debug">
+            <AppenderRef ref="LogToConsole"/>
+            <AppenderRef ref="DebugLogToFile"/>
+        </Root>
+    </Loggers>
+</Configuration>

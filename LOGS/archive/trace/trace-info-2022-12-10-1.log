@@ -1,0 +1,1839 @@
+10:12:2022 22:28:37.865 SerikHome tomcat {DEBUG} {Thread-1} {o.s.b.d.r.c.RestartClassLoader}: Created RestartClassLoader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@3e20fa48
+10:12:2022 22:28:38.152 SerikHome tomcat {DEBUG} {background-preinit} {o.j.logging}: Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+10:12:2022 22:28:38.152 SerikHome tomcat {INFO } {background-preinit} {o.h.v.i.u.Version}: HV000001: Hibernate Validator 6.2.5.Final
+10:12:2022 22:28:38.175 SerikHome tomcat {DEBUG} {background-preinit} {o.h.v.i.x.c.ValidationXmlParser}: Trying to load META-INF/validation.xml for XML based Validator configuration.
+10:12:2022 22:28:38.176 SerikHome tomcat {DEBUG} {background-preinit} {o.h.v.i.x.c.ResourceLoaderHelper}: Trying to load META-INF/validation.xml via TCCL
+10:12:2022 22:28:38.177 SerikHome tomcat {DEBUG} {background-preinit} {o.h.v.i.x.c.ResourceLoaderHelper}: Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+10:12:2022 22:28:38.177 SerikHome tomcat {DEBUG} {background-preinit} {o.h.v.i.x.c.ValidationXmlParser}: No META-INF/validation.xml found. Using annotation based configuration only.
+10:12:2022 22:28:38.180 SerikHome tomcat {DEBUG} {background-preinit} {o.h.v.i.e.r.TraversableResolvers}: Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+10:12:2022 22:28:38.191 SerikHome tomcat {INFO } {restartedMain} {s.s.s.SerikApplication}: Starting SerikApplication using Java 1.8.0_352 on SerikHome with PID 28216 (C:\Users\kobla\IdeaProjects\serik\target\classes started by kobla in C:\Users\kobla\IdeaProjects\serik)
+10:12:2022 22:28:38.192 SerikHome tomcat {DEBUG} {restartedMain} {s.s.s.SerikApplication}: Running with Spring Boot v2.7.5, Spring v5.3.23
+10:12:2022 22:28:38.193 SerikHome tomcat {INFO } {restartedMain} {s.s.s.SerikApplication}: No active profile set, falling back to 1 default profile: "default"
+10:12:2022 22:28:38.193 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.SpringApplication}: Loading source class soap.start.serik.SerikApplication
+10:12:2022 22:28:38.194 SerikHome tomcat {DEBUG} {background-preinit} {o.h.v.m.ResourceBundleMessageInterpolator}: Loaded expression factory via original TCCL
+10:12:2022 22:28:38.246 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.d.r.ChangeableUrls}: Matching URLs for reloading : [file:/C:/Users/kobla/IdeaProjects/serik/target/classes/]
+10:12:2022 22:28:38.247 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.d.s.DevToolsSettings}: Included patterns for restart : []
+10:12:2022 22:28:38.247 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.d.s.DevToolsSettings}: Excluded patterns for restart : [/spring-boot-actuator/(bin|build|out)/, /spring-boot-devtools/(bin|build|out)/, /spring-boot/(bin|build|out)/, /spring-boot-starter-[\w-]+/, /spring-boot-autoconfigure/(bin|build|out)/, /spring-boot-starter/(bin|build|out)/]
+10:12:2022 22:28:38.247 SerikHome tomcat {INFO } {restartedMain} {o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor}: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+10:12:2022 22:28:38.247 SerikHome tomcat {INFO } {restartedMain} {o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor}: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+10:12:2022 22:28:38.247 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext}: Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6a641d9f
+10:12:2022 22:28:38.261 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+10:12:2022 22:28:38.270 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
+10:12:2022 22:28:38.305 SerikHome tomcat {DEBUG} {background-preinit} {o.h.v.i.e.ValidatorFactoryConfigurationHelper}: HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+10:12:2022 22:28:38.311 SerikHome tomcat {DEBUG} {background-preinit} {o.h.v.i.e.ValidatorFactoryConfigurationHelper}: HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+10:12:2022 22:28:38.311 SerikHome tomcat {DEBUG} {background-preinit} {o.h.v.i.e.ValidatorFactoryConfigurationHelper}: HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+10:12:2022 22:28:38.311 SerikHome tomcat {DEBUG} {background-preinit} {o.h.v.i.e.ValidatorFactoryConfigurationHelper}: HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+10:12:2022 22:28:38.311 SerikHome tomcat {DEBUG} {background-preinit} {o.h.v.i.e.ValidatorFactoryConfigurationHelper}: HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+10:12:2022 22:28:38.311 SerikHome tomcat {DEBUG} {background-preinit} {o.h.v.i.e.ValidatorFactoryConfigurationHelper}: HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+10:12:2022 22:28:38.319 SerikHome tomcat {DEBUG} {restartedMain} {o.s.c.a.ClassPathBeanDefinitionScanner}: Identified candidate component class: file [C:\Users\kobla\IdeaProjects\serik\target\classes\soap\start\serik\configurations\WSConfig.class]
+10:12:2022 22:28:38.331 SerikHome tomcat {DEBUG} {restartedMain} {o.s.c.a.ClassPathBeanDefinitionScanner}: Identified candidate component class: file [C:\Users\kobla\IdeaProjects\serik\target\classes\soap\start\serik\controllers\DictController.class]
+10:12:2022 22:28:38.339 SerikHome tomcat {DEBUG} {restartedMain} {o.s.c.a.ClassPathBeanDefinitionScanner}: Identified candidate component class: file [C:\Users\kobla\IdeaProjects\serik\target\classes\soap\start\serik\controllers\DocController.class]
+10:12:2022 22:28:38.347 SerikHome tomcat {DEBUG} {restartedMain} {o.s.c.a.ClassPathBeanDefinitionScanner}: Identified candidate component class: file [C:\Users\kobla\IdeaProjects\serik\target\classes\soap\start\serik\controllers\HEDController.class]
+10:12:2022 22:28:38.769 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.x.XmlBeanDefinitionReader}: Loaded 4 bean definitions from class path resource [META-INF/cxf/cxf.xml]
+10:12:2022 22:28:38.945 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'propertySourcesPlaceholderConfigurer'
+10:12:2022 22:28:38.948 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.sql.init.dependency.DatabaseInitializationDependencyConfigurer$DependsOnDatabaseInitializationPostProcessor'
+10:12:2022 22:28:38.954 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+10:12:2022 22:28:38.954 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'preserveErrorControllerTargetClassPostProcessor'
+10:12:2022 22:28:38.955 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.apache.cxf.bus.spring.BusWiringBeanFactoryPostProcessor'
+10:12:2022 22:28:38.955 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'forceAutoProxyCreatorToUseClassProxying'
+10:12:2022 22:28:38.955 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+10:12:2022 22:28:38.986 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.l.LogUtils}: Using org.apache.cxf.common.logging.Slf4jLogger for logging.
+10:12:2022 22:28:38.990 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+10:12:2022 22:28:38.991 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+10:12:2022 22:28:38.993 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor'
+10:12:2022 22:28:38.993 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.context.internalConfigurationPropertiesBinder'
+10:12:2022 22:28:38.993 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.context.internalConfigurationPropertiesBinderFactory'
+10:12:2022 22:28:38.995 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'methodValidationPostProcessor'
+10:12:2022 22:28:39.005 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'methodValidationPostProcessor' via factory method to bean named 'environment'
+10:12:2022 22:28:39.006 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.context.properties.EnableConfigurationPropertiesRegistrar.methodValidationExcludeFilter'
+10:12:2022 22:28:39.015 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.apache.cxf.bus.spring.Jsr250BeanPostProcessor'
+10:12:2022 22:28:39.016 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.apache.cxf.bus.spring.BusExtensionPostProcessor'
+10:12:2022 22:28:39.017 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'persistenceExceptionTranslationPostProcessor'
+10:12:2022 22:28:39.018 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'persistenceExceptionTranslationPostProcessor' via factory method to bean named 'environment'
+10:12:2022 22:28:39.019 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'annotationActionEndpointMapping'
+10:12:2022 22:28:39.020 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration'
+10:12:2022 22:28:39.026 SerikHome tomcat {INFO } {restartedMain} {o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker}: Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$4e434eb3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:12:2022 22:28:39.050 SerikHome tomcat {INFO } {restartedMain} {o.s.w.s.a.s.AnnotationActionEndpointMapping}: Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+10:12:2022 22:28:39.051 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+10:12:2022 22:28:39.063 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'webServerFactoryCustomizerBeanPostProcessor'
+10:12:2022 22:28:39.063 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'errorPageRegistrarBeanPostProcessor'
+10:12:2022 22:28:39.065 SerikHome tomcat {DEBUG} {restartedMain} {o.s.u.c.s.UiApplicationContextUtils}: Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@530a1d8e]
+10:12:2022 22:28:39.066 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'tomcatServletWebServerFactory'
+10:12:2022 22:28:39.066 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryConfiguration$EmbeddedTomcat'
+10:12:2022 22:28:39.092 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'websocketServletWebServerCustomizer'
+10:12:2022 22:28:39.092 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration$TomcatWebSocketConfiguration'
+10:12:2022 22:28:39.093 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'servletWebServerFactoryCustomizer'
+10:12:2022 22:28:39.093 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryAutoConfiguration'
+10:12:2022 22:28:39.095 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+10:12:2022 22:28:39.100 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.context.properties.BoundConfigurationProperties'
+10:12:2022 22:28:39.119 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'servletWebServerFactoryCustomizer' via factory method to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+10:12:2022 22:28:39.121 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'tomcatServletWebServerFactoryCustomizer'
+10:12:2022 22:28:39.121 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'tomcatServletWebServerFactoryCustomizer' via factory method to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+10:12:2022 22:28:39.122 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'tomcatWebServerFactoryCustomizer'
+10:12:2022 22:28:39.122 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration$TomcatWebServerFactoryCustomizerConfiguration'
+10:12:2022 22:28:39.122 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'tomcatWebServerFactoryCustomizer' via factory method to bean named 'environment'
+10:12:2022 22:28:39.123 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'tomcatWebServerFactoryCustomizer' via factory method to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+10:12:2022 22:28:39.123 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'localeCharsetMappingsCustomizer'
+10:12:2022 22:28:39.124 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration'
+10:12:2022 22:28:39.125 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration' via constructor to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+10:12:2022 22:28:39.174 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'errorPageCustomizer'
+10:12:2022 22:28:39.174 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration'
+10:12:2022 22:28:39.175 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration' via constructor to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+10:12:2022 22:28:39.175 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'dispatcherServletRegistration'
+10:12:2022 22:28:39.175 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration'
+10:12:2022 22:28:39.176 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'dispatcherServlet'
+10:12:2022 22:28:39.176 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletConfiguration'
+10:12:2022 22:28:39.177 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+10:12:2022 22:28:39.180 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'dispatcherServlet' via factory method to bean named 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+10:12:2022 22:28:39.187 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'dispatcherServletRegistration' via factory method to bean named 'dispatcherServlet'
+10:12:2022 22:28:39.187 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'dispatcherServletRegistration' via factory method to bean named 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+10:12:2022 22:28:39.188 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'multipartConfigElement'
+10:12:2022 22:28:39.188 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.MultipartAutoConfiguration'
+10:12:2022 22:28:39.188 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'spring.servlet.multipart-org.springframework.boot.autoconfigure.web.servlet.MultipartProperties'
+10:12:2022 22:28:39.191 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.MultipartAutoConfiguration' via constructor to bean named 'spring.servlet.multipart-org.springframework.boot.autoconfigure.web.servlet.MultipartProperties'
+10:12:2022 22:28:39.195 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'errorPageCustomizer' via factory method to bean named 'dispatcherServletRegistration'
+10:12:2022 22:28:39.237 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.w.e.t.TomcatServletWebServerFactory}: Code archive: C:\Users\kobla\.m2\repository\org\springframework\boot\spring-boot\2.7.5\spring-boot-2.7.5.jar
+10:12:2022 22:28:39.237 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.w.e.t.TomcatServletWebServerFactory}: Code archive: C:\Users\kobla\.m2\repository\org\springframework\boot\spring-boot\2.7.5\spring-boot-2.7.5.jar
+10:12:2022 22:28:39.237 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.w.e.t.TomcatServletWebServerFactory}: None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+10:12:2022 22:28:39.386 SerikHome tomcat {INFO } {restartedMain} {o.s.b.w.e.t.TomcatWebServer}: Tomcat initialized with port(s): 8085 (http)
+10:12:2022 22:28:39.392 SerikHome tomcat {INFO } {restartedMain} {o.a.c.h.Http11NioProtocol}: Initializing ProtocolHandler ["http-nio-8085"]
+10:12:2022 22:28:39.393 SerikHome tomcat {INFO } {restartedMain} {o.a.c.c.StandardService}: Starting service [Tomcat]
+10:12:2022 22:28:39.393 SerikHome tomcat {INFO } {restartedMain} {o.a.c.c.StandardEngine}: Starting Servlet engine: [Apache Tomcat/9.0.68]
+10:12:2022 22:28:39.463 SerikHome tomcat {INFO } {restartedMain} {o.a.c.c.C.[.[.[/]}: Initializing Spring embedded WebApplicationContext
+10:12:2022 22:28:39.463 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.w.s.c.ServletWebServerApplicationContext}: Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+10:12:2022 22:28:39.463 SerikHome tomcat {INFO } {restartedMain} {o.s.b.w.s.c.ServletWebServerApplicationContext}: Root WebApplicationContext: initialization completed in 1216 ms
+10:12:2022 22:28:39.464 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'cxfServletRegistration'
+10:12:2022 22:28:39.465 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.apache.cxf.spring.boot.autoconfigure.CxfAutoConfiguration'
+10:12:2022 22:28:39.466 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'cxf-org.apache.cxf.spring.boot.autoconfigure.CxfProperties'
+10:12:2022 22:28:39.469 SerikHome tomcat {DEBUG} {restartedMain} {o.h.v.m.ResourceBundleMessageInterpolator}: Loaded expression factory via original TCCL
+10:12:2022 22:28:39.470 SerikHome tomcat {DEBUG} {restartedMain} {o.h.v.i.e.AbstractConfigurationImpl}: Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+10:12:2022 22:28:39.470 SerikHome tomcat {DEBUG} {restartedMain} {o.h.v.i.e.AbstractConfigurationImpl}: Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+10:12:2022 22:28:39.470 SerikHome tomcat {DEBUG} {restartedMain} {o.h.v.i.e.AbstractConfigurationImpl}: Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+10:12:2022 22:28:39.471 SerikHome tomcat {DEBUG} {restartedMain} {o.h.v.i.x.c.ValidationXmlParser}: Trying to load META-INF/validation.xml for XML based Validator configuration.
+10:12:2022 22:28:39.471 SerikHome tomcat {DEBUG} {restartedMain} {o.h.v.i.x.c.ResourceLoaderHelper}: Trying to load META-INF/validation.xml via user class loader
+10:12:2022 22:28:39.472 SerikHome tomcat {DEBUG} {restartedMain} {o.h.v.i.x.c.ResourceLoaderHelper}: Trying to load META-INF/validation.xml via TCCL
+10:12:2022 22:28:39.472 SerikHome tomcat {DEBUG} {restartedMain} {o.h.v.i.x.c.ResourceLoaderHelper}: Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+10:12:2022 22:28:39.472 SerikHome tomcat {DEBUG} {restartedMain} {o.h.v.i.x.c.ValidationXmlParser}: No META-INF/validation.xml found. Using annotation based configuration only.
+10:12:2022 22:28:39.473 SerikHome tomcat {DEBUG} {restartedMain} {o.h.v.i.e.r.TraversableResolvers}: Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+10:12:2022 22:28:39.474 SerikHome tomcat {DEBUG} {restartedMain} {o.h.v.i.e.ValidatorFactoryConfigurationHelper}: HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+10:12:2022 22:28:39.475 SerikHome tomcat {DEBUG} {restartedMain} {o.h.v.i.e.ValidatorFactoryConfigurationHelper}: HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+10:12:2022 22:28:39.475 SerikHome tomcat {DEBUG} {restartedMain} {o.h.v.i.e.ValidatorFactoryConfigurationHelper}: HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+10:12:2022 22:28:39.475 SerikHome tomcat {DEBUG} {restartedMain} {o.h.v.i.e.ValidatorFactoryConfigurationHelper}: HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+10:12:2022 22:28:39.475 SerikHome tomcat {DEBUG} {restartedMain} {o.h.v.i.e.ValidatorFactoryConfigurationHelper}: HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+10:12:2022 22:28:39.475 SerikHome tomcat {DEBUG} {restartedMain} {o.h.v.i.e.ValidatorFactoryConfigurationHelper}: HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+10:12:2022 22:28:39.540 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'messageDispatcherServlet'
+10:12:2022 22:28:39.540 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.webservices.WebServicesAutoConfiguration'
+10:12:2022 22:28:39.541 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'spring.webservices-org.springframework.boot.autoconfigure.webservices.WebServicesProperties'
+10:12:2022 22:28:39.541 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'messageDispatcherServlet' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6a641d9f'
+10:12:2022 22:28:39.541 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'messageDispatcherServlet' via factory method to bean named 'spring.webservices-org.springframework.boot.autoconfigure.webservices.WebServicesProperties'
+10:12:2022 22:28:39.545 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'requestContextFilter'
+10:12:2022 22:28:39.546 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'formContentFilter'
+10:12:2022 22:28:39.547 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration'
+10:12:2022 22:28:39.549 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'characterEncodingFilter'
+10:12:2022 22:28:39.552 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.w.s.ServletContextInitializerBeans}: Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+10:12:2022 22:28:39.552 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.w.s.ServletContextInitializerBeans}: Mapping servlets: dispatcherServlet urls=[/], CXFServlet urls=[/Service/*], messageDispatcherServlet urls=[/services/*]
+10:12:2022 22:28:39.565 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.w.s.f.OrderedRequestContextFilter}: Filter 'requestContextFilter' configured for use
+10:12:2022 22:28:39.565 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.w.s.f.OrderedCharacterEncodingFilter}: Filter 'characterEncodingFilter' configured for use
+10:12:2022 22:28:39.565 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.w.s.f.OrderedFormContentFilter}: Filter 'formContentFilter' configured for use
+10:12:2022 22:28:39.571 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'serikApplication'
+10:12:2022 22:28:39.571 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'WSConfig'
+10:12:2022 22:28:39.573 SerikHome tomcat {DEBUG} {restartedMain} {o.s.c.LocalVariableTableParameterNameDiscoverer}: Cannot find '.class' file for class [class soap.start.serik.configurations.WSConfig$$EnhancerBySpringCGLIB$$1d6e7b8d] - unable to determine constructor/method parameter names
+10:12:2022 22:28:39.573 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'cxf'
+10:12:2022 22:28:39.633 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.ws.policy.PolicyAnnotationListener.
+10:12:2022 22:28:39.635 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.service.factory.FactoryBeanListenerManager.
+10:12:2022 22:28:39.640 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.ws.policy.PolicyEngineImpl.
+10:12:2022 22:28:39.641 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.ws.policy.PolicyDataEngineImpl.
+10:12:2022 22:28:39.641 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.bus.managers.CXFBusLifeCycleManager.
+10:12:2022 22:28:39.642 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.bus.managers.ServerRegistryImpl.
+10:12:2022 22:28:39.643 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'WSConfig' via constructor to bean named 'cxf'
+10:12:2022 22:28:39.644 SerikHome tomcat {DEBUG} {restartedMain} {o.s.c.e.PropertySourcesPropertyResolver}: Found key 'p12.file.location' in PropertySource 'environmentProperties' with value of type String
+10:12:2022 22:28:39.644 SerikHome tomcat {DEBUG} {restartedMain} {o.s.c.e.PropertySourcesPropertyResolver}: Found key 'p12.file.password' in PropertySource 'environmentProperties' with value of type String
+10:12:2022 22:28:39.644 SerikHome tomcat {DEBUG} {restartedMain} {o.s.c.e.PropertySourcesPropertyResolver}: Found key 'p12.file.alias' in PropertySource 'environmentProperties' with value of type String
+10:12:2022 22:28:39.645 SerikHome tomcat {DEBUG} {restartedMain} {o.s.c.e.PropertySourcesPropertyResolver}: Found key 'p12.file.type' in PropertySource 'environmentProperties' with value of type String
+10:12:2022 22:28:39.645 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'dictController'
+10:12:2022 22:28:39.657 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'docController'
+10:12:2022 22:28:39.677 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'HEDController'
+10:12:2022 22:28:39.682 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'helloEndPoint'
+10:12:2022 22:28:39.699 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://serik.start.soap/}HelloPort.jaxws-endpoint - no injection will be performed.
+10:12:2022 22:28:39.700 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id org.apache.cxf.jaxws.JaxWsServerFactoryBean - no injection will be performed.
+10:12:2022 22:28:39.707 SerikHome tomcat {INFO } {restartedMain} {o.a.c.w.s.f.ReflectionServiceFactoryBean}: Creating Service {http://serik.start.soap/}HelloService from class soap.start.serik.web_services.server.HelloService
+10:12:2022 22:28:39.740 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.common.util.ASMHelperImpl.
+10:12:2022 22:28:39.740 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.jaxws.spi.WrapperClassCreatorProxyService.
+10:12:2022 22:28:39.830 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.JAXBDataBinding}: Created JAXBContext "jar:file:/C:/Users/kobla/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.7/jaxb-runtime-2.3.7.jar!/com/sun/xml/bind/v2/runtime/JAXBContextImpl.class Build-Id: 2.3.7
+Classes known to this context:
+  [B
+  boolean
+  byte
+  char
+  com.sun.xml.bind.api.CompositeStructure
+  double
+  float
+  int
+  java.awt.Image
+  java.io.File
+  java.lang.Boolean
+  java.lang.Byte
+  java.lang.Character
+  java.lang.Class
+  java.lang.Double
+  java.lang.Float
+  java.lang.Integer
+  java.lang.Long
+  java.lang.Object
+  java.lang.Short
+  java.lang.String
+  java.lang.Void
+  java.math.BigDecimal
+  java.math.BigInteger
+  java.net.URI
+  java.net.URL
+  java.util.Calendar
+  java.util.Date
+  java.util.GregorianCalendar
+  java.util.UUID
+  javax.activation.DataHandler
+  javax.xml.bind.JAXBElement
+  javax.xml.datatype.Duration
+  javax.xml.datatype.XMLGregorianCalendar
+  javax.xml.namespace.QName
+  javax.xml.transform.Source
+  long
+  short
+  soap.start.serik.web_services.server.jaxws_asm.SayHello
+  soap.start.serik.web_services.server.jaxws_asm.SayHelloResponse
+  void
+" with classes [class soap.start.serik.web_services.server.jaxws_asm.SayHello, class soap.start.serik.web_services.server.jaxws_asm.SayHelloResponse].
+10:12:2022 22:28:39.832 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.u.ProxyHelper}: current classloader sun.misc.Launcher$AppClassLoader@18b4aac2 can see all interface
+10:12:2022 22:28:39.833 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.u.ProxyHelper}: current classloader sun.misc.Launcher$AppClassLoader@18b4aac2 can see all interface
+10:12:2022 22:28:39.892 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.binding.soap.SoapBindingFactory.
+10:12:2022 22:28:39.912 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.wsdl11.WSDLManagerImpl.
+10:12:2022 22:28:39.913 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.r.DefaultResourceManager}: resolving resource <org.apache.cxf.wsdl11.WSDLManagerImpl/bus> type <interface org.apache.cxf.Bus>
+10:12:2022 22:28:39.914 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.r.DefaultResourceManager}: resolving resource <null> type <interface org.apache.cxf.Bus>
+10:12:2022 22:28:39.917 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.wsdl.ExtensionClassCreatorProxyService.
+10:12:2022 22:28:39.935 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.transport.http.HTTPWSDLExtensionLoader.
+10:12:2022 22:28:39.942 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.binding.xml.wsdl11.XMLWSDLExtensionLoader.
+10:12:2022 22:28:39.947 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.ws.addressing.impl.AddressingWSDLExtensionLoader.
+10:12:2022 22:28:39.955 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.binding.soap.SoapTransportFactory.
+10:12:2022 22:28:39.987 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.transport.http.HTTPTransportFactory.
+10:12:2022 22:28:39.994 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://serik.start.soap/}HelloPort.http-destination - no injection will be performed.
+10:12:2022 22:28:39.994 SerikHome tomcat {INFO } {restartedMain} {o.a.c.e.ServerImpl}: Setting the server's publish address to be /hello
+10:12:2022 22:28:39.996 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.bus.managers.ServerLifeCycleManagerImpl.
+10:12:2022 22:28:40.000 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.AnnotationHandlerChainBuilder}: building handler chain
+10:12:2022 22:28:40.000 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.AnnotationHandlerChainBuilder}: Checking for HandlerChain annotation on soap.start.serik.web_services.server.HelloServiceImpl
+10:12:2022 22:28:40.000 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.AnnotationHandlerChainBuilder}: Checking for HandlerChain annotation on soap.start.serik.web_services.server.HelloService
+10:12:2022 22:28:40.031 SerikHome tomcat {TRACE} {restartedMain} {o.a.c.h.DOMUtils}: can't load class com.sun.xml.messaging.saaj.soap.SOAPDocumentImpl
+10:12:2022 22:28:40.066 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.HandlerChainBuilder}: loading handler
+10:12:2022 22:28:40.098 SerikHome tomcat {DEBUG} {restartedMain} {o.a.x.s.Init}: Canonicalizer.register(http://www.w3.org/TR/2001/REC-xml-c14n-20010315, org.apache.xml.security.c14n.implementations.Canonicalizer20010315OmitComments)
+10:12:2022 22:28:40.098 SerikHome tomcat {DEBUG} {restartedMain} {o.a.x.s.Init}: Canonicalizer.register(http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments, org.apache.xml.security.c14n.implementations.Canonicalizer20010315WithComments)
+10:12:2022 22:28:40.099 SerikHome tomcat {DEBUG} {restartedMain} {o.a.x.s.Init}: Canonicalizer.register(http://www.w3.org/2001/10/xml-exc-c14n#, org.apache.xml.security.c14n.implementations.Canonicalizer20010315ExclOmitComments)
+10:12:2022 22:28:40.100 SerikHome tomcat {DEBUG} {restartedMain} {o.a.x.s.Init}: Canonicalizer.register(http://www.w3.org/2001/10/xml-exc-c14n#WithComments, org.apache.xml.security.c14n.implementations.Canonicalizer20010315ExclWithComments)
+10:12:2022 22:28:40.100 SerikHome tomcat {DEBUG} {restartedMain} {o.a.x.s.Init}: Canonicalizer.register(http://www.w3.org/2006/12/xml-c14n11, org.apache.xml.security.c14n.implementations.Canonicalizer11_OmitComments)
+10:12:2022 22:28:40.100 SerikHome tomcat {DEBUG} {restartedMain} {o.a.x.s.Init}: Canonicalizer.register(http://www.w3.org/2006/12/xml-c14n11#WithComments, org.apache.xml.security.c14n.implementations.Canonicalizer11_WithComments)
+10:12:2022 22:28:40.102 SerikHome tomcat {DEBUG} {restartedMain} {o.a.x.s.Init}: Transform.register(http://www.w3.org/2000/09/xmldsig#base64, org.apache.xml.security.transforms.implementations.TransformBase64Decode)
+10:12:2022 22:28:40.103 SerikHome tomcat {DEBUG} {restartedMain} {o.a.x.s.Init}: Transform.register(http://www.w3.org/TR/2001/REC-xml-c14n-20010315, org.apache.xml.security.transforms.implementations.TransformC14N)
+10:12:2022 22:28:40.103 SerikHome tomcat {DEBUG} {restartedMain} {o.a.x.s.Init}: Transform.register(http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments, org.apache.xml.security.transforms.implementations.TransformC14NWithComments)
+10:12:2022 22:28:40.103 SerikHome tomcat {DEBUG} {restartedMain} {o.a.x.s.Init}: Transform.register(http://www.w3.org/2006/12/xml-c14n11, org.apache.xml.security.transforms.implementations.TransformC14N11)
+10:12:2022 22:28:40.104 SerikHome tomcat {DEBUG} {restartedMain} {o.a.x.s.Init}: Transform.register(http://www.w3.org/2006/12/xml-c14n11#WithComments, org.apache.xml.security.transforms.implementations.TransformC14N11_WithComments)
+10:12:2022 22:28:40.104 SerikHome tomcat {DEBUG} {restartedMain} {o.a.x.s.Init}: Transform.register(http://www.w3.org/2001/10/xml-exc-c14n#, org.apache.xml.security.transforms.implementations.TransformC14NExclusive)
+10:12:2022 22:28:40.105 SerikHome tomcat {DEBUG} {restartedMain} {o.a.x.s.Init}: Transform.register(http://www.w3.org/2001/10/xml-exc-c14n#WithComments, org.apache.xml.security.transforms.implementations.TransformC14NExclusiveWithComments)
+10:12:2022 22:28:40.105 SerikHome tomcat {DEBUG} {restartedMain} {o.a.x.s.Init}: Transform.register(http://www.w3.org/TR/1999/REC-xpath-19991116, org.apache.xml.security.transforms.implementations.TransformXPath)
+10:12:2022 22:28:40.105 SerikHome tomcat {DEBUG} {restartedMain} {o.a.x.s.Init}: Transform.register(http://www.w3.org/2000/09/xmldsig#enveloped-signature, org.apache.xml.security.transforms.implementations.TransformEnvelopedSignature)
+10:12:2022 22:28:40.106 SerikHome tomcat {DEBUG} {restartedMain} {o.a.x.s.Init}: Transform.register(http://www.w3.org/TR/1999/REC-xslt-19991116, org.apache.xml.security.transforms.implementations.TransformXSLT)
+10:12:2022 22:28:40.106 SerikHome tomcat {DEBUG} {restartedMain} {o.a.x.s.Init}: Transform.register(http://www.w3.org/2002/04/xmldsig-filter2, org.apache.xml.security.transforms.implementations.TransformXPath2Filter)
+10:12:2022 22:28:40.107 SerikHome tomcat {DEBUG} {restartedMain} {o.a.x.s.Init}: Transform.register(http://www.w3.org/2002/06/xmldsig-filter2, org.apache.xml.security.transforms.implementations.TransformXPath2Filter)
+10:12:2022 22:28:40.108 SerikHome tomcat {DEBUG} {restartedMain} {o.a.x.s.a.SignatureAlgorithm}: Try to register http://www.w3.org/2000/09/xmldsig#rsa-sha1 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1
+10:12:2022 22:28:40.109 SerikHome tomcat {DEBUG} {restartedMain} {o.a.x.s.Init}: SignatureAlgorithm.register(http://www.w3.org/2000/09/xmldsig#rsa-sha1, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1)
+10:12:2022 22:28:40.109 SerikHome tomcat {DEBUG} {restartedMain} {o.a.x.s.a.SignatureAlgorithm}: Try to register http://www.w3.org/2001/04/xmldsig-more#gost34310-gost34311 kz.gov.pki.kalkan.xmldsig.SignatureGost34310$Gost34310Gost34311
+10:12:2022 22:28:40.110 SerikHome tomcat {DEBUG} {restartedMain} {o.a.x.s.Init}: SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#gost34310-gost34311, kz.gov.pki.kalkan.xmldsig.SignatureGost34310$Gost34310Gost34311)
+10:12:2022 22:28:40.110 SerikHome tomcat {DEBUG} {restartedMain} {o.a.x.s.a.SignatureAlgorithm}: Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-sha1 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1
+10:12:2022 22:28:40.110 SerikHome tomcat {DEBUG} {restartedMain} {o.a.x.s.Init}: SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-sha1, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1)
+10:12:2022 22:28:40.110 SerikHome tomcat {DEBUG} {restartedMain} {o.a.x.s.a.SignatureAlgorithm}: Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-sha256 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA256
+10:12:2022 22:28:40.110 SerikHome tomcat {DEBUG} {restartedMain} {o.a.x.s.Init}: SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-sha256, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA256)
+10:12:2022 22:28:40.114 SerikHome tomcat {DEBUG} {restartedMain} {o.a.x.s.Init}: Register Resolver: org.apache.xml.security.utils.resolver.implementations.ResolverDirectHTTP: A simple resolver for requests to HTTP space
+10:12:2022 22:28:40.114 SerikHome tomcat {DEBUG} {restartedMain} {o.a.x.s.Init}: Register Resolver: org.apache.xml.security.utils.resolver.implementations.ResolverLocalFilesystem: A simple resolver for requests to the local file system
+10:12:2022 22:28:40.114 SerikHome tomcat {DEBUG} {restartedMain} {o.a.x.s.Init}: Register Resolver: org.apache.xml.security.utils.resolver.implementations.ResolverFragment: A simple resolver for requests of same-document URIs
+10:12:2022 22:28:40.114 SerikHome tomcat {DEBUG} {restartedMain} {o.a.x.s.Init}: Register Resolver: org.apache.xml.security.utils.resolver.implementations.ResolverXPointer: A simple resolver for requests of XPointer fragents
+10:12:2022 22:28:40.116 SerikHome tomcat {DEBUG} {restartedMain} {o.a.x.s.Init}: Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.RSAKeyValueResolver: Can extract RSA public keys
+10:12:2022 22:28:40.117 SerikHome tomcat {DEBUG} {restartedMain} {o.a.x.s.Init}: Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.DSAKeyValueResolver: Can extract DSA public keys
+10:12:2022 22:28:40.117 SerikHome tomcat {DEBUG} {restartedMain} {o.a.x.s.Init}: Register Resolver: kz.gov.pki.kalkan.xmldsig.keys.keyresolver.implementations.X509CertificateResolver: Can extract public keys from X509 certificates
+10:12:2022 22:28:40.117 SerikHome tomcat {DEBUG} {restartedMain} {o.a.x.s.Init}: Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.X509SKIResolver: Uses an X509v3 SubjectKeyIdentifier extension to retrieve a certificate from the storages
+10:12:2022 22:28:40.117 SerikHome tomcat {DEBUG} {restartedMain} {o.a.x.s.Init}: Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.RetrievalMethodResolver: Resolves keys and certificates using ResourceResolvers
+10:12:2022 22:28:40.117 SerikHome tomcat {DEBUG} {restartedMain} {o.a.x.s.Init}: Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.X509SubjectNameResolver: Uses an X509 SubjectName to retrieve a certificate from the storages
+10:12:2022 22:28:40.117 SerikHome tomcat {DEBUG} {restartedMain} {o.a.x.s.Init}: Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.X509IssuerSerialResolver: Uses an X509 IssuerName and IssuerSerial to retrieve a certificate from the storages
+10:12:2022 22:28:40.120 SerikHome tomcat {DEBUG} {restartedMain} {o.a.x.s.Init}: Now I try to bind prefixes:
+10:12:2022 22:28:40.121 SerikHome tomcat {DEBUG} {restartedMain} {o.a.x.s.Init}: Now I try to bind ds to http://www.w3.org/2000/09/xmldsig#
+10:12:2022 22:28:40.121 SerikHome tomcat {DEBUG} {restartedMain} {o.a.x.s.Init}: Now I try to bind xenc to http://www.w3.org/2001/04/xmlenc#
+10:12:2022 22:28:40.121 SerikHome tomcat {DEBUG} {restartedMain} {o.a.x.s.Init}: Now I try to bind experimental to http://www.xmlsecurity.org/experimental#
+10:12:2022 22:28:40.121 SerikHome tomcat {DEBUG} {restartedMain} {o.a.x.s.Init}: Now I try to bind dsig-xpath-old to http://www.w3.org/2002/04/xmldsig-filter2
+10:12:2022 22:28:40.121 SerikHome tomcat {DEBUG} {restartedMain} {o.a.x.s.Init}: Now I try to bind dsig-xpath to http://www.w3.org/2002/06/xmldsig-filter2
+10:12:2022 22:28:40.121 SerikHome tomcat {DEBUG} {restartedMain} {o.a.x.s.Init}: Now I try to bind ec to http://www.w3.org/2001/10/xml-exc-c14n#
+10:12:2022 22:28:40.121 SerikHome tomcat {DEBUG} {restartedMain} {o.a.x.s.Init}: Now I try to bind xx to http://www.nue.et-inf.uni-siegen.de/~geuer-pollmann/#xpathFilter
+10:12:2022 22:28:40.121 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.HandlerChainBuilder}: adding handler to chain: soap.start.serik.handlers.PropertyValidator@773f1d96
+10:12:2022 22:28:40.122 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://serik.start.soap/}HelloService - no injection will be performed.
+10:12:2022 22:28:40.123 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://serik.start.soap/}HelloPort.endpoint - no injection will be performed.
+10:12:2022 22:28:40.123 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.e.ServerImpl}: Server is starting.
+10:12:2022 22:28:40.124 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.t.s.ServletDestination}: registering incoming observer: org.apache.cxf.transport.ChainInitiationObserver@11e3b4c
+10:12:2022 22:28:40.124 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.e.ServerImpl}: register the server to serverRegistry 
+10:12:2022 22:28:40.125 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'fillConsts'
+10:12:2022 22:28:40.125 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.AutoConfigurationPackages'
+10:12:2022 22:28:40.126 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration'
+10:12:2022 22:28:40.126 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration'
+10:12:2022 22:28:40.126 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration'
+10:12:2022 22:28:40.127 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration'
+10:12:2022 22:28:40.128 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'taskExecutorBuilder'
+10:12:2022 22:28:40.129 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'spring.task.execution-org.springframework.boot.autoconfigure.task.TaskExecutionProperties'
+10:12:2022 22:28:40.130 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'taskExecutorBuilder' via factory method to bean named 'spring.task.execution-org.springframework.boot.autoconfigure.task.TaskExecutionProperties'
+10:12:2022 22:28:40.131 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration'
+10:12:2022 22:28:40.132 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'defaultValidator'
+10:12:2022 22:28:40.133 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'defaultValidator' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6a641d9f'
+10:12:2022 22:28:40.133 SerikHome tomcat {DEBUG} {restartedMain} {o.h.v.m.ResourceBundleMessageInterpolator}: Loaded expression factory via original TCCL
+10:12:2022 22:28:40.134 SerikHome tomcat {DEBUG} {restartedMain} {o.h.v.i.e.AbstractConfigurationImpl}: Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+10:12:2022 22:28:40.134 SerikHome tomcat {DEBUG} {restartedMain} {o.h.v.i.e.AbstractConfigurationImpl}: Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+10:12:2022 22:28:40.134 SerikHome tomcat {DEBUG} {restartedMain} {o.h.v.i.e.AbstractConfigurationImpl}: Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+10:12:2022 22:28:40.134 SerikHome tomcat {DEBUG} {restartedMain} {o.h.v.i.x.c.ValidationXmlParser}: Trying to load META-INF/validation.xml for XML based Validator configuration.
+10:12:2022 22:28:40.135 SerikHome tomcat {DEBUG} {restartedMain} {o.h.v.i.x.c.ResourceLoaderHelper}: Trying to load META-INF/validation.xml via user class loader
+10:12:2022 22:28:40.135 SerikHome tomcat {DEBUG} {restartedMain} {o.h.v.i.x.c.ResourceLoaderHelper}: Trying to load META-INF/validation.xml via TCCL
+10:12:2022 22:28:40.135 SerikHome tomcat {DEBUG} {restartedMain} {o.h.v.i.x.c.ResourceLoaderHelper}: Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+10:12:2022 22:28:40.135 SerikHome tomcat {DEBUG} {restartedMain} {o.h.v.i.x.c.ValidationXmlParser}: No META-INF/validation.xml found. Using annotation based configuration only.
+10:12:2022 22:28:40.136 SerikHome tomcat {DEBUG} {restartedMain} {o.h.v.i.e.r.TraversableResolvers}: Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+10:12:2022 22:28:40.137 SerikHome tomcat {DEBUG} {restartedMain} {o.h.v.i.e.ValidatorFactoryConfigurationHelper}: HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+10:12:2022 22:28:40.137 SerikHome tomcat {DEBUG} {restartedMain} {o.h.v.i.e.ValidatorFactoryConfigurationHelper}: HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+10:12:2022 22:28:40.137 SerikHome tomcat {DEBUG} {restartedMain} {o.h.v.i.e.ValidatorFactoryConfigurationHelper}: HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+10:12:2022 22:28:40.137 SerikHome tomcat {DEBUG} {restartedMain} {o.h.v.i.e.ValidatorFactoryConfigurationHelper}: HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+10:12:2022 22:28:40.137 SerikHome tomcat {DEBUG} {restartedMain} {o.h.v.i.e.ValidatorFactoryConfigurationHelper}: HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+10:12:2022 22:28:40.137 SerikHome tomcat {DEBUG} {restartedMain} {o.h.v.i.e.ValidatorFactoryConfigurationHelper}: HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+10:12:2022 22:28:40.138 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration'
+10:12:2022 22:28:40.139 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'error'
+10:12:2022 22:28:40.139 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'beanNameViewResolver'
+10:12:2022 22:28:40.140 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration'
+10:12:2022 22:28:40.141 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
+10:12:2022 22:28:40.148 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration' via constructor to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6a641d9f'
+10:12:2022 22:28:40.148 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration' via constructor to bean named 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
+10:12:2022 22:28:40.148 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'conventionErrorViewResolver'
+10:12:2022 22:28:40.149 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'errorAttributes'
+10:12:2022 22:28:40.150 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'basicErrorController'
+10:12:2022 22:28:40.150 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'basicErrorController' via factory method to bean named 'errorAttributes'
+10:12:2022 22:28:40.152 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration'
+10:12:2022 22:28:40.153 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration' via constructor to bean named 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+10:12:2022 22:28:40.153 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration' via constructor to bean named 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
+10:12:2022 22:28:40.153 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration' via constructor to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@2ee7435'
+10:12:2022 22:28:40.163 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter'
+10:12:2022 22:28:40.163 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter' via constructor to bean named 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
+10:12:2022 22:28:40.163 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter' via constructor to bean named 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+10:12:2022 22:28:40.163 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter' via constructor to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@2ee7435'
+10:12:2022 22:28:40.164 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'resourceHandlerRegistrationCustomizer'
+10:12:2022 22:28:40.164 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$ResourceChainCustomizerConfiguration'
+10:12:2022 22:28:40.164 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'resourceHandlerRegistrationCustomizer' via factory method to bean named 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
+10:12:2022 22:28:40.166 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'swaggerWebMvcConfigurer'
+10:12:2022 22:28:40.166 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springdoc.webmvc.ui.SwaggerConfig'
+10:12:2022 22:28:40.167 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springdoc.core.SwaggerUiConfigParameters'
+10:12:2022 22:28:40.168 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springdoc.core.SwaggerUiConfigProperties'
+10:12:2022 22:28:40.174 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'org.springdoc.core.SwaggerUiConfigParameters' via constructor to bean named 'org.springdoc.core.SwaggerUiConfigProperties'
+10:12:2022 22:28:40.179 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'indexPageTransformer'
+10:12:2022 22:28:40.180 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springdoc.core.SwaggerUiOAuthProperties'
+10:12:2022 22:28:40.183 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'swaggerWelcome'
+10:12:2022 22:28:40.183 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springdoc.core.SpringDocConfigProperties'
+10:12:2022 22:28:40.190 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'springWebProvider'
+10:12:2022 22:28:40.190 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springdoc.webmvc.core.SpringDocWebMvcConfiguration'
+10:12:2022 22:28:40.194 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'swaggerWelcome' via factory method to bean named 'org.springdoc.core.SwaggerUiConfigProperties'
+10:12:2022 22:28:40.194 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'swaggerWelcome' via factory method to bean named 'org.springdoc.core.SpringDocConfigProperties'
+10:12:2022 22:28:40.194 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'swaggerWelcome' via factory method to bean named 'org.springdoc.core.SwaggerUiConfigParameters'
+10:12:2022 22:28:40.194 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'swaggerWelcome' via factory method to bean named 'springWebProvider'
+10:12:2022 22:28:40.214 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'springDocObjectMapperProvider'
+10:12:2022 22:28:40.215 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springdoc.core.SpringDocConfiguration'
+10:12:2022 22:28:40.219 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'springDocObjectMapperProvider' via factory method to bean named 'org.springdoc.core.SpringDocConfigProperties'
+10:12:2022 22:28:40.239 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'indexPageTransformer' via factory method to bean named 'org.springdoc.core.SwaggerUiConfigProperties'
+10:12:2022 22:28:40.239 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'indexPageTransformer' via factory method to bean named 'org.springdoc.core.SwaggerUiOAuthProperties'
+10:12:2022 22:28:40.239 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'indexPageTransformer' via factory method to bean named 'org.springdoc.core.SwaggerUiConfigParameters'
+10:12:2022 22:28:40.239 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'indexPageTransformer' via factory method to bean named 'swaggerWelcome'
+10:12:2022 22:28:40.239 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'indexPageTransformer' via factory method to bean named 'springDocObjectMapperProvider'
+10:12:2022 22:28:40.242 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'swaggerWebMvcConfigurer' via factory method to bean named 'org.springdoc.core.SwaggerUiConfigParameters'
+10:12:2022 22:28:40.242 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'swaggerWebMvcConfigurer' via factory method to bean named 'indexPageTransformer'
+10:12:2022 22:28:40.244 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'requestMappingHandlerAdapter'
+10:12:2022 22:28:40.245 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'mvcContentNegotiationManager'
+10:12:2022 22:28:40.249 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'mvcConversionService'
+10:12:2022 22:28:40.252 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'mvcValidator'
+10:12:2022 22:28:40.253 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcContentNegotiationManager'
+10:12:2022 22:28:40.254 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcConversionService'
+10:12:2022 22:28:40.254 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcValidator'
+10:12:2022 22:28:40.254 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcContentNegotiationManager'
+10:12:2022 22:28:40.254 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcConversionService'
+10:12:2022 22:28:40.254 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcValidator'
+10:12:2022 22:28:40.260 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'messageConverters'
+10:12:2022 22:28:40.260 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration'
+10:12:2022 22:28:40.263 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'stringHttpMessageConverter'
+10:12:2022 22:28:40.263 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration'
+10:12:2022 22:28:40.263 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'stringHttpMessageConverter' via factory method to bean named 'environment'
+10:12:2022 22:28:40.267 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'mappingJackson2HttpMessageConverter'
+10:12:2022 22:28:40.267 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration'
+10:12:2022 22:28:40.267 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'jacksonObjectMapper'
+10:12:2022 22:28:40.267 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration'
+10:12:2022 22:28:40.268 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration'
+10:12:2022 22:28:40.268 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'standardJacksonObjectMapperBuilderCustomizer'
+10:12:2022 22:28:40.268 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration'
+10:12:2022 22:28:40.269 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties'
+10:12:2022 22:28:40.270 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'standardJacksonObjectMapperBuilderCustomizer' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6a641d9f'
+10:12:2022 22:28:40.270 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'standardJacksonObjectMapperBuilderCustomizer' via factory method to bean named 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties'
+10:12:2022 22:28:40.271 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'jacksonObjectMapperBuilder' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6a641d9f'
+10:12:2022 22:28:40.271 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'jacksonObjectMapperBuilder' via factory method to bean named 'standardJacksonObjectMapperBuilderCustomizer'
+10:12:2022 22:28:40.272 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'parameterNamesModule'
+10:12:2022 22:28:40.272 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration'
+10:12:2022 22:28:40.275 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'jsonComponentModule'
+10:12:2022 22:28:40.275 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration'
+10:12:2022 22:28:40.281 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'jsonMixinModule'
+10:12:2022 22:28:40.281 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'jsonMixinModule' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6a641d9f'
+10:12:2022 22:28:40.281 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.a.AutoConfigurationPackages}: @EnableAutoConfiguration was declared on a class in the package 'soap.start.serik'. Automatic @Repository and @Entity scanning is enabled.
+10:12:2022 22:28:40.286 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'jacksonObjectMapper' via factory method to bean named 'jacksonObjectMapperBuilder'
+10:12:2022 22:28:40.298 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'mappingJackson2HttpMessageConverter' via factory method to bean named 'jacksonObjectMapper'
+10:12:2022 22:28:40.303 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'applicationTaskExecutor'
+10:12:2022 22:28:40.304 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'applicationTaskExecutor' via factory method to bean named 'taskExecutorBuilder'
+10:12:2022 22:28:40.307 SerikHome tomcat {DEBUG} {restartedMain} {o.s.s.c.ThreadPoolTaskExecutor}: Initializing ExecutorService 'applicationTaskExecutor'
+10:12:2022 22:28:40.317 SerikHome tomcat {DEBUG} {restartedMain} {o.s.w.s.m.m.a.RequestMappingHandlerAdapter}: ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+10:12:2022 22:28:40.347 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'welcomePageHandlerMapping'
+10:12:2022 22:28:40.347 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'mvcResourceUrlProvider'
+10:12:2022 22:28:40.350 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'welcomePageHandlerMapping' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6a641d9f'
+10:12:2022 22:28:40.350 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'welcomePageHandlerMapping' via factory method to bean named 'mvcConversionService'
+10:12:2022 22:28:40.351 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'welcomePageHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+10:12:2022 22:28:40.357 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'localeResolver'
+10:12:2022 22:28:40.358 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'themeResolver'
+10:12:2022 22:28:40.359 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'flashMapManager'
+10:12:2022 22:28:40.360 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'requestMappingHandlerMapping'
+10:12:2022 22:28:40.361 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcContentNegotiationManager'
+10:12:2022 22:28:40.361 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcConversionService'
+10:12:2022 22:28:40.361 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+10:12:2022 22:28:40.375 SerikHome tomcat {DEBUG} {restartedMain} {_.s.w.s.H.Mappings}: 
+	s.s.s.c.DictController:
+	{POST [/dict/download_dict], consumes [application/xml || application/json], produces [application/xml || application/json]}: downloadDict(Request,String)
+10:12:2022 22:28:40.378 SerikHome tomcat {DEBUG} {restartedMain} {_.s.w.s.H.Mappings}: 
+	s.s.s.c.DocController:
+	{POST [/doc/uploadDoc], consumes [application/xml || application/json], produces [application/xml || application/json]}: uploadDoc(DocOutgoing,String)
+10:12:2022 22:28:40.379 SerikHome tomcat {DEBUG} {restartedMain} {_.s.w.s.H.Mappings}: 
+	s.s.s.c.HEDController:
+	{POST [/hed/HEDUpload], consumes [application/xml || application/json], produces [application/xml || application/json]}: hedUpload(UploadRequestDTO,String)
+10:12:2022 22:28:40.380 SerikHome tomcat {DEBUG} {restartedMain} {_.s.w.s.H.Mappings}: 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+10:12:2022 22:28:40.392 SerikHome tomcat {DEBUG} {restartedMain} {_.s.w.s.H.Mappings}: 
+	o.s.w.a.OpenApiWebMvcResource:
+	{GET [/v3/api-docs.yaml], produces [application/vnd.oai.openapi]}: openapiYaml(HttpServletRequest,String,Locale)
+	{GET [/v3/api-docs], produces [application/json]}: openapiJson(HttpServletRequest,String,Locale)
+10:12:2022 22:28:40.392 SerikHome tomcat {DEBUG} {restartedMain} {o.s.c.e.PropertySourcesPropertyResolver}: Found key 'springdoc.swagger-ui.path' in PropertySource 'environmentProperties' with value of type String
+10:12:2022 22:28:40.393 SerikHome tomcat {DEBUG} {restartedMain} {o.s.c.e.PropertySourcesPropertyResolver}: Found key 'springdoc.swagger-ui.path' in PropertySource 'environmentProperties' with value of type String
+10:12:2022 22:28:40.393 SerikHome tomcat {DEBUG} {restartedMain} {_.s.w.s.H.Mappings}: 
+	o.s.w.u.SwaggerWelcomeWebMvc:
+	{GET [/swagger-ui.html]}: redirectToUi(HttpServletRequest)
+10:12:2022 22:28:40.393 SerikHome tomcat {DEBUG} {restartedMain} {_.s.w.s.H.Mappings}: 
+	o.s.w.u.SwaggerConfigResource:
+	{GET [/v3/api-docs/swagger-config], produces [application/json]}: openapiJson(HttpServletRequest)
+10:12:2022 22:28:40.395 SerikHome tomcat {DEBUG} {restartedMain} {o.s.w.s.m.m.a.RequestMappingHandlerMapping}: 9 mappings in 'requestMappingHandlerMapping'
+10:12:2022 22:28:40.395 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'mvcPatternParser'
+10:12:2022 22:28:40.395 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'mvcUrlPathHelper'
+10:12:2022 22:28:40.396 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'mvcPathMatcher'
+10:12:2022 22:28:40.396 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'viewControllerHandlerMapping'
+10:12:2022 22:28:40.397 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'viewControllerHandlerMapping' via factory method to bean named 'mvcConversionService'
+10:12:2022 22:28:40.397 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'viewControllerHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+10:12:2022 22:28:40.397 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'beanNameHandlerMapping'
+10:12:2022 22:28:40.397 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'beanNameHandlerMapping' via factory method to bean named 'mvcConversionService'
+10:12:2022 22:28:40.397 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'beanNameHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+10:12:2022 22:28:40.398 SerikHome tomcat {DEBUG} {restartedMain} {_.s.w.s.H.Mappings}: 'beanNameHandlerMapping' {}
+10:12:2022 22:28:40.399 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'routerFunctionMapping'
+10:12:2022 22:28:40.399 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'routerFunctionMapping' via factory method to bean named 'mvcConversionService'
+10:12:2022 22:28:40.399 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'routerFunctionMapping' via factory method to bean named 'mvcResourceUrlProvider'
+10:12:2022 22:28:40.401 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'resourceHandlerMapping'
+10:12:2022 22:28:40.402 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcContentNegotiationManager'
+10:12:2022 22:28:40.402 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcConversionService'
+10:12:2022 22:28:40.402 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+10:12:2022 22:28:40.704 SerikHome tomcat {DEBUG} {restartedMain} {_.s.w.s.H.Mappings}: 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]], /swagger-ui*/*swagger-initializer.js=ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]], /swagger-ui*/**=ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]}
+10:12:2022 22:28:40.705 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'defaultServletHandlerMapping'
+10:12:2022 22:28:40.705 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'handlerFunctionAdapter'
+10:12:2022 22:28:40.705 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'mvcUriComponentsContributor'
+10:12:2022 22:28:40.706 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'mvcUriComponentsContributor' via factory method to bean named 'mvcConversionService'
+10:12:2022 22:28:40.706 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'mvcUriComponentsContributor' via factory method to bean named 'requestMappingHandlerAdapter'
+10:12:2022 22:28:40.706 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'httpRequestHandlerAdapter'
+10:12:2022 22:28:40.706 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'simpleControllerHandlerAdapter'
+10:12:2022 22:28:40.707 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'handlerExceptionResolver'
+10:12:2022 22:28:40.707 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'handlerExceptionResolver' via factory method to bean named 'mvcContentNegotiationManager'
+10:12:2022 22:28:40.710 SerikHome tomcat {DEBUG} {restartedMain} {o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver}: ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+10:12:2022 22:28:40.711 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'mvcViewResolver'
+10:12:2022 22:28:40.712 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'mvcViewResolver' via factory method to bean named 'mvcContentNegotiationManager'
+10:12:2022 22:28:40.712 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'viewNameTranslator'
+10:12:2022 22:28:40.713 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'defaultViewResolver'
+10:12:2022 22:28:40.716 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'viewResolver'
+10:12:2022 22:28:40.716 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'viewResolver' via factory method to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@2ee7435'
+10:12:2022 22:28:40.717 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'viewResolver'
+10:12:2022 22:28:40.717 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.apache.cxf.spring.boot.autoconfigure.CxfAutoConfiguration$SpringBusConfiguration'
+10:12:2022 22:28:40.717 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springdoc.core.SpringDocConfiguration$OpenApiResourceAdvice'
+10:12:2022 22:28:40.718 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'org.springdoc.core.SpringDocConfiguration$OpenApiResourceAdvice' via constructor to bean named 'org.springdoc.core.SpringDocConfiguration'
+10:12:2022 22:28:40.718 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springdoc.core.SpringDocConfiguration$SpringDocSpringDataWebPropertiesProvider'
+10:12:2022 22:28:40.718 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'springDataWebPropertiesProvider'
+10:12:2022 22:28:40.718 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springdoc.core.SpringDocConfiguration$WebConversionServiceConfiguration'
+10:12:2022 22:28:40.719 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'webConversionServiceProvider'
+10:12:2022 22:28:40.719 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'localSpringDocParameterNameDiscoverer'
+10:12:2022 22:28:40.719 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'additionalModelsConverter'
+10:12:2022 22:28:40.719 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'additionalModelsConverter' via factory method to bean named 'springDocObjectMapperProvider'
+10:12:2022 22:28:40.720 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'fileSupportConverter'
+10:12:2022 22:28:40.720 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'fileSupportConverter' via factory method to bean named 'springDocObjectMapperProvider'
+10:12:2022 22:28:40.720 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'responseSupportConverter'
+10:12:2022 22:28:40.721 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'responseSupportConverter' via factory method to bean named 'springDocObjectMapperProvider'
+10:12:2022 22:28:40.721 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'schemaPropertyDeprecatingConverter'
+10:12:2022 22:28:40.721 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'polymorphicModelConverter'
+10:12:2022 22:28:40.721 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'polymorphicModelConverter' via factory method to bean named 'springDocObjectMapperProvider'
+10:12:2022 22:28:40.722 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'openAPIBuilder'
+10:12:2022 22:28:40.723 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'securityParser'
+10:12:2022 22:28:40.723 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'propertyResolverUtils'
+10:12:2022 22:28:40.723 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'propertyResolverUtils' via factory method to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@2ee7435'
+10:12:2022 22:28:40.723 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'propertyResolverUtils' via factory method to bean named 'messageSource'
+10:12:2022 22:28:40.723 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'propertyResolverUtils' via factory method to bean named 'org.springdoc.core.SpringDocConfigProperties'
+10:12:2022 22:28:40.723 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'securityParser' via factory method to bean named 'propertyResolverUtils'
+10:12:2022 22:28:40.726 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'openAPIBuilder' via factory method to bean named 'securityParser'
+10:12:2022 22:28:40.726 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'openAPIBuilder' via factory method to bean named 'org.springdoc.core.SpringDocConfigProperties'
+10:12:2022 22:28:40.726 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'openAPIBuilder' via factory method to bean named 'propertyResolverUtils'
+10:12:2022 22:28:40.727 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'modelConverterRegistrar'
+10:12:2022 22:28:40.733 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'operationBuilder'
+10:12:2022 22:28:40.734 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'parameterBuilder'
+10:12:2022 22:28:40.734 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'parameterBuilder' via factory method to bean named 'propertyResolverUtils'
+10:12:2022 22:28:40.734 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'parameterBuilder' via factory method to bean named 'springDocObjectMapperProvider'
+10:12:2022 22:28:40.736 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'requestBodyBuilder'
+10:12:2022 22:28:40.736 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'requestBodyBuilder' via factory method to bean named 'parameterBuilder'
+10:12:2022 22:28:40.737 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'operationBuilder' via factory method to bean named 'parameterBuilder'
+10:12:2022 22:28:40.737 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'operationBuilder' via factory method to bean named 'requestBodyBuilder'
+10:12:2022 22:28:40.737 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'operationBuilder' via factory method to bean named 'securityParser'
+10:12:2022 22:28:40.737 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'operationBuilder' via factory method to bean named 'propertyResolverUtils'
+10:12:2022 22:28:40.737 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'genericReturnTypeParser'
+10:12:2022 22:28:40.738 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'springDocProviders'
+10:12:2022 22:28:40.739 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'routerFunctionProvider'
+10:12:2022 22:28:40.739 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springdoc.webmvc.core.SpringDocWebMvcConfiguration$SpringDocWebMvcRouterConfiguration'
+10:12:2022 22:28:40.739 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'springDocProviders' via factory method to bean named 'springDocObjectMapperProvider'
+10:12:2022 22:28:40.740 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'openApiResource'
+10:12:2022 22:28:40.740 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'requestBuilder'
+10:12:2022 22:28:40.741 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'requestBuilder' via factory method to bean named 'parameterBuilder'
+10:12:2022 22:28:40.741 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'requestBuilder' via factory method to bean named 'requestBodyBuilder'
+10:12:2022 22:28:40.741 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'requestBuilder' via factory method to bean named 'operationBuilder'
+10:12:2022 22:28:40.741 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'requestBuilder' via factory method to bean named 'localSpringDocParameterNameDiscoverer'
+10:12:2022 22:28:40.743 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'responseBuilder'
+10:12:2022 22:28:40.744 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'responseBuilder' via factory method to bean named 'operationBuilder'
+10:12:2022 22:28:40.744 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'responseBuilder' via factory method to bean named 'genericReturnTypeParser'
+10:12:2022 22:28:40.744 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'responseBuilder' via factory method to bean named 'org.springdoc.core.SpringDocConfigProperties'
+10:12:2022 22:28:40.744 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'responseBuilder' via factory method to bean named 'propertyResolverUtils'
+10:12:2022 22:28:40.745 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'openApiResource' via factory method to bean named 'requestBuilder'
+10:12:2022 22:28:40.745 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'openApiResource' via factory method to bean named 'responseBuilder'
+10:12:2022 22:28:40.745 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'openApiResource' via factory method to bean named 'operationBuilder'
+10:12:2022 22:28:40.745 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'openApiResource' via factory method to bean named 'org.springdoc.core.SpringDocConfigProperties'
+10:12:2022 22:28:40.745 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'openApiResource' via factory method to bean named 'springDocProviders'
+10:12:2022 22:28:40.746 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'swaggerConfigResource'
+10:12:2022 22:28:40.746 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'swaggerConfigResource' via factory method to bean named 'swaggerWelcome'
+10:12:2022 22:28:40.746 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration'
+10:12:2022 22:28:40.747 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'spring.jmx-org.springframework.boot.autoconfigure.jmx.JmxProperties'
+10:12:2022 22:28:40.747 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' via constructor to bean named 'spring.jmx-org.springframework.boot.autoconfigure.jmx.JmxProperties'
+10:12:2022 22:28:40.748 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'mbeanExporter'
+10:12:2022 22:28:40.748 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'objectNamingStrategy'
+10:12:2022 22:28:40.749 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'mbeanExporter' via factory method to bean named 'objectNamingStrategy'
+10:12:2022 22:28:40.749 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'mbeanExporter' via factory method to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@2ee7435'
+10:12:2022 22:28:40.752 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'mbeanServer'
+10:12:2022 22:28:40.754 SerikHome tomcat {DEBUG} {restartedMain} {o.s.j.s.JmxUtils}: Found MBeanServer: com.sun.jmx.mbeanserver.JmxMBeanServer@2d8e6db6
+10:12:2022 22:28:40.756 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration'
+10:12:2022 22:28:40.756 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'springApplicationAdminRegistrar'
+10:12:2022 22:28:40.756 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'springApplicationAdminRegistrar' via factory method to bean named 'environment'
+10:12:2022 22:28:40.758 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin}: Application Admin MBean registered with name 'org.springframework.boot:type=Admin,name=SpringApplication'
+10:12:2022 22:28:40.758 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration$ClassProxyingConfiguration'
+10:12:2022 22:28:40.758 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration'
+10:12:2022 22:28:40.758 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.availability.ApplicationAvailabilityAutoConfiguration'
+10:12:2022 22:28:40.758 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'applicationAvailability'
+10:12:2022 22:28:40.760 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration'
+10:12:2022 22:28:40.760 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.LifecycleAutoConfiguration'
+10:12:2022 22:28:40.760 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'lifecycleProcessor'
+10:12:2022 22:28:40.760 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'spring.lifecycle-org.springframework.boot.autoconfigure.context.LifecycleProperties'
+10:12:2022 22:28:40.761 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'lifecycleProcessor' via factory method to bean named 'spring.lifecycle-org.springframework.boot.autoconfigure.context.LifecycleProperties'
+10:12:2022 22:28:40.762 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.dao.PersistenceExceptionTranslationAutoConfiguration'
+10:12:2022 22:28:40.762 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration'
+10:12:2022 22:28:40.762 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration'
+10:12:2022 22:28:40.763 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties'
+10:12:2022 22:28:40.764 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration' via constructor to bean named 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties'
+10:12:2022 22:28:40.764 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.security.servlet.SpringBootWebSecurityConfiguration'
+10:12:2022 22:28:40.764 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration'
+10:12:2022 22:28:40.764 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'authenticationEventPublisher'
+10:12:2022 22:28:40.764 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'authenticationEventPublisher' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6a641d9f'
+10:12:2022 22:28:40.768 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'spring.security-org.springframework.boot.autoconfigure.security.SecurityProperties'
+10:12:2022 22:28:40.769 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.sql.init.SqlInitializationAutoConfiguration'
+10:12:2022 22:28:40.769 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'spring.sql.init-org.springframework.boot.autoconfigure.sql.init.SqlInitializationProperties'
+10:12:2022 22:28:40.771 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskSchedulingAutoConfiguration'
+10:12:2022 22:28:40.771 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'scheduledBeanLazyInitializationExcludeFilter'
+10:12:2022 22:28:40.771 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'taskSchedulerBuilder'
+10:12:2022 22:28:40.772 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'spring.task.scheduling-org.springframework.boot.autoconfigure.task.TaskSchedulingProperties'
+10:12:2022 22:28:40.772 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'taskSchedulerBuilder' via factory method to bean named 'spring.task.scheduling-org.springframework.boot.autoconfigure.task.TaskSchedulingProperties'
+10:12:2022 22:28:40.773 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration'
+10:12:2022 22:28:40.774 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'platformTransactionManagerCustomizers'
+10:12:2022 22:28:40.774 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties'
+10:12:2022 22:28:40.775 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.client.RestTemplateAutoConfiguration'
+10:12:2022 22:28:40.775 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration'
+10:12:2022 22:28:40.776 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'multipartResolver'
+10:12:2022 22:28:40.777 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'payloadRootAnnotationMethodEndpointMapping'
+10:12:2022 22:28:40.778 SerikHome tomcat {DEBUG} {restartedMain} {o.s.w.s.e.m.PayloadRootAnnotationMethodEndpointMapping}: Looking for endpoints in application context: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6a641d9f, started on Sat Dec 10 22:28:38 ALMT 2022
+10:12:2022 22:28:40.780 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'soapActionAnnotationMethodEndpointMapping'
+10:12:2022 22:28:40.780 SerikHome tomcat {DEBUG} {restartedMain} {o.s.w.s.s.e.m.SoapActionAnnotationMethodEndpointMapping}: Looking for endpoints in application context: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6a641d9f, started on Sat Dec 10 22:28:38 ALMT 2022
+10:12:2022 22:28:40.781 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'defaultMethodEndpointAdapter'
+10:12:2022 22:28:40.788 SerikHome tomcat {DEBUG} {restartedMain} {o.s.w.s.e.a.DefaultMethodEndpointAdapter}: No MethodArgumentResolvers set, using defaults: [org.springframework.ws.server.endpoint.adapter.method.dom.DomPayloadMethodProcessor@1ca4b813, org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@38ce6367, org.springframework.ws.server.endpoint.adapter.method.SourcePayloadMethodProcessor@2fbbace6, org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@36cabda3, org.springframework.ws.soap.server.endpoint.adapter.method.SoapMethodArgumentResolver@f17ef49, org.springframework.ws.soap.server.endpoint.adapter.method.SoapHeaderElementMethodArgumentResolver@44896097, org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@3627287c, org.springframework.ws.server.endpoint.adapter.method.jaxb.JaxbElementPayloadMethodProcessor@55e3acbe, org.springframework.ws.server.endpoint.adapter.method.StaxPayloadMethodArgumentResolver@653e7cec]
+10:12:2022 22:28:40.789 SerikHome tomcat {DEBUG} {restartedMain} {o.s.w.s.e.a.DefaultMethodEndpointAdapter}: No MethodReturnValueHandlers set, using defaults: [org.springframework.ws.server.endpoint.adapter.method.dom.DomPayloadMethodProcessor@3bd682fc, org.springframework.ws.server.endpoint.adapter.method.SourcePayloadMethodProcessor@30c91487, org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@69e04ec5, org.springframework.ws.server.endpoint.adapter.method.jaxb.JaxbElementPayloadMethodProcessor@e8be5ec]
+10:12:2022 22:28:40.790 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'soapFaultAnnotationExceptionResolver'
+10:12:2022 22:28:40.791 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'simpleSoapExceptionResolver'
+10:12:2022 22:28:40.791 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.webservices.WebServicesAutoConfiguration$WsConfiguration'
+10:12:2022 22:28:40.791 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.webservices.client.WebServiceTemplateAutoConfiguration'
+10:12:2022 22:28:40.791 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'webServiceTemplateBuilder'
+10:12:2022 22:28:40.793 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartConfiguration'
+10:12:2022 22:28:40.793 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'spring.devtools-org.springframework.boot.devtools.autoconfigure.DevToolsProperties'
+10:12:2022 22:28:40.794 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartConfiguration' via constructor to bean named 'spring.devtools-org.springframework.boot.devtools.autoconfigure.DevToolsProperties'
+10:12:2022 22:28:40.794 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'restartingClassPathChangedEventListener'
+10:12:2022 22:28:40.795 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'fileSystemWatcherFactory'
+10:12:2022 22:28:40.795 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'restartingClassPathChangedEventListener' via factory method to bean named 'fileSystemWatcherFactory'
+10:12:2022 22:28:40.796 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'classPathFileSystemWatcher'
+10:12:2022 22:28:40.796 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'classPathRestartStrategy'
+10:12:2022 22:28:40.797 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'classPathFileSystemWatcher' via factory method to bean named 'fileSystemWatcherFactory'
+10:12:2022 22:28:40.797 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'classPathFileSystemWatcher' via factory method to bean named 'classPathRestartStrategy'
+10:12:2022 22:28:40.846 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'conditionEvaluationDeltaLoggingListener'
+10:12:2022 22:28:40.846 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$LiveReloadConfiguration'
+10:12:2022 22:28:40.847 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'optionalLiveReloadServer'
+10:12:2022 22:28:40.847 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'liveReloadServer' via factory method to bean named 'spring.devtools-org.springframework.boot.devtools.autoconfigure.DevToolsProperties'
+10:12:2022 22:28:40.848 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'optionalLiveReloadServer' via factory method to bean named 'liveReloadServer'
+10:12:2022 22:28:40.849 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.d.l.LiveReloadServer}: Starting live reload server on port 35729
+10:12:2022 22:28:40.850 SerikHome tomcat {INFO } {restartedMain} {o.s.b.d.a.OptionalLiveReloadServer}: LiveReload server is running on port 35729
+10:12:2022 22:28:40.850 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'liveReloadServerEventListener'
+10:12:2022 22:28:40.850 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Autowiring by type from bean name 'liveReloadServerEventListener' via factory method to bean named 'optionalLiveReloadServer'
+10:12:2022 22:28:40.850 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.f.s.DefaultListableBeanFactory}: Creating shared instance of singleton bean 'org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration'
+10:12:2022 22:28:40.856 SerikHome tomcat {DEBUG} {restartedMain} {o.s.j.e.a.AnnotationMBeanExporter}: Registering beans for JMX exposure on startup
+10:12:2022 22:28:40.857 SerikHome tomcat {DEBUG} {restartedMain} {o.s.j.e.a.AnnotationMBeanExporter}: Autodetecting user-defined JMX MBeans
+10:12:2022 22:28:40.861 SerikHome tomcat {DEBUG} {restartedMain} {o.s.c.s.DefaultLifecycleProcessor}: Starting beans in phase -2147483647
+10:12:2022 22:28:40.861 SerikHome tomcat {DEBUG} {restartedMain} {o.s.c.s.DefaultLifecycleProcessor}: Successfully started bean 'springBootLoggingLifecycle'
+10:12:2022 22:28:40.861 SerikHome tomcat {DEBUG} {restartedMain} {o.s.c.s.DefaultLifecycleProcessor}: Starting beans in phase 2147483646
+10:12:2022 22:28:40.861 SerikHome tomcat {INFO } {restartedMain} {o.a.c.h.Http11NioProtocol}: Starting ProtocolHandler ["http-nio-8085"]
+10:12:2022 22:28:40.874 SerikHome tomcat {INFO } {restartedMain} {o.s.b.w.e.t.TomcatWebServer}: Tomcat started on port(s): 8085 (http) with context path ''
+10:12:2022 22:28:40.875 SerikHome tomcat {DEBUG} {restartedMain} {o.s.c.s.DefaultLifecycleProcessor}: Successfully started bean 'webServerStartStop'
+10:12:2022 22:28:40.875 SerikHome tomcat {DEBUG} {restartedMain} {o.s.c.s.DefaultLifecycleProcessor}: Starting beans in phase 2147483647
+10:12:2022 22:28:40.875 SerikHome tomcat {DEBUG} {restartedMain} {o.s.c.s.DefaultLifecycleProcessor}: Successfully started bean 'webServerGracefulShutdown'
+10:12:2022 22:28:40.887 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.a.l.ConditionEvaluationReportLoggingListener}: 
+
+
+============================
+CONDITIONS EVALUATION REPORT
+============================
+
+
+Positive matches:
+-----------------
+
+   AopAutoConfiguration matched:
+      - @ConditionalOnProperty (spring.aop.auto=true) matched (OnPropertyCondition)
+
+   AopAutoConfiguration.ClassProxyingConfiguration matched:
+      - @ConditionalOnMissingClass did not find unwanted class 'org.aspectj.weaver.Advice' (OnClassCondition)
+      - @ConditionalOnProperty (spring.aop.proxy-target-class=true) matched (OnPropertyCondition)
+
+   CxfAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.apache.cxf.bus.spring.SpringBus', 'org.apache.cxf.transport.servlet.CXFServlet' (OnClassCondition)
+      - @ConditionalOnWebApplication (required) found 'session' scope (OnWebApplicationCondition)
+
+   CxfAutoConfiguration#cxfServletRegistration matched:
+      - @ConditionalOnProperty (cxf.servlet.enabled) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (names: cxfServletRegistration; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   CxfAutoConfiguration.SpringBusConfiguration matched:
+      - @ConditionalOnMissingBean (types: org.apache.cxf.bus.spring.SpringBus; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DispatcherServletAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.web.servlet.DispatcherServlet' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+
+   DispatcherServletAutoConfiguration.DispatcherServletConfiguration matched:
+      - @ConditionalOnClass found required class 'javax.servlet.ServletRegistration' (OnClassCondition)
+      - Default DispatcherServlet did not find dispatcher servlet beans (DispatcherServletAutoConfiguration.DefaultDispatcherServletCondition)
+
+   DispatcherServletAutoConfiguration.DispatcherServletRegistrationConfiguration matched:
+      - @ConditionalOnClass found required class 'javax.servlet.ServletRegistration' (OnClassCondition)
+      - DispatcherServlet Registration did not find servlet registration bean (DispatcherServletAutoConfiguration.DispatcherServletRegistrationCondition)
+
+   DispatcherServletAutoConfiguration.DispatcherServletRegistrationConfiguration#dispatcherServletRegistration matched:
+      - @ConditionalOnBean (names: dispatcherServlet types: org.springframework.web.servlet.DispatcherServlet; SearchStrategy: all) found bean 'dispatcherServlet' (OnBeanCondition)
+
+   EmbeddedWebServerFactoryCustomizerAutoConfiguration matched:
+      - @ConditionalOnWebApplication (required) found 'session' scope (OnWebApplicationCondition)
+
+   EmbeddedWebServerFactoryCustomizerAutoConfiguration.TomcatWebServerFactoryCustomizerConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.apache.catalina.startup.Tomcat', 'org.apache.coyote.UpgradeProtocol' (OnClassCondition)
+
+   ErrorMvcAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'javax.servlet.Servlet', 'org.springframework.web.servlet.DispatcherServlet' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+
+   ErrorMvcAutoConfiguration#basicErrorController matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.web.servlet.error.ErrorController; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   ErrorMvcAutoConfiguration#errorAttributes matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.web.servlet.error.ErrorAttributes; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   ErrorMvcAutoConfiguration.DefaultErrorViewResolverConfiguration#conventionErrorViewResolver matched:
+      - @ConditionalOnBean (types: org.springframework.web.servlet.DispatcherServlet; SearchStrategy: all) found bean 'dispatcherServlet'; @ConditionalOnMissingBean (types: org.springframework.boot.autoconfigure.web.servlet.error.ErrorViewResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ErrorMvcAutoConfiguration.WhitelabelErrorViewConfiguration matched:
+      - @ConditionalOnProperty (server.error.whitelabel.enabled) matched (OnPropertyCondition)
+      - ErrorTemplate Missing did not find error template view (ErrorMvcAutoConfiguration.ErrorTemplateMissingCondition)
+
+   ErrorMvcAutoConfiguration.WhitelabelErrorViewConfiguration#beanNameViewResolver matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.servlet.view.BeanNameViewResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ErrorMvcAutoConfiguration.WhitelabelErrorViewConfiguration#defaultErrorView matched:
+      - @ConditionalOnMissingBean (names: error; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   GenericCacheConfiguration matched:
+      - Cache org.springframework.boot.autoconfigure.cache.GenericCacheConfiguration automatic cache type (CacheCondition)
+
+   HttpEncodingAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.web.filter.CharacterEncodingFilter' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnProperty (server.servlet.encoding.enabled) matched (OnPropertyCondition)
+
+   HttpEncodingAutoConfiguration#characterEncodingFilter matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.filter.CharacterEncodingFilter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   HttpMessageConvertersAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.http.converter.HttpMessageConverter' (OnClassCondition)
+      - NoneNestedConditions 0 matched 1 did not; NestedCondition on HttpMessageConvertersAutoConfiguration.NotReactiveWebApplicationCondition.ReactiveWebApplication did not find reactive web application classes (HttpMessageConvertersAutoConfiguration.NotReactiveWebApplicationCondition)
+
+   HttpMessageConvertersAutoConfiguration#messageConverters matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.autoconfigure.http.HttpMessageConverters; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   HttpMessageConvertersAutoConfiguration.StringHttpMessageConverterConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.http.converter.StringHttpMessageConverter' (OnClassCondition)
+
+   HttpMessageConvertersAutoConfiguration.StringHttpMessageConverterConfiguration#stringHttpMessageConverter matched:
+      - @ConditionalOnMissingBean (types: org.springframework.http.converter.StringHttpMessageConverter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JacksonAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'com.fasterxml.jackson.databind.ObjectMapper' (OnClassCondition)
+
+   JacksonAutoConfiguration.Jackson2ObjectMapperBuilderCustomizerConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.http.converter.json.Jackson2ObjectMapperBuilder' (OnClassCondition)
+
+   JacksonAutoConfiguration.JacksonObjectMapperBuilderConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.http.converter.json.Jackson2ObjectMapperBuilder' (OnClassCondition)
+
+   JacksonAutoConfiguration.JacksonObjectMapperBuilderConfiguration#jacksonObjectMapperBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.http.converter.json.Jackson2ObjectMapperBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JacksonAutoConfiguration.JacksonObjectMapperConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.http.converter.json.Jackson2ObjectMapperBuilder' (OnClassCondition)
+
+   JacksonAutoConfiguration.JacksonObjectMapperConfiguration#jacksonObjectMapper matched:
+      - @ConditionalOnMissingBean (types: com.fasterxml.jackson.databind.ObjectMapper; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JacksonAutoConfiguration.ParameterNamesModuleConfiguration matched:
+      - @ConditionalOnClass found required class 'com.fasterxml.jackson.module.paramnames.ParameterNamesModule' (OnClassCondition)
+
+   JacksonAutoConfiguration.ParameterNamesModuleConfiguration#parameterNamesModule matched:
+      - @ConditionalOnMissingBean (types: com.fasterxml.jackson.module.paramnames.ParameterNamesModule; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JacksonHttpMessageConvertersConfiguration.MappingJackson2HttpMessageConverterConfiguration matched:
+      - @ConditionalOnClass found required class 'com.fasterxml.jackson.databind.ObjectMapper' (OnClassCondition)
+      - @ConditionalOnProperty (spring.mvc.converters.preferred-json-mapper=jackson) matched (OnPropertyCondition)
+      - @ConditionalOnBean (types: com.fasterxml.jackson.databind.ObjectMapper; SearchStrategy: all) found bean 'jacksonObjectMapper' (OnBeanCondition)
+
+   JacksonHttpMessageConvertersConfiguration.MappingJackson2HttpMessageConverterConfiguration#mappingJackson2HttpMessageConverter matched:
+      - @ConditionalOnMissingBean (types: org.springframework.http.converter.json.MappingJackson2HttpMessageConverter ignored: org.springframework.hateoas.server.mvc.TypeConstrainedMappingJackson2HttpMessageConverter,org.springframework.data.rest.webmvc.alps.AlpsJsonHttpMessageConverter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JmxAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.jmx.export.MBeanExporter' (OnClassCondition)
+      - @ConditionalOnProperty (spring.jmx.enabled=true) matched (OnPropertyCondition)
+
+   JmxAutoConfiguration#mbeanExporter matched:
+      - @ConditionalOnMissingBean (types: org.springframework.jmx.export.MBeanExporter; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   JmxAutoConfiguration#mbeanServer matched:
+      - @ConditionalOnMissingBean (types: javax.management.MBeanServer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JmxAutoConfiguration#objectNamingStrategy matched:
+      - @ConditionalOnMissingBean (types: org.springframework.jmx.export.naming.ObjectNamingStrategy; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   LifecycleAutoConfiguration#defaultLifecycleProcessor matched:
+      - @ConditionalOnMissingBean (names: lifecycleProcessor; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   LocalDevToolsAutoConfiguration matched:
+      - Initialized Restarter Condition available and initialized (OnInitializedRestarterCondition)
+
+   LocalDevToolsAutoConfiguration.LiveReloadConfiguration matched:
+      - @ConditionalOnProperty (spring.devtools.livereload.enabled) matched (OnPropertyCondition)
+
+   LocalDevToolsAutoConfiguration.LiveReloadConfiguration#liveReloadServer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.devtools.livereload.LiveReloadServer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   LocalDevToolsAutoConfiguration.RestartConfiguration matched:
+      - @ConditionalOnProperty (spring.devtools.restart.enabled) matched (OnPropertyCondition)
+
+   LocalDevToolsAutoConfiguration.RestartConfiguration#classPathFileSystemWatcher matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.devtools.classpath.ClassPathFileSystemWatcher; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   LocalDevToolsAutoConfiguration.RestartConfiguration#classPathRestartStrategy matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.devtools.classpath.ClassPathRestartStrategy; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   LocalDevToolsAutoConfiguration.RestartConfiguration#conditionEvaluationDeltaLoggingListener matched:
+      - @ConditionalOnProperty (spring.devtools.restart.log-condition-evaluation-delta) matched (OnPropertyCondition)
+
+   MultipartAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'javax.servlet.Servlet', 'org.springframework.web.multipart.support.StandardServletMultipartResolver', 'javax.servlet.MultipartConfigElement' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnProperty (spring.servlet.multipart.enabled) matched (OnPropertyCondition)
+
+   MultipartAutoConfiguration#multipartConfigElement matched:
+      - @ConditionalOnMissingBean (types: javax.servlet.MultipartConfigElement,org.springframework.web.multipart.commons.CommonsMultipartResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   MultipartAutoConfiguration#multipartResolver matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.multipart.MultipartResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   NoOpCacheConfiguration matched:
+      - Cache org.springframework.boot.autoconfigure.cache.NoOpCacheConfiguration automatic cache type (CacheCondition)
+
+   PersistenceExceptionTranslationAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor' (OnClassCondition)
+
+   PersistenceExceptionTranslationAutoConfiguration#persistenceExceptionTranslationPostProcessor matched:
+      - @ConditionalOnProperty (spring.dao.exceptiontranslation.enabled) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   PropertyPlaceholderAutoConfiguration#propertySourcesPlaceholderConfigurer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.context.support.PropertySourcesPlaceholderConfigurer; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   RestTemplateAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.web.client.RestTemplate' (OnClassCondition)
+      - NoneNestedConditions 0 matched 1 did not; NestedCondition on RestTemplateAutoConfiguration.NotReactiveWebApplicationCondition.ReactiveWebApplication did not find reactive web application classes (RestTemplateAutoConfiguration.NotReactiveWebApplicationCondition)
+
+   RestTemplateAutoConfiguration#restTemplateBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.web.client.RestTemplateBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   RestTemplateAutoConfiguration#restTemplateBuilderConfigurer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.autoconfigure.web.client.RestTemplateBuilderConfigurer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SecurityAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.authentication.DefaultAuthenticationEventPublisher' (OnClassCondition)
+
+   SecurityAutoConfiguration#authenticationEventPublisher matched:
+      - @ConditionalOnMissingBean (types: org.springframework.security.authentication.AuthenticationEventPublisher; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ServletWebServerFactoryAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'javax.servlet.ServletRequest' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+
+   ServletWebServerFactoryAutoConfiguration#tomcatServletWebServerFactoryCustomizer matched:
+      - @ConditionalOnClass found required class 'org.apache.catalina.startup.Tomcat' (OnClassCondition)
+
+   ServletWebServerFactoryConfiguration.EmbeddedTomcat matched:
+      - @ConditionalOnClass found required classes 'javax.servlet.Servlet', 'org.apache.catalina.startup.Tomcat', 'org.apache.coyote.UpgradeProtocol' (OnClassCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.boot.web.servlet.server.ServletWebServerFactory; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   SimpleCacheConfiguration matched:
+      - Cache org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration automatic cache type (CacheCondition)
+
+   SpringApplicationAdminJmxAutoConfiguration matched:
+      - @ConditionalOnProperty (spring.application.admin.enabled=true) matched (OnPropertyCondition)
+
+   SpringApplicationAdminJmxAutoConfiguration#springApplicationAdminRegistrar matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringBootWebSecurityConfiguration matched:
+      - found 'session' scope (OnWebApplicationCondition)
+
+   SpringDocConfigProperties matched:
+      - @ConditionalOnProperty (springdoc.api-docs.enabled) matched (OnPropertyCondition)
+
+   SpringDocConfiguration matched:
+      - @ConditionalOnWebApplication (required) found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnProperty (springdoc.api-docs.enabled) matched (OnPropertyCondition)
+
+   SpringDocConfiguration#fileSupportConverter matched:
+      - @ConditionalOnMissingBean (types: org.springdoc.core.converters.FileSupportConverter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDocConfiguration#openAPIBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springdoc.core.OpenAPIService; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDocConfiguration#operationBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springdoc.core.OperationService; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDocConfiguration#parameterBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springdoc.core.GenericParameterService; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDocConfiguration#polymorphicModelConverter matched:
+      - @ConditionalOnProperty (springdoc.model-converters.polymorphic-converter.enabled) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springdoc.core.converters.PolymorphicModelConverter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDocConfiguration#requestBodyBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springdoc.core.RequestBodyService; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDocConfiguration#responseSupportConverter matched:
+      - @ConditionalOnMissingBean (types: org.springdoc.core.converters.ResponseSupportConverter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDocConfiguration#schemaPropertyDeprecatingConverter matched:
+      - @ConditionalOnProperty (springdoc.model-converters.deprecating-converter.enabled) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springdoc.core.converters.SchemaPropertyDeprecatingConverter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDocConfiguration#securityParser matched:
+      - @ConditionalOnMissingBean (types: org.springdoc.core.SecurityService; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDocConfiguration#springDocObjectMapperProvider matched:
+      - @ConditionalOnMissingBean (types: org.springdoc.core.providers.ObjectMapperProvider; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDocConfiguration#springDocProviders matched:
+      - @ConditionalOnMissingBean (types: org.springdoc.core.SpringDocProviders; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDocConfiguration.SpringDocSpringDataWebPropertiesProvider matched:
+      - @ConditionalOnClass found required class 'org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties' (OnClassCondition)
+
+   SpringDocConfiguration.SpringDocSpringDataWebPropertiesProvider#springDataWebPropertiesProvider matched:
+      - @ConditionalOnMissingBean (types: org.springdoc.core.providers.SpringDataWebPropertiesProvider; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDocConfiguration.WebConversionServiceConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.boot.autoconfigure.web.format.WebConversionService' (OnClassCondition)
+
+   SpringDocWebMvcConfiguration matched:
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnProperty (springdoc.api-docs.enabled) matched (OnPropertyCondition)
+      - @ConditionalOnBean (types: org.springdoc.core.SpringDocConfiguration; SearchStrategy: all) found bean 'org.springdoc.core.SpringDocConfiguration' (OnBeanCondition)
+
+   SpringDocWebMvcConfiguration#openApiResource matched:
+      - @ConditionalOnProperty (springdoc.use-management-port=false) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springdoc.webmvc.api.OpenApiWebMvcResource; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDocWebMvcConfiguration#requestBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springdoc.webmvc.core.RequestService; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDocWebMvcConfiguration#responseBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springdoc.core.GenericResponseService; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDocWebMvcConfiguration#springWebProvider matched:
+      - @ConditionalOnMissingBean (types: org.springdoc.core.providers.SpringWebProvider; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDocWebMvcConfiguration.SpringDocWebMvcRouterConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.web.servlet.function.RouterFunction' (OnClassCondition)
+
+   SpringDocWebMvcConfiguration.SpringDocWebMvcRouterConfiguration#routerFunctionProvider matched:
+      - @ConditionalOnMissingBean (types: org.springdoc.webmvc.core.RouterFunctionWebMvcProvider; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SqlInitializationAutoConfiguration matched:
+      - @ConditionalOnProperty (spring.sql.init.enabled) matched (OnPropertyCondition)
+      - NoneNestedConditions 0 matched 1 did not; NestedCondition on SqlInitializationAutoConfiguration.SqlInitializationModeCondition.ModeIsNever @ConditionalOnProperty (spring.sql.init.mode=never) did not find property 'mode' (SqlInitializationAutoConfiguration.SqlInitializationModeCondition)
+
+   SwaggerConfig matched:
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnProperty (springdoc.swagger-ui.enabled) matched (OnPropertyCondition)
+      - @ConditionalOnBean (types: org.springdoc.core.SpringDocConfiguration; SearchStrategy: all) found bean 'org.springdoc.core.SpringDocConfiguration' (OnBeanCondition)
+
+   SwaggerConfig#indexPageTransformer matched:
+      - @ConditionalOnMissingBean (types: org.springdoc.webmvc.ui.SwaggerIndexTransformer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SwaggerConfig#swaggerConfigResource matched:
+      - @ConditionalOnProperty (springdoc.use-management-port=false) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springdoc.webmvc.ui.SwaggerConfigResource; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SwaggerConfig#swaggerWebMvcConfigurer matched:
+      - @ConditionalOnMissingBean (types: org.springdoc.webmvc.ui.SwaggerWebMvcConfigurer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SwaggerConfig#swaggerWelcome matched:
+      - @ConditionalOnProperty (springdoc.use-management-port=false) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springdoc.webmvc.ui.SwaggerWelcomeWebMvc; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SwaggerUiConfigParameters matched:
+      - @ConditionalOnProperty (springdoc.swagger-ui.enabled) matched (OnPropertyCondition)
+      - @ConditionalOnBean (types: org.springdoc.core.SpringDocConfiguration; SearchStrategy: all) found bean 'org.springdoc.core.SpringDocConfiguration' (OnBeanCondition)
+
+   SwaggerUiConfigProperties matched:
+      - @ConditionalOnProperty (springdoc.swagger-ui.enabled) matched (OnPropertyCondition)
+      - @ConditionalOnBean (types: org.springdoc.core.SpringDocConfiguration; SearchStrategy: all) found bean 'org.springdoc.core.SpringDocConfiguration' (OnBeanCondition)
+
+   SwaggerUiOAuthProperties matched:
+      - @ConditionalOnProperty (springdoc.swagger-ui.enabled) matched (OnPropertyCondition)
+      - @ConditionalOnBean (types: org.springdoc.core.SpringDocConfiguration; SearchStrategy: all) found bean 'org.springdoc.core.SpringDocConfiguration' (OnBeanCondition)
+
+   TaskExecutionAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor' (OnClassCondition)
+
+   TaskExecutionAutoConfiguration#applicationTaskExecutor matched:
+      - @ConditionalOnMissingBean (types: java.util.concurrent.Executor; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TaskExecutionAutoConfiguration#taskExecutorBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.task.TaskExecutorBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TaskSchedulingAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler' (OnClassCondition)
+
+   TaskSchedulingAutoConfiguration#taskSchedulerBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.task.TaskSchedulerBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TransactionAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.transaction.PlatformTransactionManager' (OnClassCondition)
+
+   TransactionAutoConfiguration#platformTransactionManagerCustomizers matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizers; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ValidationAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'javax.validation.executable.ExecutableValidator' (OnClassCondition)
+      - @ConditionalOnResource found location classpath:META-INF/services/javax.validation.spi.ValidationProvider (OnResourceCondition)
+
+   ValidationAutoConfiguration#defaultValidator matched:
+      - @ConditionalOnMissingBean (types: javax.validation.Validator; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ValidationAutoConfiguration#methodValidationPostProcessor matched:
+      - @ConditionalOnMissingBean (types: org.springframework.validation.beanvalidation.MethodValidationPostProcessor; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'javax.servlet.Servlet', 'org.springframework.web.servlet.DispatcherServlet', 'org.springframework.web.servlet.config.annotation.WebMvcConfigurer' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration#formContentFilter matched:
+      - @ConditionalOnProperty (spring.mvc.formcontent.filter.enabled) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.web.filter.FormContentFilter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.EnableWebMvcConfiguration#flashMapManager matched:
+      - @ConditionalOnMissingBean (names: flashMapManager; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.EnableWebMvcConfiguration#localeResolver matched:
+      - @ConditionalOnMissingBean (names: localeResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.EnableWebMvcConfiguration#themeResolver matched:
+      - @ConditionalOnMissingBean (names: themeResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.ResourceChainCustomizerConfiguration matched:
+      - @ConditionalOnEnabledResourceChain found class org.webjars.WebJarAssetLocator (OnEnabledResourceChainCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#defaultViewResolver matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.servlet.view.InternalResourceViewResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#requestContextFilter matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.context.request.RequestContextListener,org.springframework.web.filter.RequestContextFilter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#viewResolver matched:
+      - @ConditionalOnBean (types: org.springframework.web.servlet.ViewResolver; SearchStrategy: all) found beans 'defaultViewResolver', 'beanNameViewResolver', 'mvcViewResolver'; @ConditionalOnMissingBean (names: viewResolver types: org.springframework.web.servlet.view.ContentNegotiatingViewResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebServiceTemplateAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.ws.client.core.WebServiceTemplate', 'org.springframework.oxm.Unmarshaller', 'org.springframework.oxm.Marshaller' (OnClassCondition)
+
+   WebServiceTemplateAutoConfiguration#webServiceTemplateBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.webservices.client.WebServiceTemplateBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebServicesAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.ws.transport.http.MessageDispatcherServlet' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.ws.config.annotation.WsConfigurationSupport; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebSocketServletAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'javax.servlet.Servlet', 'javax.websocket.server.ServerContainer' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+
+   WebSocketServletAutoConfiguration.TomcatWebSocketConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.apache.catalina.startup.Tomcat', 'org.apache.tomcat.websocket.server.WsSci' (OnClassCondition)
+
+   WebSocketServletAutoConfiguration.TomcatWebSocketConfiguration#websocketServletWebServerCustomizer matched:
+      - @ConditionalOnMissingBean (names: websocketServletWebServerCustomizer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+   ActiveMQAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.jms.ConnectionFactory' (OnClassCondition)
+
+   AopAutoConfiguration.AspectJAutoProxyingConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.aspectj.weaver.Advice' (OnClassCondition)
+
+   ArtemisAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.jms.ConnectionFactory' (OnClassCondition)
+
+   BatchAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.batch.core.launch.JobLauncher' (OnClassCondition)
+
+   Cache2kCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.cache2k.Cache2kBuilder' (OnClassCondition)
+
+   CacheAutoConfiguration:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.cache.interceptor.CacheAspectSupport; SearchStrategy: all) did not find any beans of type org.springframework.cache.interceptor.CacheAspectSupport (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.cache.CacheManager' (OnClassCondition)
+
+   CacheAutoConfiguration.CacheManagerEntityManagerFactoryDependsOnPostProcessor:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean' (OnClassCondition)
+         - Ancestor org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration did not match (ConditionEvaluationReport.AncestorsMatchedCondition)
+
+   CaffeineCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.github.benmanes.caffeine.cache.Caffeine' (OnClassCondition)
+
+   CassandraAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.datastax.oss.driver.api.core.CqlSession' (OnClassCondition)
+
+   CassandraDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.datastax.oss.driver.api.core.CqlSession' (OnClassCondition)
+
+   CassandraReactiveDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.datastax.oss.driver.api.core.CqlSession' (OnClassCondition)
+
+   CassandraReactiveRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.cassandra.ReactiveSession' (OnClassCondition)
+
+   CassandraRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.datastax.oss.driver.api.core.CqlSession' (OnClassCondition)
+
+   ClientHttpConnectorAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.function.client.WebClient' (OnClassCondition)
+
+   CodecsAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.function.client.WebClient' (OnClassCondition)
+
+   CouchbaseAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.couchbase.client.java.Cluster' (OnClassCondition)
+
+   CouchbaseCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.couchbase.client.java.Cluster' (OnClassCondition)
+
+   CouchbaseDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.couchbase.client.java.Bucket' (OnClassCondition)
+
+   CouchbaseReactiveDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.couchbase.client.java.Cluster' (OnClassCondition)
+
+   CouchbaseReactiveRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.couchbase.client.java.Cluster' (OnClassCondition)
+
+   CouchbaseRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.couchbase.client.java.Bucket' (OnClassCondition)
+
+   CxfAutoConfiguration.JaxRsClassesConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.cxf.jaxrs.JAXRSServerFactoryBean' (OnClassCondition)
+
+   CxfAutoConfiguration.JaxRsComponentConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.cxf.jaxrs.JAXRSServerFactoryBean' (OnClassCondition)
+
+   DataSourceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType' (OnClassCondition)
+
+   DataSourceInitializationConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.jdbc.datasource.init.DatabasePopulator' (OnClassCondition)
+
+   DataSourceTransactionManagerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.jdbc.core.JdbcTemplate' (OnClassCondition)
+
+   DevToolsDataSourceAutoConfiguration:
+      Did not match:
+         - DevTools DataSource Condition did not find a single DataSource bean (DevToolsDataSourceAutoConfiguration.DevToolsDataSourceCondition)
+      Matched:
+         - Devtools devtools enabled. (OnEnabledDevToolsCondition)
+
+   DevToolsDataSourceAutoConfiguration.DatabaseShutdownExecutorEntityManagerFactoryDependsOnPostProcessor:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean' (OnClassCondition)
+         - Ancestor org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration did not match (ConditionEvaluationReport.AncestorsMatchedCondition)
+
+   DevToolsR2dbcAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.r2dbc.spi.ConnectionFactory' (OnClassCondition)
+
+   DispatcherServletAutoConfiguration.DispatcherServletConfiguration#multipartResolver:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.web.multipart.MultipartResolver; SearchStrategy: all) did not find any beans of type org.springframework.web.multipart.MultipartResolver (OnBeanCondition)
+
+   EhCacheCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.cache.ehcache.EhCacheCacheManager' (OnClassCondition)
+
+   ElasticsearchDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate' (OnClassCondition)
+
+   ElasticsearchRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.elasticsearch.client.Client' (OnClassCondition)
+
+   ElasticsearchRestClientAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.elasticsearch.client.RestClientBuilder' (OnClassCondition)
+
+   EmbeddedLdapAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.unboundid.ldap.listener.InMemoryDirectoryServer' (OnClassCondition)
+
+   EmbeddedMongoAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.mongodb.MongoClientSettings' (OnClassCondition)
+
+   EmbeddedWebServerFactoryCustomizerAutoConfiguration.JettyWebServerFactoryCustomizerConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.eclipse.jetty.server.Server', 'org.eclipse.jetty.util.Loader', 'org.eclipse.jetty.webapp.WebAppContext' (OnClassCondition)
+
+   EmbeddedWebServerFactoryCustomizerAutoConfiguration.NettyWebServerFactoryCustomizerConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'reactor.netty.http.server.HttpServer' (OnClassCondition)
+
+   EmbeddedWebServerFactoryCustomizerAutoConfiguration.UndertowWebServerFactoryCustomizerConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'io.undertow.Undertow', 'org.xnio.SslClientAuthMode' (OnClassCondition)
+
+   ErrorWebFluxAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.config.WebFluxConfigurer' (OnClassCondition)
+
+   FlywayAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.flywaydb.core.Flyway' (OnClassCondition)
+
+   FreeMarkerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'freemarker.template.Configuration' (OnClassCondition)
+
+   GraphQlAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'graphql.GraphQL' (OnClassCondition)
+
+   GraphQlQueryByExampleAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'graphql.GraphQL' (OnClassCondition)
+
+   GraphQlQuerydslAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'graphql.GraphQL' (OnClassCondition)
+
+   GraphQlRSocketAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'graphql.GraphQL' (OnClassCondition)
+
+   GraphQlReactiveQueryByExampleAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'graphql.GraphQL' (OnClassCondition)
+
+   GraphQlReactiveQuerydslAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'graphql.GraphQL' (OnClassCondition)
+
+   GraphQlWebFluxAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'graphql.GraphQL' (OnClassCondition)
+
+   GraphQlWebFluxSecurityAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'graphql.GraphQL' (OnClassCondition)
+
+   GraphQlWebMvcAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'graphql.GraphQL' (OnClassCondition)
+
+   GraphQlWebMvcSecurityAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'graphql.GraphQL' (OnClassCondition)
+
+   GroovyTemplateAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'groovy.text.markup.MarkupTemplateEngine' (OnClassCondition)
+
+   GsonAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.google.gson.Gson' (OnClassCondition)
+
+   GsonHttpMessageConvertersConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.google.gson.Gson' (OnClassCondition)
+
+   H2ConsoleAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.h2.server.web.WebServlet' (OnClassCondition)
+
+   HazelcastAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.hazelcast.core.HazelcastInstance' (OnClassCondition)
+
+   HazelcastCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.hazelcast.core.HazelcastInstance' (OnClassCondition)
+
+   HazelcastJpaDependencyAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.hazelcast.core.HazelcastInstance' (OnClassCondition)
+
+   HibernateJpaAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.persistence.EntityManager' (OnClassCondition)
+
+   HttpHandlerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.DispatcherHandler' (OnClassCondition)
+
+   HypermediaAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.hateoas.EntityModel' (OnClassCondition)
+
+   InfinispanCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.infinispan.spring.embedded.provider.SpringEmbeddedCacheManager' (OnClassCondition)
+
+   InfluxDbAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.influxdb.InfluxDB' (OnClassCondition)
+
+   IntegrationAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.integration.config.EnableIntegration' (OnClassCondition)
+
+   JCacheCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.cache.jcache.JCacheCacheManager' (OnClassCondition)
+
+   JacksonHttpMessageConvertersConfiguration.MappingJackson2XmlHttpMessageConverterConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.fasterxml.jackson.dataformat.xml.XmlMapper' (OnClassCondition)
+
+   JdbcRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.jdbc.repository.config.AbstractJdbcConfiguration' (OnClassCondition)
+
+   JdbcTemplateAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.jdbc.core.JdbcTemplate' (OnClassCondition)
+
+   JerseyAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.glassfish.jersey.server.spring.SpringComponentProvider' (OnClassCondition)
+
+   JmsAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.jms.Message' (OnClassCondition)
+
+   JndiConnectionFactoryAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.jms.core.JmsTemplate' (OnClassCondition)
+
+   JndiDataSourceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType' (OnClassCondition)
+
+   JooqAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.jooq.DSLContext' (OnClassCondition)
+
+   JpaRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.jpa.repository.JpaRepository' (OnClassCondition)
+
+   JsonbAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.json.bind.Jsonb' (OnClassCondition)
+
+   JsonbHttpMessageConvertersConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.json.bind.Jsonb' (OnClassCondition)
+
+   JtaAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.transaction.Transaction' (OnClassCondition)
+
+   KafkaAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.kafka.core.KafkaTemplate' (OnClassCondition)
+
+   LdapAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.ldap.core.ContextSource' (OnClassCondition)
+
+   LdapRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.ldap.repository.LdapRepository' (OnClassCondition)
+
+   LiquibaseAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'liquibase.change.DatabaseChange' (OnClassCondition)
+
+   MailSenderAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.mail.MailSender' (OnClassCondition)
+
+   MailSenderValidatorAutoConfiguration:
+      Did not match:
+         - @ConditionalOnSingleCandidate did not find required type 'org.springframework.mail.javamail.JavaMailSenderImpl' (OnBeanCondition)
+
+   MessageSourceAutoConfiguration:
+      Did not match:
+         - ResourceBundle did not find bundle with basename messages (MessageSourceAutoConfiguration.ResourceBundleCondition)
+
+   MicrometerMetricsAutoConfiguration:
+      Did not match:
+         - @ConditionalOnBean (types: io.micrometer.core.instrument.MeterRegistry; SearchStrategy: all) did not find any beans of type io.micrometer.core.instrument.MeterRegistry (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.apache.cxf.metrics.MetricsProvider' (OnClassCondition)
+         - found 'session' scope (OnWebApplicationCondition)
+         - @ConditionalOnProperty (cxf.metrics.enabled) matched (OnPropertyCondition)
+
+   MicrometerMetricsAutoConfiguration.JaxRsMetricsConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.cxf.jaxrs.JAXRSServerFactoryBean' (OnClassCondition)
+         - Ancestor org.apache.cxf.spring.boot.autoconfigure.micrometer.MicrometerMetricsAutoConfiguration did not match (ConditionEvaluationReport.AncestorsMatchedCondition)
+
+   MicrometerMetricsAutoConfiguration.JaxWsMetricsConfiguration:
+      Did not match:
+         - Ancestor org.apache.cxf.spring.boot.autoconfigure.micrometer.MicrometerMetricsAutoConfiguration did not match (ConditionEvaluationReport.AncestorsMatchedCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.apache.cxf.jaxws.JaxWsServerFactoryBean' (OnClassCondition)
+         - @ConditionalOnProperty (cxf.metrics.jaxws.enabled) matched (OnPropertyCondition)
+
+   MongoAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.mongodb.client.MongoClient' (OnClassCondition)
+
+   MongoDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.mongodb.client.MongoClient' (OnClassCondition)
+
+   MongoReactiveAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.mongodb.reactivestreams.client.MongoClient' (OnClassCondition)
+
+   MongoReactiveDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.mongodb.reactivestreams.client.MongoClient' (OnClassCondition)
+
+   MongoReactiveRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.mongodb.reactivestreams.client.MongoClient' (OnClassCondition)
+
+   MongoRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.mongodb.client.MongoClient' (OnClassCondition)
+
+   MultipleOpenApiSupportConfiguration:
+      Did not match:
+         - AnyNestedCondition 0 matched 2 did not; NestedCondition on MultipleOpenApiSupportCondition.OnActuatorDifferentPort @ConditionalOnProperty (springdoc.show-actuator) did not find property 'springdoc.show-actuator'; NestedCondition on MultipleOpenApiSupportCondition.OnMultipleOpenApiSupportCondition AnyNestedCondition 0 matched 2 did not; NestedCondition on MultipleOpenApiGroupsCondition.OnGroupConfigProperty @ConditionalOnProperty (springdoc.group-configs[0].group) did not find property 'springdoc.group-configs[0].group'; NestedCondition on MultipleOpenApiGroupsCondition.OnGroupedOpenApiBean @ConditionalOnBean (types: org.springdoc.core.GroupedOpenApi; SearchStrategy: all) did not find any beans of type org.springdoc.core.GroupedOpenApi (MultipleOpenApiSupportCondition)
+      Matched:
+         - found 'session' scope (OnWebApplicationCondition)
+         - @ConditionalOnProperty (springdoc.api-docs.enabled) matched (OnPropertyCondition)
+
+   MultipleOpenApiSupportConfiguration.SpringDocWebMvcActuatorDifferentConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping' (OnClassCondition)
+         - Ancestor org.springdoc.webmvc.core.MultipleOpenApiSupportConfiguration did not match (ConditionEvaluationReport.AncestorsMatchedCondition)
+
+   MustacheAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.samskivert.mustache.Mustache' (OnClassCondition)
+
+   Neo4jAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.neo4j.driver.Driver' (OnClassCondition)
+
+   Neo4jDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.neo4j.driver.Driver' (OnClassCondition)
+
+   Neo4jReactiveDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.neo4j.driver.Driver' (OnClassCondition)
+
+   Neo4jReactiveRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.neo4j.driver.Driver' (OnClassCondition)
+
+   Neo4jRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.neo4j.driver.Driver' (OnClassCondition)
+
+   NettyAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.netty.util.NettyRuntime' (OnClassCondition)
+
+   OAuth2ClientAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+
+   OAuth2ResourceServerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.oauth2.server.resource.BearerTokenAuthenticationToken' (OnClassCondition)
+
+   OpenApiAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.cxf.jaxrs.openapi.OpenApiFeature' (OnClassCondition)
+
+   ProjectInfoAutoConfiguration#buildProperties:
+      Did not match:
+         - @ConditionalOnResource did not find resource '${spring.info.build.location:classpath:META-INF/build-info.properties}' (OnResourceCondition)
+
+   ProjectInfoAutoConfiguration#gitProperties:
+      Did not match:
+         - GitResource did not find git info at classpath:git.properties (ProjectInfoAutoConfiguration.GitResourceAvailableCondition)
+
+   QuartzAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.quartz.Scheduler' (OnClassCondition)
+
+   R2dbcAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.r2dbc.spi.ConnectionFactory' (OnClassCondition)
+
+   R2dbcDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.r2dbc.core.R2dbcEntityTemplate' (OnClassCondition)
+
+   R2dbcInitializationConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'io.r2dbc.spi.ConnectionFactory', 'org.springframework.r2dbc.connection.init.DatabasePopulator' (OnClassCondition)
+
+   R2dbcRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.r2dbc.spi.ConnectionFactory' (OnClassCondition)
+
+   R2dbcTransactionManagerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.r2dbc.connection.R2dbcTransactionManager' (OnClassCondition)
+
+   RSocketGraphQlClientAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'graphql.GraphQL' (OnClassCondition)
+
+   RSocketMessagingAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.rsocket.RSocket' (OnClassCondition)
+
+   RSocketRequesterAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.rsocket.RSocket' (OnClassCondition)
+
+   RSocketSecurityAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.rsocket.core.SecuritySocketAcceptorInterceptor' (OnClassCondition)
+
+   RSocketServerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.rsocket.core.RSocketServer' (OnClassCondition)
+
+   RSocketStrategiesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.netty.buffer.PooledByteBufAllocator' (OnClassCondition)
+
+   RabbitAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.rabbitmq.client.Channel' (OnClassCondition)
+
+   ReactiveElasticsearchRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.elasticsearch.client.reactive.ReactiveElasticsearchClient' (OnClassCondition)
+
+   ReactiveElasticsearchRestClientAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'reactor.netty.http.client.HttpClient' (OnClassCondition)
+
+   ReactiveMultipartAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.config.WebFluxConfigurer' (OnClassCondition)
+
+   ReactiveOAuth2ClientAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'reactor.core.publisher.Flux' (OnClassCondition)
+
+   ReactiveOAuth2ResourceServerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.config.annotation.web.reactive.EnableWebFluxSecurity' (OnClassCondition)
+
+   ReactiveSecurityAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'reactor.core.publisher.Flux' (OnClassCondition)
+
+   ReactiveUserDetailsServiceAutoConfiguration:
+      Did not match:
+         - AnyNestedCondition 0 matched 2 did not; NestedCondition on ReactiveUserDetailsServiceAutoConfiguration.ReactiveUserDetailsServiceCondition.ReactiveWebApplicationCondition did not find reactive web application classes; NestedCondition on ReactiveUserDetailsServiceAutoConfiguration.ReactiveUserDetailsServiceCondition.RSocketSecurityEnabledCondition @ConditionalOnBean (types: org.springframework.messaging.rsocket.annotation.support.RSocketMessageHandler; SearchStrategy: all) did not find any beans of type org.springframework.messaging.rsocket.annotation.support.RSocketMessageHandler (ReactiveUserDetailsServiceAutoConfiguration.ReactiveUserDetailsServiceCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.authentication.ReactiveAuthenticationManager' (OnClassCondition)
+
+   ReactiveWebServerFactoryAutoConfiguration:
+      Did not match:
+         - @ConditionalOnWebApplication did not find reactive web application classes (OnWebApplicationCondition)
+
+   RedisAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.redis.core.RedisOperations' (OnClassCondition)
+
+   RedisCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.redis.connection.RedisConnectionFactory' (OnClassCondition)
+
+   RedisReactiveAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'reactor.core.publisher.Flux' (OnClassCondition)
+
+   RedisRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.redis.repository.configuration.EnableRedisRepositories' (OnClassCondition)
+
+   RemoteDevToolsAutoConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.devtools.remote.secret) did not find property 'secret' (OnPropertyCondition)
+      Matched:
+         - @ConditionalOnClass found required classes 'javax.servlet.Filter', 'org.springframework.http.server.ServerHttpRequest' (OnClassCondition)
+
+   RepositoryRestMvcAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.rest.webmvc.config.RepositoryRestMvcConfiguration' (OnClassCondition)
+
+   Saml2RelyingPartyAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.saml2.provider.service.registration.RelyingPartyRegistrationRepository' (OnClassCondition)
+
+   SecurityDataConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.data.repository.query.SecurityEvaluationContextExtension' (OnClassCondition)
+
+   SecurityFilterAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.config.http.SessionCreationPolicy' (OnClassCondition)
+
+   SendGridAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.sendgrid.SendGrid' (OnClassCondition)
+
+   ServletWebServerFactoryAutoConfiguration.ForwardedHeaderFilterConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (server.forward-headers-strategy=framework) did not find property 'server.forward-headers-strategy' (OnPropertyCondition)
+
+   ServletWebServerFactoryConfiguration.EmbeddedJetty:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.eclipse.jetty.server.Server', 'org.eclipse.jetty.util.Loader', 'org.eclipse.jetty.webapp.WebAppContext' (OnClassCondition)
+
+   ServletWebServerFactoryConfiguration.EmbeddedUndertow:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'io.undertow.Undertow', 'org.xnio.SslClientAuthMode' (OnClassCondition)
+
+   SessionAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.session.Session' (OnClassCondition)
+
+   SolrAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.solr.client.solrj.impl.CloudSolrClient' (OnClassCondition)
+
+   SpringBootWebSecurityConfiguration.ErrorPageSecurityFilterConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.web.access.WebInvocationPrivilegeEvaluator' (OnClassCondition)
+
+   SpringBootWebSecurityConfiguration.SecurityFilterChainConfiguration:
+      Did not match:
+         - AllNestedConditions 1 matched 1 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter,org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) did not find any beans; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass did not find required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+
+   SpringBootWebSecurityConfiguration.WebSecurityEnablerConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+
+   SpringDataWebAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.web.PageableHandlerMethodArgumentResolver' (OnClassCondition)
+
+   SpringDocConfiguration#propertiesResolverForSchema:
+      Did not match:
+         - @ConditionalOnProperty (springdoc.api-docs.resolve-schema-properties) did not find property 'springdoc.api-docs.resolve-schema-properties' (OnPropertyCondition)
+
+   SpringDocConfiguration#propertyCustomizingConverter:
+      Did not match:
+         - @ConditionalOnBean (types: org.springdoc.core.customizers.PropertyCustomizer; SearchStrategy: all) did not find any beans of type org.springdoc.core.customizers.PropertyCustomizer (OnBeanCondition)
+
+   SpringDocConfiguration#springdocBeanFactoryPostProcessor:
+      Did not match:
+         - AnyNestedCondition 0 matched 2 did not; NestedCondition on CacheOrGroupedOpenApiCondition.OnCacheDisabled found non-matching nested conditions @ConditionalOnProperty (springdoc.cache.disabled) did not find property 'springdoc.cache.disabled'; NestedCondition on CacheOrGroupedOpenApiCondition.OnMultipleOpenApiSupportCondition AnyNestedCondition 0 matched 2 did not; NestedCondition on MultipleOpenApiSupportCondition.OnActuatorDifferentPort @ConditionalOnProperty (springdoc.show-actuator) did not find property 'springdoc.show-actuator'; NestedCondition on MultipleOpenApiSupportCondition.OnMultipleOpenApiSupportCondition AnyNestedCondition 0 matched 2 did not; NestedCondition on MultipleOpenApiGroupsCondition.OnGroupConfigProperty @ConditionalOnProperty (springdoc.group-configs[0].group) did not find property 'springdoc.group-configs[0].group'; NestedCondition on MultipleOpenApiGroupsCondition.OnGroupedOpenApiBean @ConditionalOnBean (types: org.springdoc.core.GroupedOpenApi; SearchStrategy: all) did not find any beans of type org.springdoc.core.GroupedOpenApi (CacheOrGroupedOpenApiCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.boot.context.properties.bind.BindResult' (OnClassCondition)
+
+   SpringDocConfiguration#springdocBeanFactoryPostProcessor2:
+      Did not match:
+         - @ConditionalOnMissingClass found unwanted class 'org.springframework.boot.context.properties.bind.BindResult' (OnClassCondition)
+
+   SpringDocConfiguration.SpringDocActuatorConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.actuate.autoconfigure.endpoint.web.WebEndpointProperties' (OnClassCondition)
+
+   SpringDocConfiguration.SpringDocFunctionCatalogConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.cloud.function.web.function.FunctionEndpointInitializer' (OnClassCondition)
+
+   SpringDocConfiguration.SpringDocPageableConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.domain.Pageable' (OnClassCondition)
+
+   SpringDocConfiguration.SpringDocRepositoryRestConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.rest.core.config.RepositoryRestConfiguration' (OnClassCondition)
+
+   SpringDocConfiguration.SpringDocSortConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.domain.Sort' (OnClassCondition)
+
+   SpringDocConfiguration.SpringDocWebFluxSupportConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'reactor.core.publisher.Flux' (OnClassCondition)
+
+   SpringDocWebMvcConfiguration.SpringDocWebMvcActuatorConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping' (OnClassCondition)
+
+   SwaggerConfig#springWebProvider:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springdoc.core.providers.SpringWebProvider; SearchStrategy: all) found beans of type 'org.springdoc.core.providers.SpringWebProvider' springWebProvider (OnBeanCondition)
+
+   SwaggerConfig#swaggerUiConfigParameters:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springdoc.core.SwaggerUiConfigParameters; SearchStrategy: all) found beans of type 'org.springdoc.core.SwaggerUiConfigParameters' org.springdoc.core.SwaggerUiConfigParameters (OnBeanCondition)
+
+   SwaggerConfig#swaggerUiHome:
+      Did not match:
+         - @ConditionalOnProperty (springdoc.swagger-ui.use-root-path=true) did not find property 'springdoc.swagger-ui.use-root-path' (OnPropertyCondition)
+
+   SwaggerConfig.SwaggerActuatorWelcomeConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping' (OnClassCondition)
+
+   TaskSchedulingAutoConfiguration#taskScheduler:
+      Did not match:
+         - @ConditionalOnBean (names: org.springframework.context.annotation.internalScheduledAnnotationProcessor; SearchStrategy: all) did not find any beans named org.springframework.context.annotation.internalScheduledAnnotationProcessor (OnBeanCondition)
+
+   ThymeleafAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.thymeleaf.spring5.SpringTemplateEngine' (OnClassCondition)
+
+   TransactionAutoConfiguration#transactionalOperator:
+      Did not match:
+         - @ConditionalOnSingleCandidate (types: org.springframework.transaction.ReactiveTransactionManager; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TransactionAutoConfiguration.EnableTransactionManagementConfiguration:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.transaction.TransactionManager; SearchStrategy: all) did not find any beans of type org.springframework.transaction.TransactionManager (OnBeanCondition)
+
+   TransactionAutoConfiguration.EnableTransactionManagementConfiguration.CglibAutoProxyConfiguration:
+      Did not match:
+         - Ancestor org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$EnableTransactionManagementConfiguration did not match (ConditionEvaluationReport.AncestorsMatchedCondition)
+      Matched:
+         - @ConditionalOnProperty (spring.aop.proxy-target-class=true) matched (OnPropertyCondition)
+
+   TransactionAutoConfiguration.EnableTransactionManagementConfiguration.JdkDynamicAutoProxyConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.aop.proxy-target-class=false) did not find property 'proxy-target-class' (OnPropertyCondition)
+         - Ancestor org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$EnableTransactionManagementConfiguration did not match (ConditionEvaluationReport.AncestorsMatchedCondition)
+
+   TransactionAutoConfiguration.TransactionTemplateConfiguration:
+      Did not match:
+         - @ConditionalOnSingleCandidate (types: org.springframework.transaction.PlatformTransactionManager; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   UserDetailsServiceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnBean did not find required type 'org.springframework.security.config.annotation.ObjectPostProcessor' (OnBeanCondition)
+
+   WebClientAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.function.client.WebClient' (OnClassCondition)
+
+   WebFluxAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.config.WebFluxConfigurer' (OnClassCondition)
+
+   WebMvcAutoConfiguration#hiddenHttpMethodFilter:
+      Did not match:
+         - @ConditionalOnProperty (spring.mvc.hiddenmethod.filter.enabled) did not find property 'enabled' (OnPropertyCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#beanNameViewResolver:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.web.servlet.view.BeanNameViewResolver; SearchStrategy: all) found beans of type 'org.springframework.web.servlet.view.BeanNameViewResolver' beanNameViewResolver (OnBeanCondition)
+
+   WebServicesAutoConfiguration#wsdlDefinitionBeanFactoryPostProcessor:
+      Did not match:
+         - WSDL locations did not find property spring.webservices.wsdl-locations (OnWsdlLocationsCondition)
+
+   WebSessionIdResolverAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'reactor.core.publisher.Mono' (OnClassCondition)
+
+   WebSocketMessagingAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.socket.config.annotation.WebSocketMessageBrokerConfigurer' (OnClassCondition)
+
+   WebSocketReactiveAutoConfiguration:
+      Did not match:
+         - @ConditionalOnWebApplication did not find reactive web application classes (OnWebApplicationCondition)
+
+   WebSocketServletAutoConfiguration.Jetty10WebSocketConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.eclipse.jetty.websocket.javax.server.internal.JavaxWebSocketServerContainer', 'org.eclipse.jetty.websocket.server.JettyWebSocketServerContainer' (OnClassCondition)
+
+   WebSocketServletAutoConfiguration.JettyWebSocketConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.eclipse.jetty.websocket.jsr356.server.deploy.WebSocketServerContainerInitializer' (OnClassCondition)
+
+   WebSocketServletAutoConfiguration.UndertowWebSocketConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.undertow.websockets.jsr.Bootstrap' (OnClassCondition)
+
+   XADataSourceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.transaction.TransactionManager' (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration
+
+    org.springframework.boot.autoconfigure.context.LifecycleAutoConfiguration
+
+    org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration
+
+    org.springframework.boot.autoconfigure.availability.ApplicationAvailabilityAutoConfiguration
+
+    org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration
+
+
+
+10:12:2022 22:28:40.893 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.c.p.s.ConfigurationPropertySourcesPropertyResolver$DefaultResolver}: Found key 'spring.liveBeansView.mbeanDomain' in PropertySource 'systemProperties' with value of type String
+10:12:2022 22:28:40.894 SerikHome tomcat {INFO } {restartedMain} {s.s.s.SerikApplication}: Started SerikApplication in 3.02 seconds (JVM running for 4.381)
+10:12:2022 22:28:40.895 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.a.ApplicationAvailabilityBean}: Application availability state LivenessState changed to CORRECT
+10:12:2022 22:28:40.896 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.d.r.Restarter}: Creating new Restarter for thread Thread[main,5,main]
+10:12:2022 22:28:40.896 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.d.r.Restarter}: Immediately restarting application
+10:12:2022 22:28:40.896 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.d.r.Restarter}: Starting application soap.start.serik.SerikApplication with URLs [file:/C:/Users/kobla/IdeaProjects/serik/target/classes/]
+10:12:2022 22:28:40.897 SerikHome tomcat {DEBUG} {restartedMain} {o.s.b.a.ApplicationAvailabilityBean}: Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+10:12:2022 22:44:19.587 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.s.b.a.ApplicationAvailabilityBean}: Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+10:12:2022 22:44:19.588 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext}: Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6a641d9f, started on Sat Dec 10 22:28:38 ALMT 2022
+10:12:2022 22:44:19.588 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.s.b.c.p.s.ConfigurationPropertySourcesPropertyResolver$DefaultResolver}: Found key 'spring.liveBeansView.mbeanDomain' in PropertySource 'systemProperties' with value of type String
+10:12:2022 22:44:19.590 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.s.c.s.DefaultLifecycleProcessor}: Stopping beans in phase 2147483647
+10:12:2022 22:44:19.591 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.s.c.s.DefaultLifecycleProcessor}: Bean 'webServerGracefulShutdown' completed its stop procedure
+10:12:2022 22:44:19.591 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.s.c.s.DefaultLifecycleProcessor}: Stopping beans in phase 2147483646
+10:12:2022 22:44:19.798 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.s.c.s.DefaultLifecycleProcessor}: Bean 'webServerStartStop' completed its stop procedure
+10:12:2022 22:44:19.799 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.s.c.s.DefaultLifecycleProcessor}: Stopping beans in phase -2147483647
+10:12:2022 22:44:19.799 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.s.c.s.DefaultLifecycleProcessor}: Bean 'springBootLoggingLifecycle' completed its stop procedure
+10:12:2022 22:44:19.799 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.s.j.e.a.AnnotationMBeanExporter}: Unregistering JMX-exposed beans on shutdown
+10:12:2022 22:44:19.799 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.s.s.c.ThreadPoolTaskExecutor}: Shutting down ExecutorService 'applicationTaskExecutor'
+10:12:2022 22:44:19.800 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.e.ServerImpl}: Server is stopping.
+10:12:2022 22:44:19.800 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.t.s.ServletDestination}: unregistering incoming observer: org.apache.cxf.transport.ChainInitiationObserver@11e3b4c
+10:12:2022 22:44:19.800 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.e.ServerImpl}: unregister the server to serverRegistry 

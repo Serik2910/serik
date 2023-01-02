@@ -1,0 +1,81 @@
+<xsd:schema id="NSI_ORG" elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://nitec.kz/unidic/items" targetNamespace="http://nitec.kz/unidic/items">
+    <xsd:element name="Items">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="Item" minOccurs="0" maxOccurs="unbounded">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="Id" type="xsd:integer" minOccurs="1" maxOccurs="1" nillable="false" />
+                            <xsd:element name="Parent" type="xsd:integer" minOccurs="1" maxOccurs="1" nillable="false" />
+                            <xsd:element name="ChildsCount" type="xsd:integer" minOccurs="1" maxOccurs="1" nillable="false" />
+                            <xsd:element name="IsMarkedToDelete" type="xsd:boolean" minOccurs="1" maxOccurs="1" nillable="false" />
+                            <xsd:element name="name_ru" type="Tname_ru" minOccurs="1" maxOccurs="1" />
+                            <xsd:element name="name_kz" type="Tname_kz" minOccurs="1" maxOccurs="1" />
+                            <xsd:element name="abbr_ru" type="Tabbr_ru" minOccurs="1" maxOccurs="1" />
+                            <xsd:element name="abbr_kz" type="Tabbr_kz" minOccurs="1" maxOccurs="1" />
+                            <xsd:element name="member" type="Tmember" minOccurs="1" maxOccurs="1" nillable="true" />
+                            <xsd:element name="code" type="Tcode" minOccurs="1" maxOccurs="1" />
+                            <xsd:element name="isEsedo" type="TisEsedo" minOccurs="1" maxOccurs="1" />
+                            <xsd:element name="isReady" type="TisReady" minOccurs="1" maxOccurs="1" />
+                            <xsd:element name="ElementGUID" type="TElementGUID" minOccurs="1" maxOccurs="1" nillable="false" />
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:simpleType name="Tname_ru">
+        <xsd:restriction base="xsd:string">
+            <xsd:minLength value="1" />
+            <xsd:maxLength value="400" />
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="Tname_kz">
+        <xsd:restriction base="xsd:string">
+            <xsd:minLength value="1" />
+            <xsd:maxLength value="400" />
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="Tabbr_ru">
+        <xsd:restriction base="xsd:string">
+            <xsd:minLength value="0" />
+            <xsd:maxLength value="150" />
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="Tabbr_kz">
+        <xsd:restriction base="xsd:string">
+            <xsd:minLength value="0" />
+            <xsd:maxLength value="150" />
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="Tmember">
+        <xsd:restriction base="xsd:decimal">
+            <xsd:totalDigits value="10" />
+            <xsd:fractionDigits value="0" />
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="Tcode">
+        <xsd:restriction base="xsd:string">
+            <xsd:minLength value="1" />
+            <xsd:maxLength value="100" />
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="TisEsedo">
+        <xsd:restriction base="xsd:string">
+            <xsd:minLength value="0" />
+            <xsd:maxLength value="10" />
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="TisReady">
+        <xsd:restriction base="xsd:string">
+            <xsd:minLength value="0" />
+            <xsd:maxLength value="10" />
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="TElementGUID">
+        <xsd:restriction base="xsd:decimal">
+            <xsd:totalDigits value="10" />
+            <xsd:fractionDigits value="0" />
+        </xsd:restriction>
+    </xsd:simpleType>
+</xsd:schema>

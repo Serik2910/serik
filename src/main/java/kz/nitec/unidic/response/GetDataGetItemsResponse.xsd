@@ -1,0 +1,66 @@
+﻿<xsd:schema id="GetItemsResponse" targetNamespace="http://nitec.kz/unidic/ws/getdata" xmlns="http://nitec.kz/unidic/ws/getdata" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<xsd:element name="Response">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element minOccurs="1" maxOccurs="1" name="SessionId">
+					<xsd:simpleType>
+						<xsd:restriction base="xsd:string">
+							<xsd:pattern value="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}" />
+						</xsd:restriction>
+					</xsd:simpleType>
+				</xsd:element>
+				<xsd:element minOccurs="1" maxOccurs="1" name="ProcessingResult">
+					<xsd:simpleType>
+						<xsd:restriction base="xsd:string">
+							<xsd:enumeration value="Success" />
+							<xsd:enumeration value="Error" />
+						</xsd:restriction>
+					</xsd:simpleType>
+				</xsd:element>
+				<xsd:element minOccurs="0" maxOccurs="1" name="ErrorInfo">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element minOccurs="1" maxOccurs="1" name="ErrorCode">
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:enumeration value="100" />
+										<xsd:enumeration value="200" />
+										<xsd:enumeration value="300" />
+										<xsd:enumeration value="400" />
+										<xsd:enumeration value="500" />
+										<xsd:enumeration value="600" />
+										<xsd:enumeration value="700" />
+										<xsd:enumeration value="800" />
+										<xsd:enumeration value="900" />
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:element>
+							<xsd:element minOccurs="1" maxOccurs="1" name="ErrorMessage" type="xsd:string" />
+							<xsd:element minOccurs="1" maxOccurs="1" name="ErrorDescription" type="xsd:string" />
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element minOccurs="0" maxOccurs="1" name="ResultData">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element minOccurs="1" maxOccurs="1" name="Data">
+								<xsd:complexType mixed="true">
+									<xsd:sequence>
+										<xsd:any minOccurs="0" processContents="skip" />
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+							<xsd:element minOccurs="1" maxOccurs="1" name="Schema">
+								<xsd:complexType mixed="true">
+									<xsd:sequence>
+										<xsd:any minOccurs="0" processContents="skip" />
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

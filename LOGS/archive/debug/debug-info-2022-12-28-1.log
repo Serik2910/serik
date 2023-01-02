@@ -1,0 +1,17 @@
+28:12:2022 12:20:23.612 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.s.b.a.ApplicationAvailabilityBean}: Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+28:12:2022 12:20:23.617 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext}: Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@67b5b3fd, started on Tue Dec 27 23:51:30 ALMT 2022
+28:12:2022 12:20:23.617 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.s.b.c.p.s.ConfigurationPropertySourcesPropertyResolver$DefaultResolver}: Found key 'spring.liveBeansView.mbeanDomain' in PropertySource 'systemProperties' with value of type String
+28:12:2022 12:20:23.619 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.s.c.s.DefaultLifecycleProcessor}: Stopping beans in phase 2147483647
+28:12:2022 12:20:23.620 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.s.c.s.DefaultLifecycleProcessor}: Bean 'webServerGracefulShutdown' completed its stop procedure
+28:12:2022 12:20:23.620 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.s.c.s.DefaultLifecycleProcessor}: Stopping beans in phase 2147483646
+28:12:2022 12:20:23.829 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.s.c.s.DefaultLifecycleProcessor}: Bean 'webServerStartStop' completed its stop procedure
+28:12:2022 12:20:23.829 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.s.c.s.DefaultLifecycleProcessor}: Stopping beans in phase -2147483647
+28:12:2022 12:20:23.829 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.s.c.s.DefaultLifecycleProcessor}: Bean 'springBootLoggingLifecycle' completed its stop procedure
+28:12:2022 12:20:23.830 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.s.j.e.a.AnnotationMBeanExporter}: Unregistering JMX-exposed beans on shutdown
+28:12:2022 12:20:23.830 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.s.s.c.ThreadPoolTaskExecutor}: Shutting down ExecutorService 'applicationTaskExecutor'
+28:12:2022 12:20:23.830 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.e.ServerImpl}: Server is stopping.
+28:12:2022 12:20:23.833 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.t.s.ServletDestination}: unregistering incoming observer: org.apache.cxf.transport.ChainInitiationObserver@39848135
+28:12:2022 12:20:23.833 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.e.ServerImpl}: unregister the server to serverRegistry 
+28:12:2022 12:20:23.833 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.e.ServerImpl}: Server is stopping.
+28:12:2022 12:20:23.834 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.t.s.ServletDestination}: unregistering incoming observer: org.apache.cxf.transport.ChainInitiationObserver@5e0dc06
+28:12:2022 12:20:23.834 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.e.ServerImpl}: unregister the server to serverRegistry 

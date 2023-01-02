@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<handler-chains xmlns="http://java.sun.com/xml/ns/javaee">
+    <handler-chain>
+        <handler>
+            <handler-name>soap.start.serik.handlers.PropertyValidator</handler-name>
+            <handler-class>soap.start.serik.handlers.PropertyValidator</handler-class>
+        </handler>
+        <handler>
+            <handler-name>soap.start.serik.handlers.LoggingHandler</handler-name>
+            <handler-class>soap.start.serik.handlers.LoggingHandler</handler-class>
+        </handler>
+    </handler-chain>
+</handler-chains>

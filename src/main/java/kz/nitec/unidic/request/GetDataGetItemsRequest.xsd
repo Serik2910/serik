@@ -1,0 +1,55 @@
+﻿<xsd:schema id="GetItemsRequest" targetNamespace="http://nitec.kz/unidic/ws/getdata" xmlns="http://nitec.kz/unidic/ws/getdata" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<xsd:element name="Request">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element minOccurs="1" maxOccurs="1" name="Login" type="xsd:string"/>
+				<xsd:element minOccurs="1" maxOccurs="1" name="Password" type="xsd:string"/>
+				<xsd:element minOccurs="1" maxOccurs="1" name="EntityName" type="xsd:string"/>
+				<xsd:element minOccurs="0" maxOccurs="1" name="Relevance">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element minOccurs="1" maxOccurs="1" name="Date" type="xsd:dateTime"/>
+							<xsd:element minOccurs="1" maxOccurs="1" name="ConsiderTime" type="xsd:boolean"/>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element minOccurs="0" maxOccurs="1" name="SelectRequisites">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element minOccurs="0" maxOccurs="unbounded" name="Requisite">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element minOccurs="0" maxOccurs="1" name="Name" type="xsd:string"/>
+										<xsd:element minOccurs="1" maxOccurs="1" name="Alias" type="xsd:string"/>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element minOccurs="0" maxOccurs="1" name="Filter" type="xsd:string"/>
+				<xsd:element minOccurs="0" maxOccurs="1" name="SortRequisites">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element minOccurs="0" maxOccurs="unbounded" name="Requisite">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element minOccurs="1" maxOccurs="1" name="Name" type="xsd:string"/>
+										<xsd:element minOccurs="1" maxOccurs="1" name="Direction">
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:enumeration value="Ascending"/>
+													<xsd:enumeration value="Descending"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

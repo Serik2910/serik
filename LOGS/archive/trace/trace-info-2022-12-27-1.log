@@ -1,0 +1,1026 @@
+27:12:2022 14:45:52.479 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.e.ServerImpl}: Server is stopping.
+27:12:2022 14:45:52.527 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.t.s.ServletDestination}: unregistering incoming observer: org.apache.cxf.transport.ChainInitiationObserver@384ae8e8
+27:12:2022 14:45:52.527 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.e.ServerImpl}: unregister the server to serverRegistry 
+27:12:2022 14:45:52.528 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.e.ServerImpl}: Server is stopping.
+27:12:2022 14:45:52.547 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.t.s.ServletDestination}: unregistering incoming observer: org.apache.cxf.transport.ChainInitiationObserver@6ecedca0
+27:12:2022 14:45:52.547 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.e.ServerImpl}: unregister the server to serverRegistry 
+27:12:2022 14:48:51.388 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.l.LogUtils}: Using org.apache.cxf.common.logging.Slf4jLogger for logging.
+27:12:2022 14:48:52.209 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.ws.policy.PolicyAnnotationListener.
+27:12:2022 14:48:52.212 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.service.factory.FactoryBeanListenerManager.
+27:12:2022 14:48:52.218 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.ws.policy.PolicyEngineImpl.
+27:12:2022 14:48:52.218 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.ws.policy.PolicyDataEngineImpl.
+27:12:2022 14:48:52.221 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.bus.managers.CXFBusLifeCycleManager.
+27:12:2022 14:48:52.222 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.bus.managers.ServerRegistryImpl.
+27:12:2022 14:48:52.335 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://serik.start.soap/}HelloPort.jaxws-endpoint - no injection will be performed.
+27:12:2022 14:48:52.337 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id org.apache.cxf.jaxws.JaxWsServerFactoryBean - no injection will be performed.
+27:12:2022 14:48:52.346 SerikHome tomcat {INFO } {restartedMain} {o.a.c.w.s.f.ReflectionServiceFactoryBean}: Creating Service {http://serik.start.soap/}HelloService from class soap.start.serik.web_services.server.HelloService
+27:12:2022 14:48:52.388 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.common.util.ASMHelperImpl.
+27:12:2022 14:48:52.388 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.jaxws.spi.WrapperClassCreatorProxyService.
+27:12:2022 14:48:52.515 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.JAXBDataBinding}: Created JAXBContext "jar:file:/C:/Users/kobla/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.7/jaxb-runtime-2.3.7.jar!/com/sun/xml/bind/v2/runtime/JAXBContextImpl.class Build-Id: 2.3.7
+Classes known to this context:
+  [B
+  boolean
+  byte
+  char
+  com.sun.xml.bind.api.CompositeStructure
+  double
+  float
+  int
+  java.awt.Image
+  java.io.File
+  java.lang.Boolean
+  java.lang.Byte
+  java.lang.Character
+  java.lang.Class
+  java.lang.Double
+  java.lang.Float
+  java.lang.Integer
+  java.lang.Long
+  java.lang.Object
+  java.lang.Short
+  java.lang.String
+  java.lang.Void
+  java.math.BigDecimal
+  java.math.BigInteger
+  java.net.URI
+  java.net.URL
+  java.util.Calendar
+  java.util.Date
+  java.util.GregorianCalendar
+  java.util.UUID
+  javax.activation.DataHandler
+  javax.xml.bind.JAXBElement
+  javax.xml.datatype.Duration
+  javax.xml.datatype.XMLGregorianCalendar
+  javax.xml.namespace.QName
+  javax.xml.transform.Source
+  long
+  short
+  soap.start.serik.web_services.server.jaxws_asm.SayHello
+  soap.start.serik.web_services.server.jaxws_asm.SayHelloResponse
+  void
+" with classes [class soap.start.serik.web_services.server.jaxws_asm.SayHello, class soap.start.serik.web_services.server.jaxws_asm.SayHelloResponse].
+27:12:2022 14:48:52.520 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.u.ProxyHelper}: current classloader sun.misc.Launcher$AppClassLoader@18b4aac2 can see all interface
+27:12:2022 14:48:52.521 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.u.ProxyHelper}: current classloader sun.misc.Launcher$AppClassLoader@18b4aac2 can see all interface
+27:12:2022 14:48:52.603 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.binding.soap.SoapBindingFactory.
+27:12:2022 14:48:52.632 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.wsdl11.WSDLManagerImpl.
+27:12:2022 14:48:52.633 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.r.DefaultResourceManager}: resolving resource <org.apache.cxf.wsdl11.WSDLManagerImpl/bus> type <interface org.apache.cxf.Bus>
+27:12:2022 14:48:52.634 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.r.DefaultResourceManager}: resolving resource <null> type <interface org.apache.cxf.Bus>
+27:12:2022 14:48:52.639 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.wsdl.ExtensionClassCreatorProxyService.
+27:12:2022 14:48:52.662 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.transport.http.HTTPWSDLExtensionLoader.
+27:12:2022 14:48:52.676 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.binding.xml.wsdl11.XMLWSDLExtensionLoader.
+27:12:2022 14:48:52.684 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.ws.addressing.impl.AddressingWSDLExtensionLoader.
+27:12:2022 14:48:52.693 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.binding.soap.SoapTransportFactory.
+27:12:2022 14:48:52.743 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.transport.http.HTTPTransportFactory.
+27:12:2022 14:48:52.754 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://serik.start.soap/}HelloPort.http-destination - no injection will be performed.
+27:12:2022 14:48:52.754 SerikHome tomcat {INFO } {restartedMain} {o.a.c.e.ServerImpl}: Setting the server's publish address to be /hello
+27:12:2022 14:48:52.756 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.bus.managers.ServerLifeCycleManagerImpl.
+27:12:2022 14:48:52.762 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.AnnotationHandlerChainBuilder}: building handler chain
+27:12:2022 14:48:52.762 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.AnnotationHandlerChainBuilder}: Checking for HandlerChain annotation on soap.start.serik.web_services.server.HelloServiceImpl
+27:12:2022 14:48:52.762 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.AnnotationHandlerChainBuilder}: Checking for HandlerChain annotation on soap.start.serik.web_services.server.HelloService
+27:12:2022 14:48:52.849 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.HandlerChainBuilder}: loading handler
+27:12:2022 14:48:52.919 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.HandlerChainBuilder}: adding handler to chain: soap.start.serik.handlers.PropertyValidator@154c4650
+27:12:2022 14:48:52.919 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.HandlerChainBuilder}: loading handler
+27:12:2022 14:48:52.923 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.HandlerChainBuilder}: adding handler to chain: soap.start.serik.handlers.LoggingHandler@79b4bcbb
+27:12:2022 14:48:52.924 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://serik.start.soap/}HelloService - no injection will be performed.
+27:12:2022 14:48:52.924 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://serik.start.soap/}HelloPort.endpoint - no injection will be performed.
+27:12:2022 14:48:52.924 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.e.ServerImpl}: Server is starting.
+27:12:2022 14:48:52.925 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.t.s.ServletDestination}: registering incoming observer: org.apache.cxf.transport.ChainInitiationObserver@61fbb32
+27:12:2022 14:48:52.925 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.e.ServerImpl}: register the server to serverRegistry 
+27:12:2022 14:48:52.945 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://bip.bee.kz/SyncChannel/v10/Interfaces/Binding2}SyncChannelHttpPort.jaxws-endpoint - no injection will be performed.
+27:12:2022 14:48:52.945 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id org.apache.cxf.jaxws.JaxWsServerFactoryBean - no injection will be performed.
+27:12:2022 14:48:52.950 SerikHome tomcat {INFO } {restartedMain} {o.a.c.w.s.f.ReflectionServiceFactoryBean}: Creating Service {http://bip.bee.kz/SyncChannel/v10/Interfaces/Binding2}ria from class kz.bee.bip.esedo.ISyncChannel
+27:12:2022 14:48:53.305 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.JAXBDataBinding}: Created JAXBContext "jar:file:/C:/Users/kobla/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.7/jaxb-runtime-2.3.7.jar!/com/sun/xml/bind/v2/runtime/JAXBContextImpl.class Build-Id: 2.3.7
+Classes known to this context:
+  [B
+  boolean
+  byte
+  char
+  com.sun.xml.bind.api.CompositeStructure
+  double
+  float
+  int
+  java.awt.Image
+  java.io.File
+  java.lang.Boolean
+  java.lang.Byte
+  java.lang.Character
+  java.lang.Class
+  java.lang.Double
+  java.lang.Float
+  java.lang.Integer
+  java.lang.Long
+  java.lang.Object
+  java.lang.Short
+  java.lang.String
+  java.lang.Void
+  java.math.BigDecimal
+  java.math.BigInteger
+  java.net.URI
+  java.net.URL
+  java.util.Calendar
+  java.util.Date
+  java.util.GregorianCalendar
+  java.util.UUID
+  javax.activation.DataHandler
+  javax.xml.bind.JAXBElement
+  javax.xml.datatype.Duration
+  javax.xml.datatype.XMLGregorianCalendar
+  javax.xml.namespace.QName
+  javax.xml.transform.Source
+  kz.bee.bip.SyncChannel.v10.Types.Property
+  kz.bee.bip.SyncChannel.v10.Types.SendMessage
+  kz.bee.bip.SyncChannel.v10.Types.SendMessageResponse
+  kz.bee.bip.SyncChannel.v10.Types.SenderInfo
+  kz.bee.bip.SyncChannel.v10.Types.StatusInfo
+  kz.bee.bip.SyncChannel.v10.Types.SyncMessageInfo
+  kz.bee.bip.SyncChannel.v10.Types.SyncMessageInfoResponse
+  kz.bee.bip.SyncChannel.v10.Types.request.Data
+  kz.bee.bip.SyncChannel.v10.Types.request.RequestData
+  kz.bee.bip.SyncChannel.v10.Types.request.SyncSendMessageRequest
+  kz.bee.bip.SyncChannel.v10.Types.response.ResponseData
+  kz.bee.bip.SyncChannel.v10.Types.response.SyncSendMessageResponse
+  kz.bee.bip.common.v10.Types.ErrorInfo
+  kz.bee.bip.esedo.Attachment
+  kz.bee.bip.esedo.DocAppeal
+  kz.bee.bip.esedo.DocOL
+  kz.bee.bip.esedo.DocOutgoing
+  kz.bee.bip.esedo.DocSection
+  kz.bee.bip.esedo.EECBApprovalData
+  kz.bee.bip.esedo.EECBDocumentMetadata
+  kz.bee.bip.esedo.EECBPublication
+  kz.bee.bip.esedo.Message
+  kz.bee.bip.esedo.MetadataSystem
+  kz.bee.bip.esedo.Property
+  kz.bee.bip.esedo.RequestData
+  kz.bee.bip.esedo.ResponseData
+  kz.bee.bip.esedo.SendMessage
+  kz.bee.bip.esedo.SendMessageResponse
+  kz.bee.bip.esedo.SenderInfo
+  kz.bee.bip.esedo.StateDelivered
+  kz.bee.bip.esedo.StateExecution
+  kz.bee.bip.esedo.StateFinished
+  kz.bee.bip.esedo.StateNewControl
+  kz.bee.bip.esedo.StateNewControlWrong
+  kz.bee.bip.esedo.StateNewExDate
+  kz.bee.bip.esedo.StateNotValid
+  kz.bee.bip.esedo.StateProlongExDate
+  kz.bee.bip.esedo.StateRegistered
+  kz.bee.bip.esedo.StateStartProcessResponse
+  kz.bee.bip.esedo.StateTakeOfControl
+  kz.bee.bip.esedo.StateTakeOfControlWrong
+  kz.bee.bip.esedo.StatusInfo
+  kz.bee.bip.esedo.SyncMessageInfoResponse
+  kz.bee.bip.esedo.SyncSendMessageRequest
+  kz.bee.bip.esedo.SyncSendMessageResponse
+  kz.bee.bip.esedo.System
+  kz.bee.bip.esedo.eds.ConfirmRequest
+  kz.bee.bip.esedo.eds.ConfirmResponse
+  kz.bee.bip.esedo.eds.DownloadRequest
+  kz.bee.bip.esedo.eds.DownloadResponse
+  kz.bee.bip.esedo.eds.FileConfirmResult
+  kz.bee.bip.esedo.eds.FileDownloadResult
+  kz.bee.bip.esedo.eds.FileInfo
+  kz.bee.bip.esedo.eds.FileInfoResult
+  kz.bee.bip.esedo.eds.FileUploadResult
+  kz.bee.bip.esedo.eds.GetFileInfoRequest
+  kz.bee.bip.esedo.eds.GetFileInfoResponse
+  kz.bee.bip.esedo.eds.ProcessStatus
+  kz.bee.bip.esedo.eds.TempStorageRequest
+  kz.bee.bip.esedo.eds.TempStorageRequestType
+  kz.bee.bip.esedo.eds.TempStorageResponse
+  kz.bee.bip.esedo.eds.UploadFileRequest
+  kz.bee.bip.esedo.eds.UploadRequest
+  kz.bee.bip.esedo.eds.UploadResponse
+  kz.bee.bip.esedo.nsi.DictionaryElement
+  kz.bee.bip.esedo.nsi.DictionaryRequest
+  kz.bee.bip.esedo.nsi.DictionaryResponse
+  long
+  short
+  void
+" with classes [class kz.bee.bip.esedo.SendMessage, class kz.bee.bip.esedo.SyncSendMessageRequest, class kz.bee.bip.SyncChannel.v10.Types.SyncMessageInfo, class kz.bee.bip.SyncChannel.v10.Types.SenderInfo, class kz.bee.bip.SyncChannel.v10.Types.Property, class kz.bee.bip.esedo.RequestData, class kz.bee.bip.esedo.SendMessageResponse, class kz.bee.bip.esedo.SyncSendMessageResponse, class kz.bee.bip.esedo.SyncMessageInfoResponse, class kz.bee.bip.esedo.StatusInfo, class kz.bee.bip.esedo.ResponseData, class kz.bee.bip.common.v10.Types.ErrorInfo, class kz.bee.bip.esedo.ObjectFactory, class kz.bee.bip.SyncChannel.v10.Types.ObjectFactory].
+27:12:2022 14:48:53.305 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.u.ProxyHelper}: current classloader sun.misc.Launcher$AppClassLoader@18b4aac2 can see all interface
+27:12:2022 14:48:53.305 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.u.ProxyHelper}: current classloader sun.misc.Launcher$AppClassLoader@18b4aac2 can see all interface
+27:12:2022 14:48:53.372 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://bip.bee.kz/SyncChannel/v10/Interfaces/Binding2}SyncChannelHttpPort.http-destination - no injection will be performed.
+27:12:2022 14:48:53.372 SerikHome tomcat {INFO } {restartedMain} {o.a.c.e.ServerImpl}: Setting the server's publish address to be /sync_channel
+27:12:2022 14:48:53.372 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.AnnotationHandlerChainBuilder}: building handler chain
+27:12:2022 14:48:53.372 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.AnnotationHandlerChainBuilder}: Checking for HandlerChain annotation on kz.bee.bip.esedo.SyncChannelImpl
+27:12:2022 14:48:53.372 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.AnnotationHandlerChainBuilder}: Checking for HandlerChain annotation on kz.bee.bip.esedo.ISyncChannel
+27:12:2022 14:48:53.373 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.HandlerChainBuilder}: loading handler
+27:12:2022 14:48:53.373 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.HandlerChainBuilder}: adding handler to chain: soap.start.serik.handlers.PropertyValidator@17b2c82f
+27:12:2022 14:48:53.374 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.HandlerChainBuilder}: loading handler
+27:12:2022 14:48:53.374 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.HandlerChainBuilder}: adding handler to chain: soap.start.serik.handlers.LoggingHandler@1f28a33a
+27:12:2022 14:48:53.374 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://bip.bee.kz/SyncChannel/v10/Interfaces/Binding2}ria - no injection will be performed.
+27:12:2022 14:48:53.374 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://bip.bee.kz/SyncChannel/v10/Interfaces/Binding2}SyncChannelHttpPort.endpoint - no injection will be performed.
+27:12:2022 14:48:53.374 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.e.ServerImpl}: Server is starting.
+27:12:2022 14:48:53.374 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.t.s.ServletDestination}: registering incoming observer: org.apache.cxf.transport.ChainInitiationObserver@196dcf0a
+27:12:2022 14:48:53.374 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.e.ServerImpl}: register the server to serverRegistry 
+27:12:2022 14:49:16.376 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.r.DefaultResourceManager}: resolving resource </WEB-INF/cxfServletStaticResourcesMap.txt> type <class java.io.InputStream>
+27:12:2022 14:49:16.378 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.r.DefaultResourceManager}: resolving resource </cxfServletStaticResourcesMap.txt> type <class java.io.InputStream>
+27:12:2022 14:49:16.386 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.t.s.ServletController}: Service http request on thread: Thread[http-nio-8085-exec-1,5,main]
+27:12:2022 14:49:16.386 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.t.h.AbstractHTTPDestination}: Create a new message for processing
+27:12:2022 14:49:16.393 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.t.h.Headers}: Request Headers: {Accept=[text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9], accept-encoding=[gzip, deflate, br], accept-language=[ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7], Authorization=[***], connection=[keep-alive], Content-Type=[null], cookie=[Webstorm-2cb58833=be79b1a9-6245-4b69-a10a-5cc05fbcf1a9], dnt=[1], host=[localhost:8085], Proxy-Authorization=[***], referer=[http://localhost:8085/Service], sec-ch-ua=["Not?A_Brand";v="8", "Chromium";v="108", "Google Chrome";v="108"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Windows"], sec-fetch-dest=[document], sec-fetch-mode=[navigate], sec-fetch-site=[same-origin], sec-fetch-user=[?1], upgrade-insecure-requests=[1], user-agent=[Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36]}
+27:12:2022 14:49:16.397 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.bus.managers.PhaseManagerImpl.
+27:12:2022 14:49:16.401 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.ws.policy.PolicyInInterceptor@17b28cf8 to phase receive
+27:12:2022 14:49:16.401 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.interceptor.ServiceInvokerInterceptor@75b3548e to phase invoke
+27:12:2022 14:49:16.401 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.interceptor.OutgoingChainInterceptor@1c1d50b6 to phase post-invoke
+27:12:2022 14:49:16.401 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.interceptor.OneWayProcessorInterceptor@18c84ac9 to phase pre-logical
+27:12:2022 14:49:16.401 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.jaxws.interceptors.WrapperClassInInterceptor@1b1ed064 to phase post-logical
+27:12:2022 14:49:16.401 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.jaxws.interceptors.HolderInInterceptor@74e6e0ad to phase pre-invoke
+27:12:2022 14:49:16.401 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.jaxws.interceptors.SwAInInterceptor@2888667 to phase pre-invoke
+27:12:2022 14:49:16.401 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.frontend.WSDLGetInterceptor@584c1afd to phase read
+27:12:2022 14:49:16.401 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.jaxws.handler.logical.LogicalHandlerInInterceptor@353c7c60 to phase pre-protocol-frontend
+27:12:2022 14:49:16.401 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.jaxws.handler.soap.SOAPHandlerInterceptor@761c01e2 to phase pre-protocol-frontend
+27:12:2022 14:49:16.401 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.interceptor.AttachmentInInterceptor@30e10af8 to phase receive
+27:12:2022 14:49:16.401 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.interceptor.StaxInInterceptor@84265eb to phase post-stream
+27:12:2022 14:49:16.401 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapActionInInterceptor@5ecbc7ff to phase read
+27:12:2022 14:49:16.401 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.wsdl.interceptors.DocLiteralInInterceptor@484eced5 to phase unmarshal
+27:12:2022 14:49:16.401 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapHeaderInterceptor@70c0abee to phase unmarshal
+27:12:2022 14:49:16.401 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.binding.soap.interceptor.ReadHeadersInterceptor@6bb6e520 to phase read
+27:12:2022 14:49:16.402 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.binding.soap.interceptor.StartBodyInterceptor@6b423396 to phase read
+27:12:2022 14:49:16.402 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.binding.soap.interceptor.CheckFaultInterceptor@55c4704d to phase post-protocol
+27:12:2022 14:49:16.402 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.binding.soap.interceptor.MustUnderstandInterceptor@20ae3ec0 to phase pre-protocol
+27:12:2022 14:49:16.402 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.jaxb.attachment.JAXBAttachmentSchemaValidationHack@7c6d5010 to phase post-protocol
+27:12:2022 14:49:16.403 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.transport.https.CertConstraintsInterceptor@21f024e5 to phase pre-stream
+27:12:2022 14:49:16.403 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Chain org.apache.cxf.phase.PhaseInterceptorChain@43bb7eeb was created. Current flow:
+  receive [PolicyInInterceptor, AttachmentInInterceptor]
+  pre-stream [CertConstraintsInterceptor]
+  post-stream [StaxInInterceptor]
+  read [WSDLGetInterceptor, ReadHeadersInterceptor, SoapActionInInterceptor, StartBodyInterceptor]
+  pre-protocol [MustUnderstandInterceptor]
+  pre-protocol-frontend [SOAPHandlerInterceptor, LogicalHandlerInInterceptor]
+  post-protocol [CheckFaultInterceptor, JAXBAttachmentSchemaValidationHack]
+  unmarshal [DocLiteralInInterceptor, SoapHeaderInterceptor]
+  pre-logical [OneWayProcessorInterceptor]
+  post-logical [WrapperClassInInterceptor]
+  pre-invoke [SwAInInterceptor, HolderInInterceptor]
+  invoke [ServiceInvokerInterceptor]
+  post-invoke [OutgoingChainInterceptor]
+
+27:12:2022 14:49:16.403 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.ws.policy.PolicyInInterceptor@17b28cf8
+27:12:2022 14:49:16.412 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.ws.policy.AssertionBuilderRegistryImpl.
+27:12:2022 14:49:16.414 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.ws.policy.PolicyBuilderImpl.
+27:12:2022 14:49:16.414 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.ws.policy.attachment.ServiceModelPolicyProvider.
+27:12:2022 14:49:16.416 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.ws.policy.attachment.wsdl11.Wsdl11AttachmentPolicyProvider.
+27:12:2022 14:49:16.417 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.ws.policy.PolicyInterceptorProviderRegistryImpl.
+27:12:2022 14:49:16.418 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.interceptor.AttachmentInInterceptor@30e10af8
+27:12:2022 14:49:16.418 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.i.AttachmentInInterceptor}: AttachmentInInterceptor skipped in HTTP GET method
+27:12:2022 14:49:16.418 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.transport.https.CertConstraintsInterceptor@21f024e5
+27:12:2022 14:49:16.418 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.interceptor.StaxInInterceptor@84265eb
+27:12:2022 14:49:16.418 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.i.StaxInInterceptor}: StaxInInterceptor skipped.
+27:12:2022 14:49:16.418 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.frontend.WSDLGetInterceptor@584c1afd
+27:12:2022 14:49:16.444 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.catalog.OASISCatalogManager.
+27:12:2022 14:49:16.449 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.i.OutgoingChainInterceptor}: Interceptors contributed by endpoint: [org.apache.cxf.interceptor.MessageSenderInterceptor@f1ff827, org.apache.cxf.jaxws.interceptors.SwAOutInterceptor@3c35e025, org.apache.cxf.jaxws.interceptors.WrapperClassOutInterceptor@71dd0a64, org.apache.cxf.jaxws.interceptors.HolderOutInterceptor@33125bb1, org.apache.cxf.jaxws.handler.logical.LogicalHandlerOutInterceptor@433c4334, org.apache.cxf.jaxws.handler.soap.SOAPHandlerInterceptor@761c01e2]
+27:12:2022 14:49:16.449 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.interceptor.MessageSenderInterceptor@f1ff827 to phase prepare-send
+27:12:2022 14:49:16.449 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.jaxws.interceptors.SwAOutInterceptor@3c35e025 to phase pre-logical
+27:12:2022 14:49:16.449 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.jaxws.interceptors.WrapperClassOutInterceptor@71dd0a64 to phase pre-logical
+27:12:2022 14:49:16.449 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.jaxws.interceptors.HolderOutInterceptor@33125bb1 to phase pre-logical
+27:12:2022 14:49:16.450 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.jaxws.handler.logical.LogicalHandlerOutInterceptor@433c4334 to phase pre-marshal
+27:12:2022 14:49:16.450 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.jaxws.handler.soap.SOAPHandlerInterceptor@761c01e2 to phase pre-protocol-frontend
+27:12:2022 14:49:16.450 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.i.OutgoingChainInterceptor}: Interceptors contributed by service: []
+27:12:2022 14:49:16.450 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.i.OutgoingChainInterceptor}: Interceptors contributed by bus: [org.apache.cxf.ws.policy.PolicyOutInterceptor@509ba7be]
+27:12:2022 14:49:16.450 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.ws.policy.PolicyOutInterceptor@509ba7be to phase setup
+27:12:2022 14:49:16.450 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.i.OutgoingChainInterceptor}: Interceptors contributed by binding: [org.apache.cxf.interceptor.AttachmentOutInterceptor@490c09e3, org.apache.cxf.interceptor.StaxOutInterceptor@68621ca0, org.apache.cxf.binding.soap.interceptor.SoapHeaderOutFilterInterceptor@4966c77b, org.apache.cxf.wsdl.interceptors.WrappedOutInterceptor@444d2fbe, org.apache.cxf.wsdl.interceptors.BareOutInterceptor@6d2775c5, org.apache.cxf.binding.soap.interceptor.SoapPreProtocolOutInterceptor@1558e3dd, org.apache.cxf.binding.soap.interceptor.SoapOutInterceptor@6afab312]
+27:12:2022 14:49:16.450 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.interceptor.AttachmentOutInterceptor@490c09e3 to phase pre-stream
+27:12:2022 14:49:16.450 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.interceptor.StaxOutInterceptor@68621ca0 to phase pre-stream
+27:12:2022 14:49:16.450 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapHeaderOutFilterInterceptor@4966c77b to phase pre-logical
+27:12:2022 14:49:16.450 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.wsdl.interceptors.WrappedOutInterceptor@444d2fbe to phase marshal
+27:12:2022 14:49:16.450 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.wsdl.interceptors.BareOutInterceptor@6d2775c5 to phase marshal
+27:12:2022 14:49:16.450 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapPreProtocolOutInterceptor@1558e3dd to phase post-logical
+27:12:2022 14:49:16.450 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapOutInterceptor@6afab312 to phase write
+27:12:2022 14:49:16.451 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.frontend.WSDLGetOutInterceptor@432cc2b9 to phase pre-stream
+27:12:2022 14:49:16.451 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.interceptor.OutgoingChainInterceptor@1c1d50b6
+27:12:2022 14:49:16.452 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Chain org.apache.cxf.phase.PhaseInterceptorChain@79303e8c was created. Current flow:
+  prepare-send [MessageSenderInterceptor]
+  pre-stream [StaxOutInterceptor, WSDLGetOutInterceptor]
+
+27:12:2022 14:49:16.452 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.interceptor.MessageSenderInterceptor@f1ff827
+27:12:2022 14:49:16.453 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor@6087ffae to phase prepare-send-ending
+27:12:2022 14:49:16.453 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Chain org.apache.cxf.phase.PhaseInterceptorChain@79303e8c was modified. Current flow:
+  prepare-send [MessageSenderInterceptor]
+  pre-stream [StaxOutInterceptor, WSDLGetOutInterceptor]
+  prepare-send-ending [MessageSenderEndingInterceptor]
+
+27:12:2022 14:49:16.453 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.interceptor.StaxOutInterceptor@68621ca0
+27:12:2022 14:49:16.462 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.interceptor.StaxOutEndingInterceptor@359e26f9 to phase pre-stream-ending
+27:12:2022 14:49:16.462 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Chain org.apache.cxf.phase.PhaseInterceptorChain@79303e8c was modified. Current flow:
+  prepare-send [MessageSenderInterceptor]
+  pre-stream [StaxOutInterceptor, WSDLGetOutInterceptor]
+  pre-stream-ending [StaxOutEndingInterceptor]
+  prepare-send-ending [MessageSenderEndingInterceptor]
+
+27:12:2022 14:49:16.462 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.frontend.WSDLGetOutInterceptor@432cc2b9
+27:12:2022 14:49:16.463 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.w.a.ContextUtils}: retrieving MAPs from context property javax.xml.ws.addressing.context.inbound
+27:12:2022 14:49:16.463 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.w.a.ContextUtils}: WS-Addressing - failed to retrieve Message Addressing Properties from context
+27:12:2022 14:49:16.469 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.interceptor.StaxOutEndingInterceptor@359e26f9
+27:12:2022 14:49:16.469 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor@6087ffae
+27:12:2022 14:49:16.471 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.t.h.AbstractHTTPDestination}: Finished servicing http request on thread: Thread[http-nio-8085-exec-1,5,main]
+27:12:2022 14:49:16.471 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.t.s.ServletController}: Finished servicing http request on thread: Thread[http-nio-8085-exec-1,5,main]
+27:12:2022 14:51:17.340 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.e.ServerImpl}: Server is stopping.
+27:12:2022 14:51:17.340 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.t.s.ServletDestination}: unregistering incoming observer: org.apache.cxf.transport.ChainInitiationObserver@196dcf0a
+27:12:2022 14:51:17.340 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.e.ServerImpl}: unregister the server to serverRegistry 
+27:12:2022 14:51:17.341 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.e.ServerImpl}: Server is stopping.
+27:12:2022 14:51:17.341 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.t.s.ServletDestination}: unregistering incoming observer: org.apache.cxf.transport.ChainInitiationObserver@61fbb32
+27:12:2022 14:51:17.341 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.e.ServerImpl}: unregister the server to serverRegistry 
+27:12:2022 14:51:21.813 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.l.LogUtils}: Using org.apache.cxf.common.logging.Slf4jLogger for logging.
+27:12:2022 14:51:22.561 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.ws.policy.PolicyAnnotationListener.
+27:12:2022 14:51:22.563 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.service.factory.FactoryBeanListenerManager.
+27:12:2022 14:51:22.569 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.ws.policy.PolicyEngineImpl.
+27:12:2022 14:51:22.570 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.ws.policy.PolicyDataEngineImpl.
+27:12:2022 14:51:22.570 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.bus.managers.CXFBusLifeCycleManager.
+27:12:2022 14:51:22.572 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.bus.managers.ServerRegistryImpl.
+27:12:2022 14:51:22.617 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://serik.start.soap/}HelloPort.jaxws-endpoint - no injection will be performed.
+27:12:2022 14:51:22.618 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id org.apache.cxf.jaxws.JaxWsServerFactoryBean - no injection will be performed.
+27:12:2022 14:51:22.627 SerikHome tomcat {INFO } {restartedMain} {o.a.c.w.s.f.ReflectionServiceFactoryBean}: Creating Service {http://serik.start.soap/}HelloService from class soap.start.serik.web_services.server.HelloService
+27:12:2022 14:51:22.665 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.common.util.ASMHelperImpl.
+27:12:2022 14:51:22.666 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.jaxws.spi.WrapperClassCreatorProxyService.
+27:12:2022 14:51:22.792 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.JAXBDataBinding}: Created JAXBContext "jar:file:/C:/Users/kobla/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.7/jaxb-runtime-2.3.7.jar!/com/sun/xml/bind/v2/runtime/JAXBContextImpl.class Build-Id: 2.3.7
+Classes known to this context:
+  [B
+  boolean
+  byte
+  char
+  com.sun.xml.bind.api.CompositeStructure
+  double
+  float
+  int
+  java.awt.Image
+  java.io.File
+  java.lang.Boolean
+  java.lang.Byte
+  java.lang.Character
+  java.lang.Class
+  java.lang.Double
+  java.lang.Float
+  java.lang.Integer
+  java.lang.Long
+  java.lang.Object
+  java.lang.Short
+  java.lang.String
+  java.lang.Void
+  java.math.BigDecimal
+  java.math.BigInteger
+  java.net.URI
+  java.net.URL
+  java.util.Calendar
+  java.util.Date
+  java.util.GregorianCalendar
+  java.util.UUID
+  javax.activation.DataHandler
+  javax.xml.bind.JAXBElement
+  javax.xml.datatype.Duration
+  javax.xml.datatype.XMLGregorianCalendar
+  javax.xml.namespace.QName
+  javax.xml.transform.Source
+  long
+  short
+  soap.start.serik.web_services.server.jaxws_asm.SayHello
+  soap.start.serik.web_services.server.jaxws_asm.SayHelloResponse
+  void
+" with classes [class soap.start.serik.web_services.server.jaxws_asm.SayHello, class soap.start.serik.web_services.server.jaxws_asm.SayHelloResponse].
+27:12:2022 14:51:22.795 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.u.ProxyHelper}: current classloader sun.misc.Launcher$AppClassLoader@18b4aac2 can see all interface
+27:12:2022 14:51:22.797 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.u.ProxyHelper}: current classloader sun.misc.Launcher$AppClassLoader@18b4aac2 can see all interface
+27:12:2022 14:51:22.865 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.binding.soap.SoapBindingFactory.
+27:12:2022 14:51:22.892 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.wsdl11.WSDLManagerImpl.
+27:12:2022 14:51:22.893 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.r.DefaultResourceManager}: resolving resource <org.apache.cxf.wsdl11.WSDLManagerImpl/bus> type <interface org.apache.cxf.Bus>
+27:12:2022 14:51:22.893 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.r.DefaultResourceManager}: resolving resource <null> type <interface org.apache.cxf.Bus>
+27:12:2022 14:51:22.898 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.wsdl.ExtensionClassCreatorProxyService.
+27:12:2022 14:51:22.917 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.transport.http.HTTPWSDLExtensionLoader.
+27:12:2022 14:51:22.927 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.binding.xml.wsdl11.XMLWSDLExtensionLoader.
+27:12:2022 14:51:22.933 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.ws.addressing.impl.AddressingWSDLExtensionLoader.
+27:12:2022 14:51:22.941 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.binding.soap.SoapTransportFactory.
+27:12:2022 14:51:22.977 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.transport.http.HTTPTransportFactory.
+27:12:2022 14:51:22.985 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://serik.start.soap/}HelloPort.http-destination - no injection will be performed.
+27:12:2022 14:51:22.985 SerikHome tomcat {INFO } {restartedMain} {o.a.c.e.ServerImpl}: Setting the server's publish address to be /hello
+27:12:2022 14:51:22.987 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.bus.managers.ServerLifeCycleManagerImpl.
+27:12:2022 14:51:22.992 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.AnnotationHandlerChainBuilder}: building handler chain
+27:12:2022 14:51:22.992 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.AnnotationHandlerChainBuilder}: Checking for HandlerChain annotation on soap.start.serik.web_services.server.HelloServiceImpl
+27:12:2022 14:51:22.992 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.AnnotationHandlerChainBuilder}: Checking for HandlerChain annotation on soap.start.serik.web_services.server.HelloService
+27:12:2022 14:51:23.069 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.HandlerChainBuilder}: loading handler
+27:12:2022 14:51:23.143 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.HandlerChainBuilder}: adding handler to chain: soap.start.serik.handlers.PropertyValidator@1d63e337
+27:12:2022 14:51:23.143 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.HandlerChainBuilder}: loading handler
+27:12:2022 14:51:23.147 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.HandlerChainBuilder}: adding handler to chain: soap.start.serik.handlers.LoggingHandler@1799ec2b
+27:12:2022 14:51:23.148 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://serik.start.soap/}HelloService - no injection will be performed.
+27:12:2022 14:51:23.148 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://serik.start.soap/}HelloPort.endpoint - no injection will be performed.
+27:12:2022 14:51:23.148 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.e.ServerImpl}: Server is starting.
+27:12:2022 14:51:23.149 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.t.s.ServletDestination}: registering incoming observer: org.apache.cxf.transport.ChainInitiationObserver@510217d6
+27:12:2022 14:51:23.149 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.e.ServerImpl}: register the server to serverRegistry 
+27:12:2022 14:51:23.160 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://bip.bee.kz/SyncChannel/v10/Interfaces/Binding2}SyncChannelHttpPort.jaxws-endpoint - no injection will be performed.
+27:12:2022 14:51:23.160 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id org.apache.cxf.jaxws.JaxWsServerFactoryBean - no injection will be performed.
+27:12:2022 14:51:23.161 SerikHome tomcat {INFO } {restartedMain} {o.a.c.w.s.f.ReflectionServiceFactoryBean}: Creating Service {http://bip.bee.kz/SyncChannel/v10/Interfaces/Binding2}ria from class kz.bee.bip.esedo.ISyncChannel
+27:12:2022 14:51:23.231 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.JAXBDataBinding}: Created JAXBContext "jar:file:/C:/Users/kobla/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.7/jaxb-runtime-2.3.7.jar!/com/sun/xml/bind/v2/runtime/JAXBContextImpl.class Build-Id: 2.3.7
+Classes known to this context:
+  [B
+  boolean
+  byte
+  char
+  com.sun.xml.bind.api.CompositeStructure
+  double
+  float
+  int
+  java.awt.Image
+  java.io.File
+  java.lang.Boolean
+  java.lang.Byte
+  java.lang.Character
+  java.lang.Class
+  java.lang.Double
+  java.lang.Float
+  java.lang.Integer
+  java.lang.Long
+  java.lang.Object
+  java.lang.Short
+  java.lang.String
+  java.lang.Void
+  java.math.BigDecimal
+  java.math.BigInteger
+  java.net.URI
+  java.net.URL
+  java.util.Calendar
+  java.util.Date
+  java.util.GregorianCalendar
+  java.util.UUID
+  javax.activation.DataHandler
+  javax.xml.bind.JAXBElement
+  javax.xml.datatype.Duration
+  javax.xml.datatype.XMLGregorianCalendar
+  javax.xml.namespace.QName
+  javax.xml.transform.Source
+  kz.bee.bip.SyncChannel.v10.Types.Property
+  kz.bee.bip.SyncChannel.v10.Types.SendMessage
+  kz.bee.bip.SyncChannel.v10.Types.SendMessageResponse
+  kz.bee.bip.SyncChannel.v10.Types.SenderInfo
+  kz.bee.bip.SyncChannel.v10.Types.StatusInfo
+  kz.bee.bip.SyncChannel.v10.Types.SyncMessageInfo
+  kz.bee.bip.SyncChannel.v10.Types.SyncMessageInfoResponse
+  kz.bee.bip.SyncChannel.v10.Types.request.Data
+  kz.bee.bip.SyncChannel.v10.Types.request.RequestData
+  kz.bee.bip.SyncChannel.v10.Types.request.SyncSendMessageRequest
+  kz.bee.bip.SyncChannel.v10.Types.response.ResponseData
+  kz.bee.bip.SyncChannel.v10.Types.response.SyncSendMessageResponse
+  kz.bee.bip.common.v10.Types.ErrorInfo
+  kz.bee.bip.esedo.Attachment
+  kz.bee.bip.esedo.DocAppeal
+  kz.bee.bip.esedo.DocOL
+  kz.bee.bip.esedo.DocOutgoing
+  kz.bee.bip.esedo.DocSection
+  kz.bee.bip.esedo.EECBApprovalData
+  kz.bee.bip.esedo.EECBDocumentMetadata
+  kz.bee.bip.esedo.EECBPublication
+  kz.bee.bip.esedo.Message
+  kz.bee.bip.esedo.MetadataSystem
+  kz.bee.bip.esedo.Property
+  kz.bee.bip.esedo.RequestData
+  kz.bee.bip.esedo.ResponseData
+  kz.bee.bip.esedo.SendMessage
+  kz.bee.bip.esedo.SendMessageResponse
+  kz.bee.bip.esedo.SenderInfo
+  kz.bee.bip.esedo.StateDelivered
+  kz.bee.bip.esedo.StateExecution
+  kz.bee.bip.esedo.StateFinished
+  kz.bee.bip.esedo.StateNewControl
+  kz.bee.bip.esedo.StateNewControlWrong
+  kz.bee.bip.esedo.StateNewExDate
+  kz.bee.bip.esedo.StateNotValid
+  kz.bee.bip.esedo.StateProlongExDate
+  kz.bee.bip.esedo.StateRegistered
+  kz.bee.bip.esedo.StateStartProcessResponse
+  kz.bee.bip.esedo.StateTakeOfControl
+  kz.bee.bip.esedo.StateTakeOfControlWrong
+  kz.bee.bip.esedo.StatusInfo
+  kz.bee.bip.esedo.SyncMessageInfoResponse
+  kz.bee.bip.esedo.SyncSendMessageRequest
+  kz.bee.bip.esedo.SyncSendMessageResponse
+  kz.bee.bip.esedo.System
+  kz.bee.bip.esedo.eds.ConfirmRequest
+  kz.bee.bip.esedo.eds.ConfirmResponse
+  kz.bee.bip.esedo.eds.DownloadRequest
+  kz.bee.bip.esedo.eds.DownloadResponse
+  kz.bee.bip.esedo.eds.FileConfirmResult
+  kz.bee.bip.esedo.eds.FileDownloadResult
+  kz.bee.bip.esedo.eds.FileInfo
+  kz.bee.bip.esedo.eds.FileInfoResult
+  kz.bee.bip.esedo.eds.FileUploadResult
+  kz.bee.bip.esedo.eds.GetFileInfoRequest
+  kz.bee.bip.esedo.eds.GetFileInfoResponse
+  kz.bee.bip.esedo.eds.ProcessStatus
+  kz.bee.bip.esedo.eds.TempStorageRequest
+  kz.bee.bip.esedo.eds.TempStorageRequestType
+  kz.bee.bip.esedo.eds.TempStorageResponse
+  kz.bee.bip.esedo.eds.UploadFileRequest
+  kz.bee.bip.esedo.eds.UploadRequest
+  kz.bee.bip.esedo.eds.UploadResponse
+  kz.bee.bip.esedo.nsi.DictionaryElement
+  kz.bee.bip.esedo.nsi.DictionaryRequest
+  kz.bee.bip.esedo.nsi.DictionaryResponse
+  long
+  short
+  void
+" with classes [class kz.bee.bip.esedo.SendMessage, class kz.bee.bip.esedo.SyncSendMessageRequest, class kz.bee.bip.SyncChannel.v10.Types.SyncMessageInfo, class kz.bee.bip.SyncChannel.v10.Types.SenderInfo, class kz.bee.bip.SyncChannel.v10.Types.Property, class kz.bee.bip.esedo.RequestData, class kz.bee.bip.esedo.SendMessageResponse, class kz.bee.bip.esedo.SyncSendMessageResponse, class kz.bee.bip.esedo.SyncMessageInfoResponse, class kz.bee.bip.esedo.StatusInfo, class kz.bee.bip.esedo.ResponseData, class kz.bee.bip.common.v10.Types.ErrorInfo, class kz.bee.bip.esedo.ObjectFactory, class kz.bee.bip.SyncChannel.v10.Types.ObjectFactory].
+27:12:2022 14:51:23.232 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.u.ProxyHelper}: current classloader sun.misc.Launcher$AppClassLoader@18b4aac2 can see all interface
+27:12:2022 14:51:23.232 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.u.ProxyHelper}: current classloader sun.misc.Launcher$AppClassLoader@18b4aac2 can see all interface
+27:12:2022 14:51:23.299 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://bip.bee.kz/SyncChannel/v10/Interfaces/Binding2}SyncChannelHttpPort.http-destination - no injection will be performed.
+27:12:2022 14:51:23.299 SerikHome tomcat {INFO } {restartedMain} {o.a.c.e.ServerImpl}: Setting the server's publish address to be /sync_channel
+27:12:2022 14:51:23.299 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.AnnotationHandlerChainBuilder}: building handler chain
+27:12:2022 14:51:23.299 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.AnnotationHandlerChainBuilder}: Checking for HandlerChain annotation on kz.bee.bip.esedo.SyncChannelImpl
+27:12:2022 14:51:23.299 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.AnnotationHandlerChainBuilder}: Checking for HandlerChain annotation on kz.bee.bip.esedo.ISyncChannel
+27:12:2022 14:51:23.300 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.HandlerChainBuilder}: loading handler
+27:12:2022 14:51:23.300 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.HandlerChainBuilder}: adding handler to chain: soap.start.serik.handlers.PropertyValidator@2ec0d583
+27:12:2022 14:51:23.301 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.HandlerChainBuilder}: loading handler
+27:12:2022 14:51:23.301 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.HandlerChainBuilder}: adding handler to chain: soap.start.serik.handlers.LoggingHandler@72640116
+27:12:2022 14:51:23.301 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://bip.bee.kz/SyncChannel/v10/Interfaces/Binding2}ria - no injection will be performed.
+27:12:2022 14:51:23.301 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://bip.bee.kz/SyncChannel/v10/Interfaces/Binding2}SyncChannelHttpPort.endpoint - no injection will be performed.
+27:12:2022 14:51:23.301 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.e.ServerImpl}: Server is starting.
+27:12:2022 14:51:23.301 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.t.s.ServletDestination}: registering incoming observer: org.apache.cxf.transport.ChainInitiationObserver@1381c2b5
+27:12:2022 14:51:23.301 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.e.ServerImpl}: register the server to serverRegistry 
+27:12:2022 23:48:11.420 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.r.DefaultResourceManager}: resolving resource </WEB-INF/cxfServletStaticResourcesMap.txt> type <class java.io.InputStream>
+27:12:2022 23:48:11.424 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.r.DefaultResourceManager}: resolving resource </cxfServletStaticResourcesMap.txt> type <class java.io.InputStream>
+27:12:2022 23:48:11.436 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.t.s.ServletController}: Service http request on thread: Thread[http-nio-8085-exec-3,5,main]
+27:12:2022 23:48:11.436 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.t.h.AbstractHTTPDestination}: Create a new message for processing
+27:12:2022 23:48:11.444 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.t.h.Headers}: Request Headers: {Accept=[text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9], accept-encoding=[gzip, deflate, br], accept-language=[ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7], Authorization=[***], connection=[keep-alive], Content-Type=[null], cookie=[Webstorm-2cb58833=be79b1a9-6245-4b69-a10a-5cc05fbcf1a9], dnt=[1], host=[localhost:8085], Proxy-Authorization=[***], sec-ch-ua=["Not?A_Brand";v="8", "Chromium";v="108", "Google Chrome";v="108"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Windows"], sec-fetch-dest=[document], sec-fetch-mode=[navigate], sec-fetch-site=[none], sec-fetch-user=[?1], upgrade-insecure-requests=[1], user-agent=[Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36]}
+27:12:2022 23:48:11.452 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.bus.managers.PhaseManagerImpl.
+27:12:2022 23:48:11.455 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.ws.policy.PolicyInInterceptor@178c949c to phase receive
+27:12:2022 23:48:11.456 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.interceptor.ServiceInvokerInterceptor@71e654d2 to phase invoke
+27:12:2022 23:48:11.456 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.interceptor.OutgoingChainInterceptor@271ecce9 to phase post-invoke
+27:12:2022 23:48:11.456 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.interceptor.OneWayProcessorInterceptor@2bd712ca to phase pre-logical
+27:12:2022 23:48:11.456 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.jaxws.interceptors.WrapperClassInInterceptor@588c4b58 to phase post-logical
+27:12:2022 23:48:11.456 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.jaxws.interceptors.HolderInInterceptor@1b8fc45f to phase pre-invoke
+27:12:2022 23:48:11.456 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.jaxws.interceptors.SwAInInterceptor@4aa73a43 to phase pre-invoke
+27:12:2022 23:48:11.456 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.frontend.WSDLGetInterceptor@5975309f to phase read
+27:12:2022 23:48:11.456 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.jaxws.handler.logical.LogicalHandlerInInterceptor@63997662 to phase pre-protocol-frontend
+27:12:2022 23:48:11.456 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.jaxws.handler.soap.SOAPHandlerInterceptor@651fb72 to phase pre-protocol-frontend
+27:12:2022 23:48:11.456 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.interceptor.AttachmentInInterceptor@7557bcd9 to phase receive
+27:12:2022 23:48:11.456 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.interceptor.StaxInInterceptor@5d69b24 to phase post-stream
+27:12:2022 23:48:11.456 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapActionInInterceptor@2dd4c79a to phase read
+27:12:2022 23:48:11.456 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.wsdl.interceptors.DocLiteralInInterceptor@24573339 to phase unmarshal
+27:12:2022 23:48:11.456 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapHeaderInterceptor@6caee21e to phase unmarshal
+27:12:2022 23:48:11.456 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.binding.soap.interceptor.ReadHeadersInterceptor@5d904b14 to phase read
+27:12:2022 23:48:11.456 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.binding.soap.interceptor.StartBodyInterceptor@5673af2b to phase read
+27:12:2022 23:48:11.456 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.binding.soap.interceptor.CheckFaultInterceptor@4ba08027 to phase post-protocol
+27:12:2022 23:48:11.456 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.binding.soap.interceptor.MustUnderstandInterceptor@5085355f to phase pre-protocol
+27:12:2022 23:48:11.456 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.jaxb.attachment.JAXBAttachmentSchemaValidationHack@f121cb0 to phase post-protocol
+27:12:2022 23:48:11.457 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.transport.https.CertConstraintsInterceptor@726b026e to phase pre-stream
+27:12:2022 23:48:11.457 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Chain org.apache.cxf.phase.PhaseInterceptorChain@525a33d2 was created. Current flow:
+  receive [PolicyInInterceptor, AttachmentInInterceptor]
+  pre-stream [CertConstraintsInterceptor]
+  post-stream [StaxInInterceptor]
+  read [WSDLGetInterceptor, ReadHeadersInterceptor, SoapActionInInterceptor, StartBodyInterceptor]
+  pre-protocol [MustUnderstandInterceptor]
+  pre-protocol-frontend [SOAPHandlerInterceptor, LogicalHandlerInInterceptor]
+  post-protocol [CheckFaultInterceptor, JAXBAttachmentSchemaValidationHack]
+  unmarshal [DocLiteralInInterceptor, SoapHeaderInterceptor]
+  pre-logical [OneWayProcessorInterceptor]
+  post-logical [WrapperClassInInterceptor]
+  pre-invoke [SwAInInterceptor, HolderInInterceptor]
+  invoke [ServiceInvokerInterceptor]
+  post-invoke [OutgoingChainInterceptor]
+
+27:12:2022 23:48:11.458 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.ws.policy.PolicyInInterceptor@178c949c
+27:12:2022 23:48:11.479 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.ws.policy.AssertionBuilderRegistryImpl.
+27:12:2022 23:48:11.480 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.ws.policy.PolicyBuilderImpl.
+27:12:2022 23:48:11.480 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.ws.policy.attachment.ServiceModelPolicyProvider.
+27:12:2022 23:48:11.482 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.ws.policy.attachment.wsdl11.Wsdl11AttachmentPolicyProvider.
+27:12:2022 23:48:11.484 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.ws.policy.PolicyInterceptorProviderRegistryImpl.
+27:12:2022 23:48:11.484 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.interceptor.AttachmentInInterceptor@7557bcd9
+27:12:2022 23:48:11.484 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.i.AttachmentInInterceptor}: AttachmentInInterceptor skipped in HTTP GET method
+27:12:2022 23:48:11.484 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.transport.https.CertConstraintsInterceptor@726b026e
+27:12:2022 23:48:11.485 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.interceptor.StaxInInterceptor@5d69b24
+27:12:2022 23:48:11.485 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.i.StaxInInterceptor}: StaxInInterceptor skipped.
+27:12:2022 23:48:11.485 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.frontend.WSDLGetInterceptor@5975309f
+27:12:2022 23:48:11.523 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.catalog.OASISCatalogManager.
+27:12:2022 23:48:11.530 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.i.OutgoingChainInterceptor}: Interceptors contributed by endpoint: [org.apache.cxf.interceptor.MessageSenderInterceptor@7c8043e3, org.apache.cxf.jaxws.interceptors.SwAOutInterceptor@3ec442b5, org.apache.cxf.jaxws.interceptors.WrapperClassOutInterceptor@59a57af6, org.apache.cxf.jaxws.interceptors.HolderOutInterceptor@49b0a3b8, org.apache.cxf.jaxws.handler.logical.LogicalHandlerOutInterceptor@37517e36, org.apache.cxf.jaxws.handler.soap.SOAPHandlerInterceptor@651fb72]
+27:12:2022 23:48:11.530 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.interceptor.MessageSenderInterceptor@7c8043e3 to phase prepare-send
+27:12:2022 23:48:11.530 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.jaxws.interceptors.SwAOutInterceptor@3ec442b5 to phase pre-logical
+27:12:2022 23:48:11.530 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.jaxws.interceptors.WrapperClassOutInterceptor@59a57af6 to phase pre-logical
+27:12:2022 23:48:11.530 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.jaxws.interceptors.HolderOutInterceptor@49b0a3b8 to phase pre-logical
+27:12:2022 23:48:11.530 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.jaxws.handler.logical.LogicalHandlerOutInterceptor@37517e36 to phase pre-marshal
+27:12:2022 23:48:11.530 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.jaxws.handler.soap.SOAPHandlerInterceptor@651fb72 to phase pre-protocol-frontend
+27:12:2022 23:48:11.530 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.i.OutgoingChainInterceptor}: Interceptors contributed by service: []
+27:12:2022 23:48:11.530 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.i.OutgoingChainInterceptor}: Interceptors contributed by bus: [org.apache.cxf.ws.policy.PolicyOutInterceptor@2b9c5383]
+27:12:2022 23:48:11.530 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.ws.policy.PolicyOutInterceptor@2b9c5383 to phase setup
+27:12:2022 23:48:11.530 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.i.OutgoingChainInterceptor}: Interceptors contributed by binding: [org.apache.cxf.interceptor.AttachmentOutInterceptor@599cfecc, org.apache.cxf.interceptor.StaxOutInterceptor@157d2b24, org.apache.cxf.binding.soap.interceptor.SoapHeaderOutFilterInterceptor@29e15773, org.apache.cxf.wsdl.interceptors.WrappedOutInterceptor@60a80987, org.apache.cxf.wsdl.interceptors.BareOutInterceptor@5efce1c0, org.apache.cxf.binding.soap.interceptor.SoapPreProtocolOutInterceptor@22a4d530, org.apache.cxf.binding.soap.interceptor.SoapOutInterceptor@15d54d8]
+27:12:2022 23:48:11.530 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.interceptor.AttachmentOutInterceptor@599cfecc to phase pre-stream
+27:12:2022 23:48:11.530 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.interceptor.StaxOutInterceptor@157d2b24 to phase pre-stream
+27:12:2022 23:48:11.530 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapHeaderOutFilterInterceptor@29e15773 to phase pre-logical
+27:12:2022 23:48:11.530 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.wsdl.interceptors.WrappedOutInterceptor@60a80987 to phase marshal
+27:12:2022 23:48:11.531 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.wsdl.interceptors.BareOutInterceptor@5efce1c0 to phase marshal
+27:12:2022 23:48:11.531 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapPreProtocolOutInterceptor@22a4d530 to phase post-logical
+27:12:2022 23:48:11.531 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapOutInterceptor@15d54d8 to phase write
+27:12:2022 23:48:11.532 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.frontend.WSDLGetOutInterceptor@1c5bcd38 to phase pre-stream
+27:12:2022 23:48:11.532 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.interceptor.OutgoingChainInterceptor@271ecce9
+27:12:2022 23:48:11.533 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Chain org.apache.cxf.phase.PhaseInterceptorChain@2914fdbb was created. Current flow:
+  prepare-send [MessageSenderInterceptor]
+  pre-stream [StaxOutInterceptor, WSDLGetOutInterceptor]
+
+27:12:2022 23:48:11.534 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.interceptor.MessageSenderInterceptor@7c8043e3
+27:12:2022 23:48:11.535 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor@f3f3228 to phase prepare-send-ending
+27:12:2022 23:48:11.535 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Chain org.apache.cxf.phase.PhaseInterceptorChain@2914fdbb was modified. Current flow:
+  prepare-send [MessageSenderInterceptor]
+  pre-stream [StaxOutInterceptor, WSDLGetOutInterceptor]
+  prepare-send-ending [MessageSenderEndingInterceptor]
+
+27:12:2022 23:48:11.535 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.interceptor.StaxOutInterceptor@157d2b24
+27:12:2022 23:48:11.543 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.interceptor.StaxOutEndingInterceptor@36741d12 to phase pre-stream-ending
+27:12:2022 23:48:11.544 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Chain org.apache.cxf.phase.PhaseInterceptorChain@2914fdbb was modified. Current flow:
+  prepare-send [MessageSenderInterceptor]
+  pre-stream [StaxOutInterceptor, WSDLGetOutInterceptor]
+  pre-stream-ending [StaxOutEndingInterceptor]
+  prepare-send-ending [MessageSenderEndingInterceptor]
+
+27:12:2022 23:48:11.544 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.frontend.WSDLGetOutInterceptor@1c5bcd38
+27:12:2022 23:48:11.545 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.w.a.ContextUtils}: retrieving MAPs from context property javax.xml.ws.addressing.context.inbound
+27:12:2022 23:48:11.545 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.w.a.ContextUtils}: WS-Addressing - failed to retrieve Message Addressing Properties from context
+27:12:2022 23:48:11.550 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.interceptor.StaxOutEndingInterceptor@36741d12
+27:12:2022 23:48:11.550 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor@f3f3228
+27:12:2022 23:48:11.552 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.t.h.AbstractHTTPDestination}: Finished servicing http request on thread: Thread[http-nio-8085-exec-3,5,main]
+27:12:2022 23:48:11.552 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.t.s.ServletController}: Finished servicing http request on thread: Thread[http-nio-8085-exec-3,5,main]
+27:12:2022 23:48:51.726 SerikHome tomcat {DEBUG} {http-nio-8085-exec-4} {o.a.c.t.s.ServletController}: Service http request on thread: Thread[http-nio-8085-exec-4,5,main]
+27:12:2022 23:48:51.726 SerikHome tomcat {DEBUG} {http-nio-8085-exec-4} {o.a.c.t.h.AbstractHTTPDestination}: Create a new message for processing
+27:12:2022 23:48:51.726 SerikHome tomcat {DEBUG} {http-nio-8085-exec-4} {o.a.c.t.h.Headers}: Request Headers: {Accept=[text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9], accept-encoding=[gzip, deflate, br], accept-language=[ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7], Authorization=[***], connection=[keep-alive], Content-Type=[null], cookie=[Webstorm-2cb58833=be79b1a9-6245-4b69-a10a-5cc05fbcf1a9], dnt=[1], host=[localhost:8085], Proxy-Authorization=[***], referer=[http://localhost:8085/Service], sec-ch-ua=["Not?A_Brand";v="8", "Chromium";v="108", "Google Chrome";v="108"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Windows"], sec-fetch-dest=[document], sec-fetch-mode=[navigate], sec-fetch-site=[same-origin], sec-fetch-user=[?1], upgrade-insecure-requests=[1], user-agent=[Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36]}
+27:12:2022 23:48:51.726 SerikHome tomcat {DEBUG} {http-nio-8085-exec-4} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.transport.https.CertConstraintsInterceptor@726b026e to phase pre-stream
+27:12:2022 23:48:51.726 SerikHome tomcat {DEBUG} {http-nio-8085-exec-4} {o.a.c.p.PhaseInterceptorChain}: Chain org.apache.cxf.phase.PhaseInterceptorChain@48e7fae4 was created. Current flow:
+  receive [PolicyInInterceptor, AttachmentInInterceptor]
+  pre-stream [CertConstraintsInterceptor]
+  post-stream [StaxInInterceptor]
+  read [WSDLGetInterceptor, ReadHeadersInterceptor, SoapActionInInterceptor, StartBodyInterceptor]
+  pre-protocol [MustUnderstandInterceptor]
+  pre-protocol-frontend [SOAPHandlerInterceptor, LogicalHandlerInInterceptor]
+  post-protocol [CheckFaultInterceptor, JAXBAttachmentSchemaValidationHack]
+  unmarshal [DocLiteralInInterceptor, SoapHeaderInterceptor]
+  pre-logical [OneWayProcessorInterceptor]
+  post-logical [WrapperClassInInterceptor]
+  pre-invoke [SwAInInterceptor, HolderInInterceptor]
+  invoke [ServiceInvokerInterceptor]
+  post-invoke [OutgoingChainInterceptor]
+
+27:12:2022 23:48:51.727 SerikHome tomcat {DEBUG} {http-nio-8085-exec-4} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.ws.policy.PolicyInInterceptor@178c949c
+27:12:2022 23:48:51.727 SerikHome tomcat {DEBUG} {http-nio-8085-exec-4} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.interceptor.AttachmentInInterceptor@7557bcd9
+27:12:2022 23:48:51.727 SerikHome tomcat {DEBUG} {http-nio-8085-exec-4} {o.a.c.i.AttachmentInInterceptor}: AttachmentInInterceptor skipped in HTTP GET method
+27:12:2022 23:48:51.727 SerikHome tomcat {DEBUG} {http-nio-8085-exec-4} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.transport.https.CertConstraintsInterceptor@726b026e
+27:12:2022 23:48:51.727 SerikHome tomcat {DEBUG} {http-nio-8085-exec-4} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.interceptor.StaxInInterceptor@5d69b24
+27:12:2022 23:48:51.727 SerikHome tomcat {DEBUG} {http-nio-8085-exec-4} {o.a.c.i.StaxInInterceptor}: StaxInInterceptor skipped.
+27:12:2022 23:48:51.727 SerikHome tomcat {DEBUG} {http-nio-8085-exec-4} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.frontend.WSDLGetInterceptor@5975309f
+27:12:2022 23:48:51.729 SerikHome tomcat {DEBUG} {http-nio-8085-exec-4} {o.a.c.i.OutgoingChainInterceptor}: Interceptors contributed by endpoint: [org.apache.cxf.interceptor.MessageSenderInterceptor@7c8043e3, org.apache.cxf.jaxws.interceptors.SwAOutInterceptor@3ec442b5, org.apache.cxf.jaxws.interceptors.WrapperClassOutInterceptor@59a57af6, org.apache.cxf.jaxws.interceptors.HolderOutInterceptor@49b0a3b8, org.apache.cxf.jaxws.handler.logical.LogicalHandlerOutInterceptor@37517e36, org.apache.cxf.jaxws.handler.soap.SOAPHandlerInterceptor@651fb72]
+27:12:2022 23:48:51.729 SerikHome tomcat {DEBUG} {http-nio-8085-exec-4} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.interceptor.MessageSenderInterceptor@7c8043e3 to phase prepare-send
+27:12:2022 23:48:51.729 SerikHome tomcat {DEBUG} {http-nio-8085-exec-4} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.jaxws.interceptors.SwAOutInterceptor@3ec442b5 to phase pre-logical
+27:12:2022 23:48:51.729 SerikHome tomcat {DEBUG} {http-nio-8085-exec-4} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.jaxws.interceptors.WrapperClassOutInterceptor@59a57af6 to phase pre-logical
+27:12:2022 23:48:51.729 SerikHome tomcat {DEBUG} {http-nio-8085-exec-4} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.jaxws.interceptors.HolderOutInterceptor@49b0a3b8 to phase pre-logical
+27:12:2022 23:48:51.729 SerikHome tomcat {DEBUG} {http-nio-8085-exec-4} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.jaxws.handler.logical.LogicalHandlerOutInterceptor@37517e36 to phase pre-marshal
+27:12:2022 23:48:51.729 SerikHome tomcat {DEBUG} {http-nio-8085-exec-4} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.jaxws.handler.soap.SOAPHandlerInterceptor@651fb72 to phase pre-protocol-frontend
+27:12:2022 23:48:51.730 SerikHome tomcat {DEBUG} {http-nio-8085-exec-4} {o.a.c.i.OutgoingChainInterceptor}: Interceptors contributed by service: []
+27:12:2022 23:48:51.730 SerikHome tomcat {DEBUG} {http-nio-8085-exec-4} {o.a.c.i.OutgoingChainInterceptor}: Interceptors contributed by bus: [org.apache.cxf.ws.policy.PolicyOutInterceptor@2b9c5383]
+27:12:2022 23:48:51.730 SerikHome tomcat {DEBUG} {http-nio-8085-exec-4} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.ws.policy.PolicyOutInterceptor@2b9c5383 to phase setup
+27:12:2022 23:48:51.730 SerikHome tomcat {DEBUG} {http-nio-8085-exec-4} {o.a.c.i.OutgoingChainInterceptor}: Interceptors contributed by binding: [org.apache.cxf.interceptor.AttachmentOutInterceptor@599cfecc, org.apache.cxf.interceptor.StaxOutInterceptor@157d2b24, org.apache.cxf.binding.soap.interceptor.SoapHeaderOutFilterInterceptor@29e15773, org.apache.cxf.wsdl.interceptors.WrappedOutInterceptor@60a80987, org.apache.cxf.wsdl.interceptors.BareOutInterceptor@5efce1c0, org.apache.cxf.binding.soap.interceptor.SoapPreProtocolOutInterceptor@22a4d530, org.apache.cxf.binding.soap.interceptor.SoapOutInterceptor@15d54d8]
+27:12:2022 23:48:51.730 SerikHome tomcat {DEBUG} {http-nio-8085-exec-4} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.interceptor.AttachmentOutInterceptor@599cfecc to phase pre-stream
+27:12:2022 23:48:51.730 SerikHome tomcat {DEBUG} {http-nio-8085-exec-4} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.interceptor.StaxOutInterceptor@157d2b24 to phase pre-stream
+27:12:2022 23:48:51.730 SerikHome tomcat {DEBUG} {http-nio-8085-exec-4} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapHeaderOutFilterInterceptor@29e15773 to phase pre-logical
+27:12:2022 23:48:51.730 SerikHome tomcat {DEBUG} {http-nio-8085-exec-4} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.wsdl.interceptors.WrappedOutInterceptor@60a80987 to phase marshal
+27:12:2022 23:48:51.730 SerikHome tomcat {DEBUG} {http-nio-8085-exec-4} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.wsdl.interceptors.BareOutInterceptor@5efce1c0 to phase marshal
+27:12:2022 23:48:51.730 SerikHome tomcat {DEBUG} {http-nio-8085-exec-4} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapPreProtocolOutInterceptor@22a4d530 to phase post-logical
+27:12:2022 23:48:51.730 SerikHome tomcat {DEBUG} {http-nio-8085-exec-4} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapOutInterceptor@15d54d8 to phase write
+27:12:2022 23:48:51.730 SerikHome tomcat {DEBUG} {http-nio-8085-exec-4} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.frontend.WSDLGetOutInterceptor@1c5bcd38 to phase pre-stream
+27:12:2022 23:48:51.730 SerikHome tomcat {DEBUG} {http-nio-8085-exec-4} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.interceptor.OutgoingChainInterceptor@271ecce9
+27:12:2022 23:48:51.730 SerikHome tomcat {DEBUG} {http-nio-8085-exec-4} {o.a.c.p.PhaseInterceptorChain}: Chain org.apache.cxf.phase.PhaseInterceptorChain@4cd86720 was created. Current flow:
+  prepare-send [MessageSenderInterceptor]
+  pre-stream [StaxOutInterceptor, WSDLGetOutInterceptor]
+
+27:12:2022 23:48:51.730 SerikHome tomcat {DEBUG} {http-nio-8085-exec-4} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.interceptor.MessageSenderInterceptor@7c8043e3
+27:12:2022 23:48:51.730 SerikHome tomcat {DEBUG} {http-nio-8085-exec-4} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor@f3f3228 to phase prepare-send-ending
+27:12:2022 23:48:51.730 SerikHome tomcat {DEBUG} {http-nio-8085-exec-4} {o.a.c.p.PhaseInterceptorChain}: Chain org.apache.cxf.phase.PhaseInterceptorChain@4cd86720 was modified. Current flow:
+  prepare-send [MessageSenderInterceptor]
+  pre-stream [StaxOutInterceptor, WSDLGetOutInterceptor]
+  prepare-send-ending [MessageSenderEndingInterceptor]
+
+27:12:2022 23:48:51.730 SerikHome tomcat {DEBUG} {http-nio-8085-exec-4} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.interceptor.StaxOutInterceptor@157d2b24
+27:12:2022 23:48:51.730 SerikHome tomcat {DEBUG} {http-nio-8085-exec-4} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.interceptor.StaxOutEndingInterceptor@36741d12 to phase pre-stream-ending
+27:12:2022 23:48:51.730 SerikHome tomcat {DEBUG} {http-nio-8085-exec-4} {o.a.c.p.PhaseInterceptorChain}: Chain org.apache.cxf.phase.PhaseInterceptorChain@4cd86720 was modified. Current flow:
+  prepare-send [MessageSenderInterceptor]
+  pre-stream [StaxOutInterceptor, WSDLGetOutInterceptor]
+  pre-stream-ending [StaxOutEndingInterceptor]
+  prepare-send-ending [MessageSenderEndingInterceptor]
+
+27:12:2022 23:48:51.730 SerikHome tomcat {DEBUG} {http-nio-8085-exec-4} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.frontend.WSDLGetOutInterceptor@1c5bcd38
+27:12:2022 23:48:51.731 SerikHome tomcat {DEBUG} {http-nio-8085-exec-4} {o.a.c.w.a.ContextUtils}: retrieving MAPs from context property javax.xml.ws.addressing.context.inbound
+27:12:2022 23:48:51.731 SerikHome tomcat {DEBUG} {http-nio-8085-exec-4} {o.a.c.w.a.ContextUtils}: WS-Addressing - failed to retrieve Message Addressing Properties from context
+27:12:2022 23:48:51.731 SerikHome tomcat {DEBUG} {http-nio-8085-exec-4} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.interceptor.StaxOutEndingInterceptor@36741d12
+27:12:2022 23:48:51.731 SerikHome tomcat {DEBUG} {http-nio-8085-exec-4} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor@f3f3228
+27:12:2022 23:48:51.731 SerikHome tomcat {DEBUG} {http-nio-8085-exec-4} {o.a.c.t.h.AbstractHTTPDestination}: Finished servicing http request on thread: Thread[http-nio-8085-exec-4,5,main]
+27:12:2022 23:48:51.731 SerikHome tomcat {DEBUG} {http-nio-8085-exec-4} {o.a.c.t.s.ServletController}: Finished servicing http request on thread: Thread[http-nio-8085-exec-4,5,main]
+27:12:2022 23:51:22.863 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.e.ServerImpl}: Server is stopping.
+27:12:2022 23:51:22.864 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.t.s.ServletDestination}: unregistering incoming observer: org.apache.cxf.transport.ChainInitiationObserver@1381c2b5
+27:12:2022 23:51:22.864 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.e.ServerImpl}: unregister the server to serverRegistry 
+27:12:2022 23:51:22.864 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.e.ServerImpl}: Server is stopping.
+27:12:2022 23:51:22.864 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.t.s.ServletDestination}: unregistering incoming observer: org.apache.cxf.transport.ChainInitiationObserver@510217d6
+27:12:2022 23:51:22.864 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.e.ServerImpl}: unregister the server to serverRegistry 
+27:12:2022 23:51:31.598 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.l.LogUtils}: Using org.apache.cxf.common.logging.Slf4jLogger for logging.
+27:12:2022 23:51:32.195 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.ws.policy.PolicyAnnotationListener.
+27:12:2022 23:51:32.197 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.service.factory.FactoryBeanListenerManager.
+27:12:2022 23:51:32.202 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.ws.policy.PolicyEngineImpl.
+27:12:2022 23:51:32.202 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.ws.policy.PolicyDataEngineImpl.
+27:12:2022 23:51:32.203 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.bus.managers.CXFBusLifeCycleManager.
+27:12:2022 23:51:32.203 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.bus.managers.ServerRegistryImpl.
+27:12:2022 23:51:32.282 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://serik.start.soap/}HelloPort.jaxws-endpoint - no injection will be performed.
+27:12:2022 23:51:32.283 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id org.apache.cxf.jaxws.JaxWsServerFactoryBean - no injection will be performed.
+27:12:2022 23:51:32.289 SerikHome tomcat {INFO } {restartedMain} {o.a.c.w.s.f.ReflectionServiceFactoryBean}: Creating Service {http://serik.start.soap/}HelloService from class soap.start.serik.web_services.server.HelloService
+27:12:2022 23:51:32.318 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.common.util.ASMHelperImpl.
+27:12:2022 23:51:32.318 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.jaxws.spi.WrapperClassCreatorProxyService.
+27:12:2022 23:51:32.405 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.JAXBDataBinding}: Created JAXBContext "jar:file:/C:/Users/kobla/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.7/jaxb-runtime-2.3.7.jar!/com/sun/xml/bind/v2/runtime/JAXBContextImpl.class Build-Id: 2.3.7
+Classes known to this context:
+  [B
+  boolean
+  byte
+  char
+  com.sun.xml.bind.api.CompositeStructure
+  double
+  float
+  int
+  java.awt.Image
+  java.io.File
+  java.lang.Boolean
+  java.lang.Byte
+  java.lang.Character
+  java.lang.Class
+  java.lang.Double
+  java.lang.Float
+  java.lang.Integer
+  java.lang.Long
+  java.lang.Object
+  java.lang.Short
+  java.lang.String
+  java.lang.Void
+  java.math.BigDecimal
+  java.math.BigInteger
+  java.net.URI
+  java.net.URL
+  java.util.Calendar
+  java.util.Date
+  java.util.GregorianCalendar
+  java.util.UUID
+  javax.activation.DataHandler
+  javax.xml.bind.JAXBElement
+  javax.xml.datatype.Duration
+  javax.xml.datatype.XMLGregorianCalendar
+  javax.xml.namespace.QName
+  javax.xml.transform.Source
+  long
+  short
+  soap.start.serik.web_services.server.jaxws_asm.SayHello
+  soap.start.serik.web_services.server.jaxws_asm.SayHelloResponse
+  void
+" with classes [class soap.start.serik.web_services.server.jaxws_asm.SayHello, class soap.start.serik.web_services.server.jaxws_asm.SayHelloResponse].
+27:12:2022 23:51:32.407 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.u.ProxyHelper}: current classloader sun.misc.Launcher$AppClassLoader@18b4aac2 can see all interface
+27:12:2022 23:51:32.408 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.u.ProxyHelper}: current classloader sun.misc.Launcher$AppClassLoader@18b4aac2 can see all interface
+27:12:2022 23:51:32.458 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.binding.soap.SoapBindingFactory.
+27:12:2022 23:51:32.479 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.wsdl11.WSDLManagerImpl.
+27:12:2022 23:51:32.480 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.r.DefaultResourceManager}: resolving resource <org.apache.cxf.wsdl11.WSDLManagerImpl/bus> type <interface org.apache.cxf.Bus>
+27:12:2022 23:51:32.480 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.r.DefaultResourceManager}: resolving resource <null> type <interface org.apache.cxf.Bus>
+27:12:2022 23:51:32.484 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.wsdl.ExtensionClassCreatorProxyService.
+27:12:2022 23:51:32.500 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.transport.http.HTTPWSDLExtensionLoader.
+27:12:2022 23:51:32.508 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.binding.xml.wsdl11.XMLWSDLExtensionLoader.
+27:12:2022 23:51:32.512 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.ws.addressing.impl.AddressingWSDLExtensionLoader.
+27:12:2022 23:51:32.520 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.binding.soap.SoapTransportFactory.
+27:12:2022 23:51:32.552 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.transport.http.HTTPTransportFactory.
+27:12:2022 23:51:32.559 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://serik.start.soap/}HelloPort.http-destination - no injection will be performed.
+27:12:2022 23:51:32.560 SerikHome tomcat {INFO } {restartedMain} {o.a.c.e.ServerImpl}: Setting the server's publish address to be /hello
+27:12:2022 23:51:32.561 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.bus.managers.ServerLifeCycleManagerImpl.
+27:12:2022 23:51:32.565 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.AnnotationHandlerChainBuilder}: building handler chain
+27:12:2022 23:51:32.566 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.AnnotationHandlerChainBuilder}: Checking for HandlerChain annotation on soap.start.serik.web_services.server.HelloServiceImpl
+27:12:2022 23:51:32.566 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.AnnotationHandlerChainBuilder}: Checking for HandlerChain annotation on soap.start.serik.web_services.server.HelloService
+27:12:2022 23:51:32.629 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.HandlerChainBuilder}: loading handler
+27:12:2022 23:51:32.683 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.HandlerChainBuilder}: adding handler to chain: soap.start.serik.handlers.PropertyValidator@39459236
+27:12:2022 23:51:32.683 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.HandlerChainBuilder}: loading handler
+27:12:2022 23:51:32.684 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.HandlerChainBuilder}: adding handler to chain: soap.start.serik.handlers.LoggingHandler@3232ccae
+27:12:2022 23:51:32.685 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://serik.start.soap/}HelloService - no injection will be performed.
+27:12:2022 23:51:32.685 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://serik.start.soap/}HelloPort.endpoint - no injection will be performed.
+27:12:2022 23:51:32.685 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.e.ServerImpl}: Server is starting.
+27:12:2022 23:51:32.686 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.t.s.ServletDestination}: registering incoming observer: org.apache.cxf.transport.ChainInitiationObserver@5e0dc06
+27:12:2022 23:51:32.686 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.e.ServerImpl}: register the server to serverRegistry 
+27:12:2022 23:51:32.698 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://bip.bee.kz/SyncChannel/v10/Interfaces}SyncChannelHttpPort.jaxws-endpoint - no injection will be performed.
+27:12:2022 23:51:32.699 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id org.apache.cxf.jaxws.JaxWsServerFactoryBean - no injection will be performed.
+27:12:2022 23:51:32.703 SerikHome tomcat {INFO } {restartedMain} {o.a.c.w.s.f.ReflectionServiceFactoryBean}: Creating Service {http://bip.bee.kz/SyncChannel/v10/Interfaces}ria from class kz.bee.bip.esedo.ISyncChannel
+27:12:2022 23:51:32.951 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.JAXBDataBinding}: Created JAXBContext "jar:file:/C:/Users/kobla/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.7/jaxb-runtime-2.3.7.jar!/com/sun/xml/bind/v2/runtime/JAXBContextImpl.class Build-Id: 2.3.7
+Classes known to this context:
+  [B
+  boolean
+  byte
+  char
+  com.sun.xml.bind.api.CompositeStructure
+  double
+  float
+  int
+  java.awt.Image
+  java.io.File
+  java.lang.Boolean
+  java.lang.Byte
+  java.lang.Character
+  java.lang.Class
+  java.lang.Double
+  java.lang.Float
+  java.lang.Integer
+  java.lang.Long
+  java.lang.Object
+  java.lang.Short
+  java.lang.String
+  java.lang.Void
+  java.math.BigDecimal
+  java.math.BigInteger
+  java.net.URI
+  java.net.URL
+  java.util.Calendar
+  java.util.Date
+  java.util.GregorianCalendar
+  java.util.UUID
+  javax.activation.DataHandler
+  javax.xml.bind.JAXBElement
+  javax.xml.datatype.Duration
+  javax.xml.datatype.XMLGregorianCalendar
+  javax.xml.namespace.QName
+  javax.xml.transform.Source
+  kz.bee.bip.SyncChannel.v10.Types.Property
+  kz.bee.bip.SyncChannel.v10.Types.SendMessage
+  kz.bee.bip.SyncChannel.v10.Types.SendMessageResponse
+  kz.bee.bip.SyncChannel.v10.Types.SenderInfo
+  kz.bee.bip.SyncChannel.v10.Types.StatusInfo
+  kz.bee.bip.SyncChannel.v10.Types.SyncMessageInfo
+  kz.bee.bip.SyncChannel.v10.Types.SyncMessageInfoResponse
+  kz.bee.bip.SyncChannel.v10.Types.request.Data
+  kz.bee.bip.SyncChannel.v10.Types.request.RequestData
+  kz.bee.bip.SyncChannel.v10.Types.request.SyncSendMessageRequest
+  kz.bee.bip.SyncChannel.v10.Types.response.ResponseData
+  kz.bee.bip.SyncChannel.v10.Types.response.SyncSendMessageResponse
+  kz.bee.bip.common.v10.Types.ErrorInfo
+  kz.bee.bip.esedo.Attachment
+  kz.bee.bip.esedo.DocAppeal
+  kz.bee.bip.esedo.DocOL
+  kz.bee.bip.esedo.DocOutgoing
+  kz.bee.bip.esedo.DocSection
+  kz.bee.bip.esedo.EECBApprovalData
+  kz.bee.bip.esedo.EECBDocumentMetadata
+  kz.bee.bip.esedo.EECBPublication
+  kz.bee.bip.esedo.Message
+  kz.bee.bip.esedo.MetadataSystem
+  kz.bee.bip.esedo.Property
+  kz.bee.bip.esedo.RequestData
+  kz.bee.bip.esedo.ResponseData
+  kz.bee.bip.esedo.SendMessage
+  kz.bee.bip.esedo.SendMessageResponse
+  kz.bee.bip.esedo.SenderInfo
+  kz.bee.bip.esedo.StateDelivered
+  kz.bee.bip.esedo.StateExecution
+  kz.bee.bip.esedo.StateFinished
+  kz.bee.bip.esedo.StateNewControl
+  kz.bee.bip.esedo.StateNewControlWrong
+  kz.bee.bip.esedo.StateNewExDate
+  kz.bee.bip.esedo.StateNotValid
+  kz.bee.bip.esedo.StateProlongExDate
+  kz.bee.bip.esedo.StateRegistered
+  kz.bee.bip.esedo.StateStartProcessResponse
+  kz.bee.bip.esedo.StateTakeOfControl
+  kz.bee.bip.esedo.StateTakeOfControlWrong
+  kz.bee.bip.esedo.StatusInfo
+  kz.bee.bip.esedo.SyncMessageInfoResponse
+  kz.bee.bip.esedo.SyncSendMessageRequest
+  kz.bee.bip.esedo.SyncSendMessageResponse
+  kz.bee.bip.esedo.System
+  kz.bee.bip.esedo.eds.ConfirmRequest
+  kz.bee.bip.esedo.eds.ConfirmResponse
+  kz.bee.bip.esedo.eds.DownloadRequest
+  kz.bee.bip.esedo.eds.DownloadResponse
+  kz.bee.bip.esedo.eds.FileConfirmResult
+  kz.bee.bip.esedo.eds.FileDownloadResult
+  kz.bee.bip.esedo.eds.FileInfo
+  kz.bee.bip.esedo.eds.FileInfoResult
+  kz.bee.bip.esedo.eds.FileUploadResult
+  kz.bee.bip.esedo.eds.GetFileInfoRequest
+  kz.bee.bip.esedo.eds.GetFileInfoResponse
+  kz.bee.bip.esedo.eds.ProcessStatus
+  kz.bee.bip.esedo.eds.TempStorageRequest
+  kz.bee.bip.esedo.eds.TempStorageRequestType
+  kz.bee.bip.esedo.eds.TempStorageResponse
+  kz.bee.bip.esedo.eds.UploadFileRequest
+  kz.bee.bip.esedo.eds.UploadRequest
+  kz.bee.bip.esedo.eds.UploadResponse
+  kz.bee.bip.esedo.nsi.DictionaryElement
+  kz.bee.bip.esedo.nsi.DictionaryRequest
+  kz.bee.bip.esedo.nsi.DictionaryResponse
+  long
+  short
+  void
+" with classes [class kz.bee.bip.esedo.SendMessage, class kz.bee.bip.esedo.SyncSendMessageRequest, class kz.bee.bip.SyncChannel.v10.Types.SyncMessageInfo, class kz.bee.bip.SyncChannel.v10.Types.SenderInfo, class kz.bee.bip.SyncChannel.v10.Types.Property, class kz.bee.bip.esedo.RequestData, class kz.bee.bip.esedo.SendMessageResponse, class kz.bee.bip.esedo.SyncSendMessageResponse, class kz.bee.bip.esedo.SyncMessageInfoResponse, class kz.bee.bip.esedo.StatusInfo, class kz.bee.bip.esedo.ResponseData, class kz.bee.bip.common.v10.Types.ErrorInfo, class kz.bee.bip.esedo.ObjectFactory, class kz.bee.bip.SyncChannel.v10.Types.ObjectFactory].
+27:12:2022 23:51:32.951 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.u.ProxyHelper}: current classloader sun.misc.Launcher$AppClassLoader@18b4aac2 can see all interface
+27:12:2022 23:51:32.951 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.u.ProxyHelper}: current classloader sun.misc.Launcher$AppClassLoader@18b4aac2 can see all interface
+27:12:2022 23:51:33.008 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://bip.bee.kz/SyncChannel/v10/Interfaces}SyncChannelHttpPort.http-destination - no injection will be performed.
+27:12:2022 23:51:33.008 SerikHome tomcat {INFO } {restartedMain} {o.a.c.e.ServerImpl}: Setting the server's publish address to be /sync_channel
+27:12:2022 23:51:33.008 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.AnnotationHandlerChainBuilder}: building handler chain
+27:12:2022 23:51:33.008 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.AnnotationHandlerChainBuilder}: Checking for HandlerChain annotation on kz.bee.bip.esedo.SyncChannelImpl
+27:12:2022 23:51:33.008 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.AnnotationHandlerChainBuilder}: Checking for HandlerChain annotation on kz.bee.bip.esedo.ISyncChannel
+27:12:2022 23:51:33.009 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.HandlerChainBuilder}: loading handler
+27:12:2022 23:51:33.009 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.HandlerChainBuilder}: adding handler to chain: soap.start.serik.handlers.PropertyValidator@793ecfe
+27:12:2022 23:51:33.009 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.HandlerChainBuilder}: loading handler
+27:12:2022 23:51:33.009 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.HandlerChainBuilder}: adding handler to chain: soap.start.serik.handlers.LoggingHandler@28466a43
+27:12:2022 23:51:33.009 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://bip.bee.kz/SyncChannel/v10/Interfaces}ria - no injection will be performed.
+27:12:2022 23:51:33.009 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://bip.bee.kz/SyncChannel/v10/Interfaces}SyncChannelHttpPort.endpoint - no injection will be performed.
+27:12:2022 23:51:33.010 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.e.ServerImpl}: Server is starting.
+27:12:2022 23:51:33.010 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.t.s.ServletDestination}: registering incoming observer: org.apache.cxf.transport.ChainInitiationObserver@39848135
+27:12:2022 23:51:33.010 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.e.ServerImpl}: register the server to serverRegistry 
+27:12:2022 23:53:47.758 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.r.DefaultResourceManager}: resolving resource </WEB-INF/cxfServletStaticResourcesMap.txt> type <class java.io.InputStream>
+27:12:2022 23:53:47.759 SerikHome tomcat {DEBUG} {http-nio-8085-exec-1} {o.a.c.r.DefaultResourceManager}: resolving resource </cxfServletStaticResourcesMap.txt> type <class java.io.InputStream>
+27:12:2022 23:53:49.985 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.t.s.ServletController}: Service http request on thread: Thread[http-nio-8085-exec-3,5,main]
+27:12:2022 23:53:49.985 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.t.h.AbstractHTTPDestination}: Create a new message for processing
+27:12:2022 23:53:49.991 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.t.h.Headers}: Request Headers: {Accept=[text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9], accept-encoding=[gzip, deflate, br], accept-language=[ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7], Authorization=[***], connection=[keep-alive], Content-Type=[null], cookie=[Webstorm-2cb58833=be79b1a9-6245-4b69-a10a-5cc05fbcf1a9], dnt=[1], host=[localhost:8085], Proxy-Authorization=[***], referer=[http://localhost:8085/Service], sec-ch-ua=["Not?A_Brand";v="8", "Chromium";v="108", "Google Chrome";v="108"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Windows"], sec-fetch-dest=[document], sec-fetch-mode=[navigate], sec-fetch-site=[same-origin], sec-fetch-user=[?1], upgrade-insecure-requests=[1], user-agent=[Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36]}
+27:12:2022 23:53:49.995 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.bus.managers.PhaseManagerImpl.
+27:12:2022 23:53:49.998 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.ws.policy.PolicyInInterceptor@52c2890d to phase receive
+27:12:2022 23:53:49.998 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.interceptor.ServiceInvokerInterceptor@20757a72 to phase invoke
+27:12:2022 23:53:49.998 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.interceptor.OutgoingChainInterceptor@183d6e82 to phase post-invoke
+27:12:2022 23:53:49.998 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.interceptor.OneWayProcessorInterceptor@1a1d07e6 to phase pre-logical
+27:12:2022 23:53:49.998 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.jaxws.interceptors.WrapperClassInInterceptor@5c516f49 to phase post-logical
+27:12:2022 23:53:49.998 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.jaxws.interceptors.HolderInInterceptor@577c385b to phase pre-invoke
+27:12:2022 23:53:49.998 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.jaxws.interceptors.SwAInInterceptor@24460548 to phase pre-invoke
+27:12:2022 23:53:49.998 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.frontend.WSDLGetInterceptor@56961411 to phase read
+27:12:2022 23:53:49.998 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.jaxws.handler.logical.LogicalHandlerInInterceptor@1ea02ad to phase pre-protocol-frontend
+27:12:2022 23:53:49.998 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.jaxws.handler.soap.SOAPHandlerInterceptor@37e24c2b to phase pre-protocol-frontend
+27:12:2022 23:53:49.998 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.interceptor.AttachmentInInterceptor@239a63da to phase receive
+27:12:2022 23:53:49.998 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.interceptor.StaxInInterceptor@45cacd24 to phase post-stream
+27:12:2022 23:53:49.998 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapActionInInterceptor@14e4505a to phase read
+27:12:2022 23:53:49.998 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.wsdl.interceptors.DocLiteralInInterceptor@3142d5f9 to phase unmarshal
+27:12:2022 23:53:49.998 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapHeaderInterceptor@4136f4b8 to phase unmarshal
+27:12:2022 23:53:49.998 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.binding.soap.interceptor.ReadHeadersInterceptor@5286b257 to phase read
+27:12:2022 23:53:49.998 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.binding.soap.interceptor.StartBodyInterceptor@64565edd to phase read
+27:12:2022 23:53:49.999 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.binding.soap.interceptor.CheckFaultInterceptor@431cb2b3 to phase post-protocol
+27:12:2022 23:53:49.999 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.binding.soap.interceptor.MustUnderstandInterceptor@35791d5c to phase pre-protocol
+27:12:2022 23:53:49.999 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.jaxb.attachment.JAXBAttachmentSchemaValidationHack@520a15ae to phase post-protocol
+27:12:2022 23:53:49.999 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.transport.https.CertConstraintsInterceptor@5f3dc079 to phase pre-stream
+27:12:2022 23:53:50.000 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Chain org.apache.cxf.phase.PhaseInterceptorChain@674315a was created. Current flow:
+  receive [PolicyInInterceptor, AttachmentInInterceptor]
+  pre-stream [CertConstraintsInterceptor]
+  post-stream [StaxInInterceptor]
+  read [WSDLGetInterceptor, ReadHeadersInterceptor, SoapActionInInterceptor, StartBodyInterceptor]
+  pre-protocol [MustUnderstandInterceptor]
+  pre-protocol-frontend [SOAPHandlerInterceptor, LogicalHandlerInInterceptor]
+  post-protocol [CheckFaultInterceptor, JAXBAttachmentSchemaValidationHack]
+  unmarshal [DocLiteralInInterceptor, SoapHeaderInterceptor]
+  pre-logical [OneWayProcessorInterceptor]
+  post-logical [WrapperClassInInterceptor]
+  pre-invoke [SwAInInterceptor, HolderInInterceptor]
+  invoke [ServiceInvokerInterceptor]
+  post-invoke [OutgoingChainInterceptor]
+
+27:12:2022 23:53:50.000 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.ws.policy.PolicyInInterceptor@52c2890d
+27:12:2022 23:53:50.007 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.ws.policy.AssertionBuilderRegistryImpl.
+27:12:2022 23:53:50.008 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.ws.policy.PolicyBuilderImpl.
+27:12:2022 23:53:50.008 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.ws.policy.attachment.ServiceModelPolicyProvider.
+27:12:2022 23:53:50.009 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.ws.policy.attachment.wsdl11.Wsdl11AttachmentPolicyProvider.
+27:12:2022 23:53:50.010 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.ws.policy.PolicyInterceptorProviderRegistryImpl.
+27:12:2022 23:53:50.010 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.interceptor.AttachmentInInterceptor@239a63da
+27:12:2022 23:53:50.011 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.i.AttachmentInInterceptor}: AttachmentInInterceptor skipped in HTTP GET method
+27:12:2022 23:53:50.011 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.transport.https.CertConstraintsInterceptor@5f3dc079
+27:12:2022 23:53:50.011 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.interceptor.StaxInInterceptor@45cacd24
+27:12:2022 23:53:50.011 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.i.StaxInInterceptor}: StaxInInterceptor skipped.
+27:12:2022 23:53:50.011 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.frontend.WSDLGetInterceptor@56961411
+27:12:2022 23:53:50.028 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.catalog.OASISCatalogManager.
+27:12:2022 23:53:50.052 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.i.OutgoingChainInterceptor}: Interceptors contributed by endpoint: [org.apache.cxf.interceptor.MessageSenderInterceptor@57ff63b2, org.apache.cxf.jaxws.interceptors.SwAOutInterceptor@3003158f, org.apache.cxf.jaxws.interceptors.WrapperClassOutInterceptor@3637ccc8, org.apache.cxf.jaxws.interceptors.HolderOutInterceptor@13b13fb9, org.apache.cxf.jaxws.handler.logical.LogicalHandlerOutInterceptor@3f7f2c8e, org.apache.cxf.jaxws.handler.soap.SOAPHandlerInterceptor@37e24c2b]
+27:12:2022 23:53:50.052 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.interceptor.MessageSenderInterceptor@57ff63b2 to phase prepare-send
+27:12:2022 23:53:50.052 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.jaxws.interceptors.SwAOutInterceptor@3003158f to phase pre-logical
+27:12:2022 23:53:50.052 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.jaxws.interceptors.WrapperClassOutInterceptor@3637ccc8 to phase pre-logical
+27:12:2022 23:53:50.052 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.jaxws.interceptors.HolderOutInterceptor@13b13fb9 to phase pre-logical
+27:12:2022 23:53:50.052 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.jaxws.handler.logical.LogicalHandlerOutInterceptor@3f7f2c8e to phase pre-marshal
+27:12:2022 23:53:50.052 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.jaxws.handler.soap.SOAPHandlerInterceptor@37e24c2b to phase pre-protocol-frontend
+27:12:2022 23:53:50.052 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.i.OutgoingChainInterceptor}: Interceptors contributed by service: []
+27:12:2022 23:53:50.052 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.i.OutgoingChainInterceptor}: Interceptors contributed by bus: [org.apache.cxf.ws.policy.PolicyOutInterceptor@1778e983]
+27:12:2022 23:53:50.052 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.ws.policy.PolicyOutInterceptor@1778e983 to phase setup
+27:12:2022 23:53:50.052 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.i.OutgoingChainInterceptor}: Interceptors contributed by binding: [org.apache.cxf.interceptor.AttachmentOutInterceptor@1fa12628, org.apache.cxf.interceptor.StaxOutInterceptor@5779e92, org.apache.cxf.binding.soap.interceptor.SoapHeaderOutFilterInterceptor@43aac9ee, org.apache.cxf.wsdl.interceptors.WrappedOutInterceptor@13ce04e9, org.apache.cxf.wsdl.interceptors.BareOutInterceptor@548f0de, org.apache.cxf.binding.soap.interceptor.SoapPreProtocolOutInterceptor@3cf27deb, org.apache.cxf.binding.soap.interceptor.SoapOutInterceptor@29022622]
+27:12:2022 23:53:50.053 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.interceptor.AttachmentOutInterceptor@1fa12628 to phase pre-stream
+27:12:2022 23:53:50.053 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.interceptor.StaxOutInterceptor@5779e92 to phase pre-stream
+27:12:2022 23:53:50.053 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapHeaderOutFilterInterceptor@43aac9ee to phase pre-logical
+27:12:2022 23:53:50.053 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.wsdl.interceptors.WrappedOutInterceptor@13ce04e9 to phase marshal
+27:12:2022 23:53:50.053 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.wsdl.interceptors.BareOutInterceptor@548f0de to phase marshal
+27:12:2022 23:53:50.053 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapPreProtocolOutInterceptor@3cf27deb to phase post-logical
+27:12:2022 23:53:50.053 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapOutInterceptor@29022622 to phase write
+27:12:2022 23:53:50.053 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.frontend.WSDLGetOutInterceptor@27b678e6 to phase pre-stream
+27:12:2022 23:53:50.054 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.interceptor.OutgoingChainInterceptor@183d6e82
+27:12:2022 23:53:50.055 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Chain org.apache.cxf.phase.PhaseInterceptorChain@73add5a2 was created. Current flow:
+  prepare-send [MessageSenderInterceptor]
+  pre-stream [StaxOutInterceptor, WSDLGetOutInterceptor]
+
+27:12:2022 23:53:50.055 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.interceptor.MessageSenderInterceptor@57ff63b2
+27:12:2022 23:53:50.055 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor@56f4efa7 to phase prepare-send-ending
+27:12:2022 23:53:50.056 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Chain org.apache.cxf.phase.PhaseInterceptorChain@73add5a2 was modified. Current flow:
+  prepare-send [MessageSenderInterceptor]
+  pre-stream [StaxOutInterceptor, WSDLGetOutInterceptor]
+  prepare-send-ending [MessageSenderEndingInterceptor]
+
+27:12:2022 23:53:50.056 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.interceptor.StaxOutInterceptor@5779e92
+27:12:2022 23:53:50.056 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Adding interceptor org.apache.cxf.interceptor.StaxOutEndingInterceptor@3158a73 to phase pre-stream-ending
+27:12:2022 23:53:50.056 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Chain org.apache.cxf.phase.PhaseInterceptorChain@73add5a2 was modified. Current flow:
+  prepare-send [MessageSenderInterceptor]
+  pre-stream [StaxOutInterceptor, WSDLGetOutInterceptor]
+  pre-stream-ending [StaxOutEndingInterceptor]
+  prepare-send-ending [MessageSenderEndingInterceptor]
+
+27:12:2022 23:53:50.056 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.frontend.WSDLGetOutInterceptor@27b678e6
+27:12:2022 23:53:50.058 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.w.a.ContextUtils}: retrieving MAPs from context property javax.xml.ws.addressing.context.inbound
+27:12:2022 23:53:50.058 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.w.a.ContextUtils}: WS-Addressing - failed to retrieve Message Addressing Properties from context
+27:12:2022 23:53:50.064 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.interceptor.StaxOutEndingInterceptor@3158a73
+27:12:2022 23:53:50.064 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.p.PhaseInterceptorChain}: Invoking handleMessage on interceptor org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor@56f4efa7
+27:12:2022 23:53:50.065 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.t.h.AbstractHTTPDestination}: Finished servicing http request on thread: Thread[http-nio-8085-exec-3,5,main]
+27:12:2022 23:53:50.065 SerikHome tomcat {DEBUG} {http-nio-8085-exec-3} {o.a.c.t.s.ServletController}: Finished servicing http request on thread: Thread[http-nio-8085-exec-3,5,main]

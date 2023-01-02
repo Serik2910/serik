@@ -1,0 +1,86 @@
+21:12:2022 13:38:19.728 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.l.LogUtils}: Using org.apache.cxf.common.logging.Slf4jLogger for logging.
+21:12:2022 13:38:20.562 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.ws.policy.PolicyAnnotationListener.
+21:12:2022 13:38:20.565 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.service.factory.FactoryBeanListenerManager.
+21:12:2022 13:38:20.572 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.ws.policy.PolicyEngineImpl.
+21:12:2022 13:38:20.574 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.ws.policy.PolicyDataEngineImpl.
+21:12:2022 13:38:20.575 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.bus.managers.CXFBusLifeCycleManager.
+21:12:2022 13:38:20.576 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.bus.managers.ServerRegistryImpl.
+21:12:2022 13:38:20.679 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://serik.start.soap/}HelloPort.jaxws-endpoint - no injection will be performed.
+21:12:2022 13:38:20.681 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id org.apache.cxf.jaxws.JaxWsServerFactoryBean - no injection will be performed.
+21:12:2022 13:38:20.688 SerikHome tomcat {INFO } {restartedMain} {o.a.c.w.s.f.ReflectionServiceFactoryBean}: Creating Service {http://serik.start.soap/}HelloService from class soap.start.serik.web_services.server.HelloService
+21:12:2022 13:38:20.735 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.common.util.ASMHelperImpl.
+21:12:2022 13:38:20.736 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.jaxws.spi.WrapperClassCreatorProxyService.
+21:12:2022 13:38:20.857 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.JAXBDataBinding}: Created JAXBContext "jar:file:/C:/Users/kobla/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.7/jaxb-runtime-2.3.7.jar!/com/sun/xml/bind/v2/runtime/JAXBContextImpl.class Build-Id: 2.3.7
+Classes known to this context:
+  [B
+  boolean
+  byte
+  char
+  com.sun.xml.bind.api.CompositeStructure
+  double
+  float
+  int
+  java.awt.Image
+  java.io.File
+  java.lang.Boolean
+  java.lang.Byte
+  java.lang.Character
+  java.lang.Class
+  java.lang.Double
+  java.lang.Float
+  java.lang.Integer
+  java.lang.Long
+  java.lang.Object
+  java.lang.Short
+  java.lang.String
+  java.lang.Void
+  java.math.BigDecimal
+  java.math.BigInteger
+  java.net.URI
+  java.net.URL
+  java.util.Calendar
+  java.util.Date
+  java.util.GregorianCalendar
+  java.util.UUID
+  javax.activation.DataHandler
+  javax.xml.bind.JAXBElement
+  javax.xml.datatype.Duration
+  javax.xml.datatype.XMLGregorianCalendar
+  javax.xml.namespace.QName
+  javax.xml.transform.Source
+  long
+  short
+  soap.start.serik.web_services.server.jaxws_asm.SayHello
+  soap.start.serik.web_services.server.jaxws_asm.SayHelloResponse
+  void
+" with classes [class soap.start.serik.web_services.server.jaxws_asm.SayHello, class soap.start.serik.web_services.server.jaxws_asm.SayHelloResponse].
+21:12:2022 13:38:20.861 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.u.ProxyHelper}: current classloader sun.misc.Launcher$AppClassLoader@18b4aac2 can see all interface
+21:12:2022 13:38:20.862 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.u.ProxyHelper}: current classloader sun.misc.Launcher$AppClassLoader@18b4aac2 can see all interface
+21:12:2022 13:38:20.947 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.binding.soap.SoapBindingFactory.
+21:12:2022 13:38:20.973 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.wsdl11.WSDLManagerImpl.
+21:12:2022 13:38:20.974 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.r.DefaultResourceManager}: resolving resource <org.apache.cxf.wsdl11.WSDLManagerImpl/bus> type <interface org.apache.cxf.Bus>
+21:12:2022 13:38:20.975 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.r.DefaultResourceManager}: resolving resource <null> type <interface org.apache.cxf.Bus>
+21:12:2022 13:38:20.981 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.wsdl.ExtensionClassCreatorProxyService.
+21:12:2022 13:38:21.002 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.transport.http.HTTPWSDLExtensionLoader.
+21:12:2022 13:38:21.011 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.binding.xml.wsdl11.XMLWSDLExtensionLoader.
+21:12:2022 13:38:21.017 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.ws.addressing.impl.AddressingWSDLExtensionLoader.
+21:12:2022 13:38:21.028 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.binding.soap.SoapTransportFactory.
+21:12:2022 13:38:21.086 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.transport.http.HTTPTransportFactory.
+21:12:2022 13:38:21.095 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://serik.start.soap/}HelloPort.http-destination - no injection will be performed.
+21:12:2022 13:38:21.095 SerikHome tomcat {INFO } {restartedMain} {o.a.c.e.ServerImpl}: Setting the server's publish address to be /hello
+21:12:2022 13:38:21.097 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.bus.managers.ServerLifeCycleManagerImpl.
+21:12:2022 13:38:21.104 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.AnnotationHandlerChainBuilder}: building handler chain
+21:12:2022 13:38:21.104 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.AnnotationHandlerChainBuilder}: Checking for HandlerChain annotation on soap.start.serik.web_services.server.HelloServiceImpl
+21:12:2022 13:38:21.104 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.AnnotationHandlerChainBuilder}: Checking for HandlerChain annotation on soap.start.serik.web_services.server.HelloService
+21:12:2022 13:38:21.200 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.HandlerChainBuilder}: loading handler
+21:12:2022 13:38:21.277 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.HandlerChainBuilder}: adding handler to chain: soap.start.serik.handlers.PropertyValidator@4233a5b4
+21:12:2022 13:38:21.278 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.HandlerChainBuilder}: loading handler
+21:12:2022 13:38:21.280 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.HandlerChainBuilder}: adding handler to chain: soap.start.serik.handlers.LoggingHandler@23c616ce
+21:12:2022 13:38:21.281 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://serik.start.soap/}HelloService - no injection will be performed.
+21:12:2022 13:38:21.281 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://serik.start.soap/}HelloPort.endpoint - no injection will be performed.
+21:12:2022 13:38:21.282 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.e.ServerImpl}: Server is starting.
+21:12:2022 13:38:21.283 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.t.s.ServletDestination}: registering incoming observer: org.apache.cxf.transport.ChainInitiationObserver@1a53b364
+21:12:2022 13:38:21.283 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.e.ServerImpl}: register the server to serverRegistry 
+21:12:2022 13:52:43.674 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.e.ServerImpl}: Server is stopping.
+21:12:2022 13:52:43.675 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.t.s.ServletDestination}: unregistering incoming observer: org.apache.cxf.transport.ChainInitiationObserver@1a53b364
+21:12:2022 13:52:43.675 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.e.ServerImpl}: unregister the server to serverRegistry 

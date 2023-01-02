@@ -1,0 +1,6 @@
+28:12:2022 12:20:23.830 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.e.ServerImpl}: Server is stopping.
+28:12:2022 12:20:23.833 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.t.s.ServletDestination}: unregistering incoming observer: org.apache.cxf.transport.ChainInitiationObserver@39848135
+28:12:2022 12:20:23.833 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.e.ServerImpl}: unregister the server to serverRegistry 
+28:12:2022 12:20:23.833 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.e.ServerImpl}: Server is stopping.
+28:12:2022 12:20:23.834 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.t.s.ServletDestination}: unregistering incoming observer: org.apache.cxf.transport.ChainInitiationObserver@5e0dc06
+28:12:2022 12:20:23.834 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.e.ServerImpl}: unregister the server to serverRegistry 

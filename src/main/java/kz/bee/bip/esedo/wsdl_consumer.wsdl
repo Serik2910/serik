@@ -1,0 +1,2004 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:tns="http://bip.bee.kz/SyncChannel/v10/Types" xmlns:tns0="http://bip.bee.kz/SyncChannel/v10/Interfaces" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SyncChannelHttp_Service" targetNamespace="http://bip.bee.kz/SyncChannel/v10/Interfaces" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema xmlns:bons1="http://bip.bee.kz/SyncChannel/v10/Types/Request" xmlns:bons2="http://bip.bee.kz/SyncChannel/v10/Types/Response" xmlns:bons0="http://bip.bee.kz/common/v10/Types" targetNamespace="http://bip.bee.kz/SyncChannel/v10/Types">
+      <xsd:import namespace="http://bip.bee.kz/common/v10/Types" />
+      <xsd:import namespace="http://bip.bee.kz/SyncChannel/v10/Types/Response" />
+      <xsd:import namespace="http://bip.bee.kz/SyncChannel/v10/Types/Request" />
+      <xsd:import namespace="http://egov.bee.kz/eds/tempstorage/v2/" />
+      <xsd:import namespace="http://esedo.nitec.kz/service/model/notification" />
+      <xsd:import namespace="http://esedo.nitec.kz/service/model/document" />
+      <xsd:import namespace="http://esedo.nitec.kz/service/model/dictionary" />
+      <xsd:element name="SendMessage">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="request" nillable="true" type="bons1:SyncSendMessageRequest">
+              <xsd:annotation>
+                <xsd:documentation>Объект запроса</xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="SendMessageResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="response" nillable="true" type="bons2:SyncSendMessageResponse">
+              <xsd:annotation>
+                <xsd:documentation>Объект ответа</xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="SendMessageFault1_SendMessageFault" nillable="true" type="bons0:ErrorInfo" />
+    </xsd:schema>
+    <xs:schema xmlns:ns1="http://esedo.nitec.kz/service/model" targetNamespace="http://esedo.nitec.kz/service/model/dictionary" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import namespace="http://esedo.nitec.kz/service/model" />
+      <xs:annotation>
+        <xs:documentation>Описание типов данных справочников</xs:documentation>
+      </xs:annotation>
+      <xs:complexType name="dictionaryRequest">
+        <xs:annotation>
+          <xs:documentation>Запрос на Центр ЕСЭДО о выдаче справочника</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:message">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="createdDate" type="xs:dateTime">
+                <xs:annotation>
+                  <xs:documentation>Дата создания запроса</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="dictionaryType" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Внешнее имя справочника</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="dictionaryResponse">
+        <xs:annotation>
+          <xs:documentation>Ответ на запрос выдаче справочника</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:message">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="createdDate" type="xs:dateTime">
+                <xs:annotation>
+                  <xs:documentation>Дата создания запроса</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="dictionaryType" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Внешнее имя справочника</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="dictionaryElement">
+        <xs:annotation>
+          <xs:documentation>Сообщение от Центра ЕСЭДО о создании\изменении\удалении справочника</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:message">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="createdDate" type="xs:dateTime">
+                <xs:annotation>
+                  <xs:documentation>Дата создания запроса</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="elementStatus" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Статус справочника</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns1="http://esedo.nitec.kz/service/model/extension" xmlns:ns2="http://esedo.nitec.kz/service/model" targetNamespace="http://esedo.nitec.kz/service/model" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import namespace="http://esedo.nitec.kz/service/model/extension" />
+      <xs:annotation>
+        <xs:documentation>Описание типов данных для сервиса обмена документами</xs:documentation>
+      </xs:annotation>
+      <xs:complexType name="message" abstract="true">
+        <xs:annotation>
+          <xs:documentation>Абстрактный класс Message</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="attachments" nillable="true" type="ns1:attachment">
+            <xs:annotation>
+              <xs:documentation>Вложения</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="metadataSystem" type="ns1:metadataSystem">
+            <xs:annotation>
+              <xs:documentation>Метаданные</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema xmlns:ns1="http://esedo.nitec.kz/service/model/extension" targetNamespace="http://esedo.nitec.kz/service/model/extension" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:annotation>
+        <xs:documentation>Описание типов данных для сервиса обмена документами</xs:documentation>
+      </xs:annotation>
+      <xs:complexType name="attachment">
+        <xs:annotation>
+          <xs:documentation>Вложение</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+          <xs:element minOccurs="0" name="fileIdentifier" type="xs:string">
+            <xs:annotation>
+              <xs:documentation>Идентифкатор файла в ХЭД</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="metadataSystem">
+        <xs:annotation>
+          <xs:documentation>Метаданные</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+          <xs:element minOccurs="0" name="activityId" type="xs:string">
+            <xs:annotation>
+              <xs:documentation>GIUD (Globally Unique Identifier – глобальныйуникальныйидентификатор)  отметки</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="from" type="xs:long">
+            <xs:annotation>
+              <xs:documentation>ID участника ведомства отправителя</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="href" type="xs:string">
+            <xs:annotation>
+              <xs:documentation>GUID (Globally Unique Identifier – глобальный уникальный идентификатор) отправляемого документа</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="performers" nillable="true" type="xs:long">
+            <xs:annotation>
+              <xs:documentation>Массив ID участников получателей</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="senderOrg" type="xs:long">
+            <xs:annotation>
+              <xs:documentation>Идентификатор отправителя в ЕСЭДО-Ц</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema xmlns:ns1="http://esedo.nitec.kz/service/model" xmlns:ns2="http://esedo.nitec.kz/service/model/extension/eecbParts" xmlns:ns3="http://esedo.nitec.kz/service/model/document" targetNamespace="http://esedo.nitec.kz/service/model/document" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import namespace="http://esedo.nitec.kz/service/model" />
+      <xs:import namespace="http://esedo.nitec.kz/service/model/extension/eecbParts" />
+      <xs:annotation>
+        <xs:documentation>Описание типов данных документов</xs:documentation>
+      </xs:annotation>
+      <xs:complexType name="docSection">
+        <xs:annotation>
+          <xs:documentation>Пункт документа, является составной частью документа</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:message">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="carrierType" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Тип носителя, принимает значения:=1 (Подлинник электронного документа) =3 (Электронная копия бумажного документа)</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="character" type="xs:long">
+                <xs:annotation>
+                  <xs:documentation>Характер вопроса </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="controlTypeCode" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Код типа контроля  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="controlTypeNameKz" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Наименование типа контроля (каз)   </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="controlTypeNameRu" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Наименование типа контроля (рус)</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="description" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Краткое содержание </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="dirordNumberKpm" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Директивный номер КПМ </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="docDate" type="xs:dateTime">
+                <xs:annotation>
+                  <xs:documentation>Исходящая дата </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="docKind" type="xs:long">
+                <xs:annotation>
+                  <xs:documentation>Вид документа </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="docNumber" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Исходящий номер основного документа</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="docSection" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Номер пункта </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="documentSectionId" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Связка с основным документом (пункт является составной частью документа, в котором значение поля document_section_id равно значению данного поля )</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="employeePhone" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Телефон исполнителя</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="executionDate" type="xs:dateTime">
+                <xs:annotation>
+                  <xs:documentation>Срок исполнения </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="executor" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Исполнитель</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="inDate" type="xs:dateTime">
+                <xs:annotation>
+                  <xs:documentation>Входящая дата</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="preparedDate" type="xs:dateTime">
+                <xs:annotation>
+                  <xs:documentation>Время подготовки к отправке </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="sectionId" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>GUID Пункта </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="signerNameRu" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Автор документа (рус)</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="docAppeal">
+        <xs:annotation>
+          <xs:documentation>Обращение лица</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:message">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="address" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Адрес</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="correspondent" type="xs:long">
+                <xs:annotation>
+                  <xs:documentation>Идентификатор отправителя в ЕСЭДО-Ц ПЭП</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="deliveryDate" type="xs:dateTime">
+                <xs:annotation>
+                  <xs:documentation>Дата отправки</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="description" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Примечание </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="documentType" type="xs:long">
+                <xs:annotation>
+                  <xs:documentation>Категория лица: = 0 (Физическое лицо) = 1 (Юридическое лицо)</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="email" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Email</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="idPortalInternal" type="xs:long">
+                <xs:annotation>
+                  <xs:documentation>ID из внешней системы </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="juridicallyName" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Наименование юридического лица</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="middlename" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Отчество </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="name" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Имя </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="outDate" type="xs:dateTime">
+                <xs:annotation>
+                  <xs:documentation>Исходящая дата обращения, в системе учета документов юридического лица</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="outNumber" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Исходящий регистрационный номер обращения, в системе учета документов юридического лица</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="phone" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Телефон</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="sign" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>ЭЦП</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="surname" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Фамилия </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="userUin" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>UIN/IIN пользователя</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+			  <xs:element name="timeStampData" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Метка времени (base64)</xs:documentation>
+				</xs:annotation>
+			  </xs:element>
+			  <xs:element name="ocspData" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Ocsp квитанция (base64)</xs:documentation>
+				</xs:annotation>
+			  </xs:element>
+			</xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="docOL">
+        <xs:annotation>
+          <xs:documentation>Перенаправление обращения лица</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:message">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="address" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Адрес</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="appendCount" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Количество приложений </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="carrierType" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Тип носителя, принимает значения:=1 (Подлинник электронного документа) =3 (Электронная копия бумажного документа)</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="character" type="xs:long">
+                <xs:annotation>
+                  <xs:documentation>Характер вопроса</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="citizenship" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Гражданство, принимает значение=KZ (Казахстан)=Other (Другое)</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="controlTypeOuterCode" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Код Внешнего типа контроля</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="controlTypeOuterNameKz" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Внешний тип контроля (каз.)</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="controlTypeOuterNameRu" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Внешний тип контроля (рус.)</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="deliveryDate" type="xs:dateTime">
+                <xs:annotation>
+                  <xs:documentation>Дата обращения</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="description" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Краткое содержание</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="docDateR" type="xs:dateTime">
+                <xs:annotation>
+                  <xs:documentation>Исходящая дата перенаправления</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="docKind" type="xs:long">
+                <xs:annotation>
+                  <xs:documentation>Вид документа</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="docLang" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Язык документа, принимает значения:= RU (Русский)= KZ (Казахский)= KZRU (Казахско-русский)= ENG (Английский)= Other (Другой)= KZOther (Казахский-другой)= RUOther (Русский-другой)</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="docNoR" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Исходящий номер перенаправления</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="docReqAuthor" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Кто подписал</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="documentType" type="xs:long">
+                <xs:annotation>
+                  <xs:documentation>Категория лица: = 0 (Физическое лицо) = 1 (Юридическое лицо)</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="email" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Email</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="executionDate" type="xs:dateTime">
+                <xs:annotation>
+                  <xs:documentation>Срок исполнения</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="idPortalInternal" type="xs:long">
+                <xs:annotation>
+                  <xs:documentation>ID из внешней системы</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="juridicallyName" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Наименование юридического лица</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="middlename" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Отчество</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="name" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Имя</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="note" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Содержание обращения</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="phone" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Телефон</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="portalSign" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>ЭЦП</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="preparedDate" type="xs:dateTime">
+                <xs:annotation>
+                  <xs:documentation>Время подготовки к отправке </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="regDateOL" type="xs:dateTime">
+                <xs:annotation>
+                  <xs:documentation>Исходящая дата юридического лица</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="regNumberOL" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Исходящий номер юридического лица</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="region" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Регион</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="secondSignData" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>ЭЦП Канцелярии</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="secondSignEnabled" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Флаг ЭЦП Канцелярии, если имеется подпись канцелярии то = 1, иначе = 0</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="sheetCount" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Количество листов</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="signerNameKz" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Подписавший (каз.)</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="signerNameRu" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Подписавший (рус)</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="socialOrder" type="xs:long">
+                <xs:annotation>
+                  <xs:documentation>Статус обратившегося (Принадлежность автора)</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="surname" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Фамилия</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="uniqueNumber" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Уникальный номер обращения.</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="userUin" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>UIN/IIN пользователя</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="docOutgoing">
+        <xs:annotation>
+          <xs:documentation>Исходящий\Входящий документ </xs:documentation>
+        </xs:annotation>
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:message">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="appendCount" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Количество приложений</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="authorNameKz" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Автор документа (каз)</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="authorNameRu" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Автор документа (рус)</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="carrierType" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Тип носителя, принимает значения:=1 (Подлинник электронного документа) =3 (Электронная копия бумажного документа)</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="character" type="xs:long">
+                <xs:annotation>
+                  <xs:documentation>Характер вопроса</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="controlTypeOuterCode" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Код внешнего типа контроля</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="controlTypeOuterNameKz" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Наименование внешнего типа контроля(каз). </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="controlTypeOuterNameRu" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Наименование внешнего типа контроля(рус). </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="description" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Краткое содержание</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="docDate" type="xs:dateTime">
+                <xs:annotation>
+                  <xs:documentation>Исходящая дата</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="docKind" type="xs:long">
+                <xs:annotation>
+                  <xs:documentation>Вид документа</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="docLang" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Язык документа, принимает значения:= RU (Русский)= KZ (Казахский)= KZRU (Казахско-русский)= ENG (Английский)= Other (Другой)= KZOther (Казахский-другой)= RUOther (Русский-другой)</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="docNo" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Исходящий номер</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="docNoR" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Номер основного документа</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="docRecPostKz" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Должность Кому адресовано (каз)</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="docRecPostRu" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Должность Кому адресовано (рус)</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="docToNumber" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>На номер*номер документа на который данный документ является ответным</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="documentReceiverKz" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>ФИО кому адресовано (каз)</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="documentReceiverRu" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>ФИО кому адресовано (рус)</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="documentSectionId" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Связка с пунктом</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="employeePhone" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Телефон исполнителя</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="executionDate" type="xs:dateTime">
+                <xs:annotation>
+                  <xs:documentation>Внешний срок исполнения</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="executor" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Исполнитель </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="idPortalInternal" type="xs:long">
+                <xs:annotation>
+                  <xs:documentation>ID из внешней системы</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="outTime" type="xs:dateTime">
+                <xs:annotation>
+                  <xs:documentation>Исходящее время</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="portalSign" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>ЭЦП Канцелярии</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="preparedDate" type="xs:dateTime">
+                <xs:annotation>
+                  <xs:documentation>Время подготовки к отправке</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="resolutionText" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Текст резолюции</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="secondSignData" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>ЭЦП канцелярии</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="secondSignEnabled" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Флаг ЭЦП канцелярии  Если имеется подпись канцелярии то = 1, иначе = 0</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="sectionId" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>GUID Пункта</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="sheetCount" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Количество листов</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="signerNameKz" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Подписавший (каз)</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="signerNameRu" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Подписавший (рус)</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="userUin" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>UIN/IIN пользователя. </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="eecbDocumentMetadata" type="ns2:EECBDocumentMetadata">
+                <xs:annotation>
+                  <xs:documentation>Объект для передачи НПА в ЭЭКБ</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema xmlns:ns1="http://esedo.nitec.kz/service/model/extension/eecbParts" targetNamespace="http://esedo.nitec.kz/service/model/extension/eecbParts" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:annotation>
+        <xs:documentation>Описание объектов для обмена документами с ЭЭКБ</xs:documentation>
+      </xs:annotation>
+      <xs:complexType name="EECBApprovalData">
+        <xs:annotation>
+          <xs:documentation>Данные принятия НПА</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+          <xs:element name="approvingStateAgency" type="xs:long">
+            <xs:annotation>
+              <xs:documentation>Орган принявший акт - идентификатор справочника (обязательное)</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="stateAgencyDocNumber" type="xs:string">
+            <xs:annotation>
+              <xs:documentation>Регистрационный номер НПА (обязательное)</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="stateAgencyApprovalDate" type="xs:date">
+            <xs:annotation>
+              <xs:documentation>Дата принятия (обязательное)</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="EECBPublication">
+        <xs:annotation>
+          <xs:documentation>Источник опубликования НПА</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+          <xs:element name="sourcePub" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:documentation>Источник опубликования - код из справочника</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="issuePub" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:documentation>Номер издания опубликования</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="datePub" nillable="true" type="xs:date">
+            <xs:annotation>
+              <xs:documentation>Дата опубликования</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="EECBDocumentMetadata">
+        <xs:annotation>
+          <xs:documentation>Метаданные НПА</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+          <xs:element name="titleKz" type="xs:string">
+            <xs:annotation>
+              <xs:documentation>Заголовок, обозначающий предмет регулирования данного нормативного правового акта (на казахском языке)</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="titleRu" type="xs:string">
+            <xs:annotation>
+              <xs:documentation>Заголовок, обозначающий предмет регулирования данного нормативного правового акта (на русском языке)</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="developingStateAgency" nillable="true" type="xs:long">
+            <xs:annotation>
+              <xs:documentation>Государственный орган-разработчик Может являться многозначным полем (в случае, если совместный НПА ГО) - идентификатор справочника</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="approvalData" maxOccurs="unbounded" minOccurs="1" nillable="true" type="ns1:EECBApprovalData">
+            <xs:annotation>
+              <xs:documentation>Данные принятия НПА</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="approvalPlace" type="xs:string">
+            <xs:annotation>
+              <xs:documentation>Место принятия - код из справочника </xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="judiciaryDocNumber" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:documentation>Номер государственной регистрации</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="judiciaryApprovalDate" nillable="true" type="xs:date">
+            <xs:annotation>
+              <xs:documentation>Дата государственной регистрации</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="judicialAuthority" type="xs:long">
+            <xs:annotation>
+              <xs:documentation>Орган гос. регистрации - идентификатор справочника</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="region" type="xs:string">
+            <xs:annotation>
+              <xs:documentation>Регион действия - код из справочника</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="Publication" nillable="true" type="ns1:EECBPublication">
+            <xs:annotation>
+              <xs:documentation>Источник опубликования</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema xmlns:ns1="http://esedo.nitec.kz/service/model" targetNamespace="http://esedo.nitec.kz/service/model/notification" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import namespace="http://esedo.nitec.kz/service/model" />
+      <xs:annotation>
+        <xs:documentation>Описание типов данных уведомлении</xs:documentation>
+      </xs:annotation>
+      <xs:complexType name="stateFinished">
+        <xs:annotation>
+          <xs:documentation>Описание уведомления-квитанции об исполнении</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:message">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="author" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Исполнитель </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="idPortalInternal" type="xs:long">
+                <xs:annotation>
+                  <xs:documentation>ID из внешней системы </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="realDate" type="xs:dateTime">
+                <xs:annotation>
+                  <xs:documentation>Фактический срок исполнения</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="resultCode" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Код результата исполнения документа</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="resultText" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Результат исполнения документа</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="userUin" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>UIN/IIN пользователя</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="stateProlongExDate">
+        <xs:annotation>
+          <xs:documentation>Описание уведомления-квитанции о продлении срока исполнения</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:message">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="controlTypeCode" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Код типа контроляисполнения</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="controlTypeNameKz" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Тип контроля (Каз)</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="controlTypeNameRu" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Тип контроля (Рус)</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="execDate" type="xs:dateTime">
+                <xs:annotation>
+                  <xs:documentation>Срок исполнения</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="stateNewExDate">
+        <xs:annotation>
+          <xs:documentation>Описание уведомления-квитанции о изменении срока исполнения</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:message">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="controlTypeCode" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Код типа контроляисполнения</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="controlTypeNameKz" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Тип контроля (Каз)</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="controlTypeNameRu" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Тип контроля (Рус)</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="execDate" type="xs:dateTime">
+                <xs:annotation>
+                  <xs:documentation>Срок исполнения</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="stateTakeOfControl">
+        <xs:annotation>
+          <xs:documentation>Описание уведомления-квитанции о снятии с контроля</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:message">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="execDate" type="xs:dateTime">
+                <xs:annotation>
+                  <xs:documentation>Срок исполнения</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="stateNotValid">
+        <xs:annotation>
+          <xs:documentation>Описание уведомления-квитанции об отклонении в регистрации</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:message">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="date" type="xs:dateTime">
+                <xs:annotation>
+                  <xs:documentation>Дата создания уведомления-квитанции</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="idPortalInternal" type="xs:long">
+                <xs:annotation>
+                  <xs:documentation>ID из внешней системы</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="isValidReason" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>1 (Ссылка не верна)= 2 (Отрицательный результат проверки ЭЦП)= 3 (Не соответствует регламенту)=либо свое значение</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="secondSignNotifData" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>ЭЦП канцелярии</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="userUin" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>UIN/IIN пользователя</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="stateNewControl">
+        <xs:annotation>
+          <xs:documentation>Описание уведомления-квитанции о постановке документа на контроль</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:message">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="controlTypeCode" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Код типа контроля исполнения</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="controlTypeNameKz" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Тип контроля (Каз)</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="controlTypeNameRu" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Тип контроля (Рус)</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="execDate" type="xs:dateTime">
+                <xs:annotation>
+                  <xs:documentation>Срок исполнения</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="stateDelivered">
+        <xs:annotation>
+          <xs:documentation>Описание уведомления-квитанции о доставке</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:message">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="date" type="xs:dateTime">
+                <xs:annotation>
+                  <xs:documentation>Дата создания уведомления-квитанции</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="idPortalInternal" type="xs:long">
+                <xs:annotation>
+                  <xs:documentation>ID из внешней системы</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="userUin" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>UIN/IIN пользователя</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="stateNewControlWrong">
+        <xs:annotation>
+          <xs:documentation>Описание уведомления-квитанции об ошибочной постановке на контроль</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:message">
+            <xs:sequence />
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="stateRegistered">
+        <xs:annotation>
+          <xs:documentation>Описание уведомления-квитанции о регистрации</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:message">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="date" type="xs:dateTime">
+                <xs:annotation>
+                  <xs:documentation>Дата создания уведомления-квитанции</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="idPortalInternal" type="xs:long">
+                <xs:annotation>
+                  <xs:documentation>ID из внешней системы</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="regNo" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Регистрационный номер</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="secondSignNotifData" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>ЭЦП канцелярии</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="userUin" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>UIN/IIN пользователя</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="stateStartProcessResponse">
+        <xs:annotation>
+          <xs:documentation>Описание уведомления-квитанции об обработке документа в центре ЕСЭДО</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:message">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="date" type="xs:dateTime">
+                <xs:annotation>
+                  <xs:documentation>Дата создания уведомления-квитанции</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="description" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Описание сообщения</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+			  <xs:element minOccurs="0" name="idPortalInternal" type="xs:long">
+                <xs:annotation>
+                  <xs:documentation>ID из внешней системы</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+			  <xs:element minOccurs="0" name="userUin" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>UIN/IIN пользователя</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="stateExecution">
+        <xs:annotation>
+          <xs:documentation>Описание уведомления-квитанции о передаче на исполнение</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:message">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="date" type="xs:dateTime">
+                <xs:annotation>
+                  <xs:documentation>Дата создания уведомления-квитанции</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="execDate" type="xs:dateTime">
+                <xs:annotation>
+                  <xs:documentation>Срок исполнения</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="executive" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Исполнитель</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="executivePhone" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Телефон исполнителя</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="idPortalInternal" type="xs:long">
+                <xs:annotation>
+                  <xs:documentation>ID из внешней системы</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="userUin" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>UIN/IIN пользователя</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="stateTakeOfControlWrong">
+        <xs:annotation>
+          <xs:documentation>Описание уведомления-квитанции об ошибочном снятии с контроля</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:message">
+            <xs:sequence />
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema xmlns:ns1="http://egov.bee.kz/eds/common/v1/" xmlns="http://egov.bee.kz/eds/tempstorage/v2/" elementFormDefault="qualified" targetNamespace="http://egov.bee.kz/eds/tempstorage/v2/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:annotation>
+        <xs:documentation>Описание типов данных для сервиса временных файлов</xs:documentation>
+      </xs:annotation>
+      <xs:element name="tempStorageRequest" type="TempStorageRequest">
+        <xs:annotation>
+          <xs:documentation>Запрос к временному хранилищу</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="tempStorageResponse" type="TempStorageResponse">
+        <xs:annotation>
+          <xs:documentation>Результат выполнения запроса ко временному хранилищу</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:complexType name="ConfirmRequest">
+        <xs:annotation>
+          <xs:documentation>Данные запроса на подтверждение скачивания файлов</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" name="fileIdentifiers" type="xs:string">
+            <xs:annotation>
+              <xs:documentation>Идентификаторы подтверждаемых файлов</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ConfirmResponse">
+        <xs:annotation>
+          <xs:documentation>Результат запроса на подтверждение скачивания файлов</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" name="fileConfirmResults" type="FileConfirmResult">
+            <xs:annotation>
+              <xs:documentation>Результаты подтверждения файлов</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="status" type="ProcessStatus">
+            <xs:annotation>
+              <xs:documentation>Общий статус процесса</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="DownloadRequest">
+        <xs:annotation>
+          <xs:documentation>Данные запроса на скачивание файлов</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" name="fileIdentifiers" type="xs:string">
+            <xs:annotation>
+              <xs:documentation>Идентификаторы скачиваемых из ХЭД файлов</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="DownloadResponse">
+        <xs:annotation>
+          <xs:documentation>Результат запроса на скачивание файлов</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" name="fileDownloadResults" type="FileDownloadResult">
+            <xs:annotation>
+              <xs:documentation>Результаты запроса на скачивание из ХЭД файлов</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="status" type="ProcessStatus">
+            <xs:annotation>
+              <xs:documentation>Общий статус процесса</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="FileConfirmResult">
+        <xs:annotation>
+          <xs:documentation>Информация о результате подтверждения скачивания файла</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+          <xs:element name="status" type="ProcessStatus">
+            <xs:annotation>
+              <xs:documentation>Статус подтверждения файла</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="fileIdentifier" type="xs:string">
+            <xs:annotation>
+              <xs:documentation>Идентификатор файла</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="FileDownloadResult">
+        <xs:annotation>
+          <xs:documentation>Информация о скачиваемом файле и его содержимое</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+          <xs:element name="status" type="ProcessStatus">
+            <xs:annotation>
+              <xs:documentation>Статус скачивания файла</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="fileIdentifier" type="xs:string">
+            <xs:annotation>
+              <xs:documentation>Идентификатор файла</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="content" type="xs:base64Binary">
+            <xs:annotation>
+              <xs:documentation>Содержимое файла</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="meta" type="FileInfo">
+            <xs:annotation>
+              <xs:documentation>Метаинформация файла</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="FileInfo">
+        <xs:annotation>
+          <xs:documentation>Информация о файле</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+          <xs:element minOccurs="0" name="name" type="xs:string">
+            <xs:annotation>
+              <xs:documentation>Название файла</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="mime" type="xs:string">
+            <xs:annotation>
+              <xs:documentation>Тип содержимого</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="uploadDate" type="xs:dateTime">
+            <xs:annotation>
+              <xs:documentation>Дата и время загрузки</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="uploaderSystem" type="System">
+            <xs:annotation>
+              <xs:documentation>Загрузившая система</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="expirationTime" type="xs:dateTime">
+            <xs:annotation>
+              <xs:documentation>Дата и время окончания жизни файла</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="needToBeConfirmed" type="xs:boolean">
+            <xs:annotation>
+              <xs:documentation>Признак необходимости подтверждения скачивания файла</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="size" type="xs:long">
+            <xs:annotation>
+              <xs:documentation>Размер файла</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="deleted" type="xs:boolean">
+            <xs:annotation>
+              <xs:documentation>Признак удаления файла</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="deletionTime" type="xs:dateTime">
+            <xs:annotation>
+              <xs:documentation>Дата и время удаления файла</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="confirmed" type="xs:boolean">
+            <xs:annotation>
+              <xs:documentation>Признак подтверждения скачивания файла</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="confirmedSystem" type="System">
+            <xs:annotation>
+              <xs:documentation>Подтвердившая скачивание система</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="confirmationTime" type="xs:dateTime">
+            <xs:annotation>
+              <xs:documentation>Дата и время подтверждения скачивания файла</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="FileInfoResult">
+        <xs:annotation>
+          <xs:documentation>Результат поиска метаинформации файла</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+          <xs:element name="status" type="ProcessStatus">
+            <xs:annotation>
+              <xs:documentation>Статус поиска метаинформации</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="fileIdentifier" type="xs:string">
+            <xs:annotation>
+              <xs:documentation>Идентификатор файла</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="meta" type="FileInfo">
+            <xs:annotation>
+              <xs:documentation>Метаинформация файла</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="FileUploadResult">
+        <xs:annotation>
+          <xs:documentation>Результат загрузки файла в ХЭД</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+          <xs:element name="fileProcessIdentifier" type="xs:string">
+            <xs:annotation>
+              <xs:documentation>Идентификатор файла, переданный загружающей системой (для связи информации о файле в запросе и в ответе)</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="status" type="ProcessStatus">
+            <xs:annotation>
+              <xs:documentation>Статус загрузки файла</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="fileIdentifier" type="xs:string">
+            <xs:annotation>
+              <xs:documentation>Идентификатор файла, присвоенный системой ХЭД</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="lifeTime" type="xs:long">
+            <xs:annotation>
+              <xs:documentation>Присвоенное файлу время жизни</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="GetFileInfoRequest">
+        <xs:annotation>
+          <xs:documentation>Запрос метаинформации файлов</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" name="fileIdentifiers" type="xs:string">
+            <xs:annotation>
+              <xs:documentation>Идентификаторы файлов</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="GetFileInfoResponse">
+        <xs:annotation>
+          <xs:documentation>Результат запроса метаинформации файлов</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" name="fileInfoResults" type="FileInfoResult">
+            <xs:annotation>
+              <xs:documentation>Результаты поиска метаинформации файлов</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="status" type="ProcessStatus">
+            <xs:annotation>
+              <xs:documentation>Общий статус процесса</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ProcessStatus">
+        <xs:annotation>
+          <xs:documentation>Статус выполнения</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+          <xs:element name="code" type="xs:string">
+            <xs:annotation>
+              <xs:documentation>Код статуса</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="status" type="xs:string">
+            <xs:annotation>
+              <xs:documentation>Текст статуса</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="message" type="xs:string">
+            <xs:annotation>
+              <xs:documentation>Детальное сообщение</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="SenderInfo">
+        <xs:annotation>
+          <xs:documentation>Информация об отправителе</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+          <xs:element name="senderId" type="xs:string">
+            <xs:annotation>
+              <xs:documentation>Идентификатор отправителя</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="password" type="xs:string">
+            <xs:annotation>
+              <xs:documentation>Пароль</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="System">
+        <xs:annotation>
+          <xs:documentation>Система (отправитель или получатель)</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+          <xs:element name="id" type="xs:string">
+            <xs:annotation>
+              <xs:documentation>Идентификатор системы</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="TempStorageRequest">
+        <xs:annotation>
+          <xs:documentation>Запрос ко временному хранилищу</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+          <xs:element name="type" type="TempStorageRequestType">
+            <xs:annotation>
+              <xs:documentation>Тип запроса:
+ - UPLOAD - загрузка файлов
+ - DOWNLOAD - скачивание файлов
+ - CONFIRM - подтверждение скачивания файлов
+ - GET_FILE_INFO - получение информации о файлах</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="uploadRequest" type="UploadRequest">
+            <xs:annotation>
+              <xs:documentation>Данные запроса на загрузку файлов; используется при типе запроса "UPLOAD"</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="downloadRequest" type="DownloadRequest">
+            <xs:annotation>
+              <xs:documentation>Данные запроса на скачивание файлов; используется при типе запроса "DOWNLOAD"</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="confirmRequest" type="ConfirmRequest">
+            <xs:annotation>
+              <xs:documentation>Данные запроса на подтверждение скачивания файлов; используется при типе запроса "CONFIRM"</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="getFileInfoRequest" type="GetFileInfoRequest">
+            <xs:annotation>
+              <xs:documentation>Данные запроса на получение информации о файлах; используется при типе запроса "GET_FILE_INFO"</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="credentials" type="SenderInfo">
+            <xs:annotation>
+              <xs:documentation>Данные авторизации</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="TempStorageResponse">
+        <xs:annotation>
+          <xs:documentation>Результат выполнения запроса ко временному хранилищу</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+          <xs:element name="type" type="TempStorageRequestType">
+            <xs:annotation>
+              <xs:documentation>Тип запроса:
+ - UPLOAD - загрузка файлов
+ - DOWNLOAD - скачивание файлов
+ - CONFIRM - подтверждение скачивания файлов
+ - GET_FILE_INFO - получение информации о файлах</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="uploadResponse" type="UploadResponse">
+            <xs:annotation>
+              <xs:documentation>Результат выполнения запроса на загрузку файлов; заполняется при типе запроса "UPLOAD"</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="downloadResponse" type="DownloadResponse">
+            <xs:annotation>
+              <xs:documentation>Результат выполнения запроса на скачивание файлов; заполняется при типе запроса "DOWNLOAD"</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="confirmResponse" type="ConfirmResponse">
+            <xs:annotation>
+              <xs:documentation>Результат выполнения запроса на подтверждение скачивания файлов; заполняется при типе запроса "CONFIRM"</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="getFileInfoResponse" type="GetFileInfoResponse">
+            <xs:annotation>
+              <xs:documentation>Результат выполнения запроса на получение информации о файлах; заполняется при типе запроса "GET_FILE_INFO"</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="UploadFileRequest">
+        <xs:annotation>
+          <xs:documentation>Информация о загружаемом в ХЭД файле и его содержимое</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+          <xs:element name="fileProcessIdentifier" type="xs:string">
+            <xs:annotation>
+              <xs:documentation>Идентификатор файла, переданный загружающей системой (для связи информации о файле в запросе и в ответе)</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="content" type="xs:base64Binary">
+            <xs:annotation>
+              <xs:documentation>Содержимое файла</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="name" type="xs:string">
+            <xs:annotation>
+              <xs:documentation>Название файла</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="mime" type="xs:string">
+            <xs:annotation>
+              <xs:documentation>Тип содержимого</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="lifeTime" type="xs:long">
+            <xs:annotation>
+              <xs:documentation>Время жизни файла</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="needToBeConfirmed" type="xs:boolean">
+            <xs:annotation>
+              <xs:documentation>Признак необходимости подтверждения скачивания файла</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="UploadRequest">
+        <xs:annotation>
+          <xs:documentation>Запрос на загрузку файлов</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" name="fileUploadRequests" type="UploadFileRequest">
+            <xs:annotation>
+              <xs:documentation>Список загружаемых файлов</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="UploadResponse">
+        <xs:annotation>
+          <xs:documentation>Результат запроса на загрузку файлов</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" name="uploadFileResults" type="FileUploadResult">
+            <xs:annotation>
+              <xs:documentation>Результаты загрузки файлов</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="status" type="ProcessStatus">
+            <xs:annotation>
+              <xs:documentation>Общий статус процесса</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:simpleType name="TempStorageRequestType">
+        <xs:annotation>
+          <xs:documentation>Тип запроса:
+ - UPLOAD - загрузка файлов
+ - DOWNLOAD - скачивание файлов
+ - CONFIRM - подтверждение скачивания файлов
+ - GET_FILE_INFO - получение информации о файлах</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="UPLOAD" />
+          <xs:enumeration value="DOWNLOAD" />
+          <xs:enumeration value="CONFIRM" />
+          <xs:enumeration value="GET_FILE_INFO" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:schema>
+    <xsd:schema xmlns:bons1="http://bip.bee.kz/SyncChannel/v10/Types" xmlns:bons2="http://bip.bee.kz/SyncChannel/v10/Types/Request" targetNamespace="http://bip.bee.kz/SyncChannel/v10/Types/Request">
+      <xsd:include />
+      <xsd:import namespace="http://bip.bee.kz/SyncChannel/v10/Types" />
+      <xsd:complexType name="SyncSendMessageRequest">
+        <xsd:annotation>
+          <xsd:documentation>Формат объекта запроса метода отправки сообщения по синхронному каналу</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element minOccurs="1" name="requestInfo" type="bons1:SyncMessageInfo">
+            <xsd:annotation>
+              <xsd:documentation>Объект информация о сообщения запроса</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="1" name="requestData" type="bons2:RequestData">
+            <xsd:annotation>
+              <xsd:documentation>Объект передачи бизнес данных запроса</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema xmlns:bons1="http://bip.bee.kz/common/v10/Types" targetNamespace="http://bip.bee.kz/SyncChannel/v10/Types">
+      <xsd:import namespace="http://bip.bee.kz/common/v10/Types" />
+      <xsd:import namespace="http://bip.bee.kz/common/v10/Types" />
+      <xsd:import namespace="http://bip.bee.kz/common/v10/Types" />
+      <xsd:complexType name="SyncMessageInfo">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" name="messageId" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>Идентификатор сообщения в системе отправителя (заполняется системой отправителя)</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="correlationId" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>Идентификатор цепочки сообщения в системе отправителя (если сообщения существует в рамках цепочки сообщений, заполнятеся системой отправителя)</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="1" name="serviceId" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>Идентификатор взаимодействия, по реестру взаимодействий ШЭП</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="1" name="messageDate" type="xsd:dateTime">
+            <xsd:annotation>
+              <xsd:documentation>Дата создания сообщения в системе отправителя (заполняется отправителем)</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="routeId" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>Идентификатор маршурута сообщения (если есть необходимость в дополнительной маршрутизации, идентификатор по реестру, заполняется системой отправителя)</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="1" name="sender" type="bons1:SenderInfo">
+            <xsd:annotation>
+              <xsd:documentation>Объест информация об отправителе (заполняется отправителем)</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="properties" type="bons1:Property">
+            <xsd:annotation>
+              <xsd:documentation>Массив своиств, можно добавить дополнительные своиства запроса (по согласовнию с ШЭП и системой получателя)</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="sessionId" type="bons1:guid">
+            <xsd:annotation>
+              <xsd:documentation>Идентификатор сессии ШЭП. Заполняется на ШЭП, отправителю заполнять не надо. </xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xs:schema targetNamespace="http://bip.bee.kz/common/v10/Types" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:simpleType name="guid">
+        <xs:annotation>
+          <xs:documentation>Оисание типа данных guid</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+          <xs:pattern value="\{[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}\}" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:schema>
+    <xsd:schema xmlns:bons1="http://bip.bee.kz/common/v10/Types" targetNamespace="http://bip.bee.kz/common/v10/Types">
+      <xsd:complexType name="Property">
+        <xsd:annotation>
+          <xsd:documentation>Тип данных своиство.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element minOccurs="1" name="key">
+            <xsd:annotation>
+              <xsd:documentation>Ключ своиства</xsd:documentation>
+            </xsd:annotation>
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:minLength value="0" />
+                <xsd:maxLength value="30" />
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element minOccurs="1" name="value">
+            <xsd:annotation>
+              <xsd:documentation>Значение своиства</xsd:documentation>
+            </xsd:annotation>
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="500" />
+                <xsd:minLength value="0" />
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema targetNamespace="http://bip.bee.kz/common/v10/Types">
+      <xsd:complexType name="SenderInfo">
+        <xsd:annotation>
+          <xsd:documentation>Структура данных информации об отправителе</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element minOccurs="1" name="senderId" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>Идентификатор отправителя (системы отправителя)</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="password" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>Пароль отправителя</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema targetNamespace="http://bip.bee.kz/SyncChannel/v10/Types/Request">
+      <xsd:complexType name="RequestData">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="data" type="xsd:anyType" />
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema xmlns:bons1="http://bip.bee.kz/SyncChannel/v10/Types" xmlns:bons0="http://bip.bee.kz/SyncChannel/v10/Types/Response" targetNamespace="http://bip.bee.kz/SyncChannel/v10/Types/Response">
+      <xsd:include />
+      <xsd:import namespace="http://bip.bee.kz/SyncChannel/v10/Types" />
+      <xsd:complexType name="SyncSendMessageResponse">
+        <xsd:annotation>
+          <xsd:documentation>информация о сообщении ответе</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element minOccurs="1" name="responseInfo" type="bons1:SyncMessageInfoResponse">
+            <xsd:annotation>
+              <xsd:documentation>Мета данные ответа</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="1" name="responseData" type="bons0:ResponseData">
+            <xsd:annotation>
+              <xsd:documentation>Объект бизнесс данные ответа</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema xmlns:bons1="http://bip.bee.kz/common/v10/Types" targetNamespace="http://bip.bee.kz/SyncChannel/v10/Types">
+      <xsd:import namespace="http://bip.bee.kz/common/v10/Types" />
+      <xsd:import namespace="http://bip.bee.kz/common/v10/Types" />
+      <xsd:complexType name="SyncMessageInfoResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" name="messageId" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>Идентификатор сообщения в системе получателя (заполняет система получателя запроса (система отрабатывающая сообщение)</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="correlationId" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>Идентификатор цепочки сообщения в системе получателя запроса (если сообщения существует в рамках цепочки сообщений системы отправителя(система отрабатывающая сообщение)</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="1" name="responseDate" type="xsd:dateTime">
+            <xsd:annotation>
+              <xsd:documentation>Дата ответа в системе получателя запроса(заполняется системой получателя запроса)</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="1" name="status" type="bons1:StatusInfo">
+            <xsd:annotation>
+              <xsd:documentation>Объект информации о статусе</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="sessionId" type="bons1:guid">
+            <xsd:annotation>
+              <xsd:documentation>Идентификатор сессии на ШЭП. Устанавливается на ШЭП. При отправки ответа системой получателя запроса заполнять не нужно.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema xmlns:bons1="http://bip.bee.kz/common/v10/Types" targetNamespace="http://bip.bee.kz/common/v10/Types">
+      <xsd:complexType name="StatusInfo">
+        <xsd:annotation>
+          <xsd:documentation>Статус</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element minOccurs="1" name="code" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>Код статуса (простовляется системой получателя запроса)</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="1" name="message">
+            <xsd:annotation>
+              <xsd:documentation>Сообщение о статусе </xsd:documentation>
+            </xsd:annotation>
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="250" />
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema targetNamespace="http://bip.bee.kz/SyncChannel/v10/Types/Response">
+      <xsd:complexType name="ResponseData">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="data" type="xsd:anyType" />
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema xmlns:bons1="http://bip.bee.kz/common/v10/Types" targetNamespace="http://bip.bee.kz/common/v10/Types">
+      <xsd:include />
+      <xsd:complexType name="ErrorInfo">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" name="errorCode" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>Код ошибки</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="1" name="errorMessage" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>Сообщение ошибки</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="errorData" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>Дополнительное описание ошибки</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="1" name="errorDate" type="xsd:dateTime">
+            <xsd:annotation>
+              <xsd:documentation>Дата ошибки</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="subError" type="bons1:ErrorInfo">
+            <xsd:annotation>
+              <xsd:documentation>Дочерняя ошибка</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="sessionId" type="bons1:guid">
+            <xsd:annotation>
+              <xsd:documentation>Идентификатор сессии в которой произошла ошибка</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="SendMessageRequestMsg">
+    <wsdl:part name="SendMessageParameters" element="tns:SendMessage" />
+  </wsdl:message>
+  <wsdl:message name="SendMessageResponseMsg">
+    <wsdl:part name="SendMessageResult" element="tns:SendMessageResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendMessage_sendMessageFaultMsg">
+    <wsdl:part name="sendMessageFault" element="tns:SendMessageFault1_SendMessageFault" />
+  </wsdl:message>
+  <wsdl:portType name="ISyncChannel">
+    <wsdl:documentation>Интерфейс для работы с синхронным каналом</wsdl:documentation>
+    <wsdl:operation name="SendMessage">
+      <wsdl:documentation>Метод отправки сообщения по синхронному каналу</wsdl:documentation>
+      <wsdl:input name="SendMessageRequest" message="tns0:SendMessageRequestMsg" />
+      <wsdl:output name="SendMessageResponse" message="tns0:SendMessageResponseMsg" />
+      <wsdl:fault name="sendMessageFault" message="tns0:SendMessage_sendMessageFaultMsg" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SyncChannelHttpBinding" type="tns0:ISyncChannel">
+    <binding transport="http://schemas.xmlsoap.org/soap/http" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    <wsdl:operation name="SendMessage">
+      <operation soapAction="" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <wsdl:input name="SendMessageRequest">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </wsdl:input>
+      <wsdl:output name="SendMessageResponse">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </wsdl:output>
+      <wsdl:fault name="sendMessageFault">
+        <fault use="literal" name="sendMessageFault" namespace="" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ISyncChannelHttpService">
+    <wsdl:port name="SyncChannelHttpPort" binding="tns0:SyncChannelHttpBinding">
+      <address location="http://localhost:8080/AdapterSyncService/services/SyncChannelHttpPort" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
