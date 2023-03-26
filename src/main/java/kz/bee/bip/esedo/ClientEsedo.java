@@ -1,8 +1,7 @@
 package kz.bee.bip.esedo;
 
 import kz.bee.bip.SyncChannel.v10.Types.SendMessageResponse;
-import kz.bee.bip.esedo.wsshandler.WSSSignHandle;
-import kz.bee.bip.esedo.wsshandler.WSSign;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

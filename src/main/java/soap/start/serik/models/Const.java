@@ -14,10 +14,7 @@ public class Const {
     public static final String SENDER_ID_DICT = "izipaq";
     public static final String SENDER_PASS_CRED = "izipaq";
     public static final String SENDER_PASS_DICT = "07QiJe5y_L";
-    public static String STORE_TYPE = "type";
-    public static String STORE_FILE_LOCATION = "location";
-    public static String STORE_FILE_PASS = "password";
-    public static String STORE_ALIAS = "alias";
+    public static final String ESEDO_ENDPOINT = "https://195.12.113.29/bip-sync-wss-gost/";
 
     private static Map<String, String> SERVICE_MAP = new HashMap<>();
     public static void addConst(String key, String value){

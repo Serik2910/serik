@@ -19,6 +19,10 @@ import kz.nitec.unidic.binding2.ISyncChannel;
 import kz.nitec.unidic.binding2.ISyncChannelHttpService;
 import kz.nitec.unidic.items.Items;
 import kz.nitec.unidic.response.Response;
+import org.apache.cxf.configuration.jsse.TLSClientParameters;
+import org.apache.cxf.endpoint.Client;
+import org.apache.cxf.frontend.ClientProxy;
+import org.apache.cxf.transport.http.HTTPConduit;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.http.HttpHeaders;
@@ -127,6 +131,7 @@ public class DictController {
             ISyncChannelHttpService service = new ISyncChannelHttpService();
             ISyncChannel iSyncChannelPort = service.getSyncChannelHttpPort();
             EsedoConnection.setEndpointAddressNSI(iSyncChannelPort);
+
             response = iSyncChannelPort.sendMessage(request);
 
 

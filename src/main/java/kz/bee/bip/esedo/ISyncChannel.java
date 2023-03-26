@@ -3,8 +3,13 @@ package kz.bee.bip.esedo;
 
 import javax.jws.*;
 import javax.xml.bind.annotation.XmlSeeAlso;
+import javax.xml.datatype.DatatypeConfigurationException;
 import javax.xml.ws.RequestWrapper;
 import javax.xml.ws.ResponseWrapper;
+import java.io.IOException;
+import java.security.KeyManagementException;
+import java.security.KeyStoreException;
+import java.security.NoSuchAlgorithmException;
 
 
 /**
@@ -42,7 +47,7 @@ public interface ISyncChannel {
     public SyncSendMessageResponse sendMessage(
         @WebParam(name = "request", targetNamespace = "")
         SyncSendMessageRequest request)
-        throws SendMessageSendMessageFaultMsg
+            throws Exception
     ;
 
 }

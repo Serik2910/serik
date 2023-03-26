@@ -104,37 +104,28 @@
     <Loggers>
         <Logger name="soap.start.serik.handlers.PropertyInjector" level="info" additivity="false">
             <AppenderRef ref="LogToConsole"/>
-
+            <AppenderRef ref="DebugLogToFile"/>
         </Logger>
         <Logger name="soap.start.serik.controllers.HEDController" level="trace" additivity="false">
             <AppenderRef ref="HEDTraceLog"/>
-
         </Logger>
         <Logger name="soap.start.serik.controllers.HEDController" level="info" additivity="false">
             <AppenderRef ref="HEDLogToFile"/>
-
-        </Logger>
-        <Logger name="soap.start.serik.controllers.HEDController" level="trace" additivity="false">
-            <AppenderRef ref="HEDTraceLog"/>
-
         </Logger>
         <Logger name="soap.start.serik.controllers.DocController" level="info" additivity="false">
             <AppenderRef ref="DocLogToFile"/>
-
         </Logger>
         <Logger name="soap.start.serik.controllers.DocController" level="trace" additivity="false">
             <AppenderRef ref="DocTraceLog"/>
-
         </Logger>
         <Logger name="handlers" level="info">
-
         </Logger>
         <Logger name="org.apache.cxf" level="TRACE">
             <AppenderRef ref="TraceLogToFile"/>
         </Logger>
-        <Root level="debug">
+        <Root level="info">
             <AppenderRef ref="LogToConsole"/>
-            <AppenderRef ref="DebugLogToFile"/>
+            <AppenderRef ref="DebugLogToFile" />
         </Root>
     </Loggers>
 </Configuration>

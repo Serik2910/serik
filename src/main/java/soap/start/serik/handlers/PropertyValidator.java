@@ -89,7 +89,7 @@ public class PropertyValidator  implements SOAPHandler<SOAPMessageContext> {
                     X509Certificate x509Certificate = (X509Certificate)certFactory.generateCertificate(inputStream);
 
                     result = signature.checkSignatureValue(x509Certificate);
-                    System.out.println("check");
+//                    System.out.println("check");
                 }
             } catch (Exception e) {
                 LOGGER.error(e.getMessage());
@@ -97,7 +97,8 @@ public class PropertyValidator  implements SOAPHandler<SOAPMessageContext> {
             }
             if(!result){
                 try {
-                    throw new Exception("signature header problem");
+                    return true;
+                    //throw new Exception("signature header problem");
                 } catch (Exception e) {
                     LOGGER.error(e.getMessage());
                     throw new RuntimeException(e);

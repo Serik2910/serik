@@ -1,9 +1,8 @@
 package soap.start.serik.handlers;
 
-import kalkan.KeyStoreFileAdapter;
+
 import kz.gov.pki.kalkan.asn1.pkcs.PKCSObjectIdentifiers;
-import kz.gov.pki.kalkan.jce.provider.KalkanProvider;
-import kz.gov.pki.kalkan.xmldsig.KncaXS;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -21,7 +20,12 @@ import org.apache.xml.security.transforms.params.InclusiveNamespaces;
 import org.apache.xml.security.utils.Constants;
 import org.apache.xml.security.utils.XMLUtils;
 import com.sun.xml.messaging.saaj.soap.SOAPDocumentImpl;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.DefaultResourceLoader;
+import org.springframework.core.io.Resource;
+import org.springframework.core.io.ResourceLoader;
 import org.w3c.dom.*;
+import soap.start.serik.service.KeyStoreFileAdapter;
 
 import javax.xml.namespace.QName;
 import javax.xml.soap.*;
@@ -34,10 +38,12 @@ import javax.xml.ws.handler.soap.SOAPHandler;
 import javax.xml.ws.handler.soap.SOAPMessageContext;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.StringWriter;
 import java.security.*;
 import java.security.cert.CertificateException;
 import java.security.cert.X509Certificate;
+import java.util.Properties;
 import java.util.Set;
 import java.util.UUID;
 
@@ -45,32 +51,35 @@ public class PropertyInjector implements SOAPHandler<SOAPMessageContext> {
     private static final Logger LOGGER= LogManager.getLogger(PropertyInjector.class);
     private static final String WSU_NAMESPACE = "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd";
     private static final String ENV_NAMESPACE = "http://schemas.xmlsoap.org/soap/envelope/";
-    private static KeyStore keyStore;
-    private static Provider provider;
     private static KeyStoreFileAdapter adapter;
-
+    private static Properties properties;
     static {
         try {
-            initProvider();
-            initKeystore();
+            properties = loadProperties("application.properties");
+        } catch (IOException e) {
+            LOGGER.error(e.getMessage());
+        }
+        String storefileUrl = properties.getProperty("p12.file.location");
+        String storepass = properties.getProperty("p12.file.password");
+        String alias = properties.getProperty("p12.file.alias");
+        String storetype = properties.getProperty("p12.file.type");
+        try {
+           adapter = new KeyStoreFileAdapter(storefileUrl, storepass,alias,storetype);
         } catch (Exception e) {
-            LOGGER.trace("Error during provider and keystore init(kalkan):"+e.getMessage());
+            LOGGER.error(e.getMessage());
         }
     }
-    private static void initProvider() {
 
-        Security.addProvider(new KalkanProvider());
-        KncaXS.loadXMLSecurity();
-        org.apache.xml.security.Init.init();
-        JCEMapper.setProviderId(KalkanProvider.PROVIDER_NAME);
+    public static Properties loadProperties(String resourceFileName) throws IOException {
+        Properties configuration = new Properties();
+        InputStream inputStream = PropertyInjector.class
+                .getClassLoader()
+                .getResourceAsStream(resourceFileName);
+        configuration.load(inputStream);
+        inputStream.close();
+        return configuration;
     }
-    private static void initKeystore() throws IOException, KeyStoreException, NoSuchProviderException,
-            NoSuchAlgorithmException, CertificateException {
-        LOGGER.debug("Invoke");
-        adapter = KeyStoreFileAdapter.getStoreFileAdapter();
-        keyStore = adapter.getKeyStore();
-        LOGGER.info("Keystore inited");
-    }
+
     @Override
     public Set<QName> getHeaders() {
         return null;
@@ -125,8 +134,8 @@ public class PropertyInjector implements SOAPHandler<SOAPMessageContext> {
                 if (header == null) {
                     header = env.addHeader();
                 }
-                X509Certificate x509Certificate = (X509Certificate) keyStore.getCertificate(adapter.getAlias());
-                PrivateKey privateKey = (PrivateKey) keyStore.getKey(adapter.getAlias(), adapter.getStorepass().toCharArray());
+                X509Certificate x509Certificate = (X509Certificate) adapter.getKeyStore().getCertificate(adapter.getAlias());
+                PrivateKey privateKey = (PrivateKey) adapter.getKeyStore().getKey(adapter.getAlias(), adapter.getStorepass().toCharArray());
                 String sigAlgOid = x509Certificate.getSigAlgOID();
                 if (sigAlgOid.equals(PKCSObjectIdentifiers.sha1WithRSAEncryption.getId())) {
                     LOGGER.info("Algorithm signature: " + "rsa-sha1");

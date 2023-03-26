@@ -1,9 +1,7 @@
 
 package kz.bee.bip.esedo;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 
 
 /**
@@ -29,6 +27,8 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "RequestData", namespace = "http://bip.bee.kz/SyncChannel/v10/Types/Request", propOrder = {
     "data"
 })
+@XmlRootElement
+@XmlSeeAlso({DocOutgoing.class})
 public class RequestData {
 
     protected Object data;
