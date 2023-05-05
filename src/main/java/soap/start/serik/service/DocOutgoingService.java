@@ -15,8 +15,9 @@ public class DocOutgoingService implements IDocOutgoingService{
     }
 
     @Override
-    public boolean save(DocOutgoingDTO docOutgoingDTO) {
-        return false;
+    public DocOutgoingDTO save(DocOutgoingDTO docOutgoingDTO) {
+
+        return this.repository.save(docOutgoingDTO);
     }
 
     @Override

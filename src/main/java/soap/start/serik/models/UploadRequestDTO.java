@@ -13,6 +13,7 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import java.io.UnsupportedEncodingException;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -49,22 +50,39 @@ public class UploadRequestDTO {
      *
      *
      */
-    public static UploadRequest getUploadRequestFromDTO(UploadRequestDTO uploadRequesrDTO) throws UnsupportedEncodingException {
+    public static UploadRequest getUploadRequestFromDTO(UploadRequestDTO uploadRequestDTO) throws UnsupportedEncodingException {
         UploadRequest uploadRequest = new UploadRequest();
         List<UploadFileRequest> fileRequestList = uploadRequest.getFileUploadRequests();
         for (UploadFileRequestDTO j:
-                uploadRequesrDTO.getFileUploadRequests()) {
+                uploadRequestDTO.getFileUploadRequests()) {
             UploadFileRequest uploadFileRequest = new UploadFileRequest();
             uploadFileRequest.setMime(j.getMime());
             uploadFileRequest.setName(j.getName());
             uploadFileRequest.setFileProcessIdentifier(j.getFileProcessIdentifier());
             uploadFileRequest.setNeedToBeConfirmed(j.getNeedToBeConfirmed());
-            uploadFileRequest.setContent(Base64.decodeBase64(j.getContent().getBytes("UTF-8")));
+            uploadFileRequest.setContent(Base64.decodeBase64(j.getContent().getBytes(StandardCharsets.UTF_8)));
             uploadFileRequest.setLifeTime(j.lifeTime);
             fileRequestList.add(uploadFileRequest);
         }
-        uploadRequest.setFileUploadRequests(fileRequestList);
+
         return uploadRequest;
+    }
+
+    public static UploadRequestDTO getUpRequest_WO_Content(UploadRequestDTO uploadRequestDTO){
+        UploadRequestDTO requestDTO = new UploadRequestDTO();
+        List<UploadFileRequestDTO> fileRequestList = requestDTO.getFileUploadRequests();
+        for (UploadFileRequestDTO j:
+                uploadRequestDTO.getFileUploadRequests()) {
+            UploadFileRequestDTO uploadFileRequest = new UploadFileRequestDTO();
+            uploadFileRequest.setMime(j.getMime());
+            uploadFileRequest.setName(j.getName());
+            uploadFileRequest.setFileProcessIdentifier(j.getFileProcessIdentifier());
+            uploadFileRequest.setNeedToBeConfirmed(j.getNeedToBeConfirmed());
+            uploadFileRequest.setContent("");
+            uploadFileRequest.setLifeTime(j.lifeTime);
+            fileRequestList.add(uploadFileRequest);
+        }
+        return requestDTO;
     }
 
     public List<UploadFileRequestDTO> getFileUploadRequests() {

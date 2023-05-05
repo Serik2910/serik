@@ -68,7 +68,4 @@ public class UploadRequest {
         return this.fileUploadRequests;
     }
 
-    public void setFileUploadRequests(List<UploadFileRequest> fileRequestList) {
-        fileUploadRequests = fileRequestList;
-    }
 }

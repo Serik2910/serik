@@ -7,6 +7,7 @@ import kz.bee.bip.esedo.MetadataSystem;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
 import javax.xml.bind.annotation.XmlElement;
@@ -30,7 +31,7 @@ public class DocOutgoingDTO {
     @Column(name = "id", nullable = false)
     private Long id;
 
-    @ManyToMany(fetch = FetchType.LAZY)
+    @ManyToMany(fetch = FetchType.LAZY, cascade ={ CascadeType.REFRESH, CascadeType.MERGE, CascadeType.PERSIST} )
     private List<AttachmentDTO> attachments;
     @Column
     private String activityId;
@@ -58,7 +59,7 @@ public class DocOutgoingDTO {
     private String controlTypeOuterNameKz;
     @Column
     private String controlTypeOuterNameRu;
-    @Column
+    @Column(length = 5000)
     private String description;
     @Column
     private Date docDate;
@@ -98,7 +99,7 @@ public class DocOutgoingDTO {
     private Date preparedDate;
     @Column
     private String resolutionText;
-    @Column
+    @Column(length = 20000)
     private String secondSignData;
     @Column
     private String secondSignEnabled;
@@ -126,6 +127,7 @@ public class DocOutgoingDTO {
         this.href = docOutgoing.getMetadataSystem().getHref();
         this.performers = docOutgoing.getMetadataSystem().getPerformers().get(0);
         this.senderOrg = docOutgoing.getMetadataSystem().getSenderOrg();
+
         this.appendCount = docOutgoing.getAppendCount();
         this.authorNameKz = docOutgoing.getAuthorNameKz();
         this.authorNameRu = docOutgoing.getAuthorNameRu();
@@ -135,7 +137,12 @@ public class DocOutgoingDTO {
         this.controlTypeOuterNameKz = docOutgoing.getControlTypeOuterNameKz();
         this.controlTypeOuterNameRu = docOutgoing.getControlTypeOuterNameRu();
         this.description = docOutgoing.getDescription();
-        this.docDate = docOutgoing.getDocDate().toGregorianCalendar().getTime();
+
+        XMLGregorianCalendar docDate = docOutgoing.getDocDate();
+        if(docDate!=null) {
+            this.docDate = docDate.toGregorianCalendar().getTime();
+        }
+
         this.docKind = docOutgoing.getDocKind();
         this.docLang = docOutgoing.getDocLang();
         this.docNo = docOutgoing.getDocNo();
@@ -144,11 +151,27 @@ public class DocOutgoingDTO {
         this.docRecPostRu = docOutgoing.getDocRecPostRu();
         this.documentSectionId = docOutgoing.getDocumentSectionId();
         this.employeePhone = docOutgoing.getEmployeePhone();
-        this.executionDate = docOutgoing.getExecutionDate().toGregorianCalendar().getTime();
+
+        XMLGregorianCalendar executionDate = docOutgoing.getExecutionDate();
+        if(executionDate!=null) {
+            this.executionDate = executionDate.toGregorianCalendar().getTime();
+        }
+
+        this.executor = docOutgoing.getExecutor();
         this.idPortalInternal = docOutgoing.getIdPortalInternal();
-        this.outTime = docOutgoing.getOutTime().toGregorianCalendar().getTime();
+
+        XMLGregorianCalendar outTime = docOutgoing.getOutTime();
+        if(outTime!=null) {
+            this.outTime = outTime.toGregorianCalendar().getTime();
+        }
+
         this.portalSign = docOutgoing.getPortalSign();
-        this.preparedDate = docOutgoing.getPreparedDate().toGregorianCalendar().getTime();
+
+        XMLGregorianCalendar preparedDate = docOutgoing.getPreparedDate();
+        if(preparedDate!=null) {
+            this.preparedDate = preparedDate.toGregorianCalendar().getTime();
+        }
+
         this.resolutionText = docOutgoing.getResolutionText();
         this.secondSignData = docOutgoing.getSecondSignData();
         this.secondSignEnabled = docOutgoing.getSecondSignEnabled();
@@ -172,6 +195,7 @@ public class DocOutgoingDTO {
         metadataSystem.setHref(this.href);
         metadataSystem.getPerformers().add(this.performers);
         metadataSystem.setSenderOrg(this.senderOrg);
+        docOutgoing.setMetadataSystem(metadataSystem);
         docOutgoing.setAppendCount(this.appendCount);
         docOutgoing.setAuthorNameKz(this.authorNameKz);
         docOutgoing.setAuthorNameRu(this.authorNameRu);
@@ -181,10 +205,12 @@ public class DocOutgoingDTO {
         docOutgoing.setControlTypeOuterNameKz(this.controlTypeOuterNameKz);
         docOutgoing.setControlTypeOuterNameRu(this.controlTypeOuterNameRu);
         docOutgoing.setDescription(this.description);
+
         GregorianCalendar gregorianCalendar = new GregorianCalendar();
         gregorianCalendar.setTime(this.docDate);
         XMLGregorianCalendar xmlGregorianCalendar = DatatypeFactory.newInstance().newXMLGregorianCalendar(gregorianCalendar);
         docOutgoing.setDocDate(xmlGregorianCalendar);
+
         docOutgoing.setDocKind(this.docKind);
         docOutgoing.setDocLang(this.docLang);
         docOutgoing.setDocNo(this.docNo);
@@ -196,17 +222,24 @@ public class DocOutgoingDTO {
         docOutgoing.setDocumentReceiverRu(this.documentReceiverRu);
         docOutgoing.setDocumentSectionId(this.documentSectionId);
         docOutgoing.setEmployeePhone(this.employeePhone);
+
         gregorianCalendar.setTime(this.executionDate);
         xmlGregorianCalendar = DatatypeFactory.newInstance().newXMLGregorianCalendar(gregorianCalendar);
         docOutgoing.setExecutionDate(xmlGregorianCalendar);
+
+        docOutgoing.setExecutor(this.executor);
         docOutgoing.setIdPortalInternal(this.idPortalInternal);
+
         gregorianCalendar.setTime(this.outTime);
         xmlGregorianCalendar = DatatypeFactory.newInstance().newXMLGregorianCalendar(gregorianCalendar);
         docOutgoing.setOutTime(xmlGregorianCalendar);
+
         docOutgoing.setPortalSign(this.portalSign);
+
         gregorianCalendar.setTime(this.preparedDate);
         xmlGregorianCalendar = DatatypeFactory.newInstance().newXMLGregorianCalendar(gregorianCalendar);
         docOutgoing.setPreparedDate(xmlGregorianCalendar);
+
         docOutgoing.setResolutionText(this.resolutionText);
         docOutgoing.setSecondSignData(this.secondSignData);
         docOutgoing.setSecondSignEnabled(this.secondSignEnabled);
@@ -216,7 +249,7 @@ public class DocOutgoingDTO {
         docOutgoing.setSignerNameRu(this.signerNameRu);
         docOutgoing.setUserUin(this.userUin);
 
-        docOutgoing.setMetadataSystem(metadataSystem);
+
         return docOutgoing;
     }
 

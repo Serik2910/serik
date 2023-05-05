@@ -173,7 +173,7 @@ public class Items {
         protected String isEsedo;
         @XmlElement(required = true)
         protected String isReady;
-        @XmlElement(name = "ElementGUID", required = true)
+        @XmlElement(name = "ElementGuid", required = true)
         protected BigDecimal elementGUID;
 
         /**

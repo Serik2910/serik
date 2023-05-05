@@ -5,6 +5,6 @@ import soap.start.serik.models.DocOutgoingDTO;
 import java.util.List;
 
 public interface IDocOutgoingService {
-    boolean save(DocOutgoingDTO docOutgoingDTO);
+    DocOutgoingDTO save(DocOutgoingDTO docOutgoingDTO);
     List<DocOutgoingDTO> getListOfDocOutgoing(String href);
 }

@@ -1,16 +1,16 @@
-26:03:2023 15:58:14.807 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.l.LogUtils}: Using org.apache.cxf.common.logging.Slf4jLogger for logging.
-26:03:2023 15:58:17.138 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.ws.policy.PolicyAnnotationListener.
-26:03:2023 15:58:17.141 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.service.factory.FactoryBeanListenerManager.
-26:03:2023 15:58:17.147 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.ws.policy.PolicyEngineImpl.
-26:03:2023 15:58:17.148 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.ws.policy.PolicyDataEngineImpl.
-26:03:2023 15:58:17.148 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.bus.managers.CXFBusLifeCycleManager.
-26:03:2023 15:58:17.149 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.bus.managers.ServerRegistryImpl.
-26:03:2023 15:58:17.851 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://serik.start.soap/}HelloPort.jaxws-endpoint - no injection will be performed.
-26:03:2023 15:58:17.853 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id org.apache.cxf.jaxws.JaxWsServerFactoryBean - no injection will be performed.
-26:03:2023 15:58:17.861 SerikHome tomcat {INFO } {restartedMain} {o.a.c.w.s.f.ReflectionServiceFactoryBean}: Creating Service {http://serik.start.soap/}HelloService from class soap.start.serik.web_services.server.HelloService
-26:03:2023 15:58:17.902 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.common.util.ASMHelperImpl.
-26:03:2023 15:58:17.903 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.jaxws.spi.WrapperClassCreatorProxyService.
-26:03:2023 15:58:18.021 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.JAXBDataBinding}: Created JAXBContext "jar:file:/C:/Users/kobla/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.7/jaxb-runtime-2.3.7.jar!/com/sun/xml/bind/v2/runtime/JAXBContextImpl.class Build-Id: 2.3.7
+05:05:2023 18:47:01.591 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.l.LogUtils}: Using org.apache.cxf.common.logging.Slf4jLogger for logging.
+05:05:2023 18:47:04.219 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.ws.policy.PolicyAnnotationListener.
+05:05:2023 18:47:04.221 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.service.factory.FactoryBeanListenerManager.
+05:05:2023 18:47:04.227 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.ws.policy.PolicyEngineImpl.
+05:05:2023 18:47:04.229 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.ws.policy.PolicyDataEngineImpl.
+05:05:2023 18:47:04.229 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.bus.managers.CXFBusLifeCycleManager.
+05:05:2023 18:47:04.230 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.bus.managers.ServerRegistryImpl.
+05:05:2023 18:47:04.820 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://serik.start.soap/}HelloPort.jaxws-endpoint - no injection will be performed.
+05:05:2023 18:47:04.821 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id org.apache.cxf.jaxws.JaxWsServerFactoryBean - no injection will be performed.
+05:05:2023 18:47:04.828 SerikHome tomcat {INFO } {restartedMain} {o.a.c.w.s.f.ReflectionServiceFactoryBean}: Creating Service {http://serik.start.soap/}HelloService from class soap.start.serik.web_services.server.HelloService
+05:05:2023 18:47:04.863 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.common.util.ASMHelperImpl.
+05:05:2023 18:47:04.864 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.jaxws.spi.WrapperClassCreatorProxyService.
+05:05:2023 18:47:04.967 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.JAXBDataBinding}: Created JAXBContext "jar:file:/C:/Users/kobla/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.7/jaxb-runtime-2.3.7.jar!/com/sun/xml/bind/v2/runtime/JAXBContextImpl.class Build-Id: 2.3.7
 Classes known to this context:
   [B
   boolean
@@ -54,37 +54,37 @@ Classes known to this context:
   soap.start.serik.web_services.server.jaxws_asm.SayHelloResponse
   void
 " with classes [class soap.start.serik.web_services.server.jaxws_asm.SayHello, class soap.start.serik.web_services.server.jaxws_asm.SayHelloResponse].
-26:03:2023 15:58:18.024 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.u.ProxyHelper}: current classloader sun.misc.Launcher$AppClassLoader@18b4aac2 can see all interface
-26:03:2023 15:58:18.025 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.u.ProxyHelper}: current classloader sun.misc.Launcher$AppClassLoader@18b4aac2 can see all interface
-26:03:2023 15:58:18.092 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.binding.soap.SoapBindingFactory.
-26:03:2023 15:58:18.118 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.wsdl11.WSDLManagerImpl.
-26:03:2023 15:58:18.119 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.r.DefaultResourceManager}: resolving resource <org.apache.cxf.wsdl11.WSDLManagerImpl/bus> type <interface org.apache.cxf.Bus>
-26:03:2023 15:58:18.120 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.r.DefaultResourceManager}: resolving resource <null> type <interface org.apache.cxf.Bus>
-26:03:2023 15:58:18.124 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.wsdl.ExtensionClassCreatorProxyService.
-26:03:2023 15:58:18.143 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.transport.http.HTTPWSDLExtensionLoader.
-26:03:2023 15:58:18.150 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.binding.xml.wsdl11.XMLWSDLExtensionLoader.
-26:03:2023 15:58:18.156 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.ws.addressing.impl.AddressingWSDLExtensionLoader.
-26:03:2023 15:58:18.165 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.binding.soap.SoapTransportFactory.
-26:03:2023 15:58:18.205 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.transport.http.HTTPTransportFactory.
-26:03:2023 15:58:18.214 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://serik.start.soap/}HelloPort.http-destination - no injection will be performed.
-26:03:2023 15:58:18.214 SerikHome tomcat {INFO } {restartedMain} {o.a.c.e.ServerImpl}: Setting the server's publish address to be /hello
-26:03:2023 15:58:18.216 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.bus.managers.ServerLifeCycleManagerImpl.
-26:03:2023 15:58:18.221 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.AnnotationHandlerChainBuilder}: building handler chain
-26:03:2023 15:58:18.222 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.AnnotationHandlerChainBuilder}: Checking for HandlerChain annotation on soap.start.serik.web_services.server.HelloServiceImpl
-26:03:2023 15:58:18.222 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.AnnotationHandlerChainBuilder}: Checking for HandlerChain annotation on soap.start.serik.web_services.server.HelloService
-26:03:2023 15:58:18.309 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.HandlerChainBuilder}: loading handler
-26:03:2023 15:58:18.311 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.HandlerChainBuilder}: adding handler to chain: soap.start.serik.handlers.PropertyValidator@4fc6a0f6
-26:03:2023 15:58:18.311 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.HandlerChainBuilder}: loading handler
-26:03:2023 15:58:18.312 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.HandlerChainBuilder}: adding handler to chain: soap.start.serik.handlers.LoggingHandler@713da04e
-26:03:2023 15:58:18.313 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://serik.start.soap/}HelloService - no injection will be performed.
-26:03:2023 15:58:18.313 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://serik.start.soap/}HelloPort.endpoint - no injection will be performed.
-26:03:2023 15:58:18.313 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.e.ServerImpl}: Server is starting.
-26:03:2023 15:58:18.314 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.t.s.ServletDestination}: registering incoming observer: org.apache.cxf.transport.ChainInitiationObserver@1253407e
-26:03:2023 15:58:18.314 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.e.ServerImpl}: register the server to serverRegistry 
-26:03:2023 15:58:18.328 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://bip.bee.kz/SyncChannel/v10/Interfaces}SyncChannelHttpPort.jaxws-endpoint - no injection will be performed.
-26:03:2023 15:58:18.329 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id org.apache.cxf.jaxws.JaxWsServerFactoryBean - no injection will be performed.
-26:03:2023 15:58:18.334 SerikHome tomcat {INFO } {restartedMain} {o.a.c.w.s.f.ReflectionServiceFactoryBean}: Creating Service {http://bip.bee.kz/SyncChannel/v10/Interfaces}ria from class kz.bee.bip.esedo.ISyncChannel
-26:03:2023 15:58:18.710 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.JAXBDataBinding}: Created JAXBContext "jar:file:/C:/Users/kobla/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.7/jaxb-runtime-2.3.7.jar!/com/sun/xml/bind/v2/runtime/JAXBContextImpl.class Build-Id: 2.3.7
+05:05:2023 18:47:04.970 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.u.ProxyHelper}: current classloader sun.misc.Launcher$AppClassLoader@18b4aac2 can see all interface
+05:05:2023 18:47:04.971 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.u.ProxyHelper}: current classloader sun.misc.Launcher$AppClassLoader@18b4aac2 can see all interface
+05:05:2023 18:47:05.026 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.binding.soap.SoapBindingFactory.
+05:05:2023 18:47:05.052 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.wsdl11.WSDLManagerImpl.
+05:05:2023 18:47:05.053 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.r.DefaultResourceManager}: resolving resource <org.apache.cxf.wsdl11.WSDLManagerImpl/bus> type <interface org.apache.cxf.Bus>
+05:05:2023 18:47:05.054 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.r.DefaultResourceManager}: resolving resource <null> type <interface org.apache.cxf.Bus>
+05:05:2023 18:47:05.058 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.wsdl.ExtensionClassCreatorProxyService.
+05:05:2023 18:47:05.076 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.transport.http.HTTPWSDLExtensionLoader.
+05:05:2023 18:47:05.084 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.binding.xml.wsdl11.XMLWSDLExtensionLoader.
+05:05:2023 18:47:05.089 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.ws.addressing.impl.AddressingWSDLExtensionLoader.
+05:05:2023 18:47:05.097 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.binding.soap.SoapTransportFactory.
+05:05:2023 18:47:05.137 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.transport.http.HTTPTransportFactory.
+05:05:2023 18:47:05.144 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://serik.start.soap/}HelloPort.http-destination - no injection will be performed.
+05:05:2023 18:47:05.144 SerikHome tomcat {INFO } {restartedMain} {o.a.c.e.ServerImpl}: Setting the server's publish address to be /hello
+05:05:2023 18:47:05.146 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.bus.managers.ServerLifeCycleManagerImpl.
+05:05:2023 18:47:05.151 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.AnnotationHandlerChainBuilder}: building handler chain
+05:05:2023 18:47:05.152 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.AnnotationHandlerChainBuilder}: Checking for HandlerChain annotation on soap.start.serik.web_services.server.HelloServiceImpl
+05:05:2023 18:47:05.152 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.AnnotationHandlerChainBuilder}: Checking for HandlerChain annotation on soap.start.serik.web_services.server.HelloService
+05:05:2023 18:47:05.220 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.HandlerChainBuilder}: loading handler
+05:05:2023 18:47:05.221 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.HandlerChainBuilder}: adding handler to chain: soap.start.serik.handlers.PropertyValidator@29e973aa
+05:05:2023 18:47:05.222 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.HandlerChainBuilder}: loading handler
+05:05:2023 18:47:05.223 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.HandlerChainBuilder}: adding handler to chain: soap.start.serik.handlers.LoggingHandler@cf8f238
+05:05:2023 18:47:05.224 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://serik.start.soap/}HelloService - no injection will be performed.
+05:05:2023 18:47:05.224 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://serik.start.soap/}HelloPort.endpoint - no injection will be performed.
+05:05:2023 18:47:05.224 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.e.ServerImpl}: Server is starting.
+05:05:2023 18:47:05.225 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.t.s.ServletDestination}: registering incoming observer: org.apache.cxf.transport.ChainInitiationObserver@a269b31
+05:05:2023 18:47:05.225 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.e.ServerImpl}: register the server to serverRegistry 
+05:05:2023 18:47:05.228 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://bip.bee.kz/SyncChannel/v10/Interfaces}SyncChannelHttpPort.jaxws-endpoint - no injection will be performed.
+05:05:2023 18:47:05.228 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id org.apache.cxf.jaxws.JaxWsServerFactoryBean - no injection will be performed.
+05:05:2023 18:47:05.229 SerikHome tomcat {INFO } {restartedMain} {o.a.c.w.s.f.ReflectionServiceFactoryBean}: Creating Service {http://bip.bee.kz/SyncChannel/v10/Interfaces}ria from class kz.bee.bip.esedo.ISyncChannel
+05:05:2023 18:47:05.309 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.JAXBDataBinding}: Created JAXBContext "jar:file:/C:/Users/kobla/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.7/jaxb-runtime-2.3.7.jar!/com/sun/xml/bind/v2/runtime/JAXBContextImpl.class Build-Id: 2.3.7
 Classes known to this context:
   [B
   boolean
@@ -193,242 +193,25 @@ Classes known to this context:
   short
   void
 " with classes [class kz.bee.bip.esedo.SendMessage, class kz.bee.bip.esedo.SyncSendMessageRequest, class kz.bee.bip.SyncChannel.v10.Types.SyncMessageInfo, class kz.bee.bip.SyncChannel.v10.Types.SenderInfo, class kz.bee.bip.SyncChannel.v10.Types.Property, class kz.bee.bip.esedo.RequestData, class kz.bee.bip.esedo.DocOutgoing, class kz.bee.bip.esedo.Message, class kz.bee.bip.esedo.nsi.DictionaryRequest, class kz.bee.bip.esedo.Attachment, class kz.bee.bip.esedo.MetadataSystem, class kz.bee.bip.esedo.nsi.DictionaryResponse, class kz.bee.bip.esedo.nsi.DictionaryElement, class kz.bee.bip.esedo.DocSection, class kz.bee.bip.esedo.DocAppeal, class kz.bee.bip.esedo.DocOL, class kz.bee.bip.esedo.StateFinished, class kz.bee.bip.esedo.StateProlongExDate, class kz.bee.bip.esedo.StateNewExDate, class kz.bee.bip.esedo.StateTakeOfControl, class kz.bee.bip.esedo.StateNotValid, class kz.bee.bip.esedo.StateNewControl, class kz.bee.bip.esedo.StateDelivered, class kz.bee.bip.esedo.StateNewControlWrong, class kz.bee.bip.esedo.StateRegistered, class kz.bee.bip.esedo.StateStartProcessResponse, class kz.bee.bip.esedo.StateExecution, class kz.bee.bip.esedo.StateTakeOfControlWrong, class kz.bee.bip.esedo.EECBDocumentMetadata, class kz.bee.bip.esedo.EECBApprovalData, class kz.bee.bip.esedo.EECBPublication, class kz.bee.bip.esedo.SendMessageResponse, class kz.bee.bip.esedo.SyncSendMessageResponse, class kz.bee.bip.esedo.SyncMessageInfoResponse, class kz.bee.bip.esedo.StatusInfo, class kz.bee.bip.esedo.ResponseData, class kz.bee.bip.esedo.ObjectFactory, class kz.bee.bip.SyncChannel.v10.Types.ObjectFactory].
-26:03:2023 15:58:18.710 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.u.ProxyHelper}: current classloader sun.misc.Launcher$AppClassLoader@18b4aac2 can see all interface
-26:03:2023 15:58:18.710 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.u.ProxyHelper}: current classloader sun.misc.Launcher$AppClassLoader@18b4aac2 can see all interface
-26:03:2023 15:58:18.768 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://bip.bee.kz/SyncChannel/v10/Interfaces}SyncChannelHttpPort.http-destination - no injection will be performed.
-26:03:2023 15:58:18.768 SerikHome tomcat {INFO } {restartedMain} {o.a.c.e.ServerImpl}: Setting the server's publish address to be /delivered
-26:03:2023 15:58:18.768 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.AnnotationHandlerChainBuilder}: building handler chain
-26:03:2023 15:58:18.769 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.AnnotationHandlerChainBuilder}: Checking for HandlerChain annotation on kz.bee.bip.esedo.SyncChannelImpl
-26:03:2023 15:58:18.769 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.AnnotationHandlerChainBuilder}: Checking for HandlerChain annotation on kz.bee.bip.esedo.ISyncChannel
-26:03:2023 15:58:18.769 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.HandlerChainBuilder}: loading handler
-26:03:2023 15:58:18.769 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.HandlerChainBuilder}: adding handler to chain: soap.start.serik.handlers.PropertyValidator@d99718b
-26:03:2023 15:58:18.770 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.HandlerChainBuilder}: loading handler
-26:03:2023 15:58:18.770 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.HandlerChainBuilder}: adding handler to chain: soap.start.serik.handlers.LoggingHandler@613f4372
-26:03:2023 15:58:18.770 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://bip.bee.kz/SyncChannel/v10/Interfaces}ria - no injection will be performed.
-26:03:2023 15:58:18.770 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://bip.bee.kz/SyncChannel/v10/Interfaces}SyncChannelHttpPort.endpoint - no injection will be performed.
-26:03:2023 15:58:18.770 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.e.ServerImpl}: Server is starting.
-26:03:2023 15:58:18.770 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.t.s.ServletDestination}: registering incoming observer: org.apache.cxf.transport.ChainInitiationObserver@50b0ab91
-26:03:2023 15:58:18.770 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.e.ServerImpl}: register the server to serverRegistry 
-26:03:2023 16:00:17.381 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.e.ServerImpl}: Server is stopping.
-26:03:2023 16:00:17.382 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.t.s.ServletDestination}: unregistering incoming observer: org.apache.cxf.transport.ChainInitiationObserver@50b0ab91
-26:03:2023 16:00:17.382 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.e.ServerImpl}: unregister the server to serverRegistry 
-26:03:2023 16:00:17.383 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.e.ServerImpl}: Server is stopping.
-26:03:2023 16:00:17.383 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.t.s.ServletDestination}: unregistering incoming observer: org.apache.cxf.transport.ChainInitiationObserver@1253407e
-26:03:2023 16:00:17.383 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.e.ServerImpl}: unregister the server to serverRegistry 
-26:03:2023 16:07:43.807 SerikHome tomcat {DEBUG} {main} {o.a.c.c.l.LogUtils}: Using org.apache.cxf.common.logging.Slf4jLogger for logging.
-26:03:2023 16:07:46.126 SerikHome tomcat {DEBUG} {main} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.ws.policy.PolicyAnnotationListener.
-26:03:2023 16:07:46.129 SerikHome tomcat {DEBUG} {main} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.service.factory.FactoryBeanListenerManager.
-26:03:2023 16:07:46.132 SerikHome tomcat {DEBUG} {main} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.ws.policy.PolicyEngineImpl.
-26:03:2023 16:07:46.133 SerikHome tomcat {DEBUG} {main} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.ws.policy.PolicyDataEngineImpl.
-26:03:2023 16:07:46.133 SerikHome tomcat {DEBUG} {main} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.bus.managers.CXFBusLifeCycleManager.
-26:03:2023 16:07:46.135 SerikHome tomcat {DEBUG} {main} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.bus.managers.ServerRegistryImpl.
-26:03:2023 16:07:46.827 SerikHome tomcat {DEBUG} {main} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://serik.start.soap/}HelloPort.jaxws-endpoint - no injection will be performed.
-26:03:2023 16:07:46.828 SerikHome tomcat {DEBUG} {main} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id org.apache.cxf.jaxws.JaxWsServerFactoryBean - no injection will be performed.
-26:03:2023 16:07:46.838 SerikHome tomcat {INFO } {main} {o.a.c.w.s.f.ReflectionServiceFactoryBean}: Creating Service {http://serik.start.soap/}HelloService from class soap.start.serik.web_services.server.HelloService
-26:03:2023 16:07:46.879 SerikHome tomcat {DEBUG} {main} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.common.util.ASMHelperImpl.
-26:03:2023 16:07:46.880 SerikHome tomcat {DEBUG} {main} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.jaxws.spi.WrapperClassCreatorProxyService.
-26:03:2023 16:07:47.045 SerikHome tomcat {DEBUG} {main} {o.a.c.j.JAXBDataBinding}: Created JAXBContext "jar:file:/C:/Users/kobla/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.7/jaxb-runtime-2.3.7.jar!/com/sun/xml/bind/v2/runtime/JAXBContextImpl.class Build-Id: 2.3.7
-Classes known to this context:
-  [B
-  boolean
-  byte
-  char
-  com.sun.xml.bind.api.CompositeStructure
-  double
-  float
-  int
-  java.awt.Image
-  java.io.File
-  java.lang.Boolean
-  java.lang.Byte
-  java.lang.Character
-  java.lang.Class
-  java.lang.Double
-  java.lang.Float
-  java.lang.Integer
-  java.lang.Long
-  java.lang.Object
-  java.lang.Short
-  java.lang.String
-  java.lang.Void
-  java.math.BigDecimal
-  java.math.BigInteger
-  java.net.URI
-  java.net.URL
-  java.util.Calendar
-  java.util.Date
-  java.util.GregorianCalendar
-  java.util.UUID
-  javax.activation.DataHandler
-  javax.xml.bind.JAXBElement
-  javax.xml.datatype.Duration
-  javax.xml.datatype.XMLGregorianCalendar
-  javax.xml.namespace.QName
-  javax.xml.transform.Source
-  long
-  short
-  soap.start.serik.web_services.server.jaxws_asm.SayHello
-  soap.start.serik.web_services.server.jaxws_asm.SayHelloResponse
-  void
-" with classes [class soap.start.serik.web_services.server.jaxws_asm.SayHello, class soap.start.serik.web_services.server.jaxws_asm.SayHelloResponse].
-26:03:2023 16:07:47.050 SerikHome tomcat {DEBUG} {main} {o.a.c.c.u.ProxyHelper}: current classloader sun.misc.Launcher$AppClassLoader@75b84c92 can see all interface
-26:03:2023 16:07:47.051 SerikHome tomcat {DEBUG} {main} {o.a.c.c.u.ProxyHelper}: current classloader sun.misc.Launcher$AppClassLoader@75b84c92 can see all interface
-26:03:2023 16:07:47.137 SerikHome tomcat {DEBUG} {main} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.binding.soap.SoapBindingFactory.
-26:03:2023 16:07:47.167 SerikHome tomcat {DEBUG} {main} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.wsdl11.WSDLManagerImpl.
-26:03:2023 16:07:47.168 SerikHome tomcat {DEBUG} {main} {o.a.c.r.DefaultResourceManager}: resolving resource <org.apache.cxf.wsdl11.WSDLManagerImpl/bus> type <interface org.apache.cxf.Bus>
-26:03:2023 16:07:47.170 SerikHome tomcat {DEBUG} {main} {o.a.c.r.DefaultResourceManager}: resolving resource <null> type <interface org.apache.cxf.Bus>
-26:03:2023 16:07:47.175 SerikHome tomcat {DEBUG} {main} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.wsdl.ExtensionClassCreatorProxyService.
-26:03:2023 16:07:47.191 SerikHome tomcat {DEBUG} {main} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.transport.http.HTTPWSDLExtensionLoader.
-26:03:2023 16:07:47.197 SerikHome tomcat {DEBUG} {main} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.binding.xml.wsdl11.XMLWSDLExtensionLoader.
-26:03:2023 16:07:47.201 SerikHome tomcat {DEBUG} {main} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.ws.addressing.impl.AddressingWSDLExtensionLoader.
-26:03:2023 16:07:47.214 SerikHome tomcat {DEBUG} {main} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.binding.soap.SoapTransportFactory.
-26:03:2023 16:07:47.258 SerikHome tomcat {DEBUG} {main} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.transport.http.HTTPTransportFactory.
-26:03:2023 16:07:47.271 SerikHome tomcat {DEBUG} {main} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://serik.start.soap/}HelloPort.http-destination - no injection will be performed.
-26:03:2023 16:07:47.271 SerikHome tomcat {INFO } {main} {o.a.c.e.ServerImpl}: Setting the server's publish address to be /hello
-26:03:2023 16:07:47.273 SerikHome tomcat {DEBUG} {main} {o.a.c.c.s.ConfigurerImpl}: Could not determine bean name for instance of class org.apache.cxf.bus.managers.ServerLifeCycleManagerImpl.
-26:03:2023 16:07:47.279 SerikHome tomcat {DEBUG} {main} {o.a.c.j.h.AnnotationHandlerChainBuilder}: building handler chain
-26:03:2023 16:07:47.279 SerikHome tomcat {DEBUG} {main} {o.a.c.j.h.AnnotationHandlerChainBuilder}: Checking for HandlerChain annotation on soap.start.serik.web_services.server.HelloServiceImpl
-26:03:2023 16:07:47.279 SerikHome tomcat {DEBUG} {main} {o.a.c.j.h.AnnotationHandlerChainBuilder}: Checking for HandlerChain annotation on soap.start.serik.web_services.server.HelloService
-26:03:2023 16:07:47.384 SerikHome tomcat {DEBUG} {main} {o.a.c.j.h.HandlerChainBuilder}: loading handler
-26:03:2023 16:07:47.385 SerikHome tomcat {DEBUG} {main} {o.a.c.j.h.HandlerChainBuilder}: adding handler to chain: soap.start.serik.handlers.PropertyValidator@393bcd6b
-26:03:2023 16:07:47.386 SerikHome tomcat {DEBUG} {main} {o.a.c.j.h.HandlerChainBuilder}: loading handler
-26:03:2023 16:07:47.387 SerikHome tomcat {DEBUG} {main} {o.a.c.j.h.HandlerChainBuilder}: adding handler to chain: soap.start.serik.handlers.LoggingHandler@64a8d575
-26:03:2023 16:07:47.387 SerikHome tomcat {DEBUG} {main} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://serik.start.soap/}HelloService - no injection will be performed.
-26:03:2023 16:07:47.388 SerikHome tomcat {DEBUG} {main} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://serik.start.soap/}HelloPort.endpoint - no injection will be performed.
-26:03:2023 16:07:47.388 SerikHome tomcat {DEBUG} {main} {o.a.c.e.ServerImpl}: Server is starting.
-26:03:2023 16:07:47.389 SerikHome tomcat {DEBUG} {main} {o.a.c.t.s.ServletDestination}: registering incoming observer: org.apache.cxf.transport.ChainInitiationObserver@1d535b78
-26:03:2023 16:07:47.389 SerikHome tomcat {DEBUG} {main} {o.a.c.e.ServerImpl}: register the server to serverRegistry 
-26:03:2023 16:07:47.396 SerikHome tomcat {DEBUG} {main} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://bip.bee.kz/SyncChannel/v10/Interfaces}SyncChannelHttpPort.jaxws-endpoint - no injection will be performed.
-26:03:2023 16:07:47.396 SerikHome tomcat {DEBUG} {main} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id org.apache.cxf.jaxws.JaxWsServerFactoryBean - no injection will be performed.
-26:03:2023 16:07:47.397 SerikHome tomcat {INFO } {main} {o.a.c.w.s.f.ReflectionServiceFactoryBean}: Creating Service {http://bip.bee.kz/SyncChannel/v10/Interfaces}ria from class kz.bee.bip.esedo.ISyncChannel
-26:03:2023 16:07:47.675 SerikHome tomcat {DEBUG} {main} {o.a.c.j.JAXBDataBinding}: Created JAXBContext "jar:file:/C:/Users/kobla/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.7/jaxb-runtime-2.3.7.jar!/com/sun/xml/bind/v2/runtime/JAXBContextImpl.class Build-Id: 2.3.7
-Classes known to this context:
-  [B
-  boolean
-  byte
-  char
-  com.sun.xml.bind.api.CompositeStructure
-  double
-  float
-  int
-  java.awt.Image
-  java.io.File
-  java.lang.Boolean
-  java.lang.Byte
-  java.lang.Character
-  java.lang.Class
-  java.lang.Double
-  java.lang.Float
-  java.lang.Integer
-  java.lang.Long
-  java.lang.Object
-  java.lang.Short
-  java.lang.String
-  java.lang.Void
-  java.math.BigDecimal
-  java.math.BigInteger
-  java.net.URI
-  java.net.URL
-  java.util.Calendar
-  java.util.Date
-  java.util.GregorianCalendar
-  java.util.UUID
-  javax.activation.DataHandler
-  javax.xml.bind.JAXBElement
-  javax.xml.datatype.Duration
-  javax.xml.datatype.XMLGregorianCalendar
-  javax.xml.namespace.QName
-  javax.xml.transform.Source
-  kz.bee.bip.SyncChannel.v10.Types.Property
-  kz.bee.bip.SyncChannel.v10.Types.SendMessage
-  kz.bee.bip.SyncChannel.v10.Types.SendMessageResponse
-  kz.bee.bip.SyncChannel.v10.Types.SenderInfo
-  kz.bee.bip.SyncChannel.v10.Types.StatusInfo
-  kz.bee.bip.SyncChannel.v10.Types.SyncMessageInfo
-  kz.bee.bip.SyncChannel.v10.Types.SyncMessageInfoResponse
-  kz.bee.bip.SyncChannel.v10.Types.request.Data
-  kz.bee.bip.SyncChannel.v10.Types.request.RequestData
-  kz.bee.bip.SyncChannel.v10.Types.request.SyncSendMessageRequest
-  kz.bee.bip.SyncChannel.v10.Types.response.ResponseData
-  kz.bee.bip.SyncChannel.v10.Types.response.SyncSendMessageResponse
-  kz.bee.bip.common.v10.Types.ErrorInfo
-  kz.bee.bip.esedo.Attachment
-  kz.bee.bip.esedo.DocAppeal
-  kz.bee.bip.esedo.DocOL
-  kz.bee.bip.esedo.DocOutgoing
-  kz.bee.bip.esedo.DocSection
-  kz.bee.bip.esedo.EECBApprovalData
-  kz.bee.bip.esedo.EECBDocumentMetadata
-  kz.bee.bip.esedo.EECBPublication
-  kz.bee.bip.esedo.Message
-  kz.bee.bip.esedo.MetadataSystem
-  kz.bee.bip.esedo.Property
-  kz.bee.bip.esedo.RequestData
-  kz.bee.bip.esedo.ResponseData
-  kz.bee.bip.esedo.SendMessage
-  kz.bee.bip.esedo.SendMessageResponse
-  kz.bee.bip.esedo.SenderInfo
-  kz.bee.bip.esedo.StateDelivered
-  kz.bee.bip.esedo.StateExecution
-  kz.bee.bip.esedo.StateFinished
-  kz.bee.bip.esedo.StateNewControl
-  kz.bee.bip.esedo.StateNewControlWrong
-  kz.bee.bip.esedo.StateNewExDate
-  kz.bee.bip.esedo.StateNotValid
-  kz.bee.bip.esedo.StateProlongExDate
-  kz.bee.bip.esedo.StateRegistered
-  kz.bee.bip.esedo.StateStartProcessResponse
-  kz.bee.bip.esedo.StateTakeOfControl
-  kz.bee.bip.esedo.StateTakeOfControlWrong
-  kz.bee.bip.esedo.StatusInfo
-  kz.bee.bip.esedo.SyncMessageInfoResponse
-  kz.bee.bip.esedo.SyncSendMessageRequest
-  kz.bee.bip.esedo.SyncSendMessageResponse
-  kz.bee.bip.esedo.System
-  kz.bee.bip.esedo.eds.ConfirmRequest
-  kz.bee.bip.esedo.eds.ConfirmResponse
-  kz.bee.bip.esedo.eds.DownloadRequest
-  kz.bee.bip.esedo.eds.DownloadResponse
-  kz.bee.bip.esedo.eds.FileConfirmResult
-  kz.bee.bip.esedo.eds.FileDownloadResult
-  kz.bee.bip.esedo.eds.FileInfo
-  kz.bee.bip.esedo.eds.FileInfoResult
-  kz.bee.bip.esedo.eds.FileUploadResult
-  kz.bee.bip.esedo.eds.GetFileInfoRequest
-  kz.bee.bip.esedo.eds.GetFileInfoResponse
-  kz.bee.bip.esedo.eds.ProcessStatus
-  kz.bee.bip.esedo.eds.TempStorageRequest
-  kz.bee.bip.esedo.eds.TempStorageRequestType
-  kz.bee.bip.esedo.eds.TempStorageResponse
-  kz.bee.bip.esedo.eds.UploadFileRequest
-  kz.bee.bip.esedo.eds.UploadRequest
-  kz.bee.bip.esedo.eds.UploadResponse
-  kz.bee.bip.esedo.nsi.DictionaryElement
-  kz.bee.bip.esedo.nsi.DictionaryRequest
-  kz.bee.bip.esedo.nsi.DictionaryResponse
-  long
-  short
-  void
-" with classes [class kz.bee.bip.esedo.SendMessage, class kz.bee.bip.esedo.SyncSendMessageRequest, class kz.bee.bip.SyncChannel.v10.Types.SyncMessageInfo, class kz.bee.bip.SyncChannel.v10.Types.SenderInfo, class kz.bee.bip.SyncChannel.v10.Types.Property, class kz.bee.bip.esedo.RequestData, class kz.bee.bip.esedo.DocOutgoing, class kz.bee.bip.esedo.Message, class kz.bee.bip.esedo.nsi.DictionaryRequest, class kz.bee.bip.esedo.Attachment, class kz.bee.bip.esedo.MetadataSystem, class kz.bee.bip.esedo.nsi.DictionaryResponse, class kz.bee.bip.esedo.nsi.DictionaryElement, class kz.bee.bip.esedo.DocSection, class kz.bee.bip.esedo.DocAppeal, class kz.bee.bip.esedo.DocOL, class kz.bee.bip.esedo.StateFinished, class kz.bee.bip.esedo.StateProlongExDate, class kz.bee.bip.esedo.StateNewExDate, class kz.bee.bip.esedo.StateTakeOfControl, class kz.bee.bip.esedo.StateNotValid, class kz.bee.bip.esedo.StateNewControl, class kz.bee.bip.esedo.StateDelivered, class kz.bee.bip.esedo.StateNewControlWrong, class kz.bee.bip.esedo.StateRegistered, class kz.bee.bip.esedo.StateStartProcessResponse, class kz.bee.bip.esedo.StateExecution, class kz.bee.bip.esedo.StateTakeOfControlWrong, class kz.bee.bip.esedo.EECBDocumentMetadata, class kz.bee.bip.esedo.EECBApprovalData, class kz.bee.bip.esedo.EECBPublication, class kz.bee.bip.esedo.SendMessageResponse, class kz.bee.bip.esedo.SyncSendMessageResponse, class kz.bee.bip.esedo.SyncMessageInfoResponse, class kz.bee.bip.esedo.StatusInfo, class kz.bee.bip.esedo.ResponseData, class kz.bee.bip.SyncChannel.v10.Types.ObjectFactory, class kz.bee.bip.esedo.ObjectFactory].
-26:03:2023 16:07:47.675 SerikHome tomcat {DEBUG} {main} {o.a.c.c.u.ProxyHelper}: current classloader sun.misc.Launcher$AppClassLoader@75b84c92 can see all interface
-26:03:2023 16:07:47.676 SerikHome tomcat {DEBUG} {main} {o.a.c.c.u.ProxyHelper}: current classloader sun.misc.Launcher$AppClassLoader@75b84c92 can see all interface
-26:03:2023 16:07:47.746 SerikHome tomcat {DEBUG} {main} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://bip.bee.kz/SyncChannel/v10/Interfaces}SyncChannelHttpPort.http-destination - no injection will be performed.
-26:03:2023 16:07:47.746 SerikHome tomcat {INFO } {main} {o.a.c.e.ServerImpl}: Setting the server's publish address to be /delivered
-26:03:2023 16:07:47.746 SerikHome tomcat {DEBUG} {main} {o.a.c.j.h.AnnotationHandlerChainBuilder}: building handler chain
-26:03:2023 16:07:47.746 SerikHome tomcat {DEBUG} {main} {o.a.c.j.h.AnnotationHandlerChainBuilder}: Checking for HandlerChain annotation on kz.bee.bip.esedo.SyncChannelImpl
-26:03:2023 16:07:47.746 SerikHome tomcat {DEBUG} {main} {o.a.c.j.h.AnnotationHandlerChainBuilder}: Checking for HandlerChain annotation on kz.bee.bip.esedo.ISyncChannel
-26:03:2023 16:07:47.747 SerikHome tomcat {DEBUG} {main} {o.a.c.j.h.HandlerChainBuilder}: loading handler
-26:03:2023 16:07:47.747 SerikHome tomcat {DEBUG} {main} {o.a.c.j.h.HandlerChainBuilder}: adding handler to chain: soap.start.serik.handlers.PropertyValidator@71cc0e35
-26:03:2023 16:07:47.748 SerikHome tomcat {DEBUG} {main} {o.a.c.j.h.HandlerChainBuilder}: loading handler
-26:03:2023 16:07:47.748 SerikHome tomcat {DEBUG} {main} {o.a.c.j.h.HandlerChainBuilder}: adding handler to chain: soap.start.serik.handlers.LoggingHandler@3b6c740b
-26:03:2023 16:07:47.748 SerikHome tomcat {DEBUG} {main} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://bip.bee.kz/SyncChannel/v10/Interfaces}ria - no injection will be performed.
-26:03:2023 16:07:47.748 SerikHome tomcat {DEBUG} {main} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://bip.bee.kz/SyncChannel/v10/Interfaces}SyncChannelHttpPort.endpoint - no injection will be performed.
-26:03:2023 16:07:47.748 SerikHome tomcat {DEBUG} {main} {o.a.c.e.ServerImpl}: Server is starting.
-26:03:2023 16:07:47.749 SerikHome tomcat {DEBUG} {main} {o.a.c.t.s.ServletDestination}: registering incoming observer: org.apache.cxf.transport.ChainInitiationObserver@8091d80
-26:03:2023 16:07:47.749 SerikHome tomcat {DEBUG} {main} {o.a.c.e.ServerImpl}: register the server to serverRegistry 
-26:03:2023 16:07:49.828 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.e.ServerImpl}: Server is stopping.
-26:03:2023 16:07:49.829 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.t.s.ServletDestination}: unregistering incoming observer: org.apache.cxf.transport.ChainInitiationObserver@8091d80
-26:03:2023 16:07:49.829 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.e.ServerImpl}: unregister the server to serverRegistry 
-26:03:2023 16:07:49.829 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.e.ServerImpl}: Server is stopping.
-26:03:2023 16:07:49.829 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.t.s.ServletDestination}: unregistering incoming observer: org.apache.cxf.transport.ChainInitiationObserver@1d535b78
-26:03:2023 16:07:49.830 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.e.ServerImpl}: unregister the server to serverRegistry 
+05:05:2023 18:47:05.309 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.u.ProxyHelper}: current classloader sun.misc.Launcher$AppClassLoader@18b4aac2 can see all interface
+05:05:2023 18:47:05.309 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.u.ProxyHelper}: current classloader sun.misc.Launcher$AppClassLoader@18b4aac2 can see all interface
+05:05:2023 18:47:05.369 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://bip.bee.kz/SyncChannel/v10/Interfaces}SyncChannelHttpPort.http-destination - no injection will be performed.
+05:05:2023 18:47:05.369 SerikHome tomcat {INFO } {restartedMain} {o.a.c.e.ServerImpl}: Setting the server's publish address to be /delivered
+05:05:2023 18:47:05.369 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.AnnotationHandlerChainBuilder}: building handler chain
+05:05:2023 18:47:05.369 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.AnnotationHandlerChainBuilder}: Checking for HandlerChain annotation on kz.bee.bip.esedo.SyncChannelImpl
+05:05:2023 18:47:05.369 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.AnnotationHandlerChainBuilder}: Checking for HandlerChain annotation on kz.bee.bip.esedo.ISyncChannel
+05:05:2023 18:47:05.370 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.HandlerChainBuilder}: loading handler
+05:05:2023 18:47:05.370 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.HandlerChainBuilder}: adding handler to chain: soap.start.serik.handlers.PropertyValidator@7cbc691e
+05:05:2023 18:47:05.370 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.HandlerChainBuilder}: loading handler
+05:05:2023 18:47:05.370 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.j.h.HandlerChainBuilder}: adding handler to chain: soap.start.serik.handlers.LoggingHandler@680f51c9
+05:05:2023 18:47:05.371 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://bip.bee.kz/SyncChannel/v10/Interfaces}ria - no injection will be performed.
+05:05:2023 18:47:05.371 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.c.s.ConfigurerImpl}: Could not find a definition for bean with id {http://bip.bee.kz/SyncChannel/v10/Interfaces}SyncChannelHttpPort.endpoint - no injection will be performed.
+05:05:2023 18:47:05.371 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.e.ServerImpl}: Server is starting.
+05:05:2023 18:47:05.371 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.t.s.ServletDestination}: registering incoming observer: org.apache.cxf.transport.ChainInitiationObserver@7a59a1b2
+05:05:2023 18:47:05.371 SerikHome tomcat {DEBUG} {restartedMain} {o.a.c.e.ServerImpl}: register the server to serverRegistry 
+05:05:2023 18:47:57.392 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.e.ServerImpl}: Server is stopping.
+05:05:2023 18:47:57.393 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.t.s.ServletDestination}: unregistering incoming observer: org.apache.cxf.transport.ChainInitiationObserver@7a59a1b2
+05:05:2023 18:47:57.393 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.e.ServerImpl}: unregister the server to serverRegistry 
+05:05:2023 18:47:57.393 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.e.ServerImpl}: Server is stopping.
+05:05:2023 18:47:57.393 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.t.s.ServletDestination}: unregistering incoming observer: org.apache.cxf.transport.ChainInitiationObserver@a269b31
+05:05:2023 18:47:57.393 SerikHome tomcat {DEBUG} {SpringApplicationShutdownHook} {o.a.c.e.ServerImpl}: unregister the server to serverRegistry 

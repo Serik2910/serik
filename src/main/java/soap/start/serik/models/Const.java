@@ -12,7 +12,7 @@ public class Const {
     public static final String NSI_SERVICE_ID = "ENSI_SeGetDataGetItems";
     public static final String SENDER_ID_CRED = "izipaq";
     public static final String SENDER_ID_DICT = "izipaq";
-    public static final String SENDER_PASS_CRED = "izipaq";
+    public static final String SENDER_PASS_CRED = "2G68JEVJ";
     public static final String SENDER_PASS_DICT = "07QiJe5y_L";
     public static final String ESEDO_ENDPOINT = "https://195.12.113.29/bip-sync-wss-gost/";
 

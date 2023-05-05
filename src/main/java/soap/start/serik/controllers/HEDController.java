@@ -63,18 +63,19 @@ public class HEDController {
         LOG.info("Incoming message to upload to HED");
         try {
             uploadRequest = UploadRequestDTO.getUploadRequestFromDTO(uploadFilesDTO);
+            UploadRequestDTO uploadFilesDTO_WO_Content = UploadRequestDTO.getUpRequest_WO_Content(uploadFilesDTO);
             request.setUploadRequest(uploadRequest);
             switch (type){
                 case MediaType.APPLICATION_XML_VALUE:
                     StringWriter sw = new StringWriter();
-                    JAXB.marshal(uploadFilesDTO,sw);
+                    JAXB.marshal(uploadFilesDTO_WO_Content,sw);
                     String xmlStringToLog = sw.toString();
                     httpHeaders.setContentType(MediaType.APPLICATION_XML);
                     LOG.info(xmlStringToLog);
                     break;
                 case MediaType.APPLICATION_JSON_VALUE:
                     ObjectWriter ow = new ObjectMapper().writer().withDefaultPrettyPrinter();
-                    String json = ow.writeValueAsString(uploadFilesDTO);
+                    String json = ow.writeValueAsString(uploadFilesDTO_WO_Content);
                     httpHeaders.setContentType(MediaType.APPLICATION_JSON);
                     LOG.info(json);
                     break;
@@ -94,7 +95,13 @@ public class HEDController {
         } catch (UnsupportedEncodingException e) {
             LOG.error("Error on encoding request : "+ e.getMessage());
         }
-
+        if(syncSendMessageResponse!=null) {
+            StringWriter sw = new StringWriter();
+            JAXB.marshal(syncSendMessageResponse, sw);
+            String xmlStringToLog = sw.toString();
+            httpHeaders.setContentType(MediaType.APPLICATION_XML);
+            LOG.info(xmlStringToLog);
+        }
         return new ResponseEntity<SyncSendMessageResponse>(syncSendMessageResponse,httpHeaders, HttpStatus.OK);
     }
     @PostMapping(
@@ -138,6 +145,7 @@ public class HEDController {
         } catch (JsonProcessingException e) {
             LOG.error("Error on JSON request : "+ e.getMessage());
         }
+        
         return new ResponseEntity<SyncSendMessageResponse>(syncSendMessageResponse,httpHeaders, HttpStatus.OK);
     }
 

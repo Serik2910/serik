@@ -4,9 +4,9 @@ package kz.bee.bip.esedo;
 
 import org.springframework.stereotype.Service;
 import simbase.SbapiResponse;
-import soap.start.serik.models.SimbaseClient;
+import soap.start.serik.models.*;
 import soap.start.serik.service.IxmlDsigUtil;
-import soap.start.serik.service.SimbasClientService;
+import soap.start.serik.service.SimbaseClientService;
 
 
 import javax.jws.WebService;
@@ -17,6 +17,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 import java.io.StringReader;
 import java.util.Date;
 import java.util.GregorianCalendar;
+import java.util.Objects;
 
 @WebService(
         serviceName = "ria",
@@ -26,9 +27,9 @@ import java.util.GregorianCalendar;
 )
 @Service
 public class SyncChannelImpl implements ISyncChannel {
-    private final SimbasClientService service;
+    private final SimbaseClientService service;
     private final IxmlDsigUtil dsigUtil;
-    public SyncChannelImpl(SimbasClientService service, IxmlDsigUtil dsigUtil) {
+    public SyncChannelImpl(SimbaseClientService service, IxmlDsigUtil dsigUtil) {
         this.service = service;
         this.dsigUtil = dsigUtil;
     }
@@ -42,29 +43,74 @@ public class SyncChannelImpl implements ISyncChannel {
     public SyncSendMessageResponse sendMessage(SyncSendMessageRequest request) throws
             Exception {
         Object data = request.getRequestData().getData();
-        Boolean error=false;
+        boolean error=false;
         if(data instanceof Message){
             Message message = (Message) data;
             Long id = message.getMetadataSystem().getPerformers().get(0);
             SimbaseClient simbaseClient = null;
-            if(id != null){
-                simbaseClient = service.findFirst(id);
+            if(id != null && service!=null){
+                simbaseClient = service.findFirstClient(id);
                 if (simbaseClient== null){
-                    simbaseClient = service.findFirst(17466374L);
+                    simbaseClient = service.findFirstClient(17466374L);
                 }
                 String response = simbaseClient.sendDocToSimbase(request);
                 StringReader stringReader = new StringReader(response);
                 JAXBContext jaxbContext  = JAXBContext.newInstance(SbapiResponse.class);
                 Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
                 SbapiResponse sbapiResponse = (SbapiResponse) unmarshaller.unmarshal(stringReader);
-                java.lang.System.out.println(response);
+                String simbaseError = sbapiResponse.getHeader().getError().getId();
+                String receiveError = sbapiResponse.getBody().getStatus();
+                if (!Objects.equals(simbaseError, "0") || receiveError.equals("0")){
+                    error=true;
+                }
+                if (data instanceof DocOutgoing){
+                    DocOutgoingDTO docOutgoingDTO = new DocOutgoingDTO((DocOutgoing) data);
+                    docOutgoingDTO.setIsSent(!error);
+                    service.saveDocOutgoing(docOutgoingDTO);
+                }
+                if (data instanceof DocAppeal){
+                    DocAppealDTO docAppealDTO = new DocAppealDTO((DocAppeal) data);
+                    docAppealDTO.setIsSent(!error);
+                    service.saveDocAppeal(docAppealDTO);
+                }
+                if (data instanceof DocOL){
+                    DocOLDTO docOLDTO = new DocOLDTO((DocOL) data);
+                    docOLDTO.setIsSent(!error);
+                    service.saveDocOL(docOLDTO);
+                }
+                if (data instanceof StateDelivered){
+                    StateDeliveredDTO stateDeliveredDTO = new StateDeliveredDTO((StateDelivered) data);
+                    stateDeliveredDTO.setIsSent(!error);
+                    service.saveStateDelivered(stateDeliveredDTO);
+                }
+                if (data instanceof StateRegistered){
+                    StateRegisteredDTO stateRegisteredDTO = new StateRegisteredDTO((StateRegistered) data);
+                    stateRegisteredDTO.setIsSent(!error);
+                    service.saveStateRegistered(stateRegisteredDTO);
+                }
+                if (data instanceof StateNotValid){
+                    StateNotValidDTO stateNotValidDTO = new StateNotValidDTO((StateNotValid) data);
+                    stateNotValidDTO.setIsSent(!error);
+                    service.saveStateNotValid(stateNotValidDTO);
+                }
+                if (data instanceof DocSection){
+                    DocSectionDTO docSectionDTO = new DocSectionDTO((DocSection) data);
+                    docSectionDTO.setIsSent(!error);
+                    service.saveDocSection(docSectionDTO);
+                }
+                if (data instanceof StateExecution){
+                    StateExecutionDTO stateExecutionDTO = new StateExecutionDTO((StateExecution) data);
+                    stateExecutionDTO.setIsSent(!error);
+                    service.saveStateExecution(stateExecutionDTO);
+                }
+                if (data instanceof StateFinished){
+                    StateFinishedDTO stateFinishedDTO = new StateFinishedDTO((StateFinished) data);
+                    stateFinishedDTO.setIsSent(!error);
+                    service.saveStateFinished(stateFinishedDTO);
+                }
             }
-            if (data instanceof DocOutgoing){
 
-            }
         }
-
-
         SyncSendMessageResponse messageResponse = new SyncSendMessageResponse();
         SyncMessageInfoResponse responseInfo = new SyncMessageInfoResponse();
         responseInfo.setMessageId(request.getRequestInfo().getMessageId());

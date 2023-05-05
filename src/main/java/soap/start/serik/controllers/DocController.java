@@ -40,6 +40,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 import java.io.StringWriter;
 import java.util.Date;
 import java.util.GregorianCalendar;
+import java.util.Objects;
 import java.util.UUID;
 
 import static soap.start.serik.models.Const.*;
@@ -137,16 +138,26 @@ public class DocController {
     public ResponseEntity<SyncSendMessageResponse> uploadDoc(
             @RequestBody DocOutgoing docOutgoing,
             @RequestHeader (HttpHeaders.CONTENT_TYPE) String type) {
-        SyncSendMessageResponse syncSendMessageResponse =  logAndSend(docOutgoing, type);
+        SyncSendMessageResponse syncSendMessageResponse = logAndSend(docOutgoing, type);
         HttpHeaders httpHeader = getHeader(type);
         DocOutgoingDTO docOutgoingDTO = new DocOutgoingDTO(docOutgoing);
-        if (syncSendMessageResponse!=null) {
-            boolean isSent = syncSendMessageResponse.getResponseInfo().getStatus().getCode() != "SCSE001";
+
+        if (syncSendMessageResponse!=null &&
+                syncSendMessageResponse.getResponseInfo()!=null &&
+                syncSendMessageResponse.getResponseInfo().getStatus()!=null
+        ) {
+            boolean isSent = !Objects.equals(syncSendMessageResponse.getResponseInfo().getStatus().getCode(), "SCSE001");
+
             docOutgoingDTO.setIsSent(isSent);
+            StringWriter sw = new StringWriter();
+            JAXB.marshal(syncSendMessageResponse,sw);
+            String xmlStringToLog = sw.toString();
+            LOG.info(xmlStringToLog);
         }else{
             docOutgoingDTO.setIsSent(false);
         }
         docOutgoingService.save(docOutgoingDTO);
+
         return new ResponseEntity<SyncSendMessageResponse>(syncSendMessageResponse, httpHeader, HttpStatus.OK);
     }
     private HttpHeaders getHeader(String type){
