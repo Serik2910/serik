@@ -18,6 +18,10 @@ public interface ISimbaseClientService {
     StateExecutionDTO saveStateExecution(StateExecutionDTO stateExecutionDTO);
 
     StateFinishedDTO saveStateFinished(StateFinishedDTO stateFinishedDTO);
+    StateNewControlDTO saveStateNewControl(StateNewControlDTO stateNewControlDTO);
+    StateNewExDateDTO saveStateNewExDate(StateNewExDateDTO stateNewExDateDTO);
+    StateProlongExDateDTO saveStateProlongExDate(StateProlongExDateDTO stateProlongExDateDTO);
+    StateTakeOfControlDTO saveStateTakeOfControl(StateTakeOfControlDTO stateTakeOfControlDTO);
 
     DocOLDTO saveDocOL(DocOLDTO docOLDTO);
 

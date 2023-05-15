@@ -17,6 +17,10 @@ public class SimbaseClientService implements ISimbaseClientService{
     private final DocSectionRepository docSectionRepository;
     private final StateExecutionRepository stateExecutionRepository;
     private final StateFinishedRepository stateFinishedRepository;
+    private final StateNewControlRepository stateNewControlRepository;
+    private final StateNewExDateRepository stateNewExDateRepository;
+    private final StateProlongExDateRepository stateProlongExDateRepository;
+    private final StateTakeOfControlRepository stateTakeOfControlRepository;
 
     public SimbaseClientService(
             SimbaseClientRepository simbaseClientRepository,
@@ -28,7 +32,11 @@ public class SimbaseClientService implements ISimbaseClientService{
             StateNotValidRepository stateNotValidRepository,
             DocSectionRepository docSectionRepository,
             StateExecutionRepository stateExecutionRepository,
-            StateFinishedRepository stateFinishedRepository) {
+            StateFinishedRepository stateFinishedRepository,
+            StateNewControlRepository stateNewControlRepository,
+            StateNewExDateRepository stateNewExDateRepository,
+            StateProlongExDateRepository stateProlongExDateRepository,
+            StateTakeOfControlRepository stateTakeOfControlRepository) {
         this.simbaseClientRepository = simbaseClientRepository;
         this.docOutgoingRepository = docOutgoingRepository;
         this.docAppealRepository = docAppealRepository;
@@ -39,6 +47,10 @@ public class SimbaseClientService implements ISimbaseClientService{
         this.docSectionRepository = docSectionRepository;
         this.stateExecutionRepository = stateExecutionRepository;
         this.stateFinishedRepository = stateFinishedRepository;
+        this.stateNewControlRepository = stateNewControlRepository;
+        this.stateNewExDateRepository = stateNewExDateRepository;
+        this.stateProlongExDateRepository = stateProlongExDateRepository;
+        this.stateTakeOfControlRepository = stateTakeOfControlRepository;
     }
 
 
@@ -90,6 +102,26 @@ public class SimbaseClientService implements ISimbaseClientService{
     @Override
     public StateFinishedDTO saveStateFinished(StateFinishedDTO stateFinishedDTO) {
         return stateFinishedRepository.save(stateFinishedDTO);
+    }
+
+    @Override
+    public StateNewControlDTO saveStateNewControl(StateNewControlDTO stateNewControlDTO) {
+        return stateNewControlRepository.save(stateNewControlDTO);
+    }
+
+    @Override
+    public StateNewExDateDTO saveStateNewExDate(StateNewExDateDTO stateNewExDateDTO) {
+        return stateNewExDateRepository.save(stateNewExDateDTO);
+    }
+
+    @Override
+    public StateProlongExDateDTO saveStateProlongExDate(StateProlongExDateDTO stateProlongExDateDTO) {
+        return stateProlongExDateRepository.save(stateProlongExDateDTO);
+    }
+
+    @Override
+    public StateTakeOfControlDTO saveStateTakeOfControl(StateTakeOfControlDTO stateTakeOfControlDTO) {
+        return stateTakeOfControlRepository.save(stateTakeOfControlDTO);
     }
 
     @Override

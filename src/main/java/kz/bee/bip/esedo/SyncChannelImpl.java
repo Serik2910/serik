@@ -108,6 +108,26 @@ public class SyncChannelImpl implements ISyncChannel {
                     stateFinishedDTO.setIsSent(!error);
                     service.saveStateFinished(stateFinishedDTO);
                 }
+                if (data instanceof StateNewControl){
+                    StateNewControlDTO stateNewControlDTO = new StateNewControlDTO((StateNewControl) data);
+                    stateNewControlDTO.setIsSent(!error);
+                    service.saveStateNewControl(stateNewControlDTO);
+                }
+                if (data instanceof StateNewExDate){
+                    StateNewExDateDTO stateNewExDateDTO = new StateNewExDateDTO((StateNewExDate) data);
+                    stateNewExDateDTO.setIsSent(!error);
+                    service.saveStateNewExDate(stateNewExDateDTO);
+                }
+                if (data instanceof StateProlongExDate){
+                    StateProlongExDateDTO stateProlongExDateDTO = new StateProlongExDateDTO((StateProlongExDate) data);
+                    stateProlongExDateDTO.setIsSent(!error);
+                    service.saveStateProlongExDate(stateProlongExDateDTO);
+                }
+                if (data instanceof StateTakeOfControl){
+                    StateTakeOfControlDTO stateTakeOfControlDTO = new StateTakeOfControlDTO((StateTakeOfControl) data);
+                    stateTakeOfControlDTO.setIsSent(!error);
+                    service.saveStateTakeOfControl(stateTakeOfControlDTO);
+                }
             }
 
         }

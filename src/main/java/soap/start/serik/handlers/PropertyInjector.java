@@ -24,6 +24,7 @@ import soap.start.serik.service.KeyStoreFileAdapter;
 
 import javax.xml.namespace.QName;
 import javax.xml.soap.*;
+import javax.xml.transform.OutputKeys;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
@@ -103,6 +104,8 @@ public class PropertyInjector implements SOAPHandler<SOAPMessageContext> {
                 StringWriter os = new StringWriter();
                 TransformerFactory tf = TransformerFactory.newInstance();
                 Transformer trans = tf.newTransformer();
+                trans.setOutputProperty(OutputKeys.INDENT, "yes");
+                trans.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "2");
 //                trans.transform(new DOMSource(document), new StreamResult(os));
 //                os.close();
 //                System.out.println(os.toString());
@@ -170,10 +173,10 @@ public class PropertyInjector implements SOAPHandler<SOAPMessageContext> {
                 sig.getKeyInfo().addUnknownElement(reference.getElement());
 
                 sig.sign(privateKey);
-                os = new StringWriter();
-                trans.transform(new DOMSource(doc), new StreamResult(os));
-                os.close();
-                LOGGER.info(os.toString());
+//                os = new StringWriter();
+//                trans.transform(new DOMSource(doc), new StreamResult(os));
+//                os.close();
+                //LOGGER.info(os.toString());
 
 
             }  catch (SOAPException e) {

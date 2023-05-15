@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>soap.start</groupId>
 	<artifactId>serik</artifactId>
-	<version>0.0.4-gw</version>
+	<version>0.0.5-gw</version>
 	<name>serik</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>

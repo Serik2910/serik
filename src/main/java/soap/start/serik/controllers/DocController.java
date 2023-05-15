@@ -28,9 +28,10 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import soap.start.serik.Utils.EsedoConnection;
-import soap.start.serik.models.DocOutgoingDTO;
+import soap.start.serik.models.*;
 import soap.start.serik.service.DocOutgoingService;
 import soap.start.serik.service.IDocOutgoingService;
+import soap.start.serik.service.ISimbaseClientService;
 
 import javax.xml.bind.JAXB;
 import javax.xml.datatype.DatatypeConfigurationException;
@@ -38,10 +39,7 @@ import javax.xml.datatype.DatatypeFactory;
 import javax.xml.datatype.XMLGregorianCalendar;
 
 import java.io.StringWriter;
-import java.util.Date;
-import java.util.GregorianCalendar;
-import java.util.Objects;
-import java.util.UUID;
+import java.util.*;
 
 import static soap.start.serik.models.Const.*;
 
@@ -53,6 +51,10 @@ public class DocController {
 
     @Autowired
     private IDocOutgoingService docOutgoingService;
+    @Autowired
+    private ISimbaseClientService simbaseClientService;
+
+
     @PostMapping(
             value = "/uploadStateDelivered",
             produces = {MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE},
@@ -63,6 +65,21 @@ public class DocController {
             @RequestHeader (HttpHeaders.CONTENT_TYPE) String type) {
         SyncSendMessageResponse syncSendMessageResponse =  logAndSend(stateDelivered, type);
         HttpHeaders httpHeader = getHeader(type);
+        StateDeliveredDTO stateDeliveredDTO = new StateDeliveredDTO(stateDelivered);
+        if (syncSendMessageResponse!=null &&
+                syncSendMessageResponse.getResponseInfo()!=null &&
+                syncSendMessageResponse.getResponseInfo().getStatus()!=null
+        ) {
+            boolean isSent = !Objects.equals(syncSendMessageResponse.getResponseInfo().getStatus().getCode(), "SCSE001");
+            stateDeliveredDTO.setIsSent(isSent);
+            StringWriter sw = new StringWriter();
+            JAXB.marshal(syncSendMessageResponse,sw);
+            String xmlStringToLog = sw.toString();
+            LOG.info(xmlStringToLog);
+        }else{
+            stateDeliveredDTO.setIsSent(false);
+        }
+        simbaseClientService.saveStateDelivered(stateDeliveredDTO);
         return new ResponseEntity<SyncSendMessageResponse>(syncSendMessageResponse, httpHeader, HttpStatus.OK);
     }
     @PostMapping(
@@ -75,6 +92,21 @@ public class DocController {
             @RequestHeader (HttpHeaders.CONTENT_TYPE) String type) {
         SyncSendMessageResponse syncSendMessageResponse =  logAndSend(stateRegistered, type);
         HttpHeaders httpHeader = getHeader(type);
+        StateRegisteredDTO stateRegisteredDTO = new StateRegisteredDTO(stateRegistered);
+        if (syncSendMessageResponse!=null &&
+                syncSendMessageResponse.getResponseInfo()!=null &&
+                syncSendMessageResponse.getResponseInfo().getStatus()!=null
+        ) {
+            boolean isSent = !Objects.equals(syncSendMessageResponse.getResponseInfo().getStatus().getCode(), "SCSE001");
+            stateRegisteredDTO.setIsSent(isSent);
+            StringWriter sw = new StringWriter();
+            JAXB.marshal(syncSendMessageResponse,sw);
+            String xmlStringToLog = sw.toString();
+            LOG.info(xmlStringToLog);
+        }else{
+            stateRegisteredDTO.setIsSent(false);
+        }
+        simbaseClientService.saveStateRegistered(stateRegisteredDTO);
         return new ResponseEntity<SyncSendMessageResponse>(syncSendMessageResponse, httpHeader, HttpStatus.OK);
     }
 
@@ -88,6 +120,21 @@ public class DocController {
             @RequestHeader (HttpHeaders.CONTENT_TYPE) String type) {
         SyncSendMessageResponse syncSendMessageResponse =  logAndSend(stateNotValid, type);
         HttpHeaders httpHeader = getHeader(type);
+        StateNotValidDTO stateNotValidDTO = new StateNotValidDTO(stateNotValid);
+        if (syncSendMessageResponse!=null &&
+                syncSendMessageResponse.getResponseInfo()!=null &&
+                syncSendMessageResponse.getResponseInfo().getStatus()!=null
+        ) {
+            boolean isSent = !Objects.equals(syncSendMessageResponse.getResponseInfo().getStatus().getCode(), "SCSE001");
+            stateNotValidDTO.setIsSent(isSent);
+            StringWriter sw = new StringWriter();
+            JAXB.marshal(syncSendMessageResponse,sw);
+            String xmlStringToLog = sw.toString();
+            LOG.info(xmlStringToLog);
+        }else{
+            stateNotValidDTO.setIsSent(false);
+        }
+        simbaseClientService.saveStateNotValid(stateNotValidDTO);
         return new ResponseEntity<SyncSendMessageResponse>(syncSendMessageResponse, httpHeader, HttpStatus.OK);
     }
 
@@ -101,6 +148,21 @@ public class DocController {
             @RequestHeader (HttpHeaders.CONTENT_TYPE) String type) {
         SyncSendMessageResponse syncSendMessageResponse =  logAndSend(stateExecution, type);
         HttpHeaders httpHeader = getHeader(type);
+        StateExecutionDTO stateExecutionDTO = new StateExecutionDTO(stateExecution);
+        if (syncSendMessageResponse!=null &&
+                syncSendMessageResponse.getResponseInfo()!=null &&
+                syncSendMessageResponse.getResponseInfo().getStatus()!=null
+        ) {
+            boolean isSent = !Objects.equals(syncSendMessageResponse.getResponseInfo().getStatus().getCode(), "SCSE001");
+            stateExecutionDTO.setIsSent(isSent);
+            StringWriter sw = new StringWriter();
+            JAXB.marshal(syncSendMessageResponse,sw);
+            String xmlStringToLog = sw.toString();
+            LOG.info(xmlStringToLog);
+        }else{
+            stateExecutionDTO.setIsSent(false);
+        }
+        simbaseClientService.saveStateExecution(stateExecutionDTO);
         return new ResponseEntity<SyncSendMessageResponse>(syncSendMessageResponse, httpHeader, HttpStatus.OK);
     }
 
@@ -114,6 +176,21 @@ public class DocController {
             @RequestHeader (HttpHeaders.CONTENT_TYPE) String type) {
         SyncSendMessageResponse syncSendMessageResponse =  logAndSend(stateFinished, type);
         HttpHeaders httpHeader = getHeader(type);
+        StateFinishedDTO stateFinishedDTO = new StateFinishedDTO(stateFinished);
+        if (syncSendMessageResponse!=null &&
+                syncSendMessageResponse.getResponseInfo()!=null &&
+                syncSendMessageResponse.getResponseInfo().getStatus()!=null
+        ) {
+            boolean isSent = !Objects.equals(syncSendMessageResponse.getResponseInfo().getStatus().getCode(), "SCSE001");
+            stateFinishedDTO.setIsSent(isSent);
+            StringWriter sw = new StringWriter();
+            JAXB.marshal(syncSendMessageResponse,sw);
+            String xmlStringToLog = sw.toString();
+            LOG.info(xmlStringToLog);
+        }else{
+            stateFinishedDTO.setIsSent(false);
+        }
+        simbaseClientService.saveStateFinished(stateFinishedDTO);
         return new ResponseEntity<SyncSendMessageResponse>(syncSendMessageResponse, httpHeader, HttpStatus.OK);
     }
     @PostMapping(
@@ -126,6 +203,21 @@ public class DocController {
             @RequestHeader (HttpHeaders.CONTENT_TYPE) String type) {
         SyncSendMessageResponse syncSendMessageResponse =  logAndSend(docOL, type);
         HttpHeaders httpHeader = getHeader(type);
+        DocOLDTO docOLDTO = new DocOLDTO(docOL);
+        if (syncSendMessageResponse!=null &&
+                syncSendMessageResponse.getResponseInfo()!=null &&
+                syncSendMessageResponse.getResponseInfo().getStatus()!=null
+        ) {
+            boolean isSent = !Objects.equals(syncSendMessageResponse.getResponseInfo().getStatus().getCode(), "SCSE001");
+            docOLDTO.setIsSent(isSent);
+            StringWriter sw = new StringWriter();
+            JAXB.marshal(syncSendMessageResponse,sw);
+            String xmlStringToLog = sw.toString();
+            LOG.info(xmlStringToLog);
+        }else{
+            docOLDTO.setIsSent(false);
+        }
+        simbaseClientService.saveDocOL(docOLDTO);
         return new ResponseEntity<SyncSendMessageResponse>(syncSendMessageResponse, httpHeader, HttpStatus.OK);
     }
 
@@ -141,13 +233,11 @@ public class DocController {
         SyncSendMessageResponse syncSendMessageResponse = logAndSend(docOutgoing, type);
         HttpHeaders httpHeader = getHeader(type);
         DocOutgoingDTO docOutgoingDTO = new DocOutgoingDTO(docOutgoing);
-
         if (syncSendMessageResponse!=null &&
                 syncSendMessageResponse.getResponseInfo()!=null &&
                 syncSendMessageResponse.getResponseInfo().getStatus()!=null
         ) {
             boolean isSent = !Objects.equals(syncSendMessageResponse.getResponseInfo().getStatus().getCode(), "SCSE001");
-
             docOutgoingDTO.setIsSent(isSent);
             StringWriter sw = new StringWriter();
             JAXB.marshal(syncSendMessageResponse,sw);
@@ -157,7 +247,6 @@ public class DocController {
             docOutgoingDTO.setIsSent(false);
         }
         docOutgoingService.save(docOutgoingDTO);
-
         return new ResponseEntity<SyncSendMessageResponse>(syncSendMessageResponse, httpHeader, HttpStatus.OK);
     }
     private HttpHeaders getHeader(String type){
